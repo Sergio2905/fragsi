@@ -719,6 +719,7 @@ body._lock {
   margin: 0 82px;
   border-radius: 50%;
   overflow: hidden;
+  background: url("../img/loading.gif") center/contain no-repeat;
 }
 
 .about-note__image img {
@@ -935,6 +936,7 @@ body._lock {
   min-width: 60px;
   height: 60px;
   position: relative;
+  background: url("../img/loading.gif") center/contain no-repeat;
 }
 
 .article-sidebar__image img {
@@ -976,6 +978,7 @@ body._lock {
   overflow: hidden;
   position: relative;
   display: block;
+  background: url("../img/loading.gif") center/contain no-repeat;
 }
 
 .recent-sidebar__image img {
@@ -1065,6 +1068,7 @@ body._lock {
   overflow: hidden;
   position: relative;
   margin-bottom: 25px;
+  background: url("../img/loading.gif") center/contain no-repeat;
 }
 
 .similar-notes__image img {
@@ -1272,6 +1276,7 @@ body._lock {
   align-items: center;
   justify-content: center;
   margin-bottom: 25px;
+  background: url("../img/loading.gif") center/contain no-repeat;
 }
 
 .catalog-note__image img {

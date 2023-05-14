@@ -4,7 +4,7 @@
 <head>
     <title>Fragsi</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230513224912">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230514114437">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание">
     <meta name="keywords" content="Ключевые слова">
@@ -14,7 +14,7 @@
 	<header class="header">
     <div class="header__container container">
         <div class="header__body">
-            <button class="menu__icon"></button>
+            <button class="menu__icon" title="menu-icon"></button>
             <a href="/" class="header__logo">
                 <svg>
                     <use xlink: href="img/icons/icons.svg#logo"></use>
@@ -40,12 +40,12 @@
                 </nav>
             </div>
             <div class="header__options">
-                <button type="button" class="header__notifications">
+                <button type="button" class="header__notifications" title="header-notification">
                     <svg>
                         <use xlink: href="img/icons/icons.svg#notification"></use>
                     </svg>
                 </button>
-                <button type="button" class="header__login">
+                <button type="button" class="header__login" title="header-login">
                     <span>Вход</span>
                     <svg>
                         <use xlink: href="img/icons/icons.svg#login"></use>
@@ -112,7 +112,10 @@
 			<div class="about-note__container container">
 				<div class="about-note__body">
 					<div class="about-note__image" data-mob="note-options, after">
-						<picture><source srcset="img/note/image.webp" type="image/webp"><img src="img/note/image.jpg" alt="Image"></picture>
+						<picture>
+							<source data-srcset="img/note/image.webp" srcset="img/plug.png" type="image/webp">
+							<img data-src="img/note/image.jpg" src="img/plug.png" alt="Image">
+						</picture>
 					</div>
 					<div class="about-note__info">
 						<div class="about-note__header" data-desk="note-options, append">
@@ -156,7 +159,10 @@
 						<h3 class="sidebar__title">Информация</h3>
 						<div class="information-sidebar__main">
 							<div class="information-sidebar__image">
-								<picture><source srcset="img/note/group.webp" type="image/webp"><img src="img/note/group.jpg" alt="Image"></picture>
+								<picture>
+									<source data-srcset="img/note/group.webp" srcset="img/plug.png" type="image/webp">
+									<img data-src="img/note/group.jpg" src="img/plug.png" alt="Image">
+								</picture>
 							</div>
 							<div class="information-sidebar__info">
 								<p class="information-sidebar__name">Ольфакторная группа</p>
@@ -180,7 +186,11 @@
 						<h3 class="sidebar__title">Лучшие статьи</h3>
 						<article class="sidebar__article article-sidebar">
 							<a href="#" class="article-sidebar__image">
-								<picture><source srcset="img/note/article1.webp" type="image/webp"><img src="img/note/article1.jpg" alt="Image"></picture>
+								<picture>
+									<source data-srcset="img/note/article1.webp" srcset="img/plug.png"
+										type="image/webp">
+									<img data-src="img/note/article1.jpg" src="img/plug.png" alt="Image">
+								</picture>
 							</a>
 							<h4 class="article-sidebar__title">
 								<a href="#" class="article-sidebar__link">
@@ -190,7 +200,11 @@
 						</article>
 						<article class="sidebar__article article-sidebar">
 							<a href="#" class="article-sidebar__image">
-								<picture><source srcset="img/note/article2.webp" type="image/webp"><img src="img/note/article2.jpg" alt="Image"></picture>
+								<picture>
+									<source data-srcset="img/note/article2.webp" srcset="img/plug.png"
+										type="image/webp">
+									<img data-src="img/note/article2.jpg" src="img/plug.png" alt="Image">
+								</picture>
 							</a>
 							<h4 class="article-sidebar__title">
 								<a href="#" class="article-sidebar__link">
@@ -200,7 +214,11 @@
 						</article>
 						<article class="sidebar__article article-sidebar">
 							<a href="#" class="article-sidebar__image">
-								<picture><source srcset="img/note/article3.webp" type="image/webp"><img src="img/note/article3.jpg" alt="Image"></picture>
+								<picture>
+									<source data-srcset="img/note/article3.webp" srcset="img/plug.png"
+										type="image/webp">
+									<img data-src="img/note/article3.jpg" src="img/plug.png" alt="Image">
+								</picture>
 							</a>
 							<h4 class="article-sidebar__title">
 								<a href="#" class="article-sidebar__link">
@@ -210,7 +228,11 @@
 						</article>
 						<article class="sidebar__article article-sidebar">
 							<a href="#" class="article-sidebar__image">
-								<picture><source srcset="img/note/article4.webp" type="image/webp"><img src="img/note/article4.jpg" alt="Image"></picture>
+								<picture>
+									<source data-srcset="img/note/article4.webp" srcset="img/plug.png"
+										type="image/webp">
+									<img data-src="img/note/article4.jpg" src="img/plug.png" alt="Image">
+								</picture>
 							</a>
 							<h4 class="article-sidebar__title">
 								<a href="#" class="article-sidebar__link">
@@ -224,27 +246,47 @@
 						<ul class="recent-sidebar__list">
 							<li class="recent-sidebar__item">
 								<a href="#" class="recent-sidebar__image">
-									<picture><source srcset="img/note/recent1.webp" type="image/webp"><img src="img/note/recent1.jpg" alt="Image"></picture>
+									<picture>
+										<source data-srcset="img/note/recent1.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/note/recent1.jpg" src="img/plug.png" alt="Image">
+									</picture>
 								</a>
 							</li>
 							<li class="recent-sidebar__item">
 								<a href="#" class="recent-sidebar__image">
-									<picture><source srcset="img/note/recent2.webp" type="image/webp"><img src="img/note/recent2.jpg" alt="Image"></picture>
+									<picture>
+										<source data-srcset="img/note/recent2.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/note/recent2.jpg" src="img/plug.png" alt="Image">
+									</picture>
 								</a>
 							</li>
 							<li class="recent-sidebar__item">
 								<a href="#" class="recent-sidebar__image">
-									<picture><source srcset="img/note/recent3.webp" type="image/webp"><img src="img/note/recent3.jpg" alt="Image"></picture>
+									<picture>
+										<source data-srcset="img/note/recent3.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/note/recent3.jpg" src="img/plug.png" alt="Image">
+									</picture>
 								</a>
 							</li>
 							<li class="recent-sidebar__item">
 								<a href="#" class="recent-sidebar__image">
-									<picture><source srcset="img/note/recent4.webp" type="image/webp"><img src="img/note/recent4.jpg" alt="Image"></picture>
+									<picture>
+										<source data-srcset="img/note/recent4.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/note/recent4.jpg" src="img/plug.png" alt="Image">
+									</picture>
 								</a>
 							</li>
 							<li class="recent-sidebar__item">
 								<a href="#" class="recent-sidebar__image">
-									<picture><source srcset="img/note/recent5.webp" type="image/webp"><img src="img/note/recent5.jpg" alt="Image"></picture>
+									<picture>
+										<source data-srcset="img/note/recent5.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/note/recent5.jpg" src="img/plug.png" alt="Image">
+									</picture>
 								</a>
 							</li>
 						</ul>
@@ -277,25 +319,41 @@
 							<div class="similar-notes__wrapper swiper-wrapper">
 								<div class="similar-notes__slide swiper-slide">
 									<div class="similar-notes__image">
-										<picture><source srcset="img/note/similar1.webp" type="image/webp"><img src="img/note/similar1.jpg" alt="Image"></picture>
+										<picture>
+											<source data-srcset="img/note/similar1.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/note/similar1.jpg" src="img/plug.png" alt="Image">
+										</picture>
 									</div>
 									<p class="similar-notes__name">Лимон</p>
 								</div>
 								<div class="similar-notes__slide swiper-slide">
 									<div class="similar-notes__image">
-										<picture><source srcset="img/note/similar2.webp" type="image/webp"><img src="img/note/similar2.jpg" alt="Image"></picture>
+										<picture>
+											<source data-srcset="img/note/similar2.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/note/similar2.jpg" src="img/plug.png" alt="Image">
+										</picture>
 									</div>
 									<p class="similar-notes__name">Мандарин</p>
 								</div>
 								<div class="similar-notes__slide swiper-slide">
 									<div class="similar-notes__image">
-										<picture><source srcset="img/note/similar3.webp" type="image/webp"><img src="img/note/similar3.jpg" alt="Image"></picture>
+										<picture>
+											<source data-srcset="img/note/similar3.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/note/similar3.jpg" src="img/plug.png" alt="Image">
+										</picture>
 									</div>
 									<p class="similar-notes__name">Грейпфрут</p>
 								</div>
 								<div class="similar-notes__slide swiper-slide">
 									<div class="similar-notes__image">
-										<picture><source srcset="img/note/similar4.webp" type="image/webp"><img src="img/note/similar4.jpg" alt="Image"></picture>
+										<picture>
+											<source data-srcset="img/note/similar4.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/note/similar4.jpg" src="img/plug.png" alt="Image">
+										</picture>
 									</div>
 									<p class="similar-notes__name">Апельсин</p>
 								</div>
@@ -352,7 +410,11 @@
 						<div class="aromates-note__catalog catalog-note">
 							<div class="catalog-note__item">
 								<div class="catalog-note__image">
-									<picture><source srcset="img/note/cat1.webp" type="image/webp"><img src="img/note/cat1.png" alt="Image"></picture>
+									<picture>
+										<source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+									</picture>
 								</div>
 								<h6 class="catalog-note__name">Baccarat Rouge 540</h6>
 								<p class="catalog-note__brand">Maison Francis Kurkdjian</d>
@@ -372,7 +434,11 @@
 							</div>
 							<div class="catalog-note__item">
 								<div class="catalog-note__image">
-									<picture><source srcset="img/note/cat2.webp" type="image/webp"><img src="img/note/cat2.png" alt="Image"></picture>
+									<picture>
+										<source data-srcset="img/note/cat2.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/note/cat2.png" src="img/plug.png" alt="Image">
+									</picture>
 								</div>
 								<h6 class="catalog-note__name">Baccarat Rouge 540</h6>
 								<p class="catalog-note__brand">Maison Francis Kurkdjian</d>
@@ -392,7 +458,11 @@
 							</div>
 							<div class="catalog-note__item">
 								<div class="catalog-note__image">
-									<picture><source srcset="img/note/cat3.webp" type="image/webp"><img src="img/note/cat3.png" alt="Image"></picture>
+									<picture>
+										<source data-srcset="img/note/cat3.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/note/cat3.png" src="img/plug.png" alt="Image">
+									</picture>
 								</div>
 								<h6 class="catalog-note__name">Baccarat Rouge 540</h6>
 								<p class="catalog-note__brand">Maison Francis Kurkdjian</d>
@@ -412,7 +482,11 @@
 							</div>
 							<div class="catalog-note__item">
 								<div class="catalog-note__image">
-									<picture><source srcset="img/note/cat4.webp" type="image/webp"><img src="img/note/cat4.png" alt="Image"></picture>
+									<picture>
+										<source data-srcset="img/note/cat4.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/note/cat4.png" src="img/plug.png" alt="Image">
+									</picture>
 								</div>
 								<h6 class="catalog-note__name">Baccarat Rouge 540</h6>
 								<p class="catalog-note__brand">Maison Francis Kurkdjian</d>
@@ -432,7 +506,11 @@
 							</div>
 							<div class="catalog-note__item">
 								<div class="catalog-note__image">
-									<picture><source srcset="img/note/cat5.webp" type="image/webp"><img src="img/note/cat5.png" alt="Image"></picture>
+									<picture>
+										<source data-srcset="img/note/cat5.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/note/cat5.png" src="img/plug.png" alt="Image">
+									</picture>
 								</div>
 								<h6 class="catalog-note__name">Baccarat Rouge 540</h6>
 								<p class="catalog-note__brand">Maison Francis Kurkdjian</d>
@@ -452,7 +530,11 @@
 							</div>
 							<div class="catalog-note__item">
 								<div class="catalog-note__image">
-									<picture><source srcset="img/note/cat6.webp" type="image/webp"><img src="img/note/cat6.png" alt="Image"></picture>
+									<picture>
+										<source data-srcset="img/note/cat6.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/note/cat6.png" src="img/plug.png" alt="Image">
+									</picture>
 								</div>
 								<h6 class="catalog-note__name">Baccarat Rouge 540</h6>
 								<p class="catalog-note__brand">Maison Francis Kurkdjian</d>
@@ -642,7 +724,7 @@
         </div>
     </div>
 </footer>
-	<script src="js/app.min.js?_v=20230513224912"></script>
+	<script src="js/app.min.js?_v=20230514114437"></script>
 </body>
 
 </html>
