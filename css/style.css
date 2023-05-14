@@ -1005,7 +1005,7 @@ body._lock {
   color: #007F5F;
 }
 
-.content-note__container {
+.content-note__wrapper {
   display: flex;
 }
 
@@ -1018,6 +1018,7 @@ body._lock {
   flex: 1 1 auto;
   padding-left: 30px;
   border-left: 1px solid #EBEBEB;
+  width: 100%;
 }
 
 .similar-notes {
@@ -1127,6 +1128,10 @@ body._lock {
   transform: rotate(-90deg);
 }
 
+.aromates-note {
+  margin-bottom: 80px;
+}
+
 .aromates-note__header {
   display: flex;
   align-items: center;
@@ -1193,6 +1198,18 @@ body._lock {
 .aromates-note__tags {
   display: flex;
   margin-bottom: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scrollbar-color: #5f5f5f #fff;
+}
+
+.aromates-note__tags::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.aromates-note__tags::-webkit-scrollbar-thumb {
+  background: #5f5f5f;
 }
 
 .aromates-note__tag {
@@ -1204,6 +1221,7 @@ body._lock {
   height: 38px;
   padding: 0 15px;
   font-size: 1.125rem;
+  white-space: nowrap;
 }
 
 .aromates-note__tag_all {
@@ -1220,6 +1238,7 @@ body._lock {
   border-radius: none;
   padding: 0;
   height: unset;
+  justify-content: flex-end;
 }
 
 .aromates-note__tag.active {
@@ -1248,7 +1267,7 @@ body._lock {
   border-radius: 8px;
   padding: 12px 18px;
   font-size: 1.125rem;
-  margin: 0 auto 75px;
+  margin: 0 auto;
   display: block;
 }
 
@@ -1287,12 +1306,14 @@ body._lock {
 .catalog-note__name {
   font-size: 1.125rem;
   margin-bottom: 4px;
+  white-space: nowrap;
 }
 
 .catalog-note__brand {
   text-transform: uppercase;
   color: #C3C3C3;
   margin-bottom: 4px;
+  white-space: nowrap;
 }
 
 .catalog-note__year {
@@ -1377,6 +1398,148 @@ body._lock {
   font-size: 50%;
   line-height: 1;
   padding: 0 0 0 10px;
+}
+
+.themes-note {
+  margin-bottom: 80px;
+}
+
+.themes-note__header {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.themes-note__title {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+
+.themes-note__all {
+  font-size: 1.125rem;
+  color: #007F5F;
+}
+
+.themes-note__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.themes-note__item {
+  margin-right: 10px;
+  margin-bottom: 8px;
+}
+
+.themes-note__btn {
+  font-size: 1.125rem;
+  background: #F2F2F2;
+  border-radius: 50px;
+  padding: 8px 15px;
+}
+
+.recent-note {
+  margin-bottom: 150px;
+}
+
+.recent-note__body {
+  position: relative;
+  border: 1px solid #E1E1E1;
+  border-radius: 16px;
+  padding: 0 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recent-note__title {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 1.75rem;
+  transform: translate(0, -50%);
+  padding: 0 30px;
+  background: #fff;
+  margin-bottom: 30px;
+}
+
+.recent-note__slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.recent-note__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recent-note__image {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+  background: url("../img/loading.gif") center/contain no-repeat;
+}
+
+.recent-note__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.recent-note__name {
+  font-size: 1.125rem;
+}
+
+.recent-note__navigation {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.recent-note__prev,
+.recent-note__next {
+  width: 30px;
+  height: 100px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.recent-note__prev svg,
+.recent-note__next svg {
+  width: 60%;
+}
+
+.recent-note__prev {
+  transform: translate(-15px, 0);
+}
+
+.recent-note__prev svg {
+  transform: rotate(90deg);
+}
+
+.recent-note__next {
+  transform: translate(15px, 0);
+}
+
+.recent-note__next svg {
+  transform: rotate(-90deg);
 }
 
 /**
@@ -1723,6 +1886,44 @@ body._lock {
 
   .aromates-note__form input {
     font-size: calc(1.0625rem + 1 * (100vw - 20rem) / 1600);
+  }
+}
+
+@media (max-width: 1240px) {
+  .sidebar__title {
+    font-size: 1.75rem;
+  }
+
+  .sidebar__articles {
+    margin-bottom: 80px;
+  }
+
+  .information-sidebar {
+    margin-bottom: 40px;
+  }
+
+  .interesting-sidebar {
+    margin-bottom: 80px;
+  }
+
+  .interesting-sidebar__list {
+    -moz-columns: 2;
+         columns: 2;
+  }
+
+  .content-note__sidebar {
+    flex: unset;
+    margin-right: 0;
+  }
+
+  .content-note__body {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .similar-notes {
+    max-width: unset;
+    margin-bottom: 30px;
   }
 }
 
