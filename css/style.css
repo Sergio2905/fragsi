@@ -207,8 +207,8 @@ body._lock {
   content: "";
   width: 100%;
   height: 100%;
-  -webkit-mask: url("../../img/icons/icons.svg#menu") center/contain no-repeat;
-          mask: url("../../img/icons/icons.svg#menu") center/contain no-repeat;
+  -webkit-mask: url("../img/icons/icons.svg#menu") center/contain no-repeat;
+          mask: url("../img/icons/icons.svg#menu") center/contain no-repeat;
   background: #000;
 }
 
@@ -216,8 +216,8 @@ body._lock {
   content: "";
   width: 24px;
   height: 24px;
-  -webkit-mask: url("../../img/icons/icons.svg#close") center/cover no-repeat;
-          mask: url("../../img/icons/icons.svg#close") center/cover no-repeat;
+  -webkit-mask: url("../img/icons/icons.svg#close") center/cover no-repeat;
+          mask: url("../img/icons/icons.svg#close") center/cover no-repeat;
   background: #000;
   opacity: 0;
   transform: translate(-50%, -50%) scale(0);
@@ -277,7 +277,7 @@ body._lock {
   top: 50%;
   transform: translate(0, -50%);
   right: 0;
-  background: url("../../img/icons/icons.svg#arrow") center/contain no-repeat;
+  background: url("../img/icons/icons.svg#arrow") center/contain no-repeat;
   transition: all 0.2s linear;
 }
 
@@ -353,8 +353,8 @@ body._lock {
   transform: translate(0, -50%) rotate(-90deg);
   width: 10px;
   height: 10px;
-  -webkit-mask: url("../../img/icons/icons.svg#arrow") center/contain no-repeat;
-          mask: url("../../img/icons/icons.svg#arrow") center/contain no-repeat;
+  -webkit-mask: url("../img/icons/icons.svg#arrow") center/contain no-repeat;
+          mask: url("../img/icons/icons.svg#arrow") center/contain no-repeat;
   background: #A5A5A5;
 }
 
@@ -614,8 +614,8 @@ body._lock {
   transform: translate(0, -50%);
   width: 10px;
   height: 10px;
-  -webkit-mask: url("../../img/icons/icons.svg#arrow") center/contain no-repeat;
-          mask: url("../../img/icons/icons.svg#arrow") center/contain no-repeat;
+  -webkit-mask: url("../img/icons/icons.svg#arrow") center/contain no-repeat;
+          mask: url("../img/icons/icons.svg#arrow") center/contain no-repeat;
   background: #fff;
   transition: all 0.2s linear;
   display: none;
