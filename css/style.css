@@ -825,8 +825,8 @@ body._lock {
   transform: translate(0, -50%);
   width: 10px;
   height: 10px;
-  -webkit-mask: url("../../../img/icons/icons.svg#arrow") center/contain no-repeat;
-          mask: url("../../../img/icons/icons.svg#arrow") center/contain no-repeat;
+  -webkit-mask: url("../img/icons/icons.svg#arrow") center/contain no-repeat;
+          mask: url("../img/icons/icons.svg#arrow") center/contain no-repeat;
   background: #007F5F;
 }
 
@@ -914,8 +914,8 @@ body._lock {
   transform: translate(0, -50%);
   width: 10px;
   height: 10px;
-  -webkit-mask: url("../../../img/icons/icons.svg#arrow") center/contain no-repeat;
-          mask: url("../../../img/icons/icons.svg#arrow") center/contain no-repeat;
+  -webkit-mask: url("../img/icons/icons.svg#arrow") center/contain no-repeat;
+          mask: url("../img/icons/icons.svg#arrow") center/contain no-repeat;
   background: #007F5F;
 }
 
