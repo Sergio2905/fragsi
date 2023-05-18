@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Fragsi</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230518115815">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Описание">
+    <meta name="keywords" content="Ключевые слова">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header class="header">
+    <div class="header__lang lang">
+        <div class="lang__container container">
+            <div class="lang__body">
+                <button type="button" class="lang__btn popup-link" title="Select language" data-modal="lang-settings">
+                    <svg>
+                        <use href="img/icons/icons.svg#lang"></use>
+                    </svg>
+                    <span>Русский</span>
+                </button>
+                <button type="button" class="lang__btn popup-link" title="Select currency" data-modal="lang-settings">
+                    <svg>
+                        <use href="img/icons/icons.svg#currency"></use>
+                    </svg>
+                    <span>RUB</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="header__main">
+        <div class="header__container container">
+            <div class="header__body">
+                <button class="menu__icon" title="menu-icon"></button>
+                <a href="/" class="header__logo" aria-label="Go to main page">
+                    <svg>
+                        <use xlink: href="img/icons/icons.svg#logo"></use>
+                    </svg>
+                </a>
+                <div class="header__menu menu">
+                    <nav class="menu__body" data-mob="submenu, append">
+                        <ul class="menu__list">
+                            <li class="menu__item active"><a href="#" class="menu__link">Ароматы</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Бренды</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Парфюмеры</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Ноты</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
+                            <li class="menu__item menu__item_sub" data-desk="submenu, append">
+                                <a href="#" class="menu__link">Еще</a>
+                                <ul class="menu__sub-list" data-move="submenu, 993">
+                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">Семейства</a></li>
+                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">Сегменты</a></li>
+                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">Концентрации</a></li>
+                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">Производители</a></li>
+                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">Глассарий</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__options">
+                    <div class="header__notifications notifications-header active">
+                        <a href="#" class="notifications-header__link" area-lable="Read all notifications">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#notification"></use>
+                            </svg>
+                        </a>
+                        <div class="notifications-header__help">
+                            У вас имеются непросмотренные уведомления <span>(4)</span>, ознакомьтесь с ними
+                        </div>
+                    </div>
+                    <div class="header__login login-header">
+                        <button type="button" class="login-header__btn" title="Login">
+                            <span>Вход</span>
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#login"></use>
+                            </svg>
+                        </button>
+                        <div class="login-header__help">
+                            <p>
+                                Зарегистрируйтесь, чтобы узнавать новинках, интересных ароматах, обзорах и советах по
+                                выбору парфюма.
+                            </p>
+                            <button type="button" data-modal="login" class="login-header__reg popup-link"
+                                title="Login or registration">
+                                Войти или зарегестрироваться
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+		<div class="about">
+			<div class="about__actions actions">
+				<div class="actions__container container">
+					<div class="actions__body">
+						<a href="#" class="actions__cat">
+							<svg>
+								<use href="img/icons/icons.svg#catalog"></use>
+							</svg>
+							<span>Каталог пафрюмов</span>
+						</a>
+						<form action="#" class="actions__form search">
+							<div class="search__wrapper">
+								<button type="submit" title="search-btn">
+									<svg>
+										<use href="img/icons/icons.svg#search"></use>
+									</svg>
+								</button>
+								<input class="search__input" type="text" placeholder="Что будете искать?">
+								<div class="search__result">
+
+								</div>
+							</div>
+						</form>
+						<div class="actions__btns">
+							<button class="actions__btn" title="action-btn">
+								<svg>
+									<use xlink: href="img/icons/icons.svg#compare"></use>
+								</svg>
+								<span>Сравнить</span>
+							</button>
+							<button class="actions__btn" title="action-btn">
+								<svg>
+									<use xlink: href="img/icons/icons.svg#favorite"></use>
+								</svg>
+								<span>Избранное</span>
+								<span class="actions__count">99+</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="about__breadcrumbs breadcrumbs">
+				<div class="breadcrumbs__container container">
+					<div class="breadcrumbs__body">
+						<a href="#" class="breadcrumbs__link" aria-label="Back to main page">
+							<span>Главная</span>
+							<svg>
+								<use href="img/icons/icons.svg#home"></use>
+							</svg>
+						</a>
+						<a href="#" class="breadcrumbs__link">Ноты</a>
+						<a href="#" class="breadcrumbs__link">Цитрусовые</a>
+						<a href="#" class="breadcrumbs__link breadcrumbs__link_mob">...</a>
+						<a href="#" class="breadcrumbs__link">Бергамот</a>
+					</div>
+				</div>
+			</div>
+			<div class="about__container container">
+				<div class="about__body">
+					<h1 class="about__title title1">Наша команда</h1>
+					<div class="about__desc">
+						<p>
+							Мы - команда профессионалов в области парфюмерии, которые страстно увлечены всеми аспектами
+							этой
+							красивой и увлекательной индустрии.
+						</p>
+						<p>
+							Наша миссия заключается в том, чтобы делиться с вами своими знаниями и опытом, чтобы вы
+							могли
+							наслаждаться всеми прекрасными ароматами, которые мир может предложить.
+						</p>
+					</div>
+					<div class="about__cards">
+						<div class="about__card card-about">
+							<article class="card-about__body">
+								<div class="card-about__image">
+									<picture>
+										<source data-srcset="img/about/Photo1.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/about/Photo1.jpeg" src="img/plug.png" alt="Image">
+									</picture>
+								</div>
+								<h2 class="card-about__title title2">Илья Мазелов</h2>
+								<div class="card-about__profession">SMM-менеджер</div>
+								<ul class="card-about__socials socials-about">
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="Mail">
+											<picture>
+												<source data-srcset="img/icons/mail-black.svg" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/icons/mail-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="LinkedIn">
+											<picture>
+												<source data-srcset="img/icons/LinkedIn-black.svg"
+													srcset="img/plug.png" type="image/webp">
+												<img data-src="img/icons/LinkedIn-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="Facebook">
+											<picture>
+												<source data-srcset="img/icons/Facebook-black.svg"
+													srcset="img/plug.png" type="image/webp">
+												<img data-src="img/icons/Facebook-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="Twitter">
+											<picture>
+												<source data-srcset="img/icons/Twitter-black.svg"
+													srcset="img/plug.png" type="image/webp">
+												<img data-src="img/icons/Twitter-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+								</ul>
+								<p class="card-about__desc">
+									Наш SMM-менеджер - настоящий гений в мире социальных медиа! Он знает, как заставить
+									контент работать на свою аудиторию и привлечь больше подписчиков, чем у котиков на
+									YouTube.
+								</p>
+							</article>
+						</div>
+						<div class="about__card card-about">
+							<article class="card-about__body">
+								<div class="card-about__image">
+									<picture>
+										<source data-srcset="img/about/Photo2.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/about/Photo2.jpeg" src="img/plug.png" alt="Image">
+									</picture>
+								</div>
+								<h2 class="card-about__title title2">Илья Мазелов</h2>
+								<div class="card-about__profession">SMM-менеджер</div>
+								<ul class="card-about__socials socials-about">
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="Mail">
+											<picture>
+												<source data-srcset="img/icons/mail-black.svg" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/icons/mail-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="LinkedIn">
+											<picture>
+												<source data-srcset="img/icons/LinkedIn-black.svg"
+													srcset="img/plug.png" type="image/webp">
+												<img data-src="img/icons/LinkedIn-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="Facebook">
+											<picture>
+												<source data-srcset="img/icons/Facebook-black.svg"
+													srcset="img/plug.png" type="image/webp">
+												<img data-src="img/icons/Facebook-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="Twitter">
+											<picture>
+												<source data-srcset="img/icons/Twitter-black.svg"
+													srcset="img/plug.png" type="image/webp">
+												<img data-src="img/icons/Twitter-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+								</ul>
+								<p class="card-about__desc">
+									Наш SMM-менеджер - настоящий гений в мире социальных медиа! Он знает, как заставить
+									контент работать на свою аудиторию и привлечь больше подписчиков, чем у котиков на
+									YouTube.
+								</p>
+							</article>
+						</div>
+						<div class="about__card card-about">
+							<article class="card-about__body">
+								<div class="card-about__image">
+									<picture>
+										<source data-srcset="img/about/Photo3.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/about/Photo3.jpeg" src="img/plug.png" alt="Image">
+									</picture>
+								</div>
+								<h2 class="card-about__title title2">Илья Мазелов</h2>
+								<div class="card-about__profession">SMM-менеджер</div>
+								<ul class="card-about__socials socials-about">
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="Mail">
+											<picture>
+												<source data-srcset="img/icons/mail-black.svg" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/icons/mail-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="LinkedIn">
+											<picture>
+												<source data-srcset="img/icons/LinkedIn-black.svg"
+													srcset="img/plug.png" type="image/webp">
+												<img data-src="img/icons/LinkedIn-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="Facebook">
+											<picture>
+												<source data-srcset="img/icons/Facebook-black.svg"
+													srcset="img/plug.png" type="image/webp">
+												<img data-src="img/icons/Facebook-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="Twitter">
+											<picture>
+												<source data-srcset="img/icons/Twitter-black.svg"
+													srcset="img/plug.png" type="image/webp">
+												<img data-src="img/icons/Twitter-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+								</ul>
+								<p class="card-about__desc">
+									Наш SMM-менеджер - настоящий гений в мире социальных медиа! Он знает, как заставить
+									контент работать на свою аудиторию и привлечь больше подписчиков, чем у котиков на
+									YouTube.
+								</p>
+							</article>
+						</div>
+						<div class="about__card card-about">
+							<article class="card-about__body">
+								<div class="card-about__image">
+									<picture>
+										<source data-srcset="img/about/Photo4.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/about/Photo4.jpeg" src="img/plug.png" alt="Image">
+									</picture>
+								</div>
+								<h2 class="card-about__title title2">Илья Мазелов</h2>
+								<div class="card-about__profession">SMM-менеджер</div>
+								<ul class="card-about__socials socials-about">
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="Mail">
+											<picture>
+												<source data-srcset="img/icons/mail-black.svg" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/icons/mail-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="LinkedIn">
+											<picture>
+												<source data-srcset="img/icons/LinkedIn-black.svg"
+													srcset="img/plug.png" type="image/webp">
+												<img data-src="img/icons/LinkedIn-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="Facebook">
+											<picture>
+												<source data-srcset="img/icons/Facebook-black.svg"
+													srcset="img/plug.png" type="image/webp">
+												<img data-src="img/icons/Facebook-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="Twitter">
+											<picture>
+												<source data-srcset="img/icons/Twitter-black.svg"
+													srcset="img/plug.png" type="image/webp">
+												<img data-src="img/icons/Twitter-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+								</ul>
+								<p class="card-about__desc">
+									Наш SMM-менеджер - настоящий гений в мире социальных медиа! Он знает, как заставить
+									контент работать на свою аудиторию и привлечь больше подписчиков, чем у котиков на
+									YouTube.
+								</p>
+							</article>
+						</div>
+						<div class="about__card card-about">
+							<article class="card-about__body">
+								<div class="card-about__image">
+									<picture>
+										<source data-srcset="img/about/Photo5.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/about/Photo5.jpeg" src="img/plug.png" alt="Image">
+									</picture>
+								</div>
+								<h2 class="card-about__title title2">Илья Мазелов</h2>
+								<div class="card-about__profession">SMM-менеджер</div>
+								<ul class="card-about__socials socials-about">
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="Mail">
+											<picture>
+												<source data-srcset="img/icons/mail-black.svg" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/icons/mail-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="LinkedIn">
+											<picture>
+												<source data-srcset="img/icons/LinkedIn-black.svg"
+													srcset="img/plug.png" type="image/webp">
+												<img data-src="img/icons/LinkedIn-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="Facebook">
+											<picture>
+												<source data-srcset="img/icons/Facebook-black.svg"
+													srcset="img/plug.png" type="image/webp">
+												<img data-src="img/icons/Facebook-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="Twitter">
+											<picture>
+												<source data-srcset="img/icons/Twitter-black.svg"
+													srcset="img/plug.png" type="image/webp">
+												<img data-src="img/icons/Twitter-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+								</ul>
+								<p class="card-about__desc">
+									Наш SMM-менеджер - настоящий гений в мире социальных медиа! Он знает, как заставить
+									контент работать на свою аудиторию и привлечь больше подписчиков, чем у котиков на
+									YouTube.
+								</p>
+							</article>
+						</div>
+						<div class="about__card card-about">
+							<article class="card-about__body">
+								<div class="card-about__image">
+									<picture>
+										<source data-srcset="img/about/Photo6.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/about/Photo6.jpeg" src="img/plug.png" alt="Image">
+									</picture>
+								</div>
+								<h2 class="card-about__title title2">Илья Мазелов</h2>
+								<div class="card-about__profession">SMM-менеджер</div>
+								<ul class="card-about__socials socials-about">
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="Mail">
+											<picture>
+												<source data-srcset="img/icons/mail-black.svg" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/icons/mail-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="LinkedIn">
+											<picture>
+												<source data-srcset="img/icons/LinkedIn-black.svg"
+													srcset="img/plug.png" type="image/webp">
+												<img data-src="img/icons/LinkedIn-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="Facebook">
+											<picture>
+												<source data-srcset="img/icons/Facebook-black.svg"
+													srcset="img/plug.png" type="image/webp">
+												<img data-src="img/icons/Facebook-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+									<li class="socials-about__item">
+										<a href="#" class="socials-about__link" area-label="Twitter">
+											<picture>
+												<source data-srcset="img/icons/Twitter-black.svg"
+													srcset="img/plug.png" type="image/webp">
+												<img data-src="img/icons/Twitter-black.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+										</a>
+									</li>
+								</ul>
+								<p class="card-about__desc">
+									Наш SMM-менеджер - настоящий гений в мире социальных медиа! Он знает, как заставить
+									контент работать на свою аудиторию и привлечь больше подписчиков, чем у котиков на
+									YouTube.
+								</p>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__body">
+            <div class="footer__top">
+                <div class="footer__socials socials">
+                    <h3 class="socials__title">Мы в соц. сетях</h3>
+                    <ul class="socials__list">
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Follow us in Instagram">
+                                <picture>
+                                    <source data-srcset="img/icons/Instagram.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/icons/Instagram.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Follow us in Telegram">
+                                <picture>
+                                    <source data-srcset="img/icons/Telegram.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/icons/Telegram.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Follow us in YouTube">
+                                <picture>
+                                    <source data-srcset="img/icons/YouTube.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/icons/YouTube.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Follow us in VK">
+                                <picture>
+                                    <source data-srcset="img/icons/vk.svg" srcset="img/plug.png" type="image/webp">
+                                    <img data-src="img/icons/vk.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Follow us in Facebook">
+                                <picture>
+                                    <source data-srcset="img/icons/Facebook.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/icons/Facebook.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Follow us in Twitter">
+                                <picture>
+                                    <source data-srcset="img/icons/Twitter.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/icons/Twitter.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Follow us in OK">
+                                <picture>
+                                    <source data-srcset="img/icons/ok.svg" srcset="img/plug.png" type="image/webp">
+                                    <img data-src="img/icons/ok.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__subscribe subscribe">
+                    <h3 class="subscribe__title">Подпишитесь на рассылку</h3>
+                    <form action="#" method="get" class="subscribe__form" novalidate>
+                        <div class="subscribe__input input">
+                            <input type="email" name="email" placeholder="Ваш Email">
+                            <button type="submit" title="subscribe-submit" class="subscribe__btn">
+                                <svg>
+                                    <use xlink: href="img/icons/icons.svg#arrow-right"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__middle" data-spollers="993,max">
+                <div class="footer__links links-footer">
+                    <h3 class="links-footer__title" data-spoller>Каталог</h3>
+                    <ul class="links-footer__list">
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Ароматы</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Пафрюмеры</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Бренды</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Ноты</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Семейства</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Сегменты</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Концентрации</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Глоссарий</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__links links-footer">
+                    <h3 class="links-footer__title" data-spoller>Пользователю</h3>
+                    <ul class="links-footer__list">
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Личный кабинет</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Уведомления</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Избранное</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Сравнения</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__links links-footer">
+                    <h3 class="links-footer__title" data-spoller>Журнал</h3>
+                    <ul class="links-footer__list">
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Главная</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Статьи</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Новости</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__links links-footer">
+                    <h3 class="links-footer__title" data-spoller>Помощь</h3>
+                    <ul class="links-footer__list">
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">О проекте</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Комьюнити</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Помощь</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Реклама</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__rights rights">
+                    <span>@fragsi</span>
+                    <span>Все права защищены</span>
+                </div>
+                <div class="footer__docs docs">
+                    <a href="#" class="docs__link">Правообладателям</a>
+                    <a href="#" class="docs__link">Политика конфиндециальности</a>
+                    <a href="#" class="docs__link">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+	</div>
+
+	<div class="popup" id="lang-settings">
+    <div class="popup__body">
+        <div class="popup__content lang-settings">
+            <button type="button" class="popup__close">
+                <svg>
+                    <use href="img/icons/icons.svg#close"></use>
+                </svg>
+            </button>
+            <h2 class="lang-settings__title">Настройки сайта</h2>
+            <div class="lang-settings__block input">
+                <label for="lang">Язык</label>
+                <input type="text" name="lang" value="Русский">
+                <ul class="lang-settings__list input-list">
+                    <li class="lang-settings__item">Русский</li>
+                    <li class="lang-settings__item">Українська</li>
+                    <li class="lang-settings__item">English</li>
+                    <li class="lang-settings__item">Русский</li>
+                    <li class="lang-settings__item">Українська</li>
+                    <li class="lang-settings__item">English</li>
+                </ul>
+                <div class="lang-settings__error">Ошибка. Попробуйте еще раз.</div>
+            </div>
+            <div class="lang-settings__block input">
+                <label for="country">Местоположение</label>
+                <input type="text" value="Россия" name="country">
+                <ul class="lang-settings__list input-list">
+                    <li class="lang-settings__item">Россия</li>
+                    <li class="lang-settings__item">Украиїна</li>
+                    <li class="lang-settings__item">USA</li>
+                    <li class="lang-settings__item">Россия</li>
+                    <li class="lang-settings__item">Украиїна</li>
+                    <li class="lang-settings__item">USA</li>
+                </ul>
+                <div class="lang-settings__error">Ошибка. Попробуйте еще раз.</div>
+            </div>
+            <div class="lang-settings__block input">
+                <label for="currency">Валюта</label>
+                <input type="text" value="Рубль [RUB]" name="currency">
+                <ul class="lang-settings__list input-list">
+                    <li class="lang-settings__item">Рубль [RUB]</li>
+                    <li class="lang-settings__item">Гривня [UAH]</li>
+                    <li class="lang-settings__item">USA [USD]</li>
+                    <li class="lang-settings__item">Рубль [RUB]</li>
+                    <li class="lang-settings__item">Гривня [UAH]</li>
+                    <li class="lang-settings__item">USA [USD]</li>
+                </ul>
+                <div class="lang-settings__error">Ошибка. Попробуйте еще раз.</div>
+            </div>
+            <button type="button" class="lang-settings__btn">Применить</button>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="login">
+    <div class="popup__body">
+        <div class="popup__content login">
+            <button type="button" class="popup__close">
+                <svg>
+                    <use href="img/icons/icons.svg#close"></use>
+                </svg>
+            </button>
+            <div class="login__image">
+                <picture>
+                    <source data-srcset="img/login.webp" srcset="img/plug.png" type="image/webp">
+                    <img data-src="img/login.jpg" src="img/plug.png" alt="Image">
+                </picture>
+            </div>
+            <div class="login__body">
+                <div class="login__tabs tabs">
+                    <div class="tabs__header">
+                        <div class="tabs__item _active">Вход</div>
+                        <div class="tabs__item">Регистрация</div>
+                        <div class="tabs__indicator"></div>
+                    </div>
+
+                    <div class="tabs__body">
+                        <div class="tabs__block _active">
+                            <div class="tabs__content">
+                                <h2 class="login__title">Вход во Fragsi</h2>
+                                <div class="login__label"><span>Через соц.сети</span></div>
+                                <ul class="login__socials">
+                                    <li class="login__item">
+                                        <a href="#" class="login__social" area-label="Facebook">
+                                            <picture>
+                                                <source data-srcset="img/icons/Facebook.svg" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/icons/Facebook.svg" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                    </li>
+                                    <li class="login__item">
+                                        <a href="#" class="login__social" area-label="Google">
+                                            <picture>
+                                                <source data-srcset="img/icons/Google.svg" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/icons/Google.svg" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                    </li>
+                                    <li class="login__item">
+                                        <a href="#" class="login__social" area-label="Twitter">
+                                            <picture>
+                                                <source data-srcset="img/icons/Twitter.svg" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/icons/Twitter.svg" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                    </li>
+                                    <li class="login__item">
+                                        <a href="#" class="login__social" area-label="OK">
+                                            <picture>
+                                                <source data-srcset="img/icons/ok.svg" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/icons/ok.svg" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                    </li>
+                                    <li class="login__item">
+                                        <a href="#" class="login__social" area-label="VK">
+                                            <picture>
+                                                <source data-srcset="img/icons/vk.svg" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/icons/vk.svg" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="login__label"><span>Через почту</span></div>
+                                <form action="#" class="login__form form-login">
+                                    <div class="form-login__input input">
+                                        <label for="e-mail">Введите телефон или Email</label>
+                                        <input type="text" title="E-mail">
+                                    </div>
+                                    <div class="form-login__input input pass">
+                                        <label for="password">Введите пароль</label>
+                                        <input type="password" title="Password">
+                                        <button class="pass__btn" type="button" title="Show password">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#eye"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button type="submit" class="form-login__btn">Вход</button>
+                                    <div class="form-login__footer">
+                                        <div class="form-login__checkbox checkbox">
+                                            Запомнить меня
+                                            <input type="checkbox" name="remember-me">
+                                        </div>
+                                        <a href="#" class="form-login__forgot">Забыли пароль?</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tabs__block">
+                            <div class="tabs__content">
+                                <h2 class="login__title">Регистрация</h2>
+                                <p class="login__intro">
+                                    Присоединяйтесь к сообществу Fragsi и получите доступ ко всем его функциям
+                                </p>
+                                <form action="#" class="login__form form-login">
+                                    <div class="form-login__input input">
+                                        <label for="e-mail">Введите ваше имя</label>
+                                        <input type="text" title="Your name" name="name">
+                                    </div>
+                                    <div class="form-login__input input">
+                                        <label for="e-mail">Введите телефон или Email</label>
+                                        <input type="text" title="E-mail" name="email">
+                                    </div>
+                                    <div class="form-login__input input pass">
+                                        <label for="password">Придумайте пароль</label>
+                                        <input type="password" title="Password" name="password">
+                                        <button class="pass__btn" type="button" title="Show password">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#eye"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="form-login__input input pass">
+                                        <label for="password">Повторите пароль</label>
+                                        <input type="password" title="Repeat password">
+                                        <button class="pass__btn" type="button" title="Show password">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#eye"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button type="submit" class="form-login__btn">Зарегистрироваться</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	<div class="alerts">
+    <div class="alerts__error">
+        <svg>
+            <use href="img/icons/icons.svg#alert"></use>
+        </svg>
+        Введите существующий Email
+    </div>
+</div>
+	<script src="js/app.min.js?_v=20230518115815"></script>
+</body>
+
+</html>

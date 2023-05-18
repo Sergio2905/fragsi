@@ -4,7 +4,7 @@
 <head>
     <title>Fragsi</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230514143849">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230518115815">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание">
     <meta name="keywords" content="Ключевые слова">
@@ -14,45 +14,84 @@
 
 	<div class="wrapper">
 		<header class="header">
-    <div class="header__container container">
-        <div class="header__body">
-            <button class="menu__icon" title="menu-icon"></button>
-            <a href="/" class="header__logo" aria-label="Go to main page">
-                <svg>
-                    <use xlink: href="img/icons/icons.svg#logo"></use>
-                </svg>
-            </a>
-            <div class="header__menu menu">
-                <nav class="menu__body" data-mob="submenu, append">
-                    <ul class="menu__list">
-                        <li class="menu__item active"><a href="#" class="menu__link">Ароматы</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Бренды</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Парфюмеры</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Ноты</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
-                        <li class="menu__item menu__item_sub" data-desk="submenu, append">
-                            <a href="#" class="menu__link">Еще</a>
-                            <ul class="menu__sub-list" data-move="submenu, 993">
-                                <li class="menu__sub-item"><a href="#" class="menu__sub-link">Еще 1</a></li>
-                                <li class="menu__sub-item"><a href="#" class="menu__sub-link">Еще 2</a></li>
-                                <li class="menu__sub-item"><a href="#" class="menu__sub-link">Еще 3</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
+    <div class="header__lang lang">
+        <div class="lang__container container">
+            <div class="lang__body">
+                <button type="button" class="lang__btn popup-link" title="Select language" data-modal="lang-settings">
+                    <svg>
+                        <use href="img/icons/icons.svg#lang"></use>
+                    </svg>
+                    <span>Русский</span>
+                </button>
+                <button type="button" class="lang__btn popup-link" title="Select currency" data-modal="lang-settings">
+                    <svg>
+                        <use href="img/icons/icons.svg#currency"></use>
+                    </svg>
+                    <span>RUB</span>
+                </button>
             </div>
-            <div class="header__options">
-                <button type="button" class="header__notifications" title="header-notification">
+        </div>
+    </div>
+    <div class="header__main">
+        <div class="header__container container">
+            <div class="header__body">
+                <button class="menu__icon" title="menu-icon"></button>
+                <a href="/" class="header__logo" aria-label="Go to main page">
                     <svg>
-                        <use xlink: href="img/icons/icons.svg#notification"></use>
+                        <use xlink: href="img/icons/icons.svg#logo"></use>
                     </svg>
-                </button>
-                <button type="button" class="header__login" title="header-login">
-                    <span>Вход</span>
-                    <svg>
-                        <use xlink: href="img/icons/icons.svg#login"></use>
-                    </svg>
-                </button>
+                </a>
+                <div class="header__menu menu">
+                    <nav class="menu__body" data-mob="submenu, append">
+                        <ul class="menu__list">
+                            <li class="menu__item active"><a href="#" class="menu__link">Ароматы</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Бренды</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Парфюмеры</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Ноты</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
+                            <li class="menu__item menu__item_sub" data-desk="submenu, append">
+                                <a href="#" class="menu__link">Еще</a>
+                                <ul class="menu__sub-list" data-move="submenu, 993">
+                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">Семейства</a></li>
+                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">Сегменты</a></li>
+                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">Концентрации</a></li>
+                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">Производители</a></li>
+                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">Глассарий</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__options">
+                    <div class="header__notifications notifications-header active">
+                        <a href="#" class="notifications-header__link" area-lable="Read all notifications">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#notification"></use>
+                            </svg>
+                        </a>
+                        <div class="notifications-header__help">
+                            У вас имеются непросмотренные уведомления <span>(4)</span>, ознакомьтесь с ними
+                        </div>
+                    </div>
+                    <div class="header__login login-header">
+                        <button type="button" class="login-header__btn" title="Login">
+                            <span>Вход</span>
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#login"></use>
+                            </svg>
+                        </button>
+                        <div class="login-header__help">
+                            <p>
+                                Зарегистрируйтесь, чтобы узнавать новинках, интересных ароматах, обзорах и советах по
+                                выбору парфюма.
+                            </p>
+                            <button type="button" data-modal="login" class="login-header__reg popup-link"
+                                title="Login or registration">
+                                Войти или зарегестрироваться
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -68,13 +107,18 @@
 							</svg>
 							<span>Каталог пафрюмов</span>
 						</a>
-						<form action="#" class="actions__form">
-							<button type="submit" title="search-btn">
-								<svg>
-									<use href="img/icons/icons.svg#search"></use>
-								</svg>
-							</button>
-							<input type="text" placeholder="Что будете искать?">
+						<form action="#" class="actions__form search">
+							<div class="search__wrapper">
+								<button type="submit" title="search-btn">
+									<svg>
+										<use href="img/icons/icons.svg#search"></use>
+									</svg>
+								</button>
+								<input class="search__input" type="text" placeholder="Что будете искать?">
+								<div class="search__result">
+
+								</div>
+							</div>
 						</form>
 						<div class="actions__btns">
 							<button class="actions__btn" title="action-btn">
@@ -1458,64 +1502,78 @@
                     <ul class="socials__list">
                         <li class="socials__item">
                             <a href="#" class="socials__link" aria-label="Follow us in Instagram">
-                                <svg>
-                                    <use href="img/icons/icons.svg#Instagram"></use>
-                                </svg>
+                                <picture>
+                                    <source data-srcset="img/icons/Instagram.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/icons/Instagram.svg" src="img/plug.png" alt="Image">
+                                </picture>
                             </a>
                         </li>
                         <li class="socials__item">
                             <a href="#" class="socials__link" aria-label="Follow us in Telegram">
-                                <svg>
-                                    <use href="img/icons/icons.svg#Telegram"></use>
-                                </svg>
+                                <picture>
+                                    <source data-srcset="img/icons/Telegram.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/icons/Telegram.svg" src="img/plug.png" alt="Image">
+                                </picture>
                             </a>
                         </li>
                         <li class="socials__item">
                             <a href="#" class="socials__link" aria-label="Follow us in YouTube">
-                                <svg>
-                                    <use href="img/icons/icons.svg#YouTube"></use>
-                                </svg>
+                                <picture>
+                                    <source data-srcset="img/icons/YouTube.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/icons/YouTube.svg" src="img/plug.png" alt="Image">
+                                </picture>
                             </a>
                         </li>
                         <li class="socials__item">
                             <a href="#" class="socials__link" aria-label="Follow us in VK">
-                                <svg>
-                                    <use href="img/icons/icons.svg#vk"></use>
-                                </svg>
+                                <picture>
+                                    <source data-srcset="img/icons/vk.svg" srcset="img/plug.png" type="image/webp">
+                                    <img data-src="img/icons/vk.svg" src="img/plug.png" alt="Image">
+                                </picture>
                             </a>
                         </li>
                         <li class="socials__item">
                             <a href="#" class="socials__link" aria-label="Follow us in Facebook">
-                                <svg>
-                                    <use href="img/icons/icons.svg#Facebook"></use>
-                                </svg>
+                                <picture>
+                                    <source data-srcset="img/icons/Facebook.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/icons/Facebook.svg" src="img/plug.png" alt="Image">
+                                </picture>
                             </a>
                         </li>
                         <li class="socials__item">
                             <a href="#" class="socials__link" aria-label="Follow us in Twitter">
-                                <svg>
-                                    <use href="img/icons/icons.svg#Twitter"></use>
-                                </svg>
+                                <picture>
+                                    <source data-srcset="img/icons/Twitter.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/icons/Twitter.svg" src="img/plug.png" alt="Image">
+                                </picture>
                             </a>
                         </li>
                         <li class="socials__item">
                             <a href="#" class="socials__link" aria-label="Follow us in OK">
-                                <svg>
-                                    <use href="img/icons/icons.svg#ok"></use>
-                                </svg>
+                                <picture>
+                                    <source data-srcset="img/icons/ok.svg" srcset="img/plug.png" type="image/webp">
+                                    <img data-src="img/icons/ok.svg" src="img/plug.png" alt="Image">
+                                </picture>
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="footer__subscribe subscribe">
                     <h3 class="subscribe__title">Подпишитесь на рассылку</h3>
-                    <form action="#" class="subscribe__form">
-                        <input type="text" placeholder="Ваш Email">
-                        <button type="submit" title="subscribe-submit">
-                            <svg>
-                                <use xlink: href="img/icons/icons.svg#arrow-right"></use>
-                            </svg>
-                        </button>
+                    <form action="#" method="get" class="subscribe__form" novalidate>
+                        <div class="subscribe__input input">
+                            <input type="email" name="email" placeholder="Ваш Email">
+                            <button type="submit" title="subscribe-submit" class="subscribe__btn">
+                                <svg>
+                                    <use xlink: href="img/icons/icons.svg#arrow-right"></use>
+                                </svg>
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -1614,7 +1672,211 @@
 </footer>
 	</div>
 
-	<script src="js/app.min.js?_v=20230514143849"></script>
+	<div class="popup" id="lang-settings">
+    <div class="popup__body">
+        <div class="popup__content lang-settings">
+            <button type="button" class="popup__close">
+                <svg>
+                    <use href="img/icons/icons.svg#close"></use>
+                </svg>
+            </button>
+            <h2 class="lang-settings__title">Настройки сайта</h2>
+            <div class="lang-settings__block input">
+                <label for="lang">Язык</label>
+                <input type="text" name="lang" value="Русский">
+                <ul class="lang-settings__list input-list">
+                    <li class="lang-settings__item">Русский</li>
+                    <li class="lang-settings__item">Українська</li>
+                    <li class="lang-settings__item">English</li>
+                    <li class="lang-settings__item">Русский</li>
+                    <li class="lang-settings__item">Українська</li>
+                    <li class="lang-settings__item">English</li>
+                </ul>
+                <div class="lang-settings__error">Ошибка. Попробуйте еще раз.</div>
+            </div>
+            <div class="lang-settings__block input">
+                <label for="country">Местоположение</label>
+                <input type="text" value="Россия" name="country">
+                <ul class="lang-settings__list input-list">
+                    <li class="lang-settings__item">Россия</li>
+                    <li class="lang-settings__item">Украиїна</li>
+                    <li class="lang-settings__item">USA</li>
+                    <li class="lang-settings__item">Россия</li>
+                    <li class="lang-settings__item">Украиїна</li>
+                    <li class="lang-settings__item">USA</li>
+                </ul>
+                <div class="lang-settings__error">Ошибка. Попробуйте еще раз.</div>
+            </div>
+            <div class="lang-settings__block input">
+                <label for="currency">Валюта</label>
+                <input type="text" value="Рубль [RUB]" name="currency">
+                <ul class="lang-settings__list input-list">
+                    <li class="lang-settings__item">Рубль [RUB]</li>
+                    <li class="lang-settings__item">Гривня [UAH]</li>
+                    <li class="lang-settings__item">USA [USD]</li>
+                    <li class="lang-settings__item">Рубль [RUB]</li>
+                    <li class="lang-settings__item">Гривня [UAH]</li>
+                    <li class="lang-settings__item">USA [USD]</li>
+                </ul>
+                <div class="lang-settings__error">Ошибка. Попробуйте еще раз.</div>
+            </div>
+            <button type="button" class="lang-settings__btn">Применить</button>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="login">
+    <div class="popup__body">
+        <div class="popup__content login">
+            <button type="button" class="popup__close">
+                <svg>
+                    <use href="img/icons/icons.svg#close"></use>
+                </svg>
+            </button>
+            <div class="login__image">
+                <picture>
+                    <source data-srcset="img/login.webp" srcset="img/plug.png" type="image/webp">
+                    <img data-src="img/login.jpg" src="img/plug.png" alt="Image">
+                </picture>
+            </div>
+            <div class="login__body">
+                <div class="login__tabs tabs">
+                    <div class="tabs__header">
+                        <div class="tabs__item _active">Вход</div>
+                        <div class="tabs__item">Регистрация</div>
+                        <div class="tabs__indicator"></div>
+                    </div>
+
+                    <div class="tabs__body">
+                        <div class="tabs__block _active">
+                            <div class="tabs__content">
+                                <h2 class="login__title">Вход во Fragsi</h2>
+                                <div class="login__label"><span>Через соц.сети</span></div>
+                                <ul class="login__socials">
+                                    <li class="login__item">
+                                        <a href="#" class="login__social" area-label="Facebook">
+                                            <picture>
+                                                <source data-srcset="img/icons/Facebook.svg" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/icons/Facebook.svg" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                    </li>
+                                    <li class="login__item">
+                                        <a href="#" class="login__social" area-label="Google">
+                                            <picture>
+                                                <source data-srcset="img/icons/Google.svg" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/icons/Google.svg" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                    </li>
+                                    <li class="login__item">
+                                        <a href="#" class="login__social" area-label="Twitter">
+                                            <picture>
+                                                <source data-srcset="img/icons/Twitter.svg" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/icons/Twitter.svg" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                    </li>
+                                    <li class="login__item">
+                                        <a href="#" class="login__social" area-label="OK">
+                                            <picture>
+                                                <source data-srcset="img/icons/ok.svg" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/icons/ok.svg" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                    </li>
+                                    <li class="login__item">
+                                        <a href="#" class="login__social" area-label="VK">
+                                            <picture>
+                                                <source data-srcset="img/icons/vk.svg" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/icons/vk.svg" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="login__label"><span>Через почту</span></div>
+                                <form action="#" class="login__form form-login">
+                                    <div class="form-login__input input">
+                                        <label for="e-mail">Введите телефон или Email</label>
+                                        <input type="text" title="E-mail">
+                                    </div>
+                                    <div class="form-login__input input pass">
+                                        <label for="password">Введите пароль</label>
+                                        <input type="password" title="Password">
+                                        <button class="pass__btn" type="button" title="Show password">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#eye"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button type="submit" class="form-login__btn">Вход</button>
+                                    <div class="form-login__footer">
+                                        <div class="form-login__checkbox checkbox">
+                                            Запомнить меня
+                                            <input type="checkbox" name="remember-me">
+                                        </div>
+                                        <a href="#" class="form-login__forgot">Забыли пароль?</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tabs__block">
+                            <div class="tabs__content">
+                                <h2 class="login__title">Регистрация</h2>
+                                <p class="login__intro">
+                                    Присоединяйтесь к сообществу Fragsi и получите доступ ко всем его функциям
+                                </p>
+                                <form action="#" class="login__form form-login">
+                                    <div class="form-login__input input">
+                                        <label for="e-mail">Введите ваше имя</label>
+                                        <input type="text" title="Your name" name="name">
+                                    </div>
+                                    <div class="form-login__input input">
+                                        <label for="e-mail">Введите телефон или Email</label>
+                                        <input type="text" title="E-mail" name="email">
+                                    </div>
+                                    <div class="form-login__input input pass">
+                                        <label for="password">Придумайте пароль</label>
+                                        <input type="password" title="Password" name="password">
+                                        <button class="pass__btn" type="button" title="Show password">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#eye"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="form-login__input input pass">
+                                        <label for="password">Повторите пароль</label>
+                                        <input type="password" title="Repeat password">
+                                        <button class="pass__btn" type="button" title="Show password">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#eye"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button type="submit" class="form-login__btn">Зарегистрироваться</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	<div class="alerts">
+    <div class="alerts__error">
+        <svg>
+            <use href="img/icons/icons.svg#alert"></use>
+        </svg>
+        Введите существующий Email
+    </div>
+</div>
+	<script src="js/app.min.js?_v=20230518115815"></script>
 </body>
 
 </html>
