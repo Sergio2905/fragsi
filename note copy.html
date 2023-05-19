@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Fragsi</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230519173338">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Описание">
+    <meta name="keywords" content="Ключевые слова">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header class="header">
+    <div class="header__lang lang">
+        <div class="lang__container container">
+            <div class="lang__body">
+                <button type="button" class="lang__btn popup-link" title="Select language" data-modal="lang-settings">
+                    <svg>
+                        <use href="img/icons/icons.svg#lang"></use>
+                    </svg>
+                    <span>Русский</span>
+                </button>
+                <button type="button" class="lang__btn popup-link" title="Select currency" data-modal="lang-settings">
+                    <svg>
+                        <use href="img/icons/icons.svg#currency"></use>
+                    </svg>
+                    <span>RUB</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="header__main">
+        <div class="header__container container">
+            <div class="header__body">
+                <button class="menu__icon" title="menu-icon"></button>
+                <a href="/" class="header__logo" aria-label="Go to main page">
+                    <svg>
+                        <use xlink: href="img/icons/icons.svg#logo"></use>
+                    </svg>
+                </a>
+                <div class="header__menu menu">
+                    <nav class="menu__body" data-mob="submenu, append">
+                        <ul class="menu__list">
+                            <li class="menu__item active"><a href="#" class="menu__link">Ароматы</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Бренды</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Парфюмеры</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Ноты</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
+                            <li class="menu__item menu__item_sub" data-desk="submenu, append">
+                                <a href="#" class="menu__link">Еще</a>
+                                <ul class="menu__sub-list" data-move="submenu, 993">
+                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">Семейства</a></li>
+                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">Сегменты</a></li>
+                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">Концентрации</a></li>
+                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">Производители</a></li>
+                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">Глассарий</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__options">
+                    <div class="header__notifications notifications-header active">
+                        <a href="#" class="notifications-header__link" area-lable="Read all notifications">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#notification"></use>
+                            </svg>
+                        </a>
+                        <div class="notifications-header__help">
+                            У вас имеются непросмотренные уведомления <span>(4)</span>, ознакомьтесь с ними
+                        </div>
+                    </div>
+                    <div class="header__login login-header">
+                        <button type="button" class="login-header__btn" title="Login">
+                            <span>Вход</span>
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#login"></use>
+                            </svg>
+                        </button>
+                        <div class="login-header__help">
+                            <p>
+                                Зарегистрируйтесь, чтобы узнавать новинках, интересных ароматах, обзорах и советах по
+                                выбору парфюма.
+                            </p>
+                            <button type="button" data-modal="login" class="login-header__reg popup-link"
+                                title="Login or registration">
+                                Войти или зарегестрироваться
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+		<div class="actions">
+    <div class="actions__container container">
+        <div class="actions__body">
+            <a href="#" class="actions__cat btn_green">
+                <svg>
+                    <use href="img/icons/icons.svg#catalog"></use>
+                </svg>
+                <span>Каталог пафрюмов</span>
+            </a>
+            <form action="#" class="actions__form search">
+                <div class="search__wrapper">
+                    <button type="submit" title="search-btn">
+                        <svg>
+                            <use href="img/icons/icons.svg#search"></use>
+                        </svg>
+                    </button>
+                    <input class="search__input" type="text" placeholder="Что будете искать?">
+                    <div class="search__result">
+
+                    </div>
+                </div>
+            </form>
+            <div class="actions__btns">
+                <button class="actions__btn" title="action-btn">
+                    <svg>
+                        <use xlink: href="img/icons/icons.svg#compare"></use>
+                    </svg>
+                    <span>Сравнить</span>
+                </button>
+                <button class="actions__btn" title="action-btn">
+                    <svg class="fill">
+                        <use xlink: href="img/icons/icons.svg#favorite"></use>
+                    </svg>
+                    <span>Избранное</span>
+                    <span class="actions__count">99+</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+		<div class="breadcrumbs">
+    <div class="breadcrumbs__container container">
+        <div class="breadcrumbs__body">
+            <a href="#" class="breadcrumbs__link" aria-label="Back to main page">
+                <span>Главная</span>
+                <svg>
+                    <use href="img/icons/icons.svg#home"></use>
+                </svg>
+            </a>
+            <a href="#" class="breadcrumbs__link">Ноты</a>
+            <a href="#" class="breadcrumbs__link">Цитрусовые</a>
+            <a href="#" class="breadcrumbs__link breadcrumbs__link_mob">...</a>
+            <a href="#" class="breadcrumbs__link">Бергамот</a>
+        </div>
+    </div>
+</div>
+
+		<div class="note">
+			<div class="note__about about-note">
+				<div class="about-note__container container">
+					<div class="about-note__body">
+						<div class="about-note__image" data-mob="note-options, after">
+							<picture>
+								<source data-srcset="img/note/image.webp" srcset="img/plug.png" type="image/webp">
+								<img data-src="img/note/image.jpg" src="img/plug.png" alt="Image">
+							</picture>
+						</div>
+						<div class="about-note__info">
+							<div class="about-note__header" data-desk="note-options, append">
+								<h1 class="about-note__title">Бергамот</h1>
+								<div class="about-note__options" data-move="note-options, 768">
+									<button type="botton" class="about-note__favorite btn_white" title="options-btn">
+										<svg>
+											<use href="img/icons/icons.svg#favorite"></use>
+										</svg>
+									</button>
+									<button type="botton" class="about-note__share btn_white" title="options-btn">
+										<svg>
+											<use href="img/icons/icons.svg#share"></use>
+										</svg>
+									</button>
+									<button type="botton" class="about-note__subscribe btn_green" title="options-btn">
+										<svg>
+											<use href="img/icons/icons.svg#check-one"></use>
+										</svg>
+										<span>Подписаться</span>
+									</button>
+								</div>
+							</div>
+							<h3 class="about-note__subtitle">Нота</h3>
+							<p class="about-note__desc">Описание ноты</p>
+							<p class="about-note__text">
+								Название растения по ботаническому классификатору: Citrus Bergamia <br />
+								Страны производства натурального сырья: Италия <br />
+								Части растения, идущие в обработку: кожура, листья, цветы, побеги <br />
+								Виды получаемого сырья: эфирное масло...
+							</p>
+							<button type="button" class="about-note__more read-more" title="read-more">Читать
+								дальше</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="note__content content-note">
+				<div class="content-note__container container">
+					<div class="content-note__wrapper" data-mob="articles, after">
+						<aside class="content-note__sidebar sidebar" data-desk="information, prepend">
+							<section class="sidebar__information information-sidebar" data-move="information, 1240"
+								data-desk="articles, after">
+								<h3 class="sidebar__title">Информация</h3>
+								<div class="information-sidebar__main">
+									<div class="information-sidebar__image">
+										<picture>
+											<source data-srcset="img/note/group.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/note/group.jpg" src="img/plug.png" alt="Image">
+										</picture>
+									</div>
+									<div class="information-sidebar__info">
+										<p class="information-sidebar__name">Ольфакторная группа</p>
+										<p class="information-sidebar__group">Цитрусовые</p>
+									</div>
+								</div>
+								<div class="information-sidebar__popular">
+									<h5 class="information-sidebar__title">Наиболее популярные ароматы с этой нотой</h5>
+									<div class="information-sidebar__links">
+										<a href="#" class="information-sidebar__link">Hugh Parsons Notting Hill</a>
+										<a href="#" class="information-sidebar__link">Victoria's Secret Angel Italian
+											Bergamot</a>
+										<a href="#" class="information-sidebar__link">Ermenegildo Zegna Italian
+											Bergamot</a>
+										<a href="#" class="information-sidebar__link">Jo Malone Hemlock & Bergamot, Tom
+											Ford
+										</a>
+									</div>
+									<button type="button" class="information-sidebar__more read-more"
+										title="read-more">Читать
+										дальше</button>
+								</div>
+							</section>
+							<section class="sidebar__articles" data-move="articles, 1240" data-desk="recent, after"
+								data-mob="recent, after">
+								<h3 class="sidebar__title">Лучшие статьи</h3>
+								<article class="sidebar__article article-sidebar">
+									<a href="#" class="article-sidebar__image">
+										<picture>
+											<source data-srcset="img/note/article1.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/note/article1.jpg" src="img/plug.png" alt="Image">
+										</picture>
+									</a>
+									<h4 class="article-sidebar__title">
+										<a href="#" class="article-sidebar__link">
+											Моя отдушина: 4 аромата для успокоения и расслабления
+										</a>
+									</h4>
+								</article>
+								<article class="sidebar__article article-sidebar">
+									<a href="#" class="article-sidebar__image">
+										<picture>
+											<source data-srcset="img/note/article2.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/note/article2.jpg" src="img/plug.png" alt="Image">
+										</picture>
+									</a>
+									<h4 class="article-sidebar__title">
+										<a href="#" class="article-sidebar__link">
+											Моя отдушина: 4 аромата для успокоения и расслабления
+										</a>
+									</h4>
+								</article>
+								<article class="sidebar__article article-sidebar">
+									<a href="#" class="article-sidebar__image">
+										<picture>
+											<source data-srcset="img/note/article3.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/note/article3.jpg" src="img/plug.png" alt="Image">
+										</picture>
+									</a>
+									<h4 class="article-sidebar__title">
+										<a href="#" class="article-sidebar__link">
+											Моя отдушина: 4 аромата для успокоения и расслабления
+										</a>
+									</h4>
+								</article>
+								<article class="sidebar__article article-sidebar">
+									<a href="#" class="article-sidebar__image">
+										<picture>
+											<source data-srcset="img/note/article4.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/note/article4.jpg" src="img/plug.png" alt="Image">
+										</picture>
+									</a>
+									<h4 class="article-sidebar__title">
+										<a href="#" class="article-sidebar__link">
+											Моя отдушина: 4 аромата для успокоения и расслабления
+										</a>
+									</h4>
+								</article>
+							</section>
+							<section class="sidebar__recent recent-sidebar" data-move="recent, 1240"
+								data-desk="interesting, after" data-mob="interesting, after">
+								<h3 class="sidebar__title">Недавно просмотренные</h3>
+								<ul class="recent-sidebar__list">
+									<li class="recent-sidebar__item">
+										<a href="#" class="recent-sidebar__image">
+											<picture>
+												<source data-srcset="img/note/recent1.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/recent1.jpg" src="img/plug.png" alt="Image">
+											</picture>
+										</a>
+									</li>
+									<li class="recent-sidebar__item">
+										<a href="#" class="recent-sidebar__image">
+											<picture>
+												<source data-srcset="img/note/recent2.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/recent2.jpg" src="img/plug.png" alt="Image">
+											</picture>
+										</a>
+									</li>
+									<li class="recent-sidebar__item">
+										<a href="#" class="recent-sidebar__image">
+											<picture>
+												<source data-srcset="img/note/recent3.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/recent3.jpg" src="img/plug.png" alt="Image">
+											</picture>
+										</a>
+									</li>
+									<li class="recent-sidebar__item">
+										<a href="#" class="recent-sidebar__image">
+											<picture>
+												<source data-srcset="img/note/recent4.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/recent4.jpg" src="img/plug.png" alt="Image">
+											</picture>
+										</a>
+									</li>
+									<li class="recent-sidebar__item">
+										<a href="#" class="recent-sidebar__image">
+											<picture>
+												<source data-srcset="img/note/recent5.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/recent5.jpg" src="img/plug.png" alt="Image">
+											</picture>
+										</a>
+									</li>
+								</ul>
+							</section>
+							<section class="sidebar__interesting interesting-sidebar" data-move="interesting, 1240">
+								<h3 class="sidebar__title">Интересные подборки</h3>
+								<ul class="interesting-sidebar__list">
+									<li class="interesting-sidebar__item">
+										<a href="#" class="interesting-sidebar__link">Весенние ароматы для женщин</a>
+									</li>
+									<li class="interesting-sidebar__item">
+										<a href="#" class="interesting-sidebar__link">Лучшие ароматы Kenzo</a>
+									</li>
+									<li class="interesting-sidebar__item">
+										<a href="#" class="interesting-sidebar__link">Бюджетные ароматы для женщин</a>
+									</li>
+									<li class="interesting-sidebar__item">
+										<a href="#" class="interesting-sidebar__link">Селективные ароматы</a>
+									</li>
+									<li class="interesting-sidebar__item">
+										<a href="#" class="interesting-sidebar__link">Парфюмы для девочек-подростков</a>
+									</li>
+								</ul>
+							</section>
+						</aside>
+						<div class="content-note__body">
+							<section class="content-note__similar similar-notes" data-mob="information, after">
+								<h3 class="similar-notes__title">Похожие ноты</h3>
+								<div class="similar-notes__slider">
+									<div class="similar-notes__wrapper swiper-wrapper">
+										<div class="similar-notes__slide swiper-slide">
+											<div class="similar-notes__image">
+												<picture>
+													<source data-srcset="img/note/similar1.webp" srcset="img/plug.png"
+														type="image/webp">
+													<img data-src="img/note/similar1.jpg" src="img/plug.png"
+														alt="Image">
+												</picture>
+											</div>
+											<p class="similar-notes__name">Лимон</p>
+										</div>
+										<div class="similar-notes__slide swiper-slide">
+											<div class="similar-notes__image">
+												<picture>
+													<source data-srcset="img/note/similar2.webp" srcset="img/plug.png"
+														type="image/webp">
+													<img data-src="img/note/similar2.jpg" src="img/plug.png"
+														alt="Image">
+												</picture>
+											</div>
+											<p class="similar-notes__name">Мандарин</p>
+										</div>
+										<div class="similar-notes__slide swiper-slide">
+											<div class="similar-notes__image">
+												<picture>
+													<source data-srcset="img/note/similar3.webp" srcset="img/plug.png"
+														type="image/webp">
+													<img data-src="img/note/similar3.jpg" src="img/plug.png"
+														alt="Image">
+												</picture>
+											</div>
+											<p class="similar-notes__name">Грейпфрут</p>
+										</div>
+										<div class="similar-notes__slide swiper-slide">
+											<div class="similar-notes__image">
+												<picture>
+													<source data-srcset="img/note/similar4.webp" srcset="img/plug.png"
+														type="image/webp">
+													<img data-src="img/note/similar4.jpg" src="img/plug.png"
+														alt="Image">
+												</picture>
+											</div>
+											<p class="similar-notes__name">Апельсин</p>
+										</div>
+									</div>
+								</div>
+								<div class="similar-notes__navigation">
+									<div class="similar-notes__prev">
+										<svg>
+											<use href="img/icons/icons.svg#arrow"></use>
+										</svg>
+									</div>
+									<div class="similar-notes__next">
+										<svg>
+											<use href="img/icons/icons.svg#arrow"></use>
+										</svg>
+									</div>
+								</div>
+							</section>
+							<section class="content-note__aromates aromates-note">
+								<div class="aromates-note__header">
+									<h2 class="aromates-note__title">Ароматы с нотой Бергамот</h2>
+									<span class="aromates-note__count">258</span>
+								</div>
+								<form action="#" class="aromates-note__form">
+									<button type="submit" title="search-submit">
+										<svg>
+											<use xlink: href="img/icons/icons.svg#search"></use>
+										</svg>
+									</button>
+									<input type="text" placeholder="Введите название аромата">
+								</form>
+								<div class="aromates-note__tags tags">
+									<ul class="tags__list">
+										<li class="tags__item">
+											<button type="button" class="tags__btn tags__btn_clear" title="Clear all">
+												<svg>
+													<use href="img/icons/icons.svg#x-mark"></use>
+												</svg>
+											</button>
+										</li>
+										<li class="tags__item active">
+											<button type="button" class="tags__btn" title="Tag">
+												Мужские
+												<svg>
+													<use href="img/icons/icons.svg#x-mark"></use>
+												</svg>
+											</button>
+										</li>
+										<li class="tags__item">
+											<button type="button" class="tags__btn" title="Tag">
+												Женские
+											</button>
+										</li>
+										<li class="tags__item">
+											<button type="button" class="tags__btn" title="Tag">
+												Унисекс
+											</button>
+										</li>
+										<li class="tags__item">
+											<button type="button" class="tags__btn" title="Tag">
+												Вечерний
+											</button>
+										</li>
+										<li class="tags__item">
+											<button type="button" class="tags__btn" title="Tag">
+												Повседневный
+											</button>
+										</li>
+									</ul>
+									<a href="#" class="tags__all">
+										Все теги +
+									</a>
+								</div>
+								<div class="aromates-note__filter options">
+									<div class="options__filter filter">
+										<button type="button" class="filter__btn" title="Filter">
+											Фильтр
+											<svg>
+												<use href="img/icons/icons.svg#filter"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="options__sort sort">
+										<button type="button" class="sort__btn">
+											По популярности
+										</button>
+										<div class="sort__body">
+											<ul class="sort__list">
+												<li class="sort__item disable">По популярности</li>
+												<li class="sort__item">По рейтингу</li>
+												<li class="sort__item">По дате</li>
+											</ul>
+											<ul class="sort__list">
+												<li class="sort__item">По убыванию</li>
+												<li class="sort__item">По возрастанию</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="aromates-note__catalog catalog">
+									<div class="catalog__item">
+										<a href="#" class="catalog__image" area-label="Catalog item">
+											<picture>
+												<source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+											</picture>
+										</a>
+										<div class="catalog__info">
+											<a href="#" class="catalog__name">Baccarat Rouge 540</a>
+											<a href="#" class="catalog__brand">Maison Francis Kurkdjian</a>
+											<p class="catalog__year">2018</p>
+										</div>
+										<div class="catalog__extra">
+											<div class="catalog__rating rating">
+												<span class="rating__count">5/5</span>
+												<div class="rating__body">
+													<div class="rating__active"></div>
+												</div>
+												<div class="rating__value">5</div>
+											</div>
+											<a href="#" class="catalog__comments">
+												<svg>
+													<use href="img/icons/icons.svg#comment"></use>
+												</svg>
+												<span>23</span>
+											</a>
+										</div>
+									</div>
+									<div class="catalog__item">
+										<a href="#" class="catalog__image" area-label="Catalog item">
+											<picture>
+												<source data-srcset="img/note/cat2.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/cat2.png" src="img/plug.png" alt="Image">
+											</picture>
+										</a>
+										<div class="catalog__info">
+											<a href="#" class="catalog__name">Baccarat Rouge 540</a>
+											<a href="#" class="catalog__brand">Maison Francis Kurkdjian</a>
+											<p class="catalog__year">2018</p>
+										</div>
+										<div class="catalog__extra">
+											<div class="catalog__rating rating">
+												<span class="rating__count">5/5</span>
+												<div class="rating__body">
+													<div class="rating__active"></div>
+												</div>
+												<div class="rating__value">5</div>
+											</div>
+											<a href="#" class="catalog__comments">
+												<svg>
+													<use href="img/icons/icons.svg#comment"></use>
+												</svg>
+												<span>23</span>
+											</a>
+										</div>
+									</div>
+									<div class="catalog__item">
+										<a href="#" class="catalog__image" area-label="Catalog item">
+											<picture>
+												<source data-srcset="img/note/cat3.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/cat3.png" src="img/plug.png" alt="Image">
+											</picture>
+										</a>
+										<div class="catalog__info">
+											<a href="#" class="catalog__name">Baccarat Rouge 540</a>
+											<a href="#" class="catalog__brand">Maison Francis Kurkdjian</a>
+											<p class="catalog__year">2018</p>
+										</div>
+										<div class="catalog__extra">
+											<div class="catalog__rating rating">
+												<span class="rating__count">5/5</span>
+												<div class="rating__body">
+													<div class="rating__active"></div>
+												</div>
+												<div class="rating__value">5</div>
+											</div>
+											<a href="#" class="catalog__comments">
+												<svg>
+													<use href="img/icons/icons.svg#comment"></use>
+												</svg>
+												<span>23</span>
+											</a>
+										</div>
+									</div>
+									<div class="catalog__item">
+										<a href="#" class="catalog__image" area-label="Catalog item">
+											<picture>
+												<source data-srcset="img/note/cat4.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/cat4.png" src="img/plug.png" alt="Image">
+											</picture>
+										</a>
+										<div class="catalog__info">
+											<a href="#" class="catalog__name">Baccarat Rouge 540</a>
+											<a href="#" class="catalog__brand">Maison Francis Kurkdjian</a>
+											<p class="catalog__year">2018</p>
+										</div>
+										<div class="catalog__extra">
+											<div class="catalog__rating rating">
+												<span class="rating__count">5/5</span>
+												<div class="rating__body">
+													<div class="rating__active"></div>
+												</div>
+												<div class="rating__value">5</div>
+											</div>
+											<a href="#" class="catalog__comments">
+												<svg>
+													<use href="img/icons/icons.svg#comment"></use>
+												</svg>
+												<span>23</span>
+											</a>
+										</div>
+									</div>
+									<div class="catalog__item">
+										<a href="#" class="catalog__image" area-label="Catalog item">
+											<picture>
+												<source data-srcset="img/note/cat5.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/cat5.png" src="img/plug.png" alt="Image">
+											</picture>
+										</a>
+										<div class="catalog__info">
+											<a href="#" class="catalog__name">Baccarat Rouge 540</a>
+											<a href="#" class="catalog__brand">Maison Francis Kurkdjian</a>
+											<p class="catalog__year">2018</p>
+										</div>
+										<div class="catalog__extra">
+											<div class="catalog__rating rating">
+												<span class="rating__count">5/5</span>
+												<div class="rating__body">
+													<div class="rating__active"></div>
+												</div>
+												<div class="rating__value">5</div>
+											</div>
+											<a href="#" class="catalog__comments">
+												<svg>
+													<use href="img/icons/icons.svg#comment"></use>
+												</svg>
+												<span>23</span>
+											</a>
+										</div>
+									</div>
+									<div class="catalog__item">
+										<a href="#" class="catalog__image" area-label="Catalog item">
+											<picture>
+												<source data-srcset="img/note/cat6.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/cat6.png" src="img/plug.png" alt="Image">
+											</picture>
+										</a>
+										<div class="catalog__info">
+											<a href="#" class="catalog__name">Baccarat Rouge 540</a>
+											<a href="#" class="catalog__brand">Maison Francis Kurkdjian</a>
+											<p class="catalog__year">2018</p>
+										</div>
+										<div class="catalog__extra">
+											<div class="catalog__rating rating">
+												<span class="rating__count">5/5</span>
+												<div class="rating__body">
+													<div class="rating__active"></div>
+												</div>
+												<div class="rating__value">5</div>
+											</div>
+											<a href="#" class="catalog__comments">
+												<svg>
+													<use href="img/icons/icons.svg#comment"></use>
+												</svg>
+												<span>23</span>
+											</a>
+										</div>
+									</div>
+									<div class="catalog__item">
+										<a href="#" class="catalog__image" area-label="Catalog item">
+											<picture>
+												<source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+											</picture>
+										</a>
+										<div class="catalog__info">
+											<a href="#" class="catalog__name">Baccarat Rouge 540</a>
+											<a href="#" class="catalog__brand">Maison Francis Kurkdjian</a>
+											<p class="catalog__year">2018</p>
+										</div>
+										<div class="catalog__extra">
+											<div class="catalog__rating rating">
+												<span class="rating__count">5/5</span>
+												<div class="rating__body">
+													<div class="rating__active"></div>
+												</div>
+												<div class="rating__value">5</div>
+											</div>
+											<a href="#" class="catalog__comments">
+												<svg>
+													<use href="img/icons/icons.svg#comment"></use>
+												</svg>
+												<span>23</span>
+											</a>
+										</div>
+									</div>
+									<div class="catalog__item">
+										<a href="#" class="catalog__image" area-label="Catalog item">
+											<picture>
+												<source data-srcset="img/note/cat2.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/cat2.png" src="img/plug.png" alt="Image">
+											</picture>
+										</a>
+										<div class="catalog__info">
+											<a href="#" class="catalog__name">Baccarat Rouge 540</a>
+											<a href="#" class="catalog__brand">Maison Francis Kurkdjian</a>
+											<p class="catalog__year">2018</p>
+										</div>
+										<div class="catalog__extra">
+											<div class="catalog__rating rating">
+												<span class="rating__count">5/5</span>
+												<div class="rating__body">
+													<div class="rating__active"></div>
+												</div>
+												<div class="rating__value">5</div>
+											</div>
+											<a href="#" class="catalog__comments">
+												<svg>
+													<use href="img/icons/icons.svg#comment"></use>
+												</svg>
+												<span>23</span>
+											</a>
+										</div>
+									</div>
+									<div class="catalog__item">
+										<a href="#" class="catalog__image" area-label="Catalog item">
+											<picture>
+												<source data-srcset="img/note/cat3.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/cat3.png" src="img/plug.png" alt="Image">
+											</picture>
+										</a>
+										<div class="catalog__info">
+											<a href="#" class="catalog__name">Baccarat Rouge 540</a>
+											<a href="#" class="catalog__brand">Maison Francis Kurkdjian</a>
+											<p class="catalog__year">2018</p>
+										</div>
+										<div class="catalog__extra">
+											<div class="catalog__rating rating">
+												<span class="rating__count">5/5</span>
+												<div class="rating__body">
+													<div class="rating__active"></div>
+												</div>
+												<div class="rating__value">5</div>
+											</div>
+											<a href="#" class="catalog__comments">
+												<svg>
+													<use href="img/icons/icons.svg#comment"></use>
+												</svg>
+												<span>23</span>
+											</a>
+										</div>
+									</div>
+									<div class="catalog__item">
+										<a href="#" class="catalog__image" area-label="Catalog item">
+											<picture>
+												<source data-srcset="img/note/cat4.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/cat4.png" src="img/plug.png" alt="Image">
+											</picture>
+										</a>
+										<div class="catalog__info">
+											<a href="#" class="catalog__name">Baccarat Rouge 540</a>
+											<a href="#" class="catalog__brand">Maison Francis Kurkdjian</a>
+											<p class="catalog__year">2018</p>
+										</div>
+										<div class="catalog__extra">
+											<div class="catalog__rating rating">
+												<span class="rating__count">5/5</span>
+												<div class="rating__body">
+													<div class="rating__active"></div>
+												</div>
+												<div class="rating__value">5</div>
+											</div>
+											<a href="#" class="catalog__comments">
+												<svg>
+													<use href="img/icons/icons.svg#comment"></use>
+												</svg>
+												<span>23</span>
+											</a>
+										</div>
+									</div>
+									<div class="catalog__item">
+										<a href="#" class="catalog__image" area-label="Catalog item">
+											<picture>
+												<source data-srcset="img/note/cat5.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/cat5.png" src="img/plug.png" alt="Image">
+											</picture>
+										</a>
+										<div class="catalog__info">
+											<a href="#" class="catalog__name">Baccarat Rouge 540</a>
+											<a href="#" class="catalog__brand">Maison Francis Kurkdjian</a>
+											<p class="catalog__year">2018</p>
+										</div>
+										<div class="catalog__extra">
+											<div class="catalog__rating rating">
+												<span class="rating__count">5/5</span>
+												<div class="rating__body">
+													<div class="rating__active"></div>
+												</div>
+												<div class="rating__value">5</div>
+											</div>
+											<a href="#" class="catalog__comments">
+												<svg>
+													<use href="img/icons/icons.svg#comment"></use>
+												</svg>
+												<span>23</span>
+											</a>
+										</div>
+									</div>
+									<div class="catalog__item">
+										<a href="#" class="catalog__image" area-label="Catalog item">
+											<picture>
+												<source data-srcset="img/note/cat6.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/cat6.png" src="img/plug.png" alt="Image">
+											</picture>
+										</a>
+										<div class="catalog__info">
+											<a href="#" class="catalog__name">Baccarat Rouge 540</a>
+											<a href="#" class="catalog__brand">Maison Francis Kurkdjian</a>
+											<p class="catalog__year">2018</p>
+										</div>
+										<div class="catalog__extra">
+											<div class="catalog__rating rating">
+												<span class="rating__count">5/5</span>
+												<div class="rating__body">
+													<div class="rating__active"></div>
+												</div>
+												<div class="rating__value">5</div>
+											</div>
+											<a href="#" class="catalog__comments">
+												<svg>
+													<use href="img/icons/icons.svg#comment"></use>
+												</svg>
+												<span>23</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="aromates-note__more" title="show-more">Показать еще 24
+									аромата</button>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="note__themes themes">
+				<div class="themes__container container">
+					<div class="themes__body" data-mob="all-themes, append">
+						<div class="themes__header" data-desk="all-themes, append">
+							<h2 class="themes__title title2">Популярные темы</h2>
+							<button type="button" title="Show all" class="themes__all" data-move="all-themes, 480">
+								Показать все +
+							</button>
+						</div>
+						<ul class="themes__list">
+							<li class="themes__item">
+								<a href="#" area-label="Theme link" class="themes__btn">Нишевая парфюмерия</a>
+							</li>
+							<li class="themes__item">
+								<a href="#" area-label="Theme link" class="themes__btn">Парфюмерия люкс</a>
+							</li>
+							<li class="themes__item">
+								<a href="#" area-label="Theme link" class="themes__btn">Обзоры</a>
+							</li>
+							<li class="themes__item">
+								<a href="#" area-label="Theme link" class="themes__btn">Новинки</a>
+							</li>
+							<li class="themes__item">
+								<a href="#" area-label="Theme link" class="themes__btn">Kenzo</a>
+							</li>
+							<li class="themes__item">
+								<a href="#" area-label="Theme link" class="themes__btn">События</a>
+							</li>
+							<li class="themes__item">
+								<a href="#" area-label="Theme link" class="themes__btn">Аромат</a>
+							</li>
+							<li class="themes__item">
+								<a href="#" area-label="Theme link" class="themes__btn">Натуральный</a>
+							</li>
+							<li class="themes__item">
+								<a href="#" area-label="Theme link" class="themes__btn">Роза</a>
+							</li>
+							<li class="themes__item">
+								<a href="#" area-label="Theme link" class="themes__btn">Косметика</a>
+							</li>
+							<li class="themes__item">
+								<a href="#" area-label="Theme link" class="themes__btn">Цветочные ароматы</a>
+							</li>
+							<li class="themes__item">
+								<a href="#" area-label="Theme link" class="themes__btn">Вопрос-ответ</a>
+							</li>
+							<li class="themes__item">
+								<a href="#" area-label="Theme link" class="themes__btn">Интервью</a>
+							</li>
+							<li class="themes__item">
+								<a href="#" area-label="Theme link" class="themes__btn">Dior</a>
+							</li>
+							<li class="themes__item">
+								<a href="#" area-label="Theme link" class="themes__btn">Парфюмер</a>
+							</li>
+							<li class="themes__item">
+								<a href="#" area-label="Theme link" class="themes__btn">Зима</a>
+							</li>
+							<li class="themes__item">
+								<a href="#" area-label="Theme link" class="themes__btn">Весна</a>
+							</li>
+							<li class="themes__item">
+								<a href="#" area-label="Theme link" class="themes__btn">Романтичный</a>
+							</li>
+							<li class="themes__item">
+								<a href="#" area-label="Theme link" class="themes__btn">Производство</a>
+							</li>
+							<li class="themes__item">
+								<a href="#" area-label="Theme link" class="themes__btn">Guerlain</a>
+							</li>
+							<li class="themes__item">
+								<a href="#" area-label="Theme link" class="themes__btn">Романтичный</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="note__recent recent">
+				<div class="recent__container container">
+					<div class="recent__body">
+						<h2 class="recent__title title2">Недавно просмотренные ароматы</h2>
+						<div class="recent__slider">
+							<div class="recent__wrapper swiper-wrapper">
+								<div class="recent__slide swiper-slide">
+									<a href="#" class="recent__image" area-label="Recent viewed aromate">
+										<picture>
+											<source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+										</picture>
+									</a>
+									<a href="#" class="recent__name">Cloud Ariana Grande</a>
+								</div>
+								<div class="recent__slide swiper-slide">
+									<a href="#" class="recent__image" area-label="Recent viewed aromate">
+										<picture>
+											<source data-srcset="img/note/cat2.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/note/cat2.png" src="img/plug.png" alt="Image">
+										</picture>
+									</a>
+									<a href="#" class="recent__name">Cloud Ariana Grande</a>
+								</div>
+								<div class="recent__slide swiper-slide">
+									<a href="#" class="recent__image" area-label="Recent viewed aromate">
+										<picture>
+											<source data-srcset="img/note/cat3.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/note/cat3.png" src="img/plug.png" alt="Image">
+										</picture>
+									</a>
+									<a href="#" class="recent__name">Cloud Ariana Grande</a>
+								</div>
+								<div class="recent__slide swiper-slide">
+									<a href="#" class="recent__image" area-label="Recent viewed aromate">
+										<picture>
+											<source data-srcset="img/note/cat4.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/note/cat4.png" src="img/plug.png" alt="Image">
+										</picture>
+									</a>
+									<a href="#" class="recent__name">Cloud Ariana Grande</a>
+								</div>
+								<div class="recent__slide swiper-slide">
+									<a href="#" class="recent__image" area-label="Recent viewed aromate">
+										<picture>
+											<source data-srcset="img/note/cat5.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/note/cat5.png" src="img/plug.png" alt="Image">
+										</picture>
+									</a>
+									<a href="#" class="recent__name">Cloud Ariana Grande</a>
+								</div>
+							</div>
+						</div>
+						<div class="recent__navigation">
+							<div class="recent__prev">
+								<svg>
+									<use href="img/icons/icons.svg#arrow"></use>
+								</svg>
+							</div>
+							<div class="recent__next">
+								<svg>
+									<use href="img/icons/icons.svg#arrow"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__body">
+            <div class="footer__top">
+                <div class="footer__socials socials">
+                    <h3 class="socials__title">Мы в соц. сетях</h3>
+                    <ul class="socials__list">
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Follow us in Instagram">
+                                <picture>
+                                    <source data-srcset="img/icons/Instagram.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/icons/Instagram.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Follow us in Telegram">
+                                <picture>
+                                    <source data-srcset="img/icons/Telegram.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/icons/Telegram.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Follow us in YouTube">
+                                <picture>
+                                    <source data-srcset="img/icons/YouTube.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/icons/YouTube.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Follow us in VK">
+                                <picture>
+                                    <source data-srcset="img/icons/vk.svg" srcset="img/plug.png" type="image/webp">
+                                    <img data-src="img/icons/vk.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Follow us in Facebook">
+                                <picture>
+                                    <source data-srcset="img/icons/Facebook.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/icons/Facebook.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Follow us in Twitter">
+                                <picture>
+                                    <source data-srcset="img/icons/Twitter.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/icons/Twitter.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Follow us in OK">
+                                <picture>
+                                    <source data-srcset="img/icons/ok.svg" srcset="img/plug.png" type="image/webp">
+                                    <img data-src="img/icons/ok.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__subscribe subscribe">
+                    <h3 class="subscribe__title">Подпишитесь на рассылку</h3>
+                    <form action="#" method="get" class="subscribe__form" novalidate>
+                        <div class="subscribe__input input">
+                            <input type="email" name="email" placeholder="Ваш Email">
+                            <button type="submit" title="subscribe-submit" class="subscribe__btn">
+                                <svg>
+                                    <use xlink: href="img/icons/icons.svg#arrow-right"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__middle" data-spollers="993,max">
+                <div class="footer__links links-footer">
+                    <h3 class="links-footer__title" data-spoller>Каталог</h3>
+                    <ul class="links-footer__list">
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Ароматы</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Пафрюмеры</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Бренды</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Ноты</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Семейства</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Сегменты</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Концентрации</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Глоссарий</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__links links-footer">
+                    <h3 class="links-footer__title" data-spoller>Пользователю</h3>
+                    <ul class="links-footer__list">
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Личный кабинет</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Уведомления</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Избранное</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Сравнения</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__links links-footer">
+                    <h3 class="links-footer__title" data-spoller>Журнал</h3>
+                    <ul class="links-footer__list">
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Главная</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Статьи</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Новости</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__links links-footer">
+                    <h3 class="links-footer__title" data-spoller>Помощь</h3>
+                    <ul class="links-footer__list">
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">О проекте</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Комьюнити</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Помощь</a>
+                        </li>
+                        <li class="links-footer__item">
+                            <a href="#" class="links-footer__link">Реклама</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__rights rights">
+                    <span>@fragsi</span>
+                    <span>Все права защищены</span>
+                </div>
+                <div class="footer__docs docs">
+                    <a href="#" class="docs__link">Правообладателям</a>
+                    <a href="#" class="docs__link">Политика конфиндециальности</a>
+                    <a href="#" class="docs__link">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+	</div>
+
+	<div class="popup" id="lang-settings">
+    <div class="popup__body">
+        <div class="popup__content lang-settings">
+            <button type="button" class="popup__close">
+                <svg>
+                    <use href="img/icons/icons.svg#close"></use>
+                </svg>
+            </button>
+            <h2 class="lang-settings__title">Настройки сайта</h2>
+            <div class="lang-settings__block input">
+                <label for="lang">Язык</label>
+                <input type="text" name="lang" value="Русский">
+                <ul class="lang-settings__list input-list">
+                    <li class="lang-settings__item">Русский</li>
+                    <li class="lang-settings__item">Українська</li>
+                    <li class="lang-settings__item">English</li>
+                    <li class="lang-settings__item">Русский</li>
+                    <li class="lang-settings__item">Українська</li>
+                    <li class="lang-settings__item">English</li>
+                </ul>
+                <div class="lang-settings__error">Ошибка. Попробуйте еще раз.</div>
+            </div>
+            <div class="lang-settings__block input">
+                <label for="country">Местоположение</label>
+                <input type="text" value="Россия" name="country">
+                <ul class="lang-settings__list input-list">
+                    <li class="lang-settings__item">Россия</li>
+                    <li class="lang-settings__item">Украиїна</li>
+                    <li class="lang-settings__item">USA</li>
+                    <li class="lang-settings__item">Россия</li>
+                    <li class="lang-settings__item">Украиїна</li>
+                    <li class="lang-settings__item">USA</li>
+                </ul>
+                <div class="lang-settings__error">Ошибка. Попробуйте еще раз.</div>
+            </div>
+            <div class="lang-settings__block input">
+                <label for="currency">Валюта</label>
+                <input type="text" value="Рубль [RUB]" name="currency">
+                <ul class="lang-settings__list input-list">
+                    <li class="lang-settings__item">Рубль [RUB]</li>
+                    <li class="lang-settings__item">Гривня [UAH]</li>
+                    <li class="lang-settings__item">USA [USD]</li>
+                    <li class="lang-settings__item">Рубль [RUB]</li>
+                    <li class="lang-settings__item">Гривня [UAH]</li>
+                    <li class="lang-settings__item">USA [USD]</li>
+                </ul>
+                <div class="lang-settings__error">Ошибка. Попробуйте еще раз.</div>
+            </div>
+            <button type="button" class="lang-settings__btn">Применить</button>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="login">
+    <div class="popup__body">
+        <div class="popup__content login">
+            <button type="button" class="popup__close">
+                <svg>
+                    <use href="img/icons/icons.svg#close"></use>
+                </svg>
+            </button>
+            <div class="login__image">
+                <picture>
+                    <source data-srcset="img/login.webp" srcset="img/plug.png" type="image/webp">
+                    <img data-src="img/login.jpg" src="img/plug.png" alt="Image">
+                </picture>
+            </div>
+            <div class="login__body">
+                <div class="login__tabs tabs">
+                    <div class="tabs__header">
+                        <div class="tabs__item _active">Вход</div>
+                        <div class="tabs__item">Регистрация</div>
+                        <div class="tabs__indicator"></div>
+                    </div>
+
+                    <div class="tabs__body">
+                        <div class="tabs__block _active">
+                            <div class="tabs__content">
+                                <h2 class="login__title">Вход во Fragsi</h2>
+                                <div class="login__label"><span>Через соц.сети</span></div>
+                                <ul class="login__socials">
+                                    <li class="login__item">
+                                        <a href="#" class="login__social" area-label="Facebook">
+                                            <picture>
+                                                <source data-srcset="img/icons/Facebook.svg" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/icons/Facebook.svg" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                    </li>
+                                    <li class="login__item">
+                                        <a href="#" class="login__social" area-label="Google">
+                                            <picture>
+                                                <source data-srcset="img/icons/Google.svg" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/icons/Google.svg" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                    </li>
+                                    <li class="login__item">
+                                        <a href="#" class="login__social" area-label="Twitter">
+                                            <picture>
+                                                <source data-srcset="img/icons/Twitter.svg" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/icons/Twitter.svg" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                    </li>
+                                    <li class="login__item">
+                                        <a href="#" class="login__social" area-label="OK">
+                                            <picture>
+                                                <source data-srcset="img/icons/ok.svg" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/icons/ok.svg" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                    </li>
+                                    <li class="login__item">
+                                        <a href="#" class="login__social" area-label="VK">
+                                            <picture>
+                                                <source data-srcset="img/icons/vk.svg" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/icons/vk.svg" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="login__label"><span>Через почту</span></div>
+                                <form action="#" class="login__form form-login">
+                                    <div class="form-login__input input">
+                                        <label for="e-mail">Введите телефон или Email</label>
+                                        <input type="text" title="E-mail">
+                                    </div>
+                                    <div class="form-login__input input pass">
+                                        <label for="password">Введите пароль</label>
+                                        <input type="password" title="Password">
+                                        <button class="pass__btn" type="button" title="Show password">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#eye"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button type="submit" class="form-login__btn">Вход</button>
+                                    <div class="form-login__footer">
+                                        <div class="form-login__checkbox checkbox">
+                                            Запомнить меня
+                                            <input type="checkbox" name="remember-me">
+                                        </div>
+                                        <a href="#" class="form-login__forgot">Забыли пароль?</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tabs__block">
+                            <div class="tabs__content">
+                                <h2 class="login__title">Регистрация</h2>
+                                <p class="login__intro">
+                                    Присоединяйтесь к сообществу Fragsi и получите доступ ко всем его функциям
+                                </p>
+                                <form action="#" class="login__form form-login">
+                                    <div class="form-login__input input">
+                                        <label for="e-mail">Введите ваше имя</label>
+                                        <input type="text" title="Your name" name="name">
+                                    </div>
+                                    <div class="form-login__input input">
+                                        <label for="e-mail">Введите телефон или Email</label>
+                                        <input type="text" title="E-mail" name="email">
+                                    </div>
+                                    <div class="form-login__input input pass">
+                                        <label for="password">Придумайте пароль</label>
+                                        <input type="password" title="Password" name="password">
+                                        <button class="pass__btn" type="button" title="Show password">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#eye"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="form-login__input input pass">
+                                        <label for="password">Повторите пароль</label>
+                                        <input type="password" title="Repeat password">
+                                        <button class="pass__btn" type="button" title="Show password">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#eye"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button type="submit" class="form-login__btn">Зарегистрироваться</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	<div class="alerts">
+    <div class="alerts__error">
+        <svg>
+            <use href="img/icons/icons.svg#alert"></use>
+        </svg>
+        Введите существующий Email
+    </div>
+</div>
+	<script src="js/app.min.js?_v=20230519173338"></script>
+</body>
+
+</html>
