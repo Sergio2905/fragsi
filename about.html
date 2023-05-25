@@ -4,7 +4,8 @@
 <head>
     <title>Fragsi</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230519204502">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230525112152">
+    <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание">
     <meta name="keywords" content="Ключевые слова">
@@ -136,22 +137,20 @@
         </div>
     </div>
 </div>
+
 		<div class="breadcrumbs">
-    <div class="breadcrumbs__container container">
-        <div class="breadcrumbs__body">
-            <a href="#" class="breadcrumbs__link" aria-label="Back to main page">
-                <span>Главная</span>
-                <svg>
-                    <use href="img/icons/icons.svg#home"></use>
-                </svg>
-            </a>
-            <a href="#" class="breadcrumbs__link">Ноты</a>
-            <a href="#" class="breadcrumbs__link">Цитрусовые</a>
-            <a href="#" class="breadcrumbs__link breadcrumbs__link_mob">...</a>
-            <a href="#" class="breadcrumbs__link">Бергамот</a>
-        </div>
-    </div>
-</div>
+			<div class="breadcrumbs__container container">
+				<div class="breadcrumbs__body">
+					<a href="#" class="breadcrumbs__link" aria-label="Back to main page">
+						<span>Главная</span>
+						<svg>
+							<use href="img/icons/icons.svg#home"></use>
+						</svg>
+					</a>
+					<a href="#" class="breadcrumbs__link">Наша команда</a>
+				</div>
+			</div>
+		</div>
 
 		<div class="about">
 			<div class="about__container container">
@@ -619,7 +618,7 @@
                     </form>
                 </div>
             </div>
-            <div class="footer__middle" data-spollers="993,max">
+            <div class="footer__middle" data-spollers="1000,max">
                 <div class="footer__links links-footer">
                     <h3 class="links-footer__title" data-spoller>Каталог</h3>
                     <ul class="links-footer__list">
@@ -710,6 +709,32 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="footer__menu menu-footer">
+        <a href="#" class="menu-footer__btn">
+            <svg>
+                <use href="img/icons/icons.svg#footer-home"></use>
+            </svg>
+            <span>Главная</span>
+        </a>
+        <a href="#" class="menu-footer__btn">
+            <svg>
+                <use href="img/icons/icons.svg#footer-catalog"></use>
+            </svg>
+            <span>Каталог</span>
+        </a>
+        <a href="#" class="menu-footer__btn">
+            <svg>
+                <use href="img/icons/icons.svg#footer-favorite"></use>
+            </svg>
+            <span>Избранное</span>
+        </a>
+        <a href="#" class="menu-footer__btn">
+            <svg>
+                <use href="img/icons/icons.svg#footer-compare"></use>
+            </svg>
+            <span>Сравнить</span>
+        </a>
     </div>
 </footer>
 	</div>
@@ -856,7 +881,7 @@
                                             </svg>
                                         </button>
                                     </div>
-                                    <button type="submit" class="form-login__btn">Вход</button>
+                                    <button type="submit" class="form-login__btn btn_green disable">Вход</button>
                                     <div class="form-login__footer">
                                         <div class="form-login__checkbox checkbox">
                                             Запомнить меня
@@ -900,7 +925,8 @@
                                             </svg>
                                         </button>
                                     </div>
-                                    <button type="submit" class="form-login__btn">Зарегистрироваться</button>
+                                    <button type="submit"
+                                        class="form-login__btn btn_green disable">Зарегистрироваться</button>
                                 </form>
                             </div>
                         </div>
@@ -918,7 +944,7 @@
         Введите существующий Email
     </div>
 </div>
-	<script src="js/app.min.js?_v=20230519204502"></script>
+	<script src="js/app.min.js?_v=20230525112152"></script>
 </body>
 
 </html>
