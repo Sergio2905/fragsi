@@ -4,7 +4,7 @@
 <head>
     <title>Fragsi</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230525130414">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230601133824">
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание">
@@ -166,10 +166,10 @@
             </div>
         </div>
 
-        <div class="messages">
-            <div class="messages__container container">
-                <div class="messages__body" data-desk="user-menu, prepend">
-                    <div class="messages__menu user-menu" data-move="user-menu, 1001">
+        <div class="profile">
+            <div class="profile__container container">
+                <div class="profile__body" data-desk="user-menu, prepend">
+                    <div class="profile__menu user-menu" data-move="user-menu, 1001">
                         <nav class="user-menu__body">
                             <ul class="user-menu__list">
                                 <li class="user-menu__item">
@@ -241,13 +241,13 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="messages__content">
-                        <div class="messages__header">
-                            <h1 class="messages__title title1">Сообщения</h1>
-                            <span class="messages__count">2</span>
+                    <div class="profile__content">
+                        <div class="profile__header">
+                            <h1 class="profile__title title1">Сообщения</h1>
+                            <span class="profile__count">2</span>
                         </div>
-                        <form action="#" class="messages__form form-message">
-                            <div class="form-message__input">
+                        <form action="#" class="profile__search search-profile">
+                            <div class="search-profile__input">
                                 <button>
                                     <svg>
                                         <use href="img/icons/icons.svg#search"></use>
@@ -255,115 +255,117 @@
                                 </button>
                                 <input type="text" placeholder="Поиск">
                             </div>
-                            <button type="button" class="form-message__btn">
+                            <button type="button" class="search-profile__btn">
                                 <svg>
                                     <use href="img/icons/icons.svg#edit"></use>
                                 </svg>
                             </button>
                         </form>
-                        <ul class="messages__list">
-                            <li class="messages__item active">
-                                <div class="messages__avatar">
-                                    <a href="" class="messages__image" area-label="User">
-                                        <picture>
-                                            <source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
-                                                type="image/webp">
-                                            <img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
-                                        </picture>
-                                    </a>
-                                    <span class="messages__status"></span>
-                                </div>
-                                <div class="messages__info">
-                                    <a href="#" class="messages__name">Даша Чернова</a>
-                                    <p class="messages__text">Привет! Подскажи название аромата о котором ты писал в
-                                        своем блоге</p>
-                                </div>
-                                <div class="messages__details">
-                                    <time datetime="2023-05-24 09:16" class="messages__time">09:16</time>
-                                    <span class="messages__count">2</span>
-                                </div>
-                            </li>
-                            <li class="messages__item">
-                                <div class="messages__avatar">
-                                    <a href="" class="messages__image" area-label="User">
-                                        <picture>
-                                            <source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
-                                                type="image/webp">
-                                            <img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
-                                        </picture>
-                                    </a>
-                                    <span class="messages__status"></span>
-                                </div>
-                                <div class="messages__info">
-                                    <a href="#" class="messages__name">Даша Чернова</a>
-                                    <p class="messages__text">Привет! Подскажи название аромата о котором ты писал в
-                                        своем блоге</p>
-                                </div>
-                                <div class="messages__details">
-                                    <time datetime="2023-05-24 09:16" class="messages__time">Вчера</time>
-                                </div>
-                            </li>
-                            <li class="messages__item">
-                                <div class="messages__avatar">
-                                    <a href="" class="messages__image" area-label="User">
-                                        <picture>
-                                            <source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
-                                                type="image/webp">
-                                            <img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
-                                        </picture>
-                                    </a>
-                                    <span class="messages__status"></span>
-                                </div>
-                                <div class="messages__info">
-                                    <a href="#" class="messages__name">Даша Чернова</a>
-                                    <p class="messages__text">Привет! Подскажи название аромата о котором ты писал в
-                                        своем блоге</p>
-                                </div>
-                                <div class="messages__details">
-                                    <time datetime="2023-05-24 09:16" class="messages__time">Суббота</time>
-                                </div>
-                            </li>
-                            <li class="messages__item">
-                                <div class="messages__avatar">
-                                    <a href="" class="messages__image" area-label="User">
-                                        <picture>
-                                            <source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
-                                                type="image/webp">
-                                            <img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
-                                        </picture>
-                                    </a>
-                                    <span class="messages__status"></span>
-                                </div>
-                                <div class="messages__info">
-                                    <a href="#" class="messages__name">Даша Чернова</a>
-                                    <p class="messages__text">Привет! Подскажи название аромата о котором ты писал в
-                                        своем блоге</p>
-                                </div>
-                                <div class="messages__details">
-                                    <time datetime="2023-05-24 09:16" class="messages__time">Суббота</time>
-                                </div>
-                            </li>
-                            <li class="messages__item">
-                                <div class="messages__avatar">
-                                    <a href="" class="messages__image" area-label="User">
-                                        <picture>
-                                            <source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
-                                                type="image/webp">
-                                            <img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
-                                        </picture>
-                                    </a>
-                                    <span class="messages__status"></span>
-                                </div>
-                                <div class="messages__info">
-                                    <a href="#" class="messages__name">Даша Чернова</a>
-                                    <p class="messages__text">Привет! Подскажи название аромата о котором ты писал в
-                                        своем блоге</p>
-                                </div>
-                                <div class="messages__details">
-                                    <time datetime="2023-05-24 09:16" class="messages__time">Суббота</time>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="profile__messages messages">
+                            <ul class="messages__list">
+                                <li class="messages__item active">
+                                    <div class="messages__avatar">
+                                        <a href="" class="messages__image" area-label="User">
+                                            <picture>
+                                                <source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                        <span class="messages__status"></span>
+                                    </div>
+                                    <div class="messages__info">
+                                        <a href="#" class="messages__name">Даша Чернова</a>
+                                        <p class="messages__text">Привет! Подскажи название аромата о котором ты писал в
+                                            своем блоге</p>
+                                    </div>
+                                    <div class="messages__details">
+                                        <time datetime="2023-05-24 09:16" class="messages__time">09:16</time>
+                                        <span class="messages__count">2</span>
+                                    </div>
+                                </li>
+                                <li class="messages__item">
+                                    <div class="messages__avatar">
+                                        <a href="" class="messages__image" area-label="User">
+                                            <picture>
+                                                <source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                        <span class="messages__status"></span>
+                                    </div>
+                                    <div class="messages__info">
+                                        <a href="#" class="messages__name">Даша Чернова</a>
+                                        <p class="messages__text">Привет! Подскажи название аромата о котором ты писал в
+                                            своем блоге</p>
+                                    </div>
+                                    <div class="messages__details">
+                                        <time datetime="2023-05-24 09:16" class="messages__time">Вчера</time>
+                                    </div>
+                                </li>
+                                <li class="messages__item">
+                                    <div class="messages__avatar">
+                                        <a href="" class="messages__image" area-label="User">
+                                            <picture>
+                                                <source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                        <span class="messages__status"></span>
+                                    </div>
+                                    <div class="messages__info">
+                                        <a href="#" class="messages__name">Даша Чернова</a>
+                                        <p class="messages__text">Привет! Подскажи название аромата о котором ты писал в
+                                            своем блоге</p>
+                                    </div>
+                                    <div class="messages__details">
+                                        <time datetime="2023-05-24 09:16" class="messages__time">Суббота</time>
+                                    </div>
+                                </li>
+                                <li class="messages__item">
+                                    <div class="messages__avatar">
+                                        <a href="" class="messages__image" area-label="User">
+                                            <picture>
+                                                <source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                        <span class="messages__status"></span>
+                                    </div>
+                                    <div class="messages__info">
+                                        <a href="#" class="messages__name">Даша Чернова</a>
+                                        <p class="messages__text">Привет! Подскажи название аромата о котором ты писал в
+                                            своем блоге</p>
+                                    </div>
+                                    <div class="messages__details">
+                                        <time datetime="2023-05-24 09:16" class="messages__time">Суббота</time>
+                                    </div>
+                                </li>
+                                <li class="messages__item">
+                                    <div class="messages__avatar">
+                                        <a href="" class="messages__image" area-label="User">
+                                            <picture>
+                                                <source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </a>
+                                        <span class="messages__status"></span>
+                                    </div>
+                                    <div class="messages__info">
+                                        <a href="#" class="messages__name">Даша Чернова</a>
+                                        <p class="messages__text">Привет! Подскажи название аромата о котором ты писал в
+                                            своем блоге</p>
+                                    </div>
+                                    <div class="messages__details">
+                                        <time datetime="2023-05-24 09:16" class="messages__time">Суббота</time>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -444,16 +446,25 @@
                     <form action="#" method="get" class="subscribe__form" novalidate>
                         <div class="subscribe__input input">
                             <input type="email" name="email" placeholder="Ваш Email">
-                            <button type="submit" title="subscribe-submit" class="subscribe__btn">
+                            <button type="button" title="Subscribe submit" class="subscribe__btn">
                                 <svg>
                                     <use xlink: href="img/icons/icons.svg#arrow-right"></use>
                                 </svg>
                             </button>
                         </div>
+                        <div class="alert__error">
+                            <svg>
+                                <use href="img/icons/icons.svg#alert"></use>
+                            </svg>
+                            Введите существующий Email
+                        </div>
+                        <div class="alert__sent">
+                            Вы успешно подписаны на <span>e-mail</span> рассылку. <br />Проверьте свою почту.
+                        </div>
                     </form>
                 </div>
             </div>
-            <div class="footer__middle" data-spollers="1000,max">
+            <div class="footer__middle" data-spollers="768,max">
                 <div class="footer__links links-footer">
                     <h3 class="links-footer__title" data-spoller>Каталог</h3>
                     <ul class="links-footer__list">
@@ -586,43 +597,43 @@
             <div class="lang-settings__block input">
                 <label for="lang">Язык</label>
                 <input type="text" name="lang" value="Русский">
-                <ul class="lang-settings__list input-list">
-                    <li class="lang-settings__item">Русский</li>
-                    <li class="lang-settings__item">Українська</li>
-                    <li class="lang-settings__item">English</li>
-                    <li class="lang-settings__item">Русский</li>
-                    <li class="lang-settings__item">Українська</li>
-                    <li class="lang-settings__item">English</li>
+                <ul class="lang-settings__list input-list" data-simplebar>
+                    <li class="input-list__item">Русский</li>
+                    <li class="input-list__item">Українська</li>
+                    <li class="input-list__item">English</li>
+                    <li class="input-list__item">Русский</li>
+                    <li class="input-list__item">Українська</li>
+                    <li class="input-list__item">English</li>
                 </ul>
-                <div class="lang-settings__error">Ошибка. Попробуйте еще раз.</div>
+                <div class="input__error">Ошибка. Попробуйте еще раз.</div>
             </div>
             <div class="lang-settings__block input">
                 <label for="country">Местоположение</label>
                 <input type="text" value="Россия" name="country">
-                <ul class="lang-settings__list input-list">
-                    <li class="lang-settings__item">Россия</li>
-                    <li class="lang-settings__item">Украиїна</li>
-                    <li class="lang-settings__item">USA</li>
-                    <li class="lang-settings__item">Россия</li>
-                    <li class="lang-settings__item">Украиїна</li>
-                    <li class="lang-settings__item">USA</li>
+                <ul class="lang-settings__list input-list" data-simplebar>
+                    <li class="input-list__item">Россия</li>
+                    <li class="input-list__item">Украиїна</li>
+                    <li class="input-list__item">USA</li>
+                    <li class="input-list__item">Россия</li>
+                    <li class="input-list__item">Украиїна</li>
+                    <li class="input-list__item">USA</li>
                 </ul>
-                <div class="lang-settings__error">Ошибка. Попробуйте еще раз.</div>
+                <div class="input__error">Ошибка. Попробуйте еще раз.</div>
             </div>
             <div class="lang-settings__block input">
                 <label for="currency">Валюта</label>
                 <input type="text" value="Рубль [RUB]" name="currency">
-                <ul class="lang-settings__list input-list">
-                    <li class="lang-settings__item">Рубль [RUB]</li>
-                    <li class="lang-settings__item">Гривня [UAH]</li>
-                    <li class="lang-settings__item">USA [USD]</li>
-                    <li class="lang-settings__item">Рубль [RUB]</li>
-                    <li class="lang-settings__item">Гривня [UAH]</li>
-                    <li class="lang-settings__item">USA [USD]</li>
+                <ul class="lang-settings__list input-list" data-simplebar>
+                    <li class="input-list__item">Рубль [RUB]</li>
+                    <li class="input-list__item">Гривня [UAH]</li>
+                    <li class="input-list__item">USA [USD]</li>
+                    <li class="input-list__item">Рубль [RUB]</li>
+                    <li class="input-list__item">Гривня [UAH]</li>
+                    <li class="input-list__item">USA [USD]</li>
                 </ul>
-                <div class="lang-settings__error">Ошибка. Попробуйте еще раз.</div>
+                <div class="input__error">Ошибка. Попробуйте еще раз.</div>
             </div>
-            <button type="button" class="lang-settings__btn">Применить</button>
+            <button type="button" class="lang-settings__btn btn_green popup__close">Применить</button>
         </div>
     </div>
 </div>
@@ -716,7 +727,8 @@
                                             </svg>
                                         </button>
                                     </div>
-                                    <button type="submit" class="form-login__btn btn_green disable">Вход</button>
+                                    <button type="submit"
+                                        class="form-login__btn btn_green switcher disable">Вход</button>
                                     <div class="form-login__footer">
                                         <div class="form-login__checkbox checkbox">
                                             Запомнить меня
@@ -761,7 +773,7 @@
                                         </button>
                                     </div>
                                     <button type="submit"
-                                        class="form-login__btn btn_green disable">Зарегистрироваться</button>
+                                        class="form-login__btn btn_green switcher disable">Зарегистрироваться</button>
                                 </form>
                             </div>
                         </div>
@@ -771,15 +783,565 @@
         </div>
     </div>
 </div>
-    <div class="alerts">
-    <div class="alerts__error">
-        <svg>
-            <use href="img/icons/icons.svg#alert"></use>
-        </svg>
-        Введите существующий Email
+
+<div class="popup" id="change-password">
+    <div class="popup__body">
+        <div class="popup__content reset">
+            <form action="#" class="reset__form">
+                <div class="reset__header">
+                    <h4 class="reset__title">Изменить пароль</h4>
+                    <button type="button" title="Close popup" class="popup__close">
+                        <svg>
+                            <use href="img/icons/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="reset__block">
+                    <p class="reset__desc">Введите текущий пароль что бы продолжить</p>
+                    <div class="reset__input input pass">
+                        <label for="password">Текущий пароль</label>
+                        <input type="password" title="Password">
+                        <button class="pass__btn" type="button" title="Show password">
+                            <svg>
+                                <use href="img/icons/icons.svg#eye"></use>
+                            </svg>
+                        </button>
+                        <div class="input__error">Упс, ошибка! Неправильный логин или пароль</div>
+                    </div>
+                </div>
+                <div class="reset__block">
+                    <p class="reset__desc">Придумайте новый пароль</p>
+                    <div class="reset__input input pass">
+                        <label for="password">Введите пароль</label>
+                        <input type="password" title="Password">
+                        <button class="pass__btn" type="button" title="Show password">
+                            <svg>
+                                <use href="img/icons/icons.svg#eye"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="reset__input input pass confirm">
+                        <label for="password">Повторите пароль</label>
+                        <input type="password" title="Password">
+                        <button class="pass__btn" type="button" title="Show password">
+                            <svg>
+                                <use href="img/icons/icons.svg#eye"></use>
+                            </svg>
+                        </button>
+                        <div class="input__error">Пароли не совпадают.</div>
+                    </div>
+                </div>
+                <div class="reset__btns">
+                    <button type="button" title="Cancel" class="reset__btn btn_grey popup__close">Отмена</button>
+                    <button type="button" title="Save" class="reset__btn btn_green popup__close">Изменить
+                        пароль</button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
-    <script src="js/app.min.js?_v=20230525130414"></script>
+
+<div class="popup" id="delete-account">
+    <div class="popup__body">
+        <div class="popup__content reset">
+            <form action="#" class="reset__form">
+                <div class="reset__header">
+                    <h4 class="reset__title">Удалить аккаунт?</h4>
+                    <button type="button" title="Close popup" class="popup__close">
+                        <svg>
+                            <use href="img/icons/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="reset__block">
+                    <p class="reset__desc">Вы уверены, что хотите удалить свой аккаунт?</p>
+                    <p class="reset__info">*После этого вы больше не сможете войти на свой профиль и все ваши данные
+                        будут безвозвратно удалены.</p>
+                    <p class="reset__desc">Введите текущий пароль что бы продолжить</p>
+                    <div class="reset__input input pass">
+                        <label for="password">Текущий пароль</label>
+                        <input type="password" title="Password">
+                        <button class="pass__btn" type="button" title="Show password">
+                            <svg>
+                                <use href="img/icons/icons.svg#eye"></use>
+                            </svg>
+                        </button>
+                        <div class="input__error">Упс, ошибка! Неправильный логин или пароль</div>
+                    </div>
+                </div>
+                <div class="reset__btns">
+                    <button type="button" title="Cancel" class="reset__btn btn_grey popup__close">Отмена</button>
+                    <button type="button" title="Delete" class="reset__btn btn_red popup__close">
+                        <svg>
+                            <use href="img/icons/icons.svg#trash"></use>
+                        </svg>
+                        Удалить аккаунт
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="new-shelf">
+    <div class="popup__body">
+        <div class="popup__content shelf">
+            <form action="#" class="shelf__form">
+                <div class="shelf__header">
+                    <h4 class="shelf__title">Создание полки</h4>
+                    <button type="button" title="Close popup" class="popup__close">
+                        <svg>
+                            <use href="img/icons/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="shelf__input limit">
+                    <textarea name="shelf" placeholder="Введите название полки..."></textarea>
+                </div>
+                <div class="shelf__checkbox checkbox">
+                    Скрыть полку от других пользователей
+                    <input type="checkbox" name="hide">
+                </div>
+                <div class="shelf__btns">
+                    <div class="shelf__counter counter">
+                        мин. <span class="counter__min">50</span>/<span class="counter__current">0</span>
+                    </div>
+                    <button type="button" title="Delete" class="shelf__btn btn_green popup__close disable">
+                        Создать полку
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="shelf-order">
+    <div class="popup__body">
+        <div class="popup__content shelf">
+            <form action="#" class="shelf__form">
+                <div class="shelf__header">
+                    <h4 class="shelf__title">Название полки</h4>
+                    <button type="button" title="Close popup" class="popup__close">
+                        <svg>
+                            <use href="img/icons/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="shelf__list" data-simplebar>
+                    <li class="shelf__item">
+                        <div class="shelf__image">
+                            <picture>
+                                <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="shelf__info">
+                            <a href="#" class="shelf__name">Baccarat Rouge 540</a>
+                            <p class="shelf__desc">парфюмерная вода</p>
+                        </div>
+                        <div class="shelf__options">
+                            <button type="button" title="Move item" class="shelf__move move">
+                                <svg>
+                                    <use href="img/icons/icons.svg#drag"></use>
+                                </svg>
+                            </button>
+                            <button type="button" title="Move item" class="shelf__delete">
+                                <svg>
+                                    <use href="img/icons/icons.svg#close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="shelf__item">
+                        <div class="shelf__image">
+                            <picture>
+                                <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="shelf__info">
+                            <a href="#" class="shelf__name">Baccarat Rouge 540</a>
+                            <p class="shelf__desc">парфюмерная вода</p>
+                        </div>
+                        <div class="shelf__options">
+                            <button type="button" title="Move item" class="shelf__move move">
+                                <svg>
+                                    <use href="img/icons/icons.svg#drag"></use>
+                                </svg>
+                            </button>
+                            <button type="button" title="Move item" class="shelf__delete">
+                                <svg>
+                                    <use href="img/icons/icons.svg#close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="shelf__item">
+                        <div class="shelf__image">
+                            <picture>
+                                <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="shelf__info">
+                            <a href="#" class="shelf__name">Baccarat Rouge 540</a>
+                            <p class="shelf__desc">парфюмерная вода</p>
+                        </div>
+                        <div class="shelf__options">
+                            <button type="button" title="Move item" class="shelf__move move">
+                                <svg>
+                                    <use href="img/icons/icons.svg#drag"></use>
+                                </svg>
+                            </button>
+                            <button type="button" title="Move item" class="shelf__delete">
+                                <svg>
+                                    <use href="img/icons/icons.svg#close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="shelf__item">
+                        <div class="shelf__image">
+                            <picture>
+                                <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="shelf__info">
+                            <a href="#" class="shelf__name">Baccarat Rouge 540</a>
+                            <p class="shelf__desc">парфюмерная вода</p>
+                        </div>
+                        <div class="shelf__options">
+                            <button type="button" title="Move item" class="shelf__move move">
+                                <svg>
+                                    <use href="img/icons/icons.svg#drag"></use>
+                                </svg>
+                            </button>
+                            <button type="button" title="Move item" class="shelf__delete">
+                                <svg>
+                                    <use href="img/icons/icons.svg#close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="shelf__item">
+                        <div class="shelf__image">
+                            <picture>
+                                <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="shelf__info">
+                            <a href="#" class="shelf__name">Baccarat Rouge 540</a>
+                            <p class="shelf__desc">парфюмерная вода</p>
+                        </div>
+                        <div class="shelf__options">
+                            <button type="button" title="Move item" class="shelf__move move">
+                                <svg>
+                                    <use href="img/icons/icons.svg#drag"></use>
+                                </svg>
+                            </button>
+                            <button type="button" title="Move item" class="shelf__delete">
+                                <svg>
+                                    <use href="img/icons/icons.svg#close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="shelf__item">
+                        <div class="shelf__image">
+                            <picture>
+                                <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="shelf__info">
+                            <a href="#" class="shelf__name">Baccarat Rouge 540</a>
+                            <p class="shelf__desc">парфюмерная вода</p>
+                        </div>
+                        <div class="shelf__options">
+                            <button type="button" title="Move item" class="shelf__move move">
+                                <svg>
+                                    <use href="img/icons/icons.svg#drag"></use>
+                                </svg>
+                            </button>
+                            <button type="button" title="Move item" class="shelf__delete">
+                                <svg>
+                                    <use href="img/icons/icons.svg#close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="shelf__item">
+                        <div class="shelf__image">
+                            <picture>
+                                <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="shelf__info">
+                            <a href="#" class="shelf__name">Baccarat Rouge 540</a>
+                            <p class="shelf__desc">парфюмерная вода</p>
+                        </div>
+                        <div class="shelf__options">
+                            <button type="button" title="Move item" class="shelf__move move">
+                                <svg>
+                                    <use href="img/icons/icons.svg#drag"></use>
+                                </svg>
+                            </button>
+                            <button type="button" title="Move item" class="shelf__delete">
+                                <svg>
+                                    <use href="img/icons/icons.svg#close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="shelf__item">
+                        <div class="shelf__image">
+                            <picture>
+                                <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="shelf__info">
+                            <a href="#" class="shelf__name">Baccarat Rouge 540</a>
+                            <p class="shelf__desc">парфюмерная вода</p>
+                        </div>
+                        <div class="shelf__options">
+                            <button type="button" title="Move item" class="shelf__move move">
+                                <svg>
+                                    <use href="img/icons/icons.svg#drag"></use>
+                                </svg>
+                            </button>
+                            <button type="button" title="Move item" class="shelf__delete">
+                                <svg>
+                                    <use href="img/icons/icons.svg#close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="shelf__item">
+                        <div class="shelf__image">
+                            <picture>
+                                <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="shelf__info">
+                            <a href="#" class="shelf__name">Baccarat Rouge 540</a>
+                            <p class="shelf__desc">парфюмерная вода</p>
+                        </div>
+                        <div class="shelf__options">
+                            <button type="button" title="Move item" class="shelf__move move">
+                                <svg>
+                                    <use href="img/icons/icons.svg#drag"></use>
+                                </svg>
+                            </button>
+                            <button type="button" title="Move item" class="shelf__delete">
+                                <svg>
+                                    <use href="img/icons/icons.svg#close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="shelf__item">
+                        <div class="shelf__image">
+                            <picture>
+                                <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="shelf__info">
+                            <a href="#" class="shelf__name">Baccarat Rouge 540</a>
+                            <p class="shelf__desc">парфюмерная вода</p>
+                        </div>
+                        <div class="shelf__options">
+                            <button type="button" title="Move item" class="shelf__move move">
+                                <svg>
+                                    <use href="img/icons/icons.svg#drag"></use>
+                                </svg>
+                            </button>
+                            <button type="button" title="Move item" class="shelf__delete">
+                                <svg>
+                                    <use href="img/icons/icons.svg#close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+                <button type="button" title="Delete" class="shelf__btn btn_green popup__close ">
+                    Сохранить
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="add-fragrance">
+    <div class="popup__body">
+        <div class="popup__content shelf">
+            <form action="#" class="shelf__form">
+                <div class="shelf__header">
+                    <h4 class="shelf__title">Добавить аромат</h4>
+                    <button type="button" title="Close popup" class="popup__close">
+                        <svg>
+                            <use href="img/icons/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="shelf__input input profile-search">
+                    <button type="submit">
+                        <svg>
+                            <use href="img/icons/icons.svg#plus"></use>
+                        </svg>
+                    </button>
+                    <input type="text" name="fragrance" placeholder="Введите название аромата">
+                </div>
+                <div class="shelf__result search-result">
+                    <div class="shelf__wrapper search-wrapper">
+                        <ul class="shelf__list" data-simplebar>
+                            <li class="shelf__item">
+                                <div class="shelf__image">
+                                    <picture>
+                                        <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="shelf__info">
+                                    <a href="#" class="shelf__name">Baccarat Rouge 540</a>
+                                    <p class="shelf__desc">парфюмерная вода</p>
+                                </div>
+                            </li>
+                            <li class="shelf__item">
+                                <div class="shelf__image">
+                                    <picture>
+                                        <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="shelf__info">
+                                    <a href="#" class="shelf__name">Baccarat Rouge 540</a>
+                                    <p class="shelf__desc">парфюмерная вода</p>
+                                </div>
+                            </li>
+                            <li class="shelf__item">
+                                <div class="shelf__image">
+                                    <picture>
+                                        <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="shelf__info">
+                                    <a href="#" class="shelf__name">Baccarat Rouge 540</a>
+                                    <p class="shelf__desc">парфюмерная вода</p>
+                                </div>
+                            </li>
+                            <li class="shelf__item">
+                                <div class="shelf__image">
+                                    <picture>
+                                        <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="shelf__info">
+                                    <a href="#" class="shelf__name">Baccarat Rouge 540</a>
+                                    <p class="shelf__desc">парфюмерная вода</p>
+                                </div>
+                            </li>
+                            <li class="shelf__item">
+                                <div class="shelf__image">
+                                    <picture>
+                                        <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="shelf__info">
+                                    <a href="#" class="shelf__name">Baccarat Rouge 540</a>
+                                    <p class="shelf__desc">парфюмерная вода</p>
+                                </div>
+                            </li>
+                            <li class="shelf__item">
+                                <div class="shelf__image">
+                                    <picture>
+                                        <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="shelf__info">
+                                    <a href="#" class="shelf__name">Baccarat Rouge 540</a>
+                                    <p class="shelf__desc">парфюмерная вода</p>
+                                </div>
+                            </li>
+                            <li class="shelf__item">
+                                <div class="shelf__image">
+                                    <picture>
+                                        <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="shelf__info">
+                                    <a href="#" class="shelf__name">Baccarat Rouge 540</a>
+                                    <p class="shelf__desc">парфюмерная вода</p>
+                                </div>
+                            </li>
+                            <li class="shelf__item">
+                                <div class="shelf__image">
+                                    <picture>
+                                        <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="shelf__info">
+                                    <a href="#" class="shelf__name">Baccarat Rouge 540</a>
+                                    <p class="shelf__desc">парфюмерная вода</p>
+                                </div>
+                            </li>
+                            <li class="shelf__item">
+                                <div class="shelf__image">
+                                    <picture>
+                                        <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="shelf__info">
+                                    <a href="#" class="shelf__name">Baccarat Rouge 540</a>
+                                    <p class="shelf__desc">парфюмерная вода</p>
+                                </div>
+                            </li>
+                            <li class="shelf__item">
+                                <div class="shelf__image">
+                                    <picture>
+                                        <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="shelf__info">
+                                    <a href="#" class="shelf__name">Baccarat Rouge 540</a>
+                                    <p class="shelf__desc">парфюмерная вода</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" title="Delete" class="shelf__btn btn_green popup__close">
+                    Оценить аромат
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+    
+    <script src="js/app.min.js?_v=20230601133824"></script>
 </body>
 
 </html>
