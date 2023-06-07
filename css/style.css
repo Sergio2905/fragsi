@@ -1781,7 +1781,7 @@ body.lock {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #EBEBEB;
+  border: 2px solid #EBEBEB;
   border-radius: 12px;
   padding: 30px 10px;
   position: relative;
@@ -7673,7 +7673,7 @@ body.lock {
 }
 
 .similar-notes__item:hover {
-  border: 2px solid #CCE5DF;
+  border: 1px solid #CCE5DF;
 }
 
 .similar-notes__item:hover .similar-notes__image {
