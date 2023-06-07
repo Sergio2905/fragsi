@@ -4444,7 +4444,7 @@ body.lock {
 
 .all-family__item {
   padding: 12px 20px;
-  border: 1px solid #EBEBEB;
+  border: 2px solid #EBEBEB;
   border-radius: 8px;
   display: flex;
   align-items: center;
