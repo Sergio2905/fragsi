@@ -7662,7 +7662,7 @@ body.lock {
 }
 
 .similar-notes__item {
-  border: 1px solid #EBEBEB;
+  border: 2px solid #EBEBEB;
   border-radius: 12px;
   padding: 30px 0;
   display: flex;
@@ -7673,7 +7673,7 @@ body.lock {
 }
 
 .similar-notes__item:hover {
-  border: 1px solid #CCE5DF;
+  border: 2px solid #CCE5DF;
 }
 
 .similar-notes__item:hover .similar-notes__image {
@@ -8194,7 +8194,7 @@ body.lock {
     align-items: center;
     justify-content: center;
     padding: 30px;
-    border: 1px solid #EBEBEB;
+    border: 2px solid #EBEBEB;
     border-radius: 12px;
     transition: all 0.2s linear;
   }
@@ -9948,7 +9948,6 @@ body.lock {
   }
 
   .recent-sidebar__item {
-    border: 2px solid #CCE5DF;
     padding: 20px;
   }
 
