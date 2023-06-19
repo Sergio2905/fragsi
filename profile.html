@@ -4,7 +4,7 @@
 <head>
     <title>Fragsi</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230613183522">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230619115516">
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание">
@@ -147,8 +147,7 @@
                             <use href="img/icons/icons.svg#home"></use>
                         </svg>
                     </a>
-                    <a href="#" class="breadcrumbs__link">Мой профиль</a>
-                    <a href="#" class="breadcrumbs__link">Сообщения</a>
+                    <a href="#" class="breadcrumbs__link">Кирилл Изотов</a>
                 </div>
             </div>
         </div>
@@ -263,6 +262,9 @@
                                                 <img data-src="img/profile/star 3lvl.svg" src="img/plug.png"
                                                     alt="Image">
                                             </picture>
+                                            <div class="main-profile__prompt">
+                                                Новичок
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="main-profile__status" data-desk="profile-list, after">Арома любитель
@@ -392,6 +394,9 @@
                                             <img data-src="img/profile/progress1.svg" src="img/plug.png" alt="Image">
                                         </picture>
                                     </button>
+                                    <div class="progress-profile__prompt">
+                                        Позсказка Позсказка Позсказка Позсказка
+                                    </div>
                                 </li>
                                 <li class="progress-profile__item">
                                     <button type="button" title="Progress" class="progress-profile__btn">
@@ -401,6 +406,9 @@
                                             <img data-src="img/profile/progress2.svg" src="img/plug.png" alt="Image">
                                         </picture>
                                     </button>
+                                    <div class="progress-profile__prompt">
+                                        Позсказка Позсказка Позсказка Позсказка
+                                    </div>
                                 </li>
                                 <li class="progress-profile__item">
                                     <button type="button" title="Progress" class="progress-profile__btn">
@@ -410,6 +418,9 @@
                                             <img data-src="img/profile/progress3.svg" src="img/plug.png" alt="Image">
                                         </picture>
                                     </button>
+                                    <div class="progress-profile__prompt">
+                                        Позсказка Позсказка Позсказка Позсказка
+                                    </div>
                                 </li>
                                 <li class="progress-profile__item">
                                     <button type="button" title="Progress" class="progress-profile__btn">
@@ -419,6 +430,9 @@
                                             <img data-src="img/profile/progress4.svg" src="img/plug.png" alt="Image">
                                         </picture>
                                     </button>
+                                    <div class="progress-profile__prompt">
+                                        Позсказка Позсказка Позсказка Позсказка
+                                    </div>
                                 </li>
                                 <li class="progress-profile__item">
                                     <button type="button" title="Progress" class="progress-profile__btn">
@@ -428,6 +442,9 @@
                                             <img data-src="img/profile/progress5.svg" src="img/plug.png" alt="Image">
                                         </picture>
                                     </button>
+                                    <div class="progress-profile__prompt">
+                                        Позсказка Позсказка Позсказка Позсказка
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -563,7 +580,7 @@
                             </div>
                         </div>
                         <div class="profile__materials materials-profile">
-                            <h2 class="materials-profile__title title2"></h2>
+                            <h2 class="materials-profile__title title2">Материалы</h2>
                             <div class="materials-profile__tabs tabs">
                                 <div class="tabs__header">
                                     <div class="tabs__item _active">Статьи <sup>5</sup></div>
@@ -1016,6 +1033,9 @@
                                                         </picture>
                                                     </a>
                                                 </div>
+                                                <button type="button" class="profile-articles__more" title="show-more">
+                                                    Показать больше
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -1255,6 +1275,9 @@
                                                         </button>
                                                     </div>
                                                 </div>
+                                                <button type="button" class="profile-articles__more" title="show-more">
+                                                    Показать больше
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -1583,6 +1606,9 @@
                                                         <a href="#" class="profile-reviews__link">Перейти</a>
                                                     </div>
                                                 </div>
+                                                <button type="button" class="profile-articles__more" title="show-more">
+                                                    Показать больше
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -1901,6 +1927,9 @@
                                                         <a href="#" class="profile-comments__link">Перейти</a>
                                                     </div>
                                                 </div>
+                                                <button type="button" class="profile-articles__more" title="show-more">
+                                                    Показать больше
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -2399,7 +2428,7 @@
                     <p class="reset__info">*После этого вы больше не сможете войти на свой профиль и все ваши данные
                         будут безвозвратно удалены.</p>
                     <p class="reset__desc">Введите текущий пароль что бы продолжить</p>
-                    <div class="reset__input input pass">
+                    <div class="reset__input input pass error">
                         <label for="password">Текущий пароль</label>
                         <input type="password" title="Password">
                         <button class="pass__btn" type="button" title="Show password">
@@ -2469,7 +2498,7 @@
                     </button>
                 </div>
                 <ul class="shelf__list" data-simplebar>
-                    <li class="shelf__item">
+                    <li class="shelf__item" draggable="true">
                         <div class="shelf__image">
                             <picture>
                                 <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
@@ -2493,7 +2522,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="shelf__item">
+                    <li class="shelf__item" draggable="true">
                         <div class="shelf__image">
                             <picture>
                                 <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
@@ -2517,7 +2546,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="shelf__item">
+                    <li class="shelf__item" draggable="true">
                         <div class="shelf__image">
                             <picture>
                                 <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
@@ -2541,7 +2570,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="shelf__item">
+                    <li class="shelf__item" draggable="true">
                         <div class="shelf__image">
                             <picture>
                                 <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
@@ -2565,7 +2594,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="shelf__item">
+                    <li class="shelf__item" draggable="true">
                         <div class="shelf__image">
                             <picture>
                                 <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
@@ -2589,7 +2618,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="shelf__item">
+                    <li class="shelf__item" draggable="true">
                         <div class="shelf__image">
                             <picture>
                                 <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
@@ -2613,7 +2642,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="shelf__item">
+                    <li class="shelf__item" draggable="true">
                         <div class="shelf__image">
                             <picture>
                                 <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
@@ -2637,7 +2666,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="shelf__item">
+                    <li class="shelf__item" draggable="true">
                         <div class="shelf__image">
                             <picture>
                                 <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
@@ -2661,7 +2690,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="shelf__item">
+                    <li class="shelf__item" draggable="true">
                         <div class="shelf__image">
                             <picture>
                                 <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
@@ -2685,7 +2714,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="shelf__item">
+                    <li class="shelf__item" draggable="true">
                         <div class="shelf__image">
                             <picture>
                                 <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
@@ -2878,6 +2907,113 @@
                     Оценить аромат
                 </button>
             </form>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="new-shelf">
+    <div class="popup__body">
+        <div class="popup__content shelf">
+            <form action="#" class="shelf__form">
+                <div class="shelf__header">
+                    <h4 class="shelf__title">Создание полки</h4>
+                    <button type="button" title="Close popup" class="popup__close">
+                        <svg>
+                            <use href="img/icons/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="shelf__input limit">
+                    <textarea name="shelf" placeholder="Введите название полки..."></textarea>
+                </div>
+                <div class="shelf__checkbox checkbox">
+                    Скрыть полку от других пользователей
+                    <input type="checkbox" name="hide">
+                </div>
+                <div class="shelf__btns">
+                    <div class="shelf__counter counter">
+                        мин. <span class="counter__min">50</span>/<span class="counter__current">0</span>
+                    </div>
+                    <button type="button" title="Delete" class="shelf__btn btn_green popup__close disable">
+                        Создать полку
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="new-rules">
+    <div class="popup__body">
+        <div class="popup__content new-popup">
+            <div class="new-popup__header">
+                <h4 class="new-popup__title">Правила публикации</h4>
+                <button type="button" title="Close popup" class="popup__close">
+                    <svg>
+                        <use href="img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="new-popup__wrapper" data-simplebar>
+                <ol class="new-popup__list">
+                    <li class="new-popup__item">
+                        <p>
+                            Заголовок должен сообщать, о чём пойдет речь в материале: это может быть краткая
+                            формулировка
+                            основной мысли, метафора или яркий образ, характеризующий текст и т.п. (Примеры: Страсти по
+                            Лолите: L de Lolita Lempicka,Таинственная и чарующая Азия в аромате Suma Oriental, №14 и №21
+                            от
+                            Nikkos-Oskol: прозрачные, прохладные и травяные). В заголовке не используется CAPS LOCK,
+                            скобки,
+                            дефис вместо тире. Точка в заголовке не ставится. Для выделения названий, прямой речи, цитат
+                            и
+                            т.п. как в заголовке, так и в теле материала, используются кавычки-«ёлочки».
+                        </p>
+                    </li>
+                    <li class="new-popup__item">
+                        <p>
+                            Заголовок должен сообщать, о чём пойдет речь в материале: это может быть краткая
+                            формулировка
+                            основной мысли, метафора или яркий образ, характеризующий текст и т.п. (Примеры: Страсти по
+                            Лолите: L de Lolita Lempicka,Таинственная и чарующая Азия в аромате Suma Oriental, №14 и №21
+                            от
+                            Nikkos-Oskol: прозрачные, прохладные и травяные). В заголовке не используется CAPS LOCK,
+                            скобки,
+                            дефис вместо тире. Точка в заголовке не ставится. Для выделения названий, прямой речи, цитат
+                            и
+                            т.п. как в заголовке, так и в теле материала, используются кавычки-«ёлочки».
+                        </p>
+                    </li>
+                    <li class="new-popup__item">
+                        <p>
+                            Заголовок должен сообщать, о чём пойдет речь в материале: это может быть краткая
+                            формулировка
+                            основной мысли, метафора или яркий образ, характеризующий текст и т.п. (Примеры: Страсти по
+                            Лолите: L de Lolita Lempicka,Таинственная и чарующая Азия в аромате Suma Oriental, №14 и №21
+                            от
+                            Nikkos-Oskol: прозрачные, прохладные и травяные). В заголовке не используется CAPS LOCK,
+                            скобки,
+                            дефис вместо тире. Точка в заголовке не ставится. Для выделения названий, прямой речи, цитат
+                            и
+                            т.п. как в заголовке, так и в теле материала, используются кавычки-«ёлочки».
+                        </p>
+                    </li>
+                    <li class="new-popup__item">
+                        <p>
+                            Заголовок должен сообщать, о чём пойдет речь в материале: это может быть краткая
+                            формулировка
+                            основной мысли, метафора или яркий образ, характеризующий текст и т.п. (Примеры: Страсти по
+                            Лолите: L de Lolita Lempicka,Таинственная и чарующая Азия в аромате Suma Oriental, №14 и №21
+                            от
+                            Nikkos-Oskol: прозрачные, прохладные и травяные). В заголовке не используется CAPS LOCK,
+                            скобки,
+                            дефис вместо тире. Точка в заголовке не ставится. Для выделения названий, прямой речи, цитат
+                            и
+                            т.п. как в заголовке, так и в теле материала, используются кавычки-«ёлочки».
+                        </p>
+                    </li>
+                </ol>
+            </div>
         </div>
     </div>
 </div>
@@ -3956,7 +4092,7 @@
         </div>
     </div>
 </div>
-    <script src="js/app.min.js?_v=20230613183522"></script>
+    <script src="js/app.min.js?_v=20230619115516"></script>
 </body>
 
 </html>

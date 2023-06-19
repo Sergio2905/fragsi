@@ -13,8 +13,8 @@
 
 <body>
 
-    <div class="wrapper">
-        <header class="header">
+	<div class="wrapper">
+		<header class="header">
     <div class="header__lang lang">
         <div class="lang__container container">
             <div class="lang__body">
@@ -97,7 +97,7 @@
         </div>
     </div>
 </header>
-        <div class="actions">
+		<div class="actions">
     <div class="actions__container container">
         <div class="actions__body">
             <a href="#" class="actions__cat btn_green">
@@ -138,245 +138,239 @@
     </div>
 </div>
 
-        <div class="breadcrumbs">
-            <div class="breadcrumbs__container container">
-                <div class="breadcrumbs__body">
-                    <a href="#" class="breadcrumbs__link" aria-label="Back to main page">
-                        <span>Главная</span>
-                        <svg>
-                            <use href="img/icons/icons.svg#home"></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="breadcrumbs__link">Мой профиль</a>
-                    <a href="#" class="breadcrumbs__link">Сообщения</a>
-                </div>
-            </div>
-        </div>
+		<div class="breadcrumbs">
+			<div class="breadcrumbs__container container">
+				<div class="breadcrumbs__body">
+					<a href="#" class="breadcrumbs__link" aria-label="Back to main page">
+						<span>Главная</span>
+						<svg>
+							<use href="img/icons/icons.svg#home"></use>
+						</svg>
+					</a>
+					<a href="#" class="breadcrumbs__link">Мой профиль</a>
+					<a href="#" class="breadcrumbs__link">Опубликовать статью</a>
+				</div>
+			</div>
+		</div>
 
-        <div class="profile-menu">
-            <div class="profile-menu__container container">
-                <div class="profile-menu__body" data-mob="user-menu, append">
-                    <button type="button" class="profile-menu__btn">
-                        <svg>
-                            <use href="img/icons/icons.svg#message"></use>
-                        </svg>
-                        Сообщения
-                    </button>
-                </div>
-            </div>
-        </div>
+		<div class="new">
+			<div class="new__container container">
+				<h1 class="new__title title1">Опубликовать свою статью</h1>
+				<div class="new__intro">
+					<div class="new__help help">
+						<button class="help__btn">
+							<svg>
+								<use href="img/icons/icons.svg#help"></use>
+							</svg>
+						</button>
+						<div class="help__info">
+							Подсказка
+						</div>
+					</div>
+					<div class="new__desc">
+						<p>
+							После модерации все статьи публикуются в разделе «???», а лучшие из них попадут на главную
+							страницу.
+						</p>
+						<p>Прежде чем писать текст, прочитайте <button type="button" class="popup-link"
+								data-modal="new-rules">справку</button>.</p>
+					</div>
+				</div>
+				<div class="new__body">
+					<div class="new__content">
+						<div class="new__editor editor">
+						</div>
+						<button class="new__settings" type="button">
+							<span>Настройки и публикация</span>
+						</button>
+						<div class="new__block block-new block-new_short">
+							<h3 class="block-new__title title3">Добавьте краткое описание</h3>
+							<form action="#" class="block-new__form">
+								<textarea name="short-desc" placeholder="О чем ваша статья?"></textarea>
+								<div class="block-new__count count">
+									<span class="count__current">0</span>
+									/
+									<span class="count__min">100</span>
+								</div>
+							</form>
+						</div>
+						<div class="new__block block-new block-new_file">
+							<h3 class="block-new__title title3">Добавьте обложку</h3>
+							<form action="#" class="block-new__form">
+								<input type="file" name="canvas" id="canvas-image" accept=".jpg, .jpeg, .png, .webp">
+								<div class="block-new__preview"></div>
+								<label for="canvas-image"></label>
+								<picture>
+									<source data-srcset="img/new/new-file.svg" srcset="img/plug.png"
+										type="image/webp">
+									<img data-src="img/new/new-file.svg" src="img/plug.png" alt="Image">
+								</picture>
+								<p>Файл не больше 10 MB</p>
+								<p>Рекомендуемый размер файла: 123х123</p>
+							</form>
+						</div>
+						<div class="new__block block-new block-new_rubric">
+							<h3 class="block-new__title title3">Выберите рубрику</h3>
+							<form action="#" class="block-new__form">
+								<div class="block-new__radio radio-options">
+									<div class="radio-options__item">
+										<picture>
+											<source data-srcset="img/articles/Image1.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/articles/Image1.png" src="img/plug.png" alt="Image">
+										</picture>
+										<span>Обзоры</span>
+										<input type="radio" name="rubrick" value="reviews">
+									</div>
+									<div class="radio-options__item">
+										<picture>
+											<source data-srcset="img/articles/Image2.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/articles/Image2.png" src="img/plug.png" alt="Image">
+										</picture>
+										<span>Интервью</span>
+										<input type="radio" name="rubrick" value="interview">
+									</div>
+									<div class="radio-options__item">
+										<picture>
+											<source data-srcset="img/articles/Image3.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/articles/Image3.png" src="img/plug.png" alt="Image">
+										</picture>
+										<span>Производство</span>
+										<input type="radio" name="rubrick" value="production">
+									</div>
+									<div class="radio-options__item">
+										<picture>
+											<source data-srcset="img/articles/Image4.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/articles/Image4.png" src="img/plug.png" alt="Image">
+										</picture>
+										<span>Вопрос ответ</span>
+										<input type="radio" name="rubrick" value="faq">
+									</div>
+									<div class="radio-options__item">
+										<picture>
+											<source data-srcset="img/articles/Image5.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/articles/Image5.png" src="img/plug.png" alt="Image">
+										</picture>
+										<span>Косметика</span>
+										<input type="radio" name="rubrick" value="Cosmetic">
+									</div>
+									<div class="radio-options__item">
+										<picture>
+											<source data-srcset="img/articles/Image1.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/articles/Image1.png" src="img/plug.png" alt="Image">
+										</picture>
+										<span>История</span>
+										<input type="radio" name="rubrick" value="History">
+									</div>
+									<div class="radio-options__item">
+										<picture>
+											<source data-srcset="img/articles/Image2.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/articles/Image2.png" src="img/plug.png" alt="Image">
+										</picture>
+										<span>Эссэ</span>
+										<input type="radio" name="rubrick" value="Assay">
+									</div>
+									<div class="radio-options__item">
+										<picture>
+											<source data-srcset="img/articles/Image3.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/articles/Image3.png" src="img/plug.png" alt="Image">
+										</picture>
+										<span>Редкости</span>
+										<input type="radio" name="rubrick" value="Rarities">
+									</div>
+									<div class="radio-options__item">
+										<picture>
+											<source data-srcset="img/articles/Image4.webp" srcset="img/plug.png"
+												type="image/webp">
+											<img data-src="img/articles/Image4.png" src="img/plug.png" alt="Image">
+										</picture>
+										<span>Путешествия</span>
+										<input type="radio" name="rubrick" value="Travel">
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="new__block block-new block-new_themes">
+							<h3 class="block-new__title title3">Добавьте темы</h3>
+							<form action="#" class="block-new__form">
+								<input type="text" placeholder="Название темы...">
+								<div class="block-new__btns">
+									<button class="block-new__btn" type="button">
+										<span>Нишевая парфюмерия</span>
+										<svg>
+											<use href="img/icons/icons.svg#close"></use>
+										</svg>
+									</button>
+									<button class="block-new__btn" type="button">
+										<span>Парфюмерия люкс</span>
+										<svg>
+											<use href="img/icons/icons.svg#close"></use>
+										</svg>
+									</button>
+									<button class="block-new__btn" type="button">
+										<span>Обзоры</span>
+										<svg>
+											<use href="img/icons/icons.svg#close"></use>
+										</svg>
+									</button>
+								</div>
+							</form>
+						</div>
+						<div class="new__block block-new block-new_done">
+							<h3 class="block-new__title title3">Почти готово!</h3>
+							<ul class="block-new__list">
+								<li class="block-new__item active">Заполнить заголовок</li>
+								<li class="block-new__item">Написать 0 / 3 000 знаков</li>
+								<li class="block-new__item">Загрузить обложку</li>
+								<li class="block-new__item">Выбрать рубрику</li>
+								<li class="block-new__item">Добавить темы 0 / 2</li>
+							</ul>
+							<div class="block-new__btns">
+								<button class="block-new__view btn_white">Предпросмотр</button>
+								<button class="block-new__public btn_green disable">Опубликовать</button>
+							</div>
+						</div>
+					</div>
+					<aside class="new__sidebar sidebar-new">
+						<div class="sidebar-new__body">
+							<div class="sidebar-new__count">
+								<span>8</span>/<span>3 000</span> знаков
+							</div>
+							<div class="sidebar-new__btns">
+								<button class="sidebar-new__btn" type="button" title="Save">
+									<svg>
+										<use href="img/icons/icons.svg#save"></use>
+									</svg>
+									Сохранить
+								</button>
+								<button class="sidebar-new__btn popup-link" type="button" title="Read rules"
+									data-modal="new-rules">
+									<svg>
+										<use href="img/icons/icons.svg#rules"></use>
+									</svg>
+									Читать правила
+								</button>
+								<button class="sidebar-new__btn red" type="button" title="Delete article">
+									<svg>
+										<use href="img/icons/icons.svg#trash"></use>
+									</svg>
+									Удалить статью
+								</button>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
 
-        <div class="profile">
-            <div class="profile__container container">
-                <div class="profile__body" data-desk="user-menu, prepend">
-                    <div class="profile__menu user-menu" data-move="user-menu, 1001">
-                        <nav class="user-menu__body">
-                            <ul class="user-menu__list">
-                                <li class="user-menu__item">
-                                    <a href="#" class="user-menu__link">
-                                        <svg>
-                                            <use href="img/icons/icons.svg#profile"></use>
-                                        </svg>
-                                        <span>Мой профиль</span>
-                                    </a>
-                                </li>
-                                <li class="user-menu__item">
-                                    <a href="#" class="user-menu__link">
-                                        <svg>
-                                            <use href="img/icons/icons.svg#wardrobe"></use>
-                                        </svg>
-                                        <span>Гардероб</span>
-                                    </a>
-                                </li>
-                                <li class="user-menu__item">
-                                    <a href="#" class="user-menu__link">
-                                        <svg class="fill">
-                                            <use href="img/icons/icons.svg#heart"></use>
-                                        </svg>
-                                        <span>Избранное</span>
-                                    </a>
-                                </li>
-                                <li class="user-menu__item">
-                                    <a href="#" class="user-menu__link">
-                                        <svg>
-                                            <use href="img/icons/icons.svg#subscribe-menu"></use>
-                                        </svg>
-                                        <span>Подписки</span>
-                                    </a>
-                                </li>
-                                <li class="user-menu__item active">
-                                    <a href="#" class="user-menu__link">
-                                        <svg>
-                                            <use href="img/icons/icons.svg#message"></use>
-                                        </svg>
-                                        <span>Сообщения</span>
-                                        <span>2</span>
-                                    </a>
-                                </li>
-                                <li class="user-menu__item">
-                                    <a href="#" class="user-menu__link">
-                                        <svg>
-                                            <use href="img/icons/icons.svg#notification"></use>
-                                        </svg>
-                                        <span>Уведомления</span>
-                                        <span>2</span>
-                                    </a>
-                                </li>
-                                <li class="user-menu__item">
-                                    <a href="#" class="user-menu__link">
-                                        <svg>
-                                            <use href="img/icons/icons.svg#settings"></use>
-                                        </svg>
-                                        <span>Настройки</span>
-                                    </a>
-                                </li>
-                                <li class="user-menu__item">
-                                    <a href="#" class="user-menu__link">
-                                        <svg>
-                                            <use href="img/icons/icons.svg#loguot"></use>
-                                        </svg>
-                                        <span>Выйти</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="profile__content">
-                        <div class="profile__header">
-                            <h1 class="profile__title title1">Сообщения</h1>
-                            <span class="profile__count">2</span>
-                        </div>
-                        <form action="#" class="profile__search search-profile">
-                            <div class="search-profile__input">
-                                <button>
-                                    <svg>
-                                        <use href="img/icons/icons.svg#search"></use>
-                                    </svg>
-                                </button>
-                                <input type="text" placeholder="Поиск">
-                            </div>
-                            <div class="search-profile__new">
-                                <button type="button" class="search-profile__btn">
-                                    <svg>
-                                        <use href="img/icons/icons.svg#edit"></use>
-                                    </svg>
-                                </button>
-                                <div class="search-profile__prompt">
-                                    Написать новое сообщение
-                                </div>
-                            </div>
-                        </form>
-                        <div class="profile__messages messages">
-                            <ul class="messages__list">
-                                <li class="messages__item active">
-                                    <div class="messages__avatar">
-                                        <a href="" class="messages__image" area-label="User">
-                                            <picture>
-                                                <source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
-                                                    type="image/webp">
-                                                <img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
-                                            </picture>
-                                        </a>
-                                        <span class="messages__status"></span>
-                                    </div>
-                                    <div class="messages__info">
-                                        <a href="#" class="messages__name">Даша Чернова</a>
-                                        <p class="messages__text">Привет! Подскажи название аромата о котором ты писал в
-                                            своем блоге</p>
-                                    </div>
-                                    <div class="messages__details">
-                                        <time datetime="2023-05-24 09:16" class="messages__time">09:16</time>
-                                        <span class="messages__count">2</span>
-                                    </div>
-                                </li>
-                                <li class="messages__item">
-                                    <div class="messages__avatar">
-                                        <a href="" class="messages__image" area-label="User">
-                                            <picture>
-                                                <source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
-                                                    type="image/webp">
-                                                <img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
-                                            </picture>
-                                        </a>
-                                        <span class="messages__status"></span>
-                                    </div>
-                                    <div class="messages__info">
-                                        <a href="#" class="messages__name">Даша Чернова</a>
-                                        <p class="messages__text">Привет! Подскажи название аромата о котором ты писал в
-                                            своем блоге</p>
-                                    </div>
-                                    <div class="messages__details">
-                                        <time datetime="2023-05-24 09:16" class="messages__time">Вчера</time>
-                                    </div>
-                                </li>
-                                <li class="messages__item">
-                                    <div class="messages__avatar">
-                                        <a href="" class="messages__image" area-label="User">
-                                            <picture>
-                                                <source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
-                                                    type="image/webp">
-                                                <img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
-                                            </picture>
-                                        </a>
-                                        <span class="messages__status"></span>
-                                    </div>
-                                    <div class="messages__info">
-                                        <a href="#" class="messages__name">Даша Чернова</a>
-                                        <p class="messages__text">Привет! Подскажи название аромата о котором ты писал в
-                                            своем блоге</p>
-                                    </div>
-                                    <div class="messages__details">
-                                        <time datetime="2023-05-24 09:16" class="messages__time">Суббота</time>
-                                    </div>
-                                </li>
-                                <li class="messages__item">
-                                    <div class="messages__avatar">
-                                        <a href="" class="messages__image" area-label="User">
-                                            <picture>
-                                                <source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
-                                                    type="image/webp">
-                                                <img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
-                                            </picture>
-                                        </a>
-                                        <span class="messages__status"></span>
-                                    </div>
-                                    <div class="messages__info">
-                                        <a href="#" class="messages__name">Даша Чернова</a>
-                                        <p class="messages__text">Привет! Подскажи название аромата о котором ты писал в
-                                            своем блоге</p>
-                                    </div>
-                                    <div class="messages__details">
-                                        <time datetime="2023-05-24 09:16" class="messages__time">Суббота</time>
-                                    </div>
-                                </li>
-                                <li class="messages__item">
-                                    <div class="messages__avatar">
-                                        <a href="" class="messages__image" area-label="User">
-                                            <picture>
-                                                <source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
-                                                    type="image/webp">
-                                                <img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
-                                            </picture>
-                                        </a>
-                                        <span class="messages__status"></span>
-                                    </div>
-                                    <div class="messages__info">
-                                        <a href="#" class="messages__name">Даша Чернова</a>
-                                        <p class="messages__text">Привет! Подскажи название аромата о котором ты писал в
-                                            своем блоге</p>
-                                    </div>
-                                    <div class="messages__details">
-                                        <time datetime="2023-05-24 09:16" class="messages__time">Суббота</time>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <footer class="footer">
+		<footer class="footer">
     <div class="footer__container container">
         <div class="footer__body">
             <div class="footer__top">
@@ -588,9 +582,9 @@
         </a>
     </div>
 </footer>
-    </div>
+	</div>
 
-    <div class="popup" id="lang-settings">
+	<div class="popup" id="lang-settings">
     <div class="popup__body">
         <div class="popup__content lang-settings">
             <button type="button" class="popup__close">
@@ -2527,7 +2521,7 @@
         </div>
     </div>
 </div>
-    <script src="js/app.min.js?_v=20230619115516"></script>
+	<script src="js/app.min.js?_v=20230619115516"></script>
 </body>
 
 </html>

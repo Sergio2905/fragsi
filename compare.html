@@ -4,7 +4,7 @@
 <head>
     <title>Fragsi</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230613183522">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230619115516">
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание">
@@ -266,6 +266,7 @@
 										</div>
 									</div>
 								</div>
+								<div class="goods-compare__pagination"></div>
 							</div>
 							<div class="goods-compare__navigation navigation">
 								<div class="navigation__prev">
@@ -337,21 +338,42 @@
 									<div class="data-compare__slide swiper-slide">
 										<div class="data-compare__item">125</div>
 										<div class="data-compare__item">Парфюмерная вода</div>
-										<div class="data-compare__item">В производстве</div>
+										<div class="data-compare__item data-compare__item_status">
+											<picture>
+												<source data-srcset="img/compare/check.svg" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/compare/check.svg" src="img/plug.png" alt="Image">
+											</picture>
+											В производстве
+										</div>
 										<div class="data-compare__item">Мужской </div>
 										<div class="data-compare__item">2011</div>
 									</div>
 									<div class="data-compare__slide swiper-slide">
 										<div class="data-compare__item">125</div>
 										<div class="data-compare__item">Парфюмерная вода</div>
-										<div class="data-compare__item">В производстве</div>
+										<div class="data-compare__item data-compare__item_status">
+											<picture>
+												<source data-srcset="img/compare/close.svg" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/compare/close.svg" src="img/plug.png" alt="Image">
+											</picture>
+											Снят с производства
+										</div>
 										<div class="data-compare__item">Мужской </div>
 										<div class="data-compare__item">2011</div>
 									</div>
 									<div class="data-compare__slide swiper-slide">
 										<div class="data-compare__item">125</div>
 										<div class="data-compare__item">Парфюмерная вода</div>
-										<div class="data-compare__item">В производстве</div>
+										<div class="data-compare__item data-compare__item_status">
+											<picture>
+												<source data-srcset="img/compare/check.svg" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/compare/check.svg" src="img/plug.png" alt="Image">
+											</picture>
+											В производстве
+										</div>
 										<div class="data-compare__item">Мужской </div>
 										<div class="data-compare__item">2011</div>
 									</div>
@@ -362,73 +384,88 @@
 				</div>
 			</div>
 
-			<!--<div class="compare__table table-compare">
-				<div class="table-compare__container container">
-					<div class="table-compare__body">
-						<div class="table-compare__feature feature-compare">
-							<div class="feature-compare__rating">
-								<div class="feature-compare__item">Рейтинг</div>
-							</div>
-							<div class="feature-compare__table">
-								<div class="feature-compare__item">Отзывы</div>
-								<div class="feature-compare__item">Концентрация</div>
-								<div class="feature-compare__item">Статус</div>
-								<div class="feature-compare__item">Пол</div>
-								<div class="feature-compare__item">Год выпуска</div>
-							</div>
+			<div class="compare__market market-compare">
+				<div class="market-compare__container container">
+					<div class="market-compare__body">
+						<div class="market-compare__feature">
+							<picture>
+								<source data-srcset="img/compare/Market.svg" srcset="img/plug.png" type="image/webp">
+								<img data-src="img/compare/Market.svg" src="img/plug.png" alt="Image">
+							</picture>
 						</div>
-						<div class="table-compare__data data-compare">
-							<div class="data-compare__slider">
-								<div class="data-compare__wrapper swiper-wrapper">
-									<div class="data-compare__slide swiper-slide">
-										<div class="data-compare__rating">
-											<div class="data-compare__item">
-												<span>4.2</span>
-												<svg>
-													<use href="img/icons/icons.svg#star-fill"></use>
-												</svg>
+						<div class="market-compare__data">
+							<div class="market-compare__slider slider">
+								<div class="market-compare__wrapper swiper-wrapper">
+									<div class="market-compare__slide swiper-slide">
+										<div class="market-compare__item">
+											<div class="market-compare__image">
+												<picture>
+													<source data-srcset="img/note/cat3.png" srcset="img/plug.png"
+														type="image/webp">
+													<img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+												</picture>
 											</div>
-										</div>
-										<div class="data-compare__table">
-											<div class="feature-compare__item">125</div>
-											<div class="feature-compare__item">Парфюмерная вода</div>
-											<div class="feature-compare__item">В производстве</div>
-											<div class="feature-compare__item">Мужской</div>
-											<div class="feature-compare__item">2011</div>
+											<div class="market-compare__info">
+												<div class="market-compare__brand">Maison Francis Kurkdjian</div>
+												<div class="market-compare__desc">парфюмерная вода</div>
+												<div class="market-compare__name">Baccarat Rouge 540</div>
+												<div class="market-compare__price">39 071 ₽</div>
+												<div class="market-compare__price_old">60 000₽</div>
+												<a href="#" class="market-compare__buy">
+													<svg>
+														<use href="img/icons/icons.svg#cart"></use>
+													</svg>
+													<span>Купить</span>
+												</a>
+											</div>
 										</div>
 									</div>
-									<div class="data-compare__slide swiper-slide">
-										<div class="data-compare__rating">
-											<div class="data-compare__item">
-												<span>4.2</span>
-												<svg>
-													<use href="img/icons/icons.svg#star-fill"></use>
-												</svg>
+									<div class="market-compare__slide swiper-slide">
+										<div class="market-compare__item">
+											<div class="market-compare__image">
+												<picture>
+													<source data-srcset="img/note/cat2.png" srcset="img/plug.png"
+														type="image/webp">
+													<img data-src="img/note/cat2.png" src="img/plug.png" alt="Image">
+												</picture>
 											</div>
-										</div>
-										<div class="data-compare__table">
-											<div class="feature-compare__item">125</div>
-											<div class="feature-compare__item">Парфюмерная вода</div>
-											<div class="feature-compare__item">В производстве</div>
-											<div class="feature-compare__item">Мужской</div>
-											<div class="feature-compare__item">2011</div>
+											<div class="market-compare__info">
+												<div class="market-compare__brand">Maison Francis Kurkdjian</div>
+												<div class="market-compare__desc">парфюмерная вода</div>
+												<div class="market-compare__name">Baccarat Rouge 540</div>
+												<div class="market-compare__price">39 071 ₽</div>
+												<div class="market-compare__price_old">60 000₽</div>
+												<a href="#" class="market-compare__buy">
+													<svg>
+														<use href="img/icons/icons.svg#cart"></use>
+													</svg>
+													<span>Купить</span>
+												</a>
+											</div>
 										</div>
 									</div>
-									<div class="data-compare__slide swiper-slide">
-										<div class="data-compare__rating">
-											<div class="data-compare__item">
-												<span>4.2</span>
-												<svg>
-													<use href="img/icons/icons.svg#star-fill"></use>
-												</svg>
+									<div class="market-compare__slide swiper-slide">
+										<div class="market-compare__item">
+											<div class="market-compare__image">
+												<picture>
+													<source data-srcset="img/note/cat3.png" srcset="img/plug.png"
+														type="image/webp">
+													<img data-src="img/note/cat3.png" src="img/plug.png" alt="Image">
+												</picture>
 											</div>
-										</div>
-										<div class="data-compare__table">
-											<div class="feature-compare__item">125</div>
-											<div class="feature-compare__item">Парфюмерная вода</div>
-											<div class="feature-compare__item">В производстве</div>
-											<div class="feature-compare__item">Мужской</div>
-											<div class="feature-compare__item">2011</div>
+											<div class="market-compare__info">
+												<div class="market-compare__brand">Maison Francis Kurkdjian</div>
+												<div class="market-compare__desc">парфюмерная вода</div>
+												<div class="market-compare__name">Baccarat Rouge 540</div>
+												<div class="market-compare__price">39 071 ₽</div>
+												<div class="market-compare__price_old">60 000₽</div>
+												<a href="#" class="market-compare__buy">
+													<svg>
+														<use href="img/icons/icons.svg#cart"></use>
+													</svg>
+													<span>Купить</span>
+												</a>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -436,7 +473,397 @@
 						</div>
 					</div>
 				</div>
-			</div>-->
+			</div>
+
+			<div class="compare__table table-compare">
+				<div class="table-compare__container container">
+					<div class="table-compare__body">
+						<div class="table-compare__feature feature-compare">
+							<div class="feature-compare__item">Стойкость</div>
+							<div class="feature-compare__item">Шлейф</div>
+							<div class="feature-compare__item">Качество упаковки</div>
+							<div class="feature-compare__item">Сложность и глубина</div>
+							<div class="feature-compare__item">Интенсивность</div>
+						</div>
+						<div class="table-compare__data data-compare">
+							<div class="data-compare__slider2 slider">
+								<div class="data-compare__wrapper swiper-wrapper">
+									<div class="data-compare__slide swiper-slide">
+										<div class="data-compare__item data-compare__item_sensitive">
+											<picture>
+												<source data-srcset="img/compare/high.svg" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/compare/high.svg" src="img/plug.png" alt="Image">
+											</picture>
+											Высокая
+										</div>
+										<div class="data-compare__item data-compare__item_sensitive">
+											<picture>
+												<source data-srcset="img/compare/visible.svg" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/compare/visible.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+											Крайне заметный
+										</div>
+										<div class="data-compare__item data-compare__item_sensitive">
+											<picture>
+												<source data-srcset="img/compare/middle.svg" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/compare/middle.svg" src="img/plug.png" alt="Image">
+											</picture>
+											Среднее
+										</div>
+										<div class="data-compare__item data-compare__item_sensitive">
+											<picture>
+												<source data-srcset="img/compare/simple.svg" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/compare/simple.svg" src="img/plug.png" alt="Image">
+											</picture>
+											Простой и поверхностный
+										</div>
+										<div class="data-compare__item data-compare__item_sensitive">
+											<picture>
+												<source data-srcset="img/compare/low.svg" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/compare/low.svg" src="img/plug.png" alt="Image">
+											</picture>
+											Слабый
+										</div>
+									</div>
+									<div class="data-compare__slide swiper-slide">
+										<div class="data-compare__item data-compare__item_sensitive">
+											<picture>
+												<source data-srcset="img/compare/high.svg" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/compare/high.svg" src="img/plug.png" alt="Image">
+											</picture>
+											Высокая
+										</div>
+										<div class="data-compare__item data-compare__item_sensitive">
+											<picture>
+												<source data-srcset="img/compare/visible.svg" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/compare/visible.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+											Крайне заметный
+										</div>
+										<div class="data-compare__item data-compare__item_sensitive">
+											<picture>
+												<source data-srcset="img/compare/middle.svg" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/compare/middle.svg" src="img/plug.png" alt="Image">
+											</picture>
+											Среднее
+										</div>
+										<div class="data-compare__item data-compare__item_sensitive">
+											<picture>
+												<source data-srcset="img/compare/simple.svg" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/compare/simple.svg" src="img/plug.png" alt="Image">
+											</picture>
+											Простой и поверхностный
+										</div>
+										<div class="data-compare__item data-compare__item_sensitive">
+											<picture>
+												<source data-srcset="img/compare/low.svg" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/compare/low.svg" src="img/plug.png" alt="Image">
+											</picture>
+											Слабый
+										</div>
+									</div>
+									<div class="data-compare__slide swiper-slide">
+										<div class="data-compare__item empty-value">(нет данных)</div>
+										<div class="data-compare__item empty-value">(нет данных)</div>
+										<div class="data-compare__item empty-value">(нет данных)</div>
+										<div class="data-compare__item empty-value">(нет данных) </div>
+										<div class="data-compare__item empty-value">(нет данных)</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="compare__table table-compare">
+				<div class="table-compare__container container">
+					<div class="table-compare__body">
+						<div class="table-compare__feature feature-compare">
+							<div class="feature-compare__item">Страна</div>
+							<div class="feature-compare__item">Сегмент</div>
+							<div class="feature-compare__item">Сезонность</div>
+							<div class="feature-compare__item">Стиль</div>
+							<div class="feature-compare__item">Возраст</div>
+							<div class="feature-compare__item">Парфюмеры</div>
+							<div class="feature-compare__item feature-compare__item_notes">Верхние ноты</div>
+							<div class="feature-compare__item feature-compare__item_notes">Средние ноты</div>
+							<div class="feature-compare__item feature-compare__item_notes">Нижние ноты</div>
+							<div class="feature-compare__item feature-compare__item_notes">Средние ноты</div>
+							<div class="feature-compare__item">Семейства</div>
+							<div class="feature-compare__item">Ассоциации</div>
+						</div>
+						<div class="table-compare__data data-compare">
+							<div class="data-compare__slider3 slider">
+								<div class="data-compare__wrapper swiper-wrapper">
+									<div class="data-compare__slide swiper-slide">
+										<div class="data-compare__item data-compare__item_flag">
+											<picture>
+												<source data-srcset="img/compare/France.svg" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/compare/France.svg" src="img/plug.png" alt="Image">
+											</picture>
+											Франция
+										</div>
+										<div class="data-compare__item">Парф. Lux</div>
+										<div class="data-compare__item">Зима-осень</div>
+										<div class="data-compare__item">Торжественный</div>
+										<div class="data-compare__item">Францис Кюркджан</div>
+										<div class="data-compare__item">Францис Кюркджан</div>
+										<div class="data-compare__item data-compare__item_notes">сандал, кедр,
+											пачули, ветивер, дубовый мох, бобы
+											тонка.</div>
+										<div class="data-compare__item data-compare__item_notes">Шафран, лист,
+											бергамот, лимон, грейпфрут,
+											апельсин.</div>
+										<div class="data-compare__item data-compare__item_notes">сандал, кедр,
+											пачули, ветивер, дубовый мох, бобы
+											тонка.</div>
+										<div class="data-compare__item data-compare__item_notes">сандал, кедр,
+											пачули, ветивер, дубовый мох, бобы
+											тонка.</div>
+										<div class="data-compare__item">Свежесть, Эйфория</div>
+										<div class="data-compare__item">Свежесть, Эйфория</div>
+									</div>
+									<div class="data-compare__slide swiper-slide">
+										<div class="data-compare__item data-compare__item_flag">
+											<picture>
+												<source data-srcset="img/compare/Germany.svg" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/compare/Germany.svg" src="img/plug.png"
+													alt="Image">
+											</picture>
+											Германия
+										</div>
+										<div class="data-compare__item">Парф. Lux</div>
+										<div class="data-compare__item">Зима-осень</div>
+										<div class="data-compare__item">Торжественный</div>
+										<div class="data-compare__item">Францис Кюркджан</div>
+										<div class="data-compare__item">Францис Кюркджан</div>
+										<div class="data-compare__item data-compare__item_notes">сандал, кедр,
+											пачули, ветивер, дубовый мох, бобы
+											тонка.</div>
+										<div class="data-compare__item data-compare__item_notes">Шафран, лист,
+											бергамот, лимон, грейпфрут,
+											апельсин.</div>
+										<div class="data-compare__item data-compare__item_notes">сандал, кедр,
+											пачули, ветивер, дубовый мох, бобы
+											тонка.</div>
+										<div class="data-compare__item data-compare__item_notes">сандал, кедр,
+											пачули, ветивер, дубовый мох, бобы
+											тонка.</div>
+										<div class="data-compare__item">Свежесть, Эйфория</div>
+										<div class="data-compare__item">Свежесть, Эйфория</div>
+									</div>
+									<div class="data-compare__slide swiper-slide">
+										<div class="data-compare__item data-compare__item_flag">
+											<picture>
+												<source data-srcset="img/compare/Poland.svg" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/compare/Poland.svg" src="img/plug.png" alt="Image">
+											</picture>
+											Польша
+										</div>
+										<div class="data-compare__item empty-value">(нет данных)</div>
+										<div class="data-compare__item empty-value">(нет данных)</div>
+										<div class="data-compare__item empty-value">(нет данных)</div>
+										<div class="data-compare__item">Францис Кюркджан</div>
+										<div class="data-compare__item empty-value">(нет данных)</div>
+										<div class="data-compare__item data-compare__item_notes empty-value">(нет
+											данных)</div>
+										<div class="data-compare__item data-compare__item_notes empty-value">(нет
+											данных)</div>
+										<div class="data-compare__item data-compare__item_notes">сандал, кедр, пачули,
+											ветивер, дубовый мох, бобы
+											тонка.</div>
+										<div class="data-compare__item data-compare__item_notes">сандал, кедр, пачули,
+											ветивер, дубовый мох, бобы
+											тонка.</div>
+										<div class="data-compare__item">Свежесть, Эйфория</div>
+										<div class="data-compare__item">Свежесть, Эйфория</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="compare__popular popular">
+				<div class="popular__container container">
+					<div class="popular__body">
+						<h2 class="popular__title title2">Популярные сравнения</h2>
+						<div class="popular__slider">
+							<div class="popular__wrapper swiper-wrapper">
+								<div class="popular__slide swiper-slide">
+									<div class="popular__item">
+										<a href="#" class="popular__images" area-label="popular viewed aromate">
+											<picture>
+												<source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+											</picture>
+											<span>
+												<picture>
+													<source data-srcset="img/icons/VS.svg" srcset="img/plug.png"
+														type="image/webp">
+													<img data-src="img/icons/VS.svg" src="img/plug.png" alt="Image">
+												</picture>
+											</span>
+											<picture>
+												<source data-srcset="img/note/cat2.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/cat2.png" src="img/plug.png" alt="Image">
+											</picture>
+										</a>
+										<a href="#" class="popular__names">
+											<span>Cloud Ariana Grande</span>
+											<span>vs</span>
+											<span>Oceani di Seta</span>
+										</a>
+									</div>
+								</div>
+								<div class="popular__slide swiper-slide">
+									<div class="popular__item">
+										<a href="#" class="popular__images" area-label="popular viewed aromate">
+											<picture>
+												<source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+											</picture>
+											<span>
+												<picture>
+													<source data-srcset="img/icons/VS.svg" srcset="img/plug.png"
+														type="image/webp">
+													<img data-src="img/icons/VS.svg" src="img/plug.png" alt="Image">
+												</picture>
+											</span>
+											<picture>
+												<source data-srcset="img/note/cat2.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/cat2.png" src="img/plug.png" alt="Image">
+											</picture>
+										</a>
+										<a href="#" class="popular__names">
+											<span>Cloud Ariana Grande</span>
+											<span>vs</span>
+											<span>Oceani di Seta</span>
+										</a>
+									</div>
+								</div>
+								<div class="popular__slide swiper-slide">
+									<div class="popular__item">
+										<a href="#" class="popular__images" area-label="popular viewed aromate">
+											<picture>
+												<source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+											</picture>
+											<span>
+												<picture>
+													<source data-srcset="img/icons/VS.svg" srcset="img/plug.png"
+														type="image/webp">
+													<img data-src="img/icons/VS.svg" src="img/plug.png" alt="Image">
+												</picture>
+											</span>
+											<picture>
+												<source data-srcset="img/note/cat2.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/cat2.png" src="img/plug.png" alt="Image">
+											</picture>
+										</a>
+										<a href="#" class="popular__names">
+											<span>Cloud Ariana Grande</span>
+											<span>vs</span>
+											<span>Oceani di Seta</span>
+										</a>
+									</div>
+								</div>
+								<div class="popular__slide swiper-slide">
+									<div class="popular__item">
+										<a href="#" class="popular__images" area-label="popular viewed aromate">
+											<picture>
+												<source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+											</picture>
+											<span>
+												<picture>
+													<source data-srcset="img/icons/VS.svg" srcset="img/plug.png"
+														type="image/webp">
+													<img data-src="img/icons/VS.svg" src="img/plug.png" alt="Image">
+												</picture>
+											</span>
+											<picture>
+												<source data-srcset="img/note/cat2.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/cat2.png" src="img/plug.png" alt="Image">
+											</picture>
+										</a>
+										<a href="#" class="popular__names">
+											<span>Cloud Ariana Grande</span>
+											<span>vs</span>
+											<span>Oceani di Seta</span>
+										</a>
+									</div>
+								</div>
+								<div class="popular__slide swiper-slide">
+									<div class="popular__item">
+										<a href="#" class="popular__images" area-label="popular viewed aromate">
+											<picture>
+												<source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+											</picture>
+											<span>
+												<picture>
+													<source data-srcset="img/icons/VS.svg" srcset="img/plug.png"
+														type="image/webp">
+													<img data-src="img/icons/VS.svg" src="img/plug.png" alt="Image">
+												</picture>
+											</span>
+											<picture>
+												<source data-srcset="img/note/cat2.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/note/cat2.png" src="img/plug.png" alt="Image">
+											</picture>
+										</a>
+										<a href="#" class="popular__names">
+											<span>Cloud Ariana Grande</span>
+											<span>vs</span>
+											<span>Oceani di Seta</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="popular__navigation navigation">
+							<div class="navigation__prev">
+								<svg>
+									<use href="img/icons/icons.svg#arrow"></use>
+								</svg>
+							</div>
+							<div class="navigation__next">
+								<svg>
+									<use href="img/icons/icons.svg#arrow"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 		</div>
 
@@ -927,7 +1354,7 @@
                     <p class="reset__info">*После этого вы больше не сможете войти на свой профиль и все ваши данные
                         будут безвозвратно удалены.</p>
                     <p class="reset__desc">Введите текущий пароль что бы продолжить</p>
-                    <div class="reset__input input pass">
+                    <div class="reset__input input pass error">
                         <label for="password">Текущий пароль</label>
                         <input type="password" title="Password">
                         <button class="pass__btn" type="button" title="Show password">
@@ -997,7 +1424,7 @@
                     </button>
                 </div>
                 <ul class="shelf__list" data-simplebar>
-                    <li class="shelf__item">
+                    <li class="shelf__item" draggable="true">
                         <div class="shelf__image">
                             <picture>
                                 <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
@@ -1021,7 +1448,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="shelf__item">
+                    <li class="shelf__item" draggable="true">
                         <div class="shelf__image">
                             <picture>
                                 <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
@@ -1045,7 +1472,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="shelf__item">
+                    <li class="shelf__item" draggable="true">
                         <div class="shelf__image">
                             <picture>
                                 <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
@@ -1069,7 +1496,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="shelf__item">
+                    <li class="shelf__item" draggable="true">
                         <div class="shelf__image">
                             <picture>
                                 <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
@@ -1093,7 +1520,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="shelf__item">
+                    <li class="shelf__item" draggable="true">
                         <div class="shelf__image">
                             <picture>
                                 <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
@@ -1117,7 +1544,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="shelf__item">
+                    <li class="shelf__item" draggable="true">
                         <div class="shelf__image">
                             <picture>
                                 <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
@@ -1141,7 +1568,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="shelf__item">
+                    <li class="shelf__item" draggable="true">
                         <div class="shelf__image">
                             <picture>
                                 <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
@@ -1165,7 +1592,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="shelf__item">
+                    <li class="shelf__item" draggable="true">
                         <div class="shelf__image">
                             <picture>
                                 <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
@@ -1189,7 +1616,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="shelf__item">
+                    <li class="shelf__item" draggable="true">
                         <div class="shelf__image">
                             <picture>
                                 <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
@@ -1213,7 +1640,7 @@
                             </button>
                         </div>
                     </li>
-                    <li class="shelf__item">
+                    <li class="shelf__item" draggable="true">
                         <div class="shelf__image">
                             <picture>
                                 <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
@@ -1406,6 +1833,113 @@
                     Оценить аромат
                 </button>
             </form>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="new-shelf">
+    <div class="popup__body">
+        <div class="popup__content shelf">
+            <form action="#" class="shelf__form">
+                <div class="shelf__header">
+                    <h4 class="shelf__title">Создание полки</h4>
+                    <button type="button" title="Close popup" class="popup__close">
+                        <svg>
+                            <use href="img/icons/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="shelf__input limit">
+                    <textarea name="shelf" placeholder="Введите название полки..."></textarea>
+                </div>
+                <div class="shelf__checkbox checkbox">
+                    Скрыть полку от других пользователей
+                    <input type="checkbox" name="hide">
+                </div>
+                <div class="shelf__btns">
+                    <div class="shelf__counter counter">
+                        мин. <span class="counter__min">50</span>/<span class="counter__current">0</span>
+                    </div>
+                    <button type="button" title="Delete" class="shelf__btn btn_green popup__close disable">
+                        Создать полку
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="new-rules">
+    <div class="popup__body">
+        <div class="popup__content new-popup">
+            <div class="new-popup__header">
+                <h4 class="new-popup__title">Правила публикации</h4>
+                <button type="button" title="Close popup" class="popup__close">
+                    <svg>
+                        <use href="img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="new-popup__wrapper" data-simplebar>
+                <ol class="new-popup__list">
+                    <li class="new-popup__item">
+                        <p>
+                            Заголовок должен сообщать, о чём пойдет речь в материале: это может быть краткая
+                            формулировка
+                            основной мысли, метафора или яркий образ, характеризующий текст и т.п. (Примеры: Страсти по
+                            Лолите: L de Lolita Lempicka,Таинственная и чарующая Азия в аромате Suma Oriental, №14 и №21
+                            от
+                            Nikkos-Oskol: прозрачные, прохладные и травяные). В заголовке не используется CAPS LOCK,
+                            скобки,
+                            дефис вместо тире. Точка в заголовке не ставится. Для выделения названий, прямой речи, цитат
+                            и
+                            т.п. как в заголовке, так и в теле материала, используются кавычки-«ёлочки».
+                        </p>
+                    </li>
+                    <li class="new-popup__item">
+                        <p>
+                            Заголовок должен сообщать, о чём пойдет речь в материале: это может быть краткая
+                            формулировка
+                            основной мысли, метафора или яркий образ, характеризующий текст и т.п. (Примеры: Страсти по
+                            Лолите: L de Lolita Lempicka,Таинственная и чарующая Азия в аромате Suma Oriental, №14 и №21
+                            от
+                            Nikkos-Oskol: прозрачные, прохладные и травяные). В заголовке не используется CAPS LOCK,
+                            скобки,
+                            дефис вместо тире. Точка в заголовке не ставится. Для выделения названий, прямой речи, цитат
+                            и
+                            т.п. как в заголовке, так и в теле материала, используются кавычки-«ёлочки».
+                        </p>
+                    </li>
+                    <li class="new-popup__item">
+                        <p>
+                            Заголовок должен сообщать, о чём пойдет речь в материале: это может быть краткая
+                            формулировка
+                            основной мысли, метафора или яркий образ, характеризующий текст и т.п. (Примеры: Страсти по
+                            Лолите: L de Lolita Lempicka,Таинственная и чарующая Азия в аромате Suma Oriental, №14 и №21
+                            от
+                            Nikkos-Oskol: прозрачные, прохладные и травяные). В заголовке не используется CAPS LOCK,
+                            скобки,
+                            дефис вместо тире. Точка в заголовке не ставится. Для выделения названий, прямой речи, цитат
+                            и
+                            т.п. как в заголовке, так и в теле материала, используются кавычки-«ёлочки».
+                        </p>
+                    </li>
+                    <li class="new-popup__item">
+                        <p>
+                            Заголовок должен сообщать, о чём пойдет речь в материале: это может быть краткая
+                            формулировка
+                            основной мысли, метафора или яркий образ, характеризующий текст и т.п. (Примеры: Страсти по
+                            Лолите: L de Lolita Lempicka,Таинственная и чарующая Азия в аромате Suma Oriental, №14 и №21
+                            от
+                            Nikkos-Oskol: прозрачные, прохладные и травяные). В заголовке не используется CAPS LOCK,
+                            скобки,
+                            дефис вместо тире. Точка в заголовке не ставится. Для выделения названий, прямой речи, цитат
+                            и
+                            т.п. как в заголовке, так и в теле материала, используются кавычки-«ёлочки».
+                        </p>
+                    </li>
+                </ol>
+            </div>
         </div>
     </div>
 </div>
@@ -2484,7 +3018,7 @@
         </div>
     </div>
 </div>
-	<script src="js/app.min.js?_v=20230613183522"></script>
+	<script src="js/app.min.js?_v=20230619115516"></script>
 </body>
 
 </html>
