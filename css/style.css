@@ -2863,6 +2863,7 @@ body.lock {
   font-size: 1.125rem;
   display: flex;
   align-items: center;
+  color: #000;
   transition: all 0.2s linear;
 }
 
@@ -7891,7 +7892,6 @@ body.lock {
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  gap: 10px;
   height: 100%;
 }
 
@@ -7899,6 +7899,30 @@ body.lock {
   width: 24px;
   height: 24px;
   fill: #FFCB01;
+}
+
+.rating-compare__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  color: #000;
+}
+
+.rating-compare__link::after {
+  content: "";
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0;
+  height: 1px;
+  transition: all 0.2s linear;
+  background: #000;
+}
+
+.rating-compare__link:hover::after {
+  width: 100%;
 }
 
 .table-compare {
@@ -8032,6 +8056,27 @@ body.lock {
 
 .data-compare__item:not(:last-child) {
   border-bottom: 1px solid #EBEBEB;
+}
+
+.data-compare__link {
+  color: #000;
+  position: relative;
+}
+
+.data-compare__link::after {
+  content: "";
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0;
+  height: 1px;
+  transition: all 0.2s linear;
+  background: #000;
+}
+
+.data-compare__link:hover::after {
+  width: 100%;
 }
 
 .market-compare {
@@ -8328,6 +8373,7 @@ body.lock {
   padding: 15px 16px;
   width: 100%;
   display: none;
+  color: #000;
 }
 
 .profile-menu__btn::after {
@@ -8941,10 +8987,11 @@ body.lock {
   padding-top: 100px;
   margin-top: -100px;
   padding-bottom: 30px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .progress-profile__list::-webkit-scrollbar {
-  -webkit-appearance: none;
   width: 0;
   height: 0;
 }
@@ -13476,6 +13523,7 @@ body.lock {
   font-size: 1.125rem;
   margin: 0 auto;
   display: block;
+  color: #000;
   transition: all 0.2s linear;
 }
 
@@ -17573,6 +17621,10 @@ body.lock {
 
   .progress-profile__all {
     font-size: 1.0625rem;
+  }
+
+  .progress-profile__scroll {
+    max-height: 70px;
   }
 
   .progress-profile__item:not(:last-child) {
