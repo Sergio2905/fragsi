@@ -9009,6 +9009,12 @@ body.lock {
   border-right: 5px solid transparent;
 }
 
+.progress-profile__list::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0;
+  height: 0;
+}
+
 .favorite-profile {
   position: relative;
   padding-bottom: 20px;
