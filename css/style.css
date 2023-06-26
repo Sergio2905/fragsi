@@ -2037,6 +2037,87 @@ body.lock {
   fill: #C3C3C3;
 }
 
+.fragrance {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+  padding: 20px;
+}
+
+.fragrance::before,
+.fragrance::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  border-radius: 50px;
+  background: #EBEBEB;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.fragrance::before {
+  top: 10px;
+}
+
+.fragrance::after {
+  bottom: 10px;
+}
+
+.fragrance__body {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #CCE5DF;
+}
+
+.fragrance__image {
+  width: 80px;
+  height: 66px;
+  min-width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #CCE5DF;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.fragrance__image picture {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.fragrance__image picture img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.fragrance__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.fragrance__name {
+  font-size: 1.0625rem;
+  margin-bottom: 4px;
+}
+
+.fragrance__brand {
+  font-size: 0.9375rem;
+  color: #C3C3C3;
+}
+
 .login {
   padding: 0;
   display: flex;
@@ -8959,7 +9040,7 @@ body.lock {
 
 .data-profile__aromate {
   background: #FFFFFF;
-  border: 1px solid #EBEBEB;
+  border: 2px solid #EBEBEB;
   border-radius: 12px;
   padding: 20px;
   display: flex;
@@ -10918,9 +10999,42 @@ body.lock {
   justify-content: center;
 }
 
+.block-new__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.block-new__header .help:hover .help__info {
+  transform: translate(-50%, 0);
+}
+
+.block-new__header .help__info {
+  padding: 8px 12px;
+  bottom: unset;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, 20px);
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 300px;
+  border-radius: 6px;
+  z-index: 2;
+}
+
+.block-new__header .help__info::after {
+  bottom: 100%;
+  transform: translate(-50%, 0);
+  border-bottom: 10px solid #fff;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: none;
+  top: unset;
+}
+
 .block-new__title {
   text-align: left;
-  margin-bottom: 30px;
 }
 
 .block-new__form {
@@ -16839,6 +16953,14 @@ body.lock {
     padding: 15px;
   }
 
+  .reset {
+    padding: 20px 15px;
+  }
+
+  .reset__header {
+    margin: 0 -15px 30px;
+  }
+
   .reset__desc {
     font-size: 1.0625rem;
   }
@@ -18026,8 +18148,16 @@ body.lock {
     flex-wrap: nowrap;
   }
 
-  .block-new__title {
+  .block-new__header {
     margin-bottom: 24px;
+  }
+
+  .block-new__header .help {
+    position: static;
+  }
+
+  .block-new__header .help__info::after {
+    display: none;
   }
 
   .block-new__form textarea {
@@ -18594,6 +18724,10 @@ body.lock {
 }
 
 @media (max-width: 440px) {
+  .reset__block:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
   .graph-pyramid__row:nth-child(1) {
     margin: 0 40px 0 0;
   }
