@@ -2945,6 +2945,14 @@ body.lock {
   margin-bottom: 30px;
 }
 
+.filter__title.active {
+  color: #007F5F;
+}
+
+.filter__title span {
+  margin-left: 10px;
+}
+
 .filter__close {
   display: flex;
   align-items: center;
@@ -2972,12 +2980,22 @@ body.lock {
 
 .filter__section {
   max-height: 50px;
-  padding-bottom: 25px;
-  margin-bottom: 25px;
-  border-bottom: 1px solid #EBEBEB;
+  padding: 0 20px 25px;
+  margin: 0 -20px 25px;
   display: flex;
   flex-direction: column;
   overflow-y: hidden;
+  position: relative;
+}
+
+.filter__section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  background: #EBEBEB;
 }
 
 .filter__section.active {
@@ -3033,6 +3051,22 @@ body.lock {
 
 .filter__section_year .filter__list:last-of-type {
   max-height: 160px;
+}
+
+.filter__section_price.active .filter__range {
+  display: block;
+}
+
+.filter__section_price.active .filter__inputs {
+  display: flex;
+}
+
+.filter__section_price .filter__range {
+  display: none;
+}
+
+.filter__section_price .filter__inputs {
+  display: none;
 }
 
 .filter__list {
@@ -3119,6 +3153,10 @@ body.lock {
   margin-bottom: 20px;
 }
 
+.filter__excluded .tags__btn {
+  text-decoration: line-through;
+}
+
 .filter__name {
   font-weight: 600;
   font-size: 1.125rem;
@@ -3198,9 +3236,11 @@ body.lock {
 }
 
 .filter__reset-all svg {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
+  stroke-width: 2px;
   stroke: #C3C3C3;
+  margin-left: 5px;
   transition: all 0.2s linear;
 }
 
@@ -8232,10 +8272,6 @@ body.lock {
   stroke: #7c7c7c;
 }
 
-.parfume-compare__btn:not(:last-child) {
-  margin-right: 15px;
-}
-
 .parfume-compare__btn svg {
   width: 24px;
   height: 24px;
@@ -8246,6 +8282,7 @@ body.lock {
 
 .parfume-compare__drag {
   transform: rotate(90deg);
+  margin-right: 15px;
 }
 
 .parfume-compare__drag svg {
@@ -8315,6 +8352,38 @@ body.lock {
 
 .parfume-compare__brand:hover {
   color: #7c7c7c;
+}
+
+.parfume-compare__delete {
+  position: relative;
+}
+
+.parfume-compare__prompt {
+  padding: 8px 12px;
+  box-shadow: 0 -2px 22px rgba(0, 0, 0, 0.12);
+  background: #fff;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translate(-50%, 20px);
+  transition: all 0.2s linear;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 8px;
+}
+
+.parfume-compare__prompt::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-bottom: 10px solid #fff;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
 }
 
 .empty-value {
@@ -10710,6 +10779,10 @@ body.lock {
   margin-bottom: 40px;
 }
 
+.new__settings.active span::after {
+  transform: translate(0, -50%) rotate(180deg);
+}
+
 .new__settings span {
   background: #fff;
   position: relative;
@@ -10723,10 +10796,11 @@ body.lock {
   top: 50%;
   width: 24px;
   height: 24px;
-  transform: translate(0, -50%) rotate(180deg);
+  transform: translate(0, -50%);
   -webkit-mask: url("../img/icons/icons.svg#arrow") center/contain no-repeat;
           mask: url("../img/icons/icons.svg#arrow") center/contain no-repeat;
   background: #c3c3c3;
+  transition: all 0.2s linear;
 }
 
 .new__settings::before {
@@ -10739,6 +10813,15 @@ body.lock {
   height: 1px;
   background: #E1E1E1;
   border-radius: 2px;
+}
+
+.new__wrapper {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.new__wrapper.active {
+  max-height: 100%;
 }
 
 .block-new {
@@ -10832,7 +10915,7 @@ body.lock {
 }
 
 .block-new_done .block-new__btns {
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .block-new__title {
@@ -10886,6 +10969,10 @@ body.lock {
   align-items: center;
   padding: 12px 20px;
   transition: all 0.2s linear;
+}
+
+.block-new__radio .radio-options__item:hover {
+  border: 2px solid #CCE5DF;
 }
 
 .block-new__radio .radio-options__item:not(:last-of-type) {
@@ -10945,10 +11032,11 @@ body.lock {
 }
 
 .block-new__btn svg {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   stroke-width: 2px;
   stroke: #2E3192;
+  margin-left: 5px;
 }
 
 .block-new__list {
@@ -11031,11 +11119,12 @@ body.lock {
   display: flex;
   align-items: center;
   font-size: 1.125rem;
+  width: 100%;
   transition: all 0.2s linear;
 }
 
 .sidebar-new__btn:hover {
-  color: #007F5F;
+  background: rgba(0, 127, 95, 0.05);
 }
 
 .sidebar-new__btn.red {
@@ -13816,6 +13905,14 @@ body.lock {
 @media (min-width: 481px) {
   .about-item__btn:hover .about-item__prompt {
     transform: translate(0, -50%);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 769px) {
+  .parfume-compare__delete:hover .parfume-compare__prompt {
+    transform: translate(-50%, 0);
     opacity: 1;
     visibility: visible;
   }

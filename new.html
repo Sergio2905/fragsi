@@ -4,7 +4,7 @@
 <head>
     <title>Fragsi</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230626095117">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230626122059">
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание">
@@ -180,161 +180,173 @@
 					<div class="new__content">
 						<div class="new__editor editor">
 						</div>
-						<button class="new__settings" type="button">
+						<button class="new__settings active" type="button">
 							<span>Настройки и публикация</span>
 						</button>
-						<div class="new__block block-new block-new_short">
-							<h3 class="block-new__title title3">Добавьте краткое описание</h3>
-							<form action="#" class="block-new__form">
-								<textarea name="short-desc" placeholder="О чем ваша статья?"></textarea>
-								<div class="block-new__count count">
-									<span class="count__current">0</span>
-									/
-									<span class="count__min">100</span>
-								</div>
-							</form>
-						</div>
-						<div class="new__block block-new block-new_file">
-							<h3 class="block-new__title title3">Добавьте обложку</h3>
-							<form action="#" class="block-new__form">
-								<input type="file" name="canvas" id="canvas-image" accept=".jpg, .jpeg, .png, .webp">
-								<div class="block-new__preview"></div>
-								<label for="canvas-image"></label>
-								<picture>
-									<source data-srcset="img/new/new-file.svg" srcset="img/plug.png"
-										type="image/webp">
-									<img data-src="img/new/new-file.svg" src="img/plug.png" alt="Image">
-								</picture>
-								<p>Файл не больше 10 MB</p>
-								<p>Рекомендуемый размер файла: 123х123</p>
-							</form>
-						</div>
-						<div class="new__block block-new block-new_rubric">
-							<h3 class="block-new__title title3">Выберите рубрику</h3>
-							<form action="#" class="block-new__form">
-								<div class="block-new__radio radio-options">
-									<div class="radio-options__item">
-										<picture>
-											<source data-srcset="img/articles/Image1.webp" srcset="img/plug.png"
-												type="image/webp">
-											<img data-src="img/articles/Image1.png" src="img/plug.png" alt="Image">
-										</picture>
-										<span>Обзоры</span>
-										<input type="radio" name="rubrick" value="reviews">
+						<div class="new__wrapper active">
+							<div class="new__block block-new block-new_short">
+								<h3 class="block-new__title title3">Добавьте краткое описание</h3>
+								<form action="#" class="block-new__form">
+									<textarea name="short-desc" placeholder="О чем ваша статья?"></textarea>
+									<div class="block-new__count count">
+										<span class="count__current">0</span>
+										/
+										<span class="count__min">100</span>
 									</div>
-									<div class="radio-options__item">
-										<picture>
-											<source data-srcset="img/articles/Image2.webp" srcset="img/plug.png"
-												type="image/webp">
-											<img data-src="img/articles/Image2.png" src="img/plug.png" alt="Image">
-										</picture>
-										<span>Интервью</span>
-										<input type="radio" name="rubrick" value="interview">
+								</form>
+							</div>
+							<div class="new__block block-new block-new_file">
+								<h3 class="block-new__title title3">Добавьте обложку</h3>
+								<form action="#" class="block-new__form">
+									<input type="file" name="canvas" id="canvas-image"
+										accept=".jpg, .jpeg, .png, .webp">
+									<div class="block-new__preview"></div>
+									<label for="canvas-image"></label>
+									<picture>
+										<source data-srcset="img/new/new-file.svg" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/new/new-file.svg" src="img/plug.png" alt="Image">
+									</picture>
+									<p>Файл не больше 10 MB</p>
+									<p>Рекомендуемый размер файла: 123х123</p>
+								</form>
+							</div>
+							<div class="new__block block-new block-new_rubric">
+								<h3 class="block-new__title title3">Выберите рубрику</h3>
+								<form action="#" class="block-new__form">
+									<div class="block-new__radio radio-options">
+										<div class="radio-options__item">
+											<picture>
+												<source data-srcset="img/articles/Image1.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/articles/Image1.png" src="img/plug.png"
+													alt="Image">
+											</picture>
+											<span>Обзоры</span>
+											<input type="radio" name="rubrick" value="reviews">
+										</div>
+										<div class="radio-options__item">
+											<picture>
+												<source data-srcset="img/articles/Image2.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/articles/Image2.png" src="img/plug.png"
+													alt="Image">
+											</picture>
+											<span>Интервью</span>
+											<input type="radio" name="rubrick" value="interview">
+										</div>
+										<div class="radio-options__item">
+											<picture>
+												<source data-srcset="img/articles/Image3.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/articles/Image3.png" src="img/plug.png"
+													alt="Image">
+											</picture>
+											<span>Производство</span>
+											<input type="radio" name="rubrick" value="production">
+										</div>
+										<div class="radio-options__item">
+											<picture>
+												<source data-srcset="img/articles/Image4.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/articles/Image4.png" src="img/plug.png"
+													alt="Image">
+											</picture>
+											<span>Вопрос ответ</span>
+											<input type="radio" name="rubrick" value="faq">
+										</div>
+										<div class="radio-options__item">
+											<picture>
+												<source data-srcset="img/articles/Image5.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/articles/Image5.png" src="img/plug.png"
+													alt="Image">
+											</picture>
+											<span>Косметика</span>
+											<input type="radio" name="rubrick" value="Cosmetic">
+										</div>
+										<div class="radio-options__item">
+											<picture>
+												<source data-srcset="img/articles/Image1.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/articles/Image1.png" src="img/plug.png"
+													alt="Image">
+											</picture>
+											<span>История</span>
+											<input type="radio" name="rubrick" value="History">
+										</div>
+										<div class="radio-options__item">
+											<picture>
+												<source data-srcset="img/articles/Image2.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/articles/Image2.png" src="img/plug.png"
+													alt="Image">
+											</picture>
+											<span>Эссэ</span>
+											<input type="radio" name="rubrick" value="Assay">
+										</div>
+										<div class="radio-options__item">
+											<picture>
+												<source data-srcset="img/articles/Image3.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/articles/Image3.png" src="img/plug.png"
+													alt="Image">
+											</picture>
+											<span>Редкости</span>
+											<input type="radio" name="rubrick" value="Rarities">
+										</div>
+										<div class="radio-options__item">
+											<picture>
+												<source data-srcset="img/articles/Image4.webp" srcset="img/plug.png"
+													type="image/webp">
+												<img data-src="img/articles/Image4.png" src="img/plug.png"
+													alt="Image">
+											</picture>
+											<span>Путешествия</span>
+											<input type="radio" name="rubrick" value="Travel">
+										</div>
 									</div>
-									<div class="radio-options__item">
-										<picture>
-											<source data-srcset="img/articles/Image3.webp" srcset="img/plug.png"
-												type="image/webp">
-											<img data-src="img/articles/Image3.png" src="img/plug.png" alt="Image">
-										</picture>
-										<span>Производство</span>
-										<input type="radio" name="rubrick" value="production">
+								</form>
+							</div>
+							<div class="new__block block-new block-new_themes">
+								<h3 class="block-new__title title3">Добавьте темы</h3>
+								<form action="#" class="block-new__form">
+									<input type="text" placeholder="Название темы...">
+									<div class="block-new__btns">
+										<button class="block-new__btn" type="button">
+											<span>Нишевая парфюмерия</span>
+											<svg>
+												<use href="img/icons/icons.svg#close"></use>
+											</svg>
+										</button>
+										<button class="block-new__btn" type="button">
+											<span>Парфюмерия люкс</span>
+											<svg>
+												<use href="img/icons/icons.svg#close"></use>
+											</svg>
+										</button>
+										<button class="block-new__btn" type="button">
+											<span>Обзоры</span>
+											<svg>
+												<use href="img/icons/icons.svg#close"></use>
+											</svg>
+										</button>
 									</div>
-									<div class="radio-options__item">
-										<picture>
-											<source data-srcset="img/articles/Image4.webp" srcset="img/plug.png"
-												type="image/webp">
-											<img data-src="img/articles/Image4.png" src="img/plug.png" alt="Image">
-										</picture>
-										<span>Вопрос ответ</span>
-										<input type="radio" name="rubrick" value="faq">
-									</div>
-									<div class="radio-options__item">
-										<picture>
-											<source data-srcset="img/articles/Image5.webp" srcset="img/plug.png"
-												type="image/webp">
-											<img data-src="img/articles/Image5.png" src="img/plug.png" alt="Image">
-										</picture>
-										<span>Косметика</span>
-										<input type="radio" name="rubrick" value="Cosmetic">
-									</div>
-									<div class="radio-options__item">
-										<picture>
-											<source data-srcset="img/articles/Image1.webp" srcset="img/plug.png"
-												type="image/webp">
-											<img data-src="img/articles/Image1.png" src="img/plug.png" alt="Image">
-										</picture>
-										<span>История</span>
-										<input type="radio" name="rubrick" value="History">
-									</div>
-									<div class="radio-options__item">
-										<picture>
-											<source data-srcset="img/articles/Image2.webp" srcset="img/plug.png"
-												type="image/webp">
-											<img data-src="img/articles/Image2.png" src="img/plug.png" alt="Image">
-										</picture>
-										<span>Эссэ</span>
-										<input type="radio" name="rubrick" value="Assay">
-									</div>
-									<div class="radio-options__item">
-										<picture>
-											<source data-srcset="img/articles/Image3.webp" srcset="img/plug.png"
-												type="image/webp">
-											<img data-src="img/articles/Image3.png" src="img/plug.png" alt="Image">
-										</picture>
-										<span>Редкости</span>
-										<input type="radio" name="rubrick" value="Rarities">
-									</div>
-									<div class="radio-options__item">
-										<picture>
-											<source data-srcset="img/articles/Image4.webp" srcset="img/plug.png"
-												type="image/webp">
-											<img data-src="img/articles/Image4.png" src="img/plug.png" alt="Image">
-										</picture>
-										<span>Путешествия</span>
-										<input type="radio" name="rubrick" value="Travel">
-									</div>
-								</div>
-							</form>
-						</div>
-						<div class="new__block block-new block-new_themes">
-							<h3 class="block-new__title title3">Добавьте темы</h3>
-							<form action="#" class="block-new__form">
-								<input type="text" placeholder="Название темы...">
+								</form>
+							</div>
+							<div class="new__block block-new block-new_done">
+								<h3 class="block-new__title title3">Почти готово!</h3>
+								<ul class="block-new__list">
+									<li class="block-new__item active">Заполнить заголовок</li>
+									<li class="block-new__item">Написать 0 / 3 000 знаков</li>
+									<li class="block-new__item">Загрузить обложку</li>
+									<li class="block-new__item">Выбрать рубрику</li>
+									<li class="block-new__item">Добавить темы 0 / 2</li>
+								</ul>
 								<div class="block-new__btns">
-									<button class="block-new__btn" type="button">
-										<span>Нишевая парфюмерия</span>
-										<svg>
-											<use href="img/icons/icons.svg#close"></use>
-										</svg>
-									</button>
-									<button class="block-new__btn" type="button">
-										<span>Парфюмерия люкс</span>
-										<svg>
-											<use href="img/icons/icons.svg#close"></use>
-										</svg>
-									</button>
-									<button class="block-new__btn" type="button">
-										<span>Обзоры</span>
-										<svg>
-											<use href="img/icons/icons.svg#close"></use>
-										</svg>
-									</button>
+									<button class="block-new__view btn_white">Предпросмотр</button>
+									<button class="block-new__public btn_green disable">Опубликовать</button>
 								</div>
-							</form>
-						</div>
-						<div class="new__block block-new block-new_done">
-							<h3 class="block-new__title title3">Почти готово!</h3>
-							<ul class="block-new__list">
-								<li class="block-new__item active">Заполнить заголовок</li>
-								<li class="block-new__item">Написать 0 / 3 000 знаков</li>
-								<li class="block-new__item">Загрузить обложку</li>
-								<li class="block-new__item">Выбрать рубрику</li>
-								<li class="block-new__item">Добавить темы 0 / 2</li>
-							</ul>
-							<div class="block-new__btns">
-								<button class="block-new__view btn_white">Предпросмотр</button>
-								<button class="block-new__public btn_green disable">Опубликовать</button>
 							</div>
 						</div>
 					</div>
@@ -2573,12 +2585,12 @@
                 </svg>
             </button>
             <button class="filter__show btn_green">
-                Показать <span>5000</span> товаров
+                Показать <span>5 000</span> товаров
             </button>
         </div>
     </div>
 </div>
-	<script src="js/app.min.js?_v=20230626095117"></script>
+	<script src="js/app.min.js?_v=20230626122059"></script>
 </body>
 
 </html>
