@@ -8928,6 +8928,11 @@ body.lock {
   color: #1e9d7d;
 }
 
+.progress-profile__scroll {
+  max-height: 83px;
+  overflow-y: hidden;
+}
+
 .progress-profile__list {
   display: flex;
   align-items: center;
@@ -8935,6 +8940,7 @@ body.lock {
   scrollbar-width: none;
   padding-top: 100px;
   margin-top: -100px;
+  padding-bottom: 30px;
 }
 
 .progress-profile__list::-webkit-scrollbar {
@@ -9007,12 +9013,6 @@ body.lock {
   border-top: 10px solid #fff;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-}
-
-.progress-profile__list::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 0;
-  height: 0;
 }
 
 .favorite-profile {
