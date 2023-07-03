@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400%3b500%3b600&family=Rubik:wght@400%3b500%3b600&display=swap");
 
 * {
@@ -4477,31 +4475,18 @@ body.lock {
 
 .comments__new {
   margin-bottom: 30px;
+  max-height: 105px;
+  overflow: hidden;
+  transition: all 0.3s linear;
 }
 
-.comments__form {
-  border: 1px solid #E1E1E1;
-  border-radius: 8px;
-  padding: 20px;
+.comments__new.active {
+  max-height: 1000px;
 }
 
-.comments__form input {
-  background: #ECFFF8;
-  border: 1px solid #EBEBEB;
-  border-radius: 8px;
-  font-size: 1.125rem;
-  padding: 20px;
-  width: 100%;
-}
-
-.comments__form input::-moz-placeholder {
-  color: #C3C3C3;
-  opacity: 1;
-}
-
-.comments__form input::placeholder {
-  color: #C3C3C3;
-  opacity: 1;
+.comments__new.active textarea {
+  height: 140px;
+  background: #fff;
 }
 
 .comments__body {
@@ -4862,6 +4847,139 @@ body.lock {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.review {
+  border: 1px solid #E1E1E1;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.review__block:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.review__title {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.review textarea {
+  background: #ECFFF8;
+  border: 1px solid #EBEBEB;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  padding: 20px;
+  width: 100%;
+  height: 65px;
+  resize: none;
+  scrollbar-width: none;
+  transition: all 0.3s linear;
+}
+
+.review textarea::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.review textarea::-moz-placeholder {
+  color: #C3C3C3;
+  opacity: 1;
+}
+
+.review textarea::placeholder {
+  color: #C3C3C3;
+  opacity: 1;
+}
+
+.review__vote {
+  display: flex;
+  align-items: center;
+}
+
+.review__vote .radio-options__item {
+  margin-bottom: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review__vote .radio-options__item:not(:last-child) {
+  padding-right: 2px;
+}
+
+.review__vote .radio-options__item.hover svg,
+.review__vote .radio-options__item.active svg {
+  fill: #ffd600;
+}
+
+.review__vote .radio-options__item::before,
+.review__vote .radio-options__item::after {
+  display: none;
+}
+
+.review__vote .radio-options__item svg {
+  width: 24px;
+  height: 24px;
+  fill: #D8EBE4;
+}
+
+.review__general {
+  border-radius: 8px;
+  border: 1px solid #EBEBEB;
+  background: #ECFFF8;
+  padding: 10px 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.review__general .radio-options__item svg {
+  width: 30px;
+  height: 30px;
+}
+
+.review__name {
+  margin-bottom: 10px;
+}
+
+.review__cols {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.review__footer {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #E1E1E1;
+  padding-top: 10px;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.review__footer label {
+  cursor: pointer;
+}
+
+.review__footer label svg {
+  width: 32px;
+  height: 32px;
+}
+
+.review__footer input {
+  display: none;
+}
+
+.review__counter {
+  color: #C3C3C3;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .votes-comments {
@@ -17588,12 +17706,8 @@ body.lock {
     height: 100%;
   }
 
-  .author-comments__rating .rating__body::before {
-    content: "★";
-  }
-
-  .author-comments__rating .rating__active::before {
-    content: "★";
+  .author-comments__rating .rating__body {
+    width: 22px;
   }
 
   .popular__images picture {
@@ -18393,13 +18507,8 @@ body.lock {
     width: 260px;
   }
 
-  .comments__form {
-    padding: 10px;
-  }
-
-  .comments__form input {
-    font-size: 1.0625rem;
-    padding: 16px;
+  .comments__new {
+    max-height: 80px;
   }
 
   .comments__text {
@@ -18416,6 +18525,19 @@ body.lock {
 
   .author-comments__name {
     font-size: 1.0625rem;
+  }
+
+  .review {
+    padding: 10px;
+  }
+
+  .review textarea {
+    height: 58px;
+  }
+
+  .review textarea {
+    font-size: 1.0625rem;
+    padding: 16px;
   }
 
   .popular__title {
