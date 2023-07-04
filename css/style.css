@@ -18533,6 +18533,7 @@ body.lock {
     border-radius: 16px 16px 0 0;
     box-shadow: none;
     background: #fff;
+    overflow: hidden;
   }
 
   .sort__body::before {
