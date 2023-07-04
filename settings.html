@@ -4,7 +4,7 @@
 <head>
     <title>Fragsi</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230704133157">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230704162112">
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание">
@@ -256,7 +256,7 @@
                             <div class="tabs__body">
                                 <div class="tabs__block _active">
                                     <div class="tabs__content settings">
-                                        <form action="#" class="settings__form">
+                                        <form action="#" method="get" class="settings__form">
                                             <section class="settings__section">
                                                 <h4 class="settings__title">Основная информация</h4>
                                                 <div class="settings__block">
@@ -391,9 +391,12 @@
                                             <section class="settings__section">
                                                 <h4 class="settings__title">Подтверждение аккаунта</h4>
                                                 <div class="settings__block">
-                                                    <div class="settings__input input">
+                                                    <div class="settings__input input email">
                                                         <label for="name">Email</label>
                                                         <input type="text" name="country" value="izotov@gmail.com">
+                                                        <div class="settings__error">
+                                                            Проверьте правильность ввода
+                                                        </div>
                                                     </div>
                                                     <div class="settings__input input">
                                                         <label for="name">Номер телефона</label>
@@ -404,7 +407,8 @@
                                             <div class="settings__btns">
                                                 <button type="button" class="settings__btn btn_white"
                                                     title="Cancel">Отмена</button>
-                                                <button type="submit" class="settings__btn btn_green switcher disable"
+                                                <button type="submit"
+                                                    class="settings__btn settings__save btn_green switcher disable"
                                                     title="Save">Сохранить</button>
                                             </div>
                                         </form>
@@ -4099,7 +4103,7 @@
         </div>
     </div>
 </div>
-    <script src="js/app.min.js?_v=20230704133157"></script>
+    <script src="js/app.min.js?_v=20230704162112"></script>
 </body>
 
 </html>

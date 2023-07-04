@@ -4,7 +4,7 @@
 <head>
     <title>Fragsi</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230704133157">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230704162112">
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание">
@@ -204,12 +204,12 @@
 									<div class="images-item__pagination"></div>
 								</div>
 								<div class="images-item__labels">
-									<div class="images-item__label">
+									<a href="#" class="images-item__label">
 										<span>Limited</span>
 										<div class="images-item__prompt">
 											один из самых популярных ароматов Библиотеки
 										</div>
-									</div>
+									</a>
 								</div>
 							</div>
 							<div class="images-item__thumbs thumbs-item">
@@ -2358,12 +2358,12 @@
 							<div class="insta-item__navigation navigation">
 								<div class="navigation__prev">
 									<svg>
-										<use href="img/icons/icons.svg#arrow"></use>
+										<use href="img/icons/icons.svg#arrow-str"></use>
 									</svg>
 								</div>
 								<div class="navigation__next">
 									<svg>
-										<use href="img/icons/icons.svg#arrow"></use>
+										<use href="img/icons/icons.svg#arrow-str"></use>
 									</svg>
 								</div>
 							</div>
@@ -2586,6 +2586,9 @@
 									<div class="review__block limit">
 										<textarea name="comment"
 											placeholder="Напишите комментарий к статье..."></textarea>
+										<div class="review__error">
+											Минимум 150 символов
+										</div>
 									</div>
 									<div class="review__block">
 										<h5 class="review__title">Оцените аромат в общих чертах</h5>
@@ -2620,6 +2623,9 @@
 												</svg>
 												<input type="radio" name="vote-general" value="5">
 											</div>
+										</div>
+										<div class="review__error">
+											Оцените аромат в общих чертах
 										</div>
 									</div>
 									<div class="review__block">
@@ -2745,7 +2751,7 @@
 											/
 											<span class="counter__current">0</span>
 										</div>
-										<button type="submit" class="review__submit btn_green submit disable">
+										<button type="submit" class="review__submit btn_green">
 											Оставить отзыв
 										</button>
 									</div>
@@ -4287,12 +4293,12 @@
 						<div class="recent__navigation navigation">
 							<div class="navigation__prev">
 								<svg>
-									<use href="img/icons/icons.svg#arrow"></use>
+									<use href="img/icons/icons.svg#arrow-str"></use>
 								</svg>
 							</div>
 							<div class="navigation__next">
 								<svg>
-									<use href="img/icons/icons.svg#arrow"></use>
+									<use href="img/icons/icons.svg#arrow-str"></use>
 								</svg>
 							</div>
 						</div>
@@ -7828,7 +7834,7 @@
         </div>
     </div>
 </div>
-	<script src="js/app.min.js?_v=20230704133157"></script>
+	<script src="js/app.min.js?_v=20230704162112"></script>
 </body>
 
 </html>
