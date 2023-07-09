@@ -5068,24 +5068,10 @@ body.lock {
   margin-bottom: 30px;
 }
 
-.votes-comments__list {
-  display: flex;
-  align-items: center;
-  overflow-x: auto;
-  padding: 15px 0;
-  margin-top: -15px;
-}
-
-.votes-comments__list .simplebar-content {
-  display: flex;
-}
-
 .votes-comments__item {
   position: relative;
-}
-
-.votes-comments__item:not(:last-child) {
-  margin-right: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .votes-comments__image {
@@ -5130,6 +5116,12 @@ body.lock {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.votes-comments__slider {
+  padding-top: 20px;
+  margin-top: -20px;
+  overflow: hidden;
 }
 
 .popular__body {
@@ -15891,10 +15883,6 @@ body.lock {
     margin-bottom: 20px;
   }
 
-  .votes-comments__item:not(:last-child) {
-    margin-right: 23px;
-  }
-
   .socials {
     margin-bottom: 30px;
   }
@@ -16453,6 +16441,10 @@ body.lock {
 
   .interesting-sidebar {
     margin-bottom: 60px;
+  }
+
+  .votes-comments__slider {
+    overflow: visible;
   }
 
   .popular__body {
