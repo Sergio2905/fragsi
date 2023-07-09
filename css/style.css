@@ -512,15 +512,15 @@ body.lock {
 .radio-options__item::after {
   content: " ";
   position: absolute;
-  top: -8px;
-  left: -7px;
-  width: 40px;
-  height: 40px;
-  -webkit-mask: url("../img/icons/icons.svg#check") center/contain no-repeat;
-          mask: url("../img/icons/icons.svg#check") center/contain no-repeat;
+  top: 50%;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  -webkit-mask: url("../img/icons/icons.svg#check-icon") center/cover no-repeat;
+          mask: url("../img/icons/icons.svg#check-icon") center/cover no-repeat;
   background: #fff;
   opacity: 0;
-  transform: scale(0);
+  transform: translate(0, -50%) scale(0);
   transition: all 0.2s linear;
 }
 
@@ -530,7 +530,7 @@ body.lock {
 }
 
 .radio-options__item._active::after {
-  transform: scale(1);
+  transform: translate(0, -50%) scale(1);
   opacity: 1;
 }
 
@@ -6452,6 +6452,11 @@ body.lock {
   height: 41px;
 }
 
+.expert-item .opinion-article__body p {
+  max-height: 100px;
+  font-size: 1.125rem;
+}
+
 .features-item__title {
   margin-bottom: 40px;
   text-align: left;
@@ -8080,6 +8085,9 @@ body.lock {
 .images-item {
   min-width: 0;
   margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .images-item__main {
@@ -11621,6 +11629,7 @@ body.lock {
   border: 1px solid #E84141;
   position: relative;
   margin-bottom: 20px;
+  background: none;
 }
 
 .settings__input.error label {
@@ -14388,12 +14397,12 @@ body.lock {
 .survey-article__item.active::after {
   content: "";
   position: absolute;
-  top: -7px;
-  left: -7px;
-  width: 40px;
-  height: 40px;
-  -webkit-mask: url("../img/icons/icons.svg#check") center/contain no-repeat;
-          mask: url("../img/icons/icons.svg#check") center/contain no-repeat;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  -webkit-mask: url("../img/icons/icons.svg#check-icon") center/cover no-repeat;
+          mask: url("../img/icons/icons.svg#check-icon") center/cover no-repeat;
   background: #fff;
 }
 
@@ -15926,6 +15935,14 @@ body.lock {
     height: 500px;
   }
 
+  .images-item {
+    margin-right: 30px;
+  }
+
+  .images-item__image {
+    height: 388px;
+  }
+
   .about-item__info {
     padding-right: 80px;
   }
@@ -16851,7 +16868,7 @@ body.lock {
 
   .images-item__pagination {
     display: flex;
-    margin: 10px 0 20px;
+    margin: 20px 0 20px;
   }
 
   .thumbs-item {
@@ -19597,6 +19614,10 @@ body.lock {
 
   .settings__section:not(:first-child) .settings__input:not(:last-of-type) {
     margin: 0 0 20px 0;
+  }
+
+  .settings__section:not(:first-child) .settings__input.error {
+    margin-bottom: 50px;
   }
 
   .settings__section:first-child .settings__block {
