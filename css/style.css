@@ -16264,6 +16264,10 @@ body.lock {
     margin-bottom: 0;
   }
 
+  .block-item_review {
+    display: none;
+  }
+
   .all-family__list {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
@@ -16864,10 +16868,6 @@ body.lock {
   }
 
   .thumbs-item {
-    display: none;
-  }
-
-  .block-item_review {
     display: none;
   }
 
