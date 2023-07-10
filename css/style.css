@@ -1614,8 +1614,8 @@ body.lock {
   right: 20px;
   width: 15px;
   height: 15px;
-  -webkit-mask: url("../../img/icons/icons.svg#arrow") center/contain no-repeat;
-          mask: url("../../img/icons/icons.svg#arrow") center/contain no-repeat;
+  -webkit-mask: url("../img/icons/icons.svg#arrow") center/contain no-repeat;
+          mask: url("../img/icons/icons.svg#arrow") center/contain no-repeat;
   background: #C3C3C3;
 }
 
