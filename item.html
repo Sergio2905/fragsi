@@ -4,7 +4,7 @@
 <head>
     <title>Fragsi</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230709144205">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230710153308">
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание">
@@ -310,7 +310,7 @@
 									манящую загадочность и соблазнительную
 									пикантность.
 								</p>
-								<div class="about-item__recommend recommend-about">
+								<div class="about-item__recommend recommend-about popup-link" data-modal="feedback">
 									<div class="recommend-about__text">Этот аромат рекомендуют более 71% пользователей!
 									</div>
 									<div class="recommend-about__rating rating">
@@ -2481,7 +2481,8 @@
 								<div class="block-item__text">
 									Поделитесь своими впечетлениями об аромате
 								</div>
-								<button type="button" class="block-item__review btn_green">
+								<button type="button" class="block-item__review btn_green popup-link"
+									data-modal="feedback">
 									<svg>
 										<use href="img/icons/icons.svg#like"></use>
 									</svg>
@@ -2588,154 +2589,6 @@
 											placeholder="Напишите комментарий к статье..."></textarea>
 										<div class="review__error">
 											Минимум 150 символов
-										</div>
-									</div>
-									<div class="review__block">
-										<h5 class="review__title">Оцените аромат в общих чертах</h5>
-										<div class="review__vote review__general vote vote-require radio-options">
-											<div class="radio-options__item">
-												<svg>
-													<use href="img/icons/icons.svg#star-vote"></use>
-												</svg>
-												<input type="radio" name="vote-general" value="1">
-											</div>
-											<div class="radio-options__item">
-												<svg>
-													<use href="img/icons/icons.svg#star-vote"></use>
-												</svg>
-												<input type="radio" name="vote-general" value="2">
-											</div>
-											<div class="radio-options__item">
-												<svg>
-													<use href="img/icons/icons.svg#star-vote"></use>
-												</svg>
-												<input type="radio" name="vote-general" value="3">
-											</div>
-											<div class="radio-options__item">
-												<svg>
-													<use href="img/icons/icons.svg#star-vote"></use>
-												</svg>
-												<input type="radio" name="vote-general" value="4">
-											</div>
-											<div class="radio-options__item">
-												<svg>
-													<use href="img/icons/icons.svg#star-vote"></use>
-												</svg>
-												<input type="radio" name="vote-general" value="5">
-											</div>
-										</div>
-										<div class="review__error">
-											Оцените аромат в общих чертах
-										</div>
-									</div>
-									<div class="review__block">
-										<h5 class="review__title">Оцените аромат по критериям</h5>
-										<div class="review__cols">
-											<div class="review__col">
-												<div class="review__name">Цена-качество</div>
-												<div class="review__vote vote radio-options">
-													<div class="radio-options__item">
-														<svg>
-															<use href="img/icons/icons.svg#star-vote"></use>
-														</svg>
-														<input type="radio" name="vote-general" value="1">
-													</div>
-													<div class="radio-options__item">
-														<svg>
-															<use href="img/icons/icons.svg#star-vote"></use>
-														</svg>
-														<input type="radio" name="vote-general" value="2">
-													</div>
-													<div class="radio-options__item">
-														<svg>
-															<use href="img/icons/icons.svg#star-vote"></use>
-														</svg>
-														<input type="radio" name="vote-general" value="3">
-													</div>
-													<div class="radio-options__item">
-														<svg>
-															<use href="img/icons/icons.svg#star-vote"></use>
-														</svg>
-														<input type="radio" name="vote-general" value="4">
-													</div>
-													<div class="radio-options__item">
-														<svg>
-															<use href="img/icons/icons.svg#star-vote"></use>
-														</svg>
-														<input type="radio" name="vote-general" value="5">
-													</div>
-												</div>
-											</div>
-											<div class="review__col">
-												<div class="review__name">Аромат</div>
-												<div class="review__vote vote radio-options">
-													<div class="radio-options__item">
-														<svg>
-															<use href="img/icons/icons.svg#star-vote"></use>
-														</svg>
-														<input type="radio" name="vote-general" value="1">
-													</div>
-													<div class="radio-options__item">
-														<svg>
-															<use href="img/icons/icons.svg#star-vote"></use>
-														</svg>
-														<input type="radio" name="vote-general" value="2">
-													</div>
-													<div class="radio-options__item">
-														<svg>
-															<use href="img/icons/icons.svg#star-vote"></use>
-														</svg>
-														<input type="radio" name="vote-general" value="3">
-													</div>
-													<div class="radio-options__item">
-														<svg>
-															<use href="img/icons/icons.svg#star-vote"></use>
-														</svg>
-														<input type="radio" name="vote-general" value="4">
-													</div>
-													<div class="radio-options__item">
-														<svg>
-															<use href="img/icons/icons.svg#star-vote"></use>
-														</svg>
-														<input type="radio" name="vote-general" value="5">
-													</div>
-												</div>
-											</div>
-											<div class="review__col">
-												<div class="review__name">Упаковка</div>
-												<div class="review__vote vote radio-options">
-													<div class="radio-options__item">
-														<svg>
-															<use href="img/icons/icons.svg#star-vote"></use>
-														</svg>
-														<input type="radio" name="vote-general" value="1">
-													</div>
-													<div class="radio-options__item">
-														<svg>
-															<use href="img/icons/icons.svg#star-vote"></use>
-														</svg>
-														<input type="radio" name="vote-general" value="2">
-													</div>
-													<div class="radio-options__item">
-														<svg>
-															<use href="img/icons/icons.svg#star-vote"></use>
-														</svg>
-														<input type="radio" name="vote-general" value="3">
-													</div>
-													<div class="radio-options__item">
-														<svg>
-															<use href="img/icons/icons.svg#star-vote"></use>
-														</svg>
-														<input type="radio" name="vote-general" value="4">
-													</div>
-													<div class="radio-options__item">
-														<svg>
-															<use href="img/icons/icons.svg#star-vote"></use>
-														</svg>
-														<input type="radio" name="vote-general" value="5">
-													</div>
-												</div>
-											</div>
 										</div>
 									</div>
 									<div class="review__footer">
@@ -3049,16 +2902,18 @@
 											<div class="votes-comments__item">
 												<a href="#" class="votes-comments__image">
 													<picture>
-														<source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
-															type="image/webp">
-														<img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
+														<source data-srcset="img/chat/Image.webp"
+															srcset="img/plug.png" type="image/webp">
+														<img data-src="img/chat/Image.png" src="img/plug.png"
+															alt="Image">
 													</picture>
 												</a>
 												<div class="votes-comments__icon">
 													<picture>
 														<source data-srcset="img/item/like.svg" srcset="img/plug.png"
 															type="image/webp">
-														<img data-src="img/item/like.svg" src="img/plug.png" alt="Image">
+														<img data-src="img/item/like.svg" src="img/plug.png"
+															alt="Image">
 													</picture>
 												</div>
 											</div>
@@ -3067,16 +2922,18 @@
 											<div class="votes-comments__item">
 												<a href="#" class="votes-comments__image">
 													<picture>
-														<source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
-															type="image/webp">
-														<img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
+														<source data-srcset="img/chat/Image.webp"
+															srcset="img/plug.png" type="image/webp">
+														<img data-src="img/chat/Image.png" src="img/plug.png"
+															alt="Image">
 													</picture>
 												</a>
 												<div class="votes-comments__icon">
 													<picture>
 														<source data-srcset="img/item/like.svg" srcset="img/plug.png"
 															type="image/webp">
-														<img data-src="img/item/like.svg" src="img/plug.png" alt="Image">
+														<img data-src="img/item/like.svg" src="img/plug.png"
+															alt="Image">
 													</picture>
 												</div>
 											</div>
@@ -3085,16 +2942,18 @@
 											<div class="votes-comments__item">
 												<a href="#" class="votes-comments__image">
 													<picture>
-														<source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
-															type="image/webp">
-														<img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
+														<source data-srcset="img/chat/Image.webp"
+															srcset="img/plug.png" type="image/webp">
+														<img data-src="img/chat/Image.png" src="img/plug.png"
+															alt="Image">
 													</picture>
 												</a>
 												<div class="votes-comments__icon">
 													<picture>
 														<source data-srcset="img/item/time.svg" srcset="img/plug.png"
 															type="image/webp">
-														<img data-src="img/item/time.svg" src="img/plug.png" alt="Image">
+														<img data-src="img/item/time.svg" src="img/plug.png"
+															alt="Image">
 													</picture>
 												</div>
 											</div>
@@ -3103,16 +2962,18 @@
 											<div class="votes-comments__item">
 												<a href="#" class="votes-comments__image">
 													<picture>
-														<source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
-															type="image/webp">
-														<img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
+														<source data-srcset="img/chat/Image.webp"
+															srcset="img/plug.png" type="image/webp">
+														<img data-src="img/chat/Image.png" src="img/plug.png"
+															alt="Image">
 													</picture>
 												</a>
 												<div class="votes-comments__icon">
 													<picture>
 														<source data-srcset="img/item/check.svg" srcset="img/plug.png"
 															type="image/webp">
-														<img data-src="img/item/check.svg" src="img/plug.png" alt="Image">
+														<img data-src="img/item/check.svg" src="img/plug.png"
+															alt="Image">
 													</picture>
 												</div>
 											</div>
@@ -3121,16 +2982,18 @@
 											<div class="votes-comments__item">
 												<a href="#" class="votes-comments__image">
 													<picture>
-														<source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
-															type="image/webp">
-														<img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
+														<source data-srcset="img/chat/Image.webp"
+															srcset="img/plug.png" type="image/webp">
+														<img data-src="img/chat/Image.png" src="img/plug.png"
+															alt="Image">
 													</picture>
 												</a>
 												<div class="votes-comments__icon">
 													<picture>
 														<source data-srcset="img/item/heart.svg" srcset="img/plug.png"
 															type="image/webp">
-														<img data-src="img/item/heart.svg" src="img/plug.png" alt="Image">
+														<img data-src="img/item/heart.svg" src="img/plug.png"
+															alt="Image">
 													</picture>
 												</div>
 											</div>
@@ -3139,16 +3002,18 @@
 											<div class="votes-comments__item">
 												<a href="#" class="votes-comments__image">
 													<picture>
-														<source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
-															type="image/webp">
-														<img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
+														<source data-srcset="img/chat/Image.webp"
+															srcset="img/plug.png" type="image/webp">
+														<img data-src="img/chat/Image.png" src="img/plug.png"
+															alt="Image">
 													</picture>
 												</a>
 												<div class="votes-comments__icon">
 													<picture>
 														<source data-srcset="img/item/like.svg" srcset="img/plug.png"
 															type="image/webp">
-														<img data-src="img/item/like.svg" src="img/plug.png" alt="Image">
+														<img data-src="img/item/like.svg" src="img/plug.png"
+															alt="Image">
 													</picture>
 												</div>
 											</div>
@@ -3157,16 +3022,18 @@
 											<div class="votes-comments__item">
 												<a href="#" class="votes-comments__image">
 													<picture>
-														<source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
-															type="image/webp">
-														<img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
+														<source data-srcset="img/chat/Image.webp"
+															srcset="img/plug.png" type="image/webp">
+														<img data-src="img/chat/Image.png" src="img/plug.png"
+															alt="Image">
 													</picture>
 												</a>
 												<div class="votes-comments__icon">
 													<picture>
 														<source data-srcset="img/item/heart.svg" srcset="img/plug.png"
 															type="image/webp">
-														<img data-src="img/item/heart.svg" src="img/plug.png" alt="Image">
+														<img data-src="img/item/heart.svg" src="img/plug.png"
+															alt="Image">
 													</picture>
 												</div>
 											</div>
@@ -3175,16 +3042,18 @@
 											<div class="votes-comments__item">
 												<a href="#" class="votes-comments__image">
 													<picture>
-														<source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
-															type="image/webp">
-														<img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
+														<source data-srcset="img/chat/Image.webp"
+															srcset="img/plug.png" type="image/webp">
+														<img data-src="img/chat/Image.png" src="img/plug.png"
+															alt="Image">
 													</picture>
 												</a>
 												<div class="votes-comments__icon">
 													<picture>
 														<source data-srcset="img/item/time.svg" srcset="img/plug.png"
 															type="image/webp">
-														<img data-src="img/item/time.svg" src="img/plug.png" alt="Image">
+														<img data-src="img/item/time.svg" src="img/plug.png"
+															alt="Image">
 													</picture>
 												</div>
 											</div>
@@ -3193,16 +3062,18 @@
 											<div class="votes-comments__item">
 												<a href="#" class="votes-comments__image">
 													<picture>
-														<source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
-															type="image/webp">
-														<img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
+														<source data-srcset="img/chat/Image.webp"
+															srcset="img/plug.png" type="image/webp">
+														<img data-src="img/chat/Image.png" src="img/plug.png"
+															alt="Image">
 													</picture>
 												</a>
 												<div class="votes-comments__icon">
 													<picture>
 														<source data-srcset="img/item/check.svg" srcset="img/plug.png"
 															type="image/webp">
-														<img data-src="img/item/check.svg" src="img/plug.png" alt="Image">
+														<img data-src="img/item/check.svg" src="img/plug.png"
+															alt="Image">
 													</picture>
 												</div>
 											</div>
@@ -3211,16 +3082,18 @@
 											<div class="votes-comments__item">
 												<a href="#" class="votes-comments__image">
 													<picture>
-														<source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
-															type="image/webp">
-														<img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
+														<source data-srcset="img/chat/Image.webp"
+															srcset="img/plug.png" type="image/webp">
+														<img data-src="img/chat/Image.png" src="img/plug.png"
+															alt="Image">
 													</picture>
 												</a>
 												<div class="votes-comments__icon">
 													<picture>
 														<source data-srcset="img/item/check.svg" srcset="img/plug.png"
 															type="image/webp">
-														<img data-src="img/item/check.svg" src="img/plug.png" alt="Image">
+														<img data-src="img/item/check.svg" src="img/plug.png"
+															alt="Image">
 													</picture>
 												</div>
 											</div>
@@ -3229,22 +3102,24 @@
 											<div class="votes-comments__item">
 												<a href="#" class="votes-comments__image">
 													<picture>
-														<source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
-															type="image/webp">
-														<img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
+														<source data-srcset="img/chat/Image.webp"
+															srcset="img/plug.png" type="image/webp">
+														<img data-src="img/chat/Image.png" src="img/plug.png"
+															alt="Image">
 													</picture>
 												</a>
 												<div class="votes-comments__icon">
 													<picture>
 														<source data-srcset="img/item/heart.svg" srcset="img/plug.png"
 															type="image/webp">
-														<img data-src="img/item/heart.svg" src="img/plug.png" alt="Image">
+														<img data-src="img/item/heart.svg" src="img/plug.png"
+															alt="Image">
 													</picture>
 												</div>
 											</div>
 										</div>
 									</div>
-								</div>	
+								</div>
 							</div>
 						</div>
 					</div>
@@ -7874,7 +7749,643 @@
         </div>
     </div>
 </div>
-	<script src="js/app.min.js?_v=20230709144205"></script>
+
+<div class="popup" id="rewards">
+    <div class="popup__body">
+        <div class="popup__content rewards">
+            <div class="rewards__header">
+                <h4 class="rewards__title">Достижения</h4>
+                <button type="button" title="Close popup" class="popup__close">
+                    <svg>
+                        <use href="img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="rewards__body" data-simplebar>
+                <div class="rewards__block block-rewards">
+                    <div class="block-rewards__header">
+                        <h5 class="block-rewards__title">Полученные</h5>
+                        <span class="block-rewards__count">9</span>
+                    </div>
+                    <ul class="block-rewards__list progress-profile__list">
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn popup-link"
+                                data-modal="reward">
+                                <picture>
+                                    <source data-srcset="img/profile/progress1.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress1.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress2.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress2.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress3.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress3.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress4.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress4.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress5.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress5.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress1.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress1.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress2.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress2.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress3.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress3.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress4.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress4.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rewards__block block-rewards block-rewards_inactive">
+                    <div class="block-rewards__header">
+                        <h5 class="block-rewards__title">В процессе</h5>
+                        <span class="block-rewards__count">26</span>
+                    </div>
+                    <ul class="block-rewards__list progress-profile__list">
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn popup-link"
+                                data-modal="reward-inactive">
+                                <picture>
+                                    <source data-srcset="img/profile/progress1.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress1.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress2.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress2.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress3.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress3.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress4.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress4.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress5.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress5.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress1.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress1.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress2.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress2.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress3.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress3.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress4.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress4.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress1.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress1.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress2.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress2.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress3.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress3.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress4.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress4.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress5.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress5.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress1.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress1.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress2.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress2.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress3.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress3.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress4.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress4.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress2.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress2.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress3.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress3.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress4.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress4.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress1.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress1.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress2.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress2.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress3.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress3.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress4.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress4.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress5.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress5.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress1.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress1.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress2.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress2.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress3.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress3.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                        <li class="progress-profile__item">
+                            <button type="button" title="Progress" class="progress-profile__btn">
+                                <picture>
+                                    <source data-srcset="img/profile/progress4.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/profile/progress4.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="reward">
+    <div class="popup__body">
+        <div class="popup__content reward">
+            <div class="reward__header">
+                <div class="reward__bg"></div>
+                <button type="button" title="Close popup" class="popup__close">
+                    <svg>
+                        <use href="img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+                <div class="reward__image">
+                    <picture>
+                        <source data-srcset="img/profile/reward.svg" srcset="img/plug.png" type="image/webp">
+                        <img data-src="img/profile/reward.svg" src="img/plug.png" alt="Image">
+                    </picture>
+                </div>
+            </div>
+            <div class="reward__body">
+                <h4 class="reward__title">“Название награды”</h4>
+                <div class="reward__level">3 уровень</div>
+                <div class="reward__status">Открыто</div>
+                <p class="reward__text">
+                    Общий рейтинг – это список самых активных и популярных пользователей в сообществе Aromo. Количество
+                    поинтов, которые вы получаете за различные действия на сайте, определяет вашу позицию в рейтинге.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="reward-inactive">
+    <div class="popup__body">
+        <div class="popup__content reward">
+            <div class="reward__header">
+                <div class="reward__bg"></div>
+                <button type="button" title="Close popup" class="popup__close">
+                    <svg>
+                        <use href="img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+                <div class="reward__image">
+                    <picture>
+                        <source data-srcset="img/profile/reward.svg" srcset="img/plug.png" type="image/webp">
+                        <img data-src="img/profile/reward.svg" src="img/plug.png" alt="Image">
+                    </picture>
+                </div>
+            </div>
+            <div class="reward__body">
+                <h4 class="reward__title">“Название награды”</h4>
+                <div class="reward__level">3 уровень</div>
+                <div class="reward__status">Не Открыто</div>
+                <p class="reward__text">
+                    Общий рейтинг – это список самых активных и популярных пользователей в сообществе Aromo. Количество
+                    поинтов, которые вы получаете за различные действия на сайте, определяет вашу позицию в рейтинге.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="feedback">
+    <div class="popup__body">
+        <div class="popup__content feedback">
+            <div class="feedback__header">
+                <h4 class="feedback__title">Оцените аромат</h4>
+                <button type="button" title="Close popup" class="popup__close">
+                    <svg>
+                        <use href="img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="feedback__body review">
+                <form action="#" class="review__form">
+                    <div class="review__block limit">
+                        <textarea name="comment" placeholder="Напишите комментарий к статье..."></textarea>
+                        <div class="review__error">
+                            Минимум 150 символов
+                        </div>
+                    </div>
+                    <div class="review__block">
+                        <h5 class="review__title">Оцените аромат в общих чертах</h5>
+                        <div class="review__vote review__general vote vote-require radio-options">
+                            <div class="radio-options__item">
+                                <svg>
+                                    <use href="img/icons/icons.svg#star-vote"></use>
+                                </svg>
+                                <input type="radio" name="vote-general" value="1">
+                            </div>
+                            <div class="radio-options__item">
+                                <svg>
+                                    <use href="img/icons/icons.svg#star-vote"></use>
+                                </svg>
+                                <input type="radio" name="vote-general" value="2">
+                            </div>
+                            <div class="radio-options__item">
+                                <svg>
+                                    <use href="img/icons/icons.svg#star-vote"></use>
+                                </svg>
+                                <input type="radio" name="vote-general" value="3">
+                            </div>
+                            <div class="radio-options__item">
+                                <svg>
+                                    <use href="img/icons/icons.svg#star-vote"></use>
+                                </svg>
+                                <input type="radio" name="vote-general" value="4">
+                            </div>
+                            <div class="radio-options__item">
+                                <svg>
+                                    <use href="img/icons/icons.svg#star-vote"></use>
+                                </svg>
+                                <input type="radio" name="vote-general" value="5">
+                            </div>
+                        </div>
+                        <div class="review__error">
+                            Оцените аромат в общих чертах
+                        </div>
+                    </div>
+                    <div class="review__block">
+                        <h5 class="review__title">Оцените аромат по критериям</h5>
+                        <div class="review__cols">
+                            <div class="review__col">
+                                <div class="review__name">Цена-качество</div>
+                                <div class="review__vote vote radio-options">
+                                    <div class="radio-options__item">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#star-vote"></use>
+                                        </svg>
+                                        <input type="radio" name="vote-general" value="1">
+                                    </div>
+                                    <div class="radio-options__item">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#star-vote"></use>
+                                        </svg>
+                                        <input type="radio" name="vote-general" value="2">
+                                    </div>
+                                    <div class="radio-options__item">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#star-vote"></use>
+                                        </svg>
+                                        <input type="radio" name="vote-general" value="3">
+                                    </div>
+                                    <div class="radio-options__item">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#star-vote"></use>
+                                        </svg>
+                                        <input type="radio" name="vote-general" value="4">
+                                    </div>
+                                    <div class="radio-options__item">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#star-vote"></use>
+                                        </svg>
+                                        <input type="radio" name="vote-general" value="5">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review__col">
+                                <div class="review__name">Аромат</div>
+                                <div class="review__vote vote radio-options">
+                                    <div class="radio-options__item">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#star-vote"></use>
+                                        </svg>
+                                        <input type="radio" name="vote-general" value="1">
+                                    </div>
+                                    <div class="radio-options__item">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#star-vote"></use>
+                                        </svg>
+                                        <input type="radio" name="vote-general" value="2">
+                                    </div>
+                                    <div class="radio-options__item">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#star-vote"></use>
+                                        </svg>
+                                        <input type="radio" name="vote-general" value="3">
+                                    </div>
+                                    <div class="radio-options__item">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#star-vote"></use>
+                                        </svg>
+                                        <input type="radio" name="vote-general" value="4">
+                                    </div>
+                                    <div class="radio-options__item">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#star-vote"></use>
+                                        </svg>
+                                        <input type="radio" name="vote-general" value="5">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review__col">
+                                <div class="review__name">Упаковка</div>
+                                <div class="review__vote vote radio-options">
+                                    <div class="radio-options__item">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#star-vote"></use>
+                                        </svg>
+                                        <input type="radio" name="vote-general" value="1">
+                                    </div>
+                                    <div class="radio-options__item">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#star-vote"></use>
+                                        </svg>
+                                        <input type="radio" name="vote-general" value="2">
+                                    </div>
+                                    <div class="radio-options__item">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#star-vote"></use>
+                                        </svg>
+                                        <input type="radio" name="vote-general" value="3">
+                                    </div>
+                                    <div class="radio-options__item">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#star-vote"></use>
+                                        </svg>
+                                        <input type="radio" name="vote-general" value="4">
+                                    </div>
+                                    <div class="radio-options__item">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#star-vote"></use>
+                                        </svg>
+                                        <input type="radio" name="vote-general" value="5">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review__footer">
+                        <input type="file" name="comments-file" id="comments-file">
+                        <label for="comments-file">
+                            <svg>
+                                <use href="img/icons/icons.svg#img"></use>
+                            </svg>
+                        </label>
+                        <div class="review__counter counter">
+                            мин.
+                            <span class="counter__min">150</span>
+                            /
+                            <span class="counter__current">0</span>
+                        </div>
+                        <button type="submit" class="review__submit btn_green">
+                            Оставить отзыв
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+	<script src="js/app.min.js?_v=20230710153308"></script>
 </body>
 
 </html>

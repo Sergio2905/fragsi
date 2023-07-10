@@ -2280,6 +2280,222 @@ body.lock {
   stroke: #C3C3C3;
 }
 
+.rewards {
+  padding: 20px 20px 0;
+  max-width: 640px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+}
+
+.rewards__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #EBEBEB;
+  padding: 0 2% 20px;
+  margin: 0 -20px 20px;
+  position: relative;
+}
+
+.rewards__body {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.rewards__body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.rewards__title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.rewards .popup__close {
+  width: 24px;
+  height: 24px;
+  box-shadow: none;
+  border-radius: 0;
+  right: 30px;
+  transform: translate(0, 0);
+}
+
+.block-rewards:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.block-rewards_inactive .progress-profile__btn img {
+  filter: saturate(0%);
+}
+
+.block-rewards_inactive .block-rewards__count {
+  background: #D1D1D1;
+}
+
+.block-rewards__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.block-rewards__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.block-rewards__count {
+  border-radius: 6px;
+  background: #007F5F;
+  padding: 4px 6px;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block-rewards .progress-profile__list {
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.block-rewards .progress-profile__item:not(:last-child) {
+  margin-right: 0;
+}
+
+.block-rewards .progress-profile__btn {
+  width: 73px;
+  height: 73px;
+}
+
+.reward {
+  padding: 0;
+  max-width: 400px;
+  width: 100%;
+}
+
+.reward__header {
+  margin-bottom: 80px;
+}
+
+.reward__bg {
+  -webkit-mask: url("../img/profile/popup-bg.svg") center/cover no-repeat;
+          mask: url("../img/profile/popup-bg.svg") center/cover no-repeat;
+  background: #FFEC87;
+  height: 132px;
+  border-radius: 6px 6px 0 0;
+  overflow: hidden;
+}
+
+.reward__image {
+  width: 150px;
+  height: 150px;
+  background: #FFEC87;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.reward__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  height: 65%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.reward__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px 30px;
+}
+
+.reward__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.reward__level {
+  color: #C3C3C3;
+  margin-bottom: 5px;
+}
+
+.reward__status {
+  color: #007F5F;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.reward__text {
+  text-align: center;
+}
+
+#reward-inactive .reward__bg {
+  background: #E7E7E7;
+}
+
+#reward-inactive .reward__image {
+  background: #E7E7E7;
+}
+
+#reward-inactive .reward__image img {
+  filter: saturate(0);
+}
+
+#reward-inactive .reward__status {
+  color: #C3C3C3;
+}
+
+.feedback {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px 30px 20px;
+}
+
+.feedback__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #EBEBEB;
+  padding: 0 30px 20px;
+  margin: 0 -30px 20px;
+}
+
+.feedback__title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.feedback__body.review {
+  border: none;
+  padding: 0;
+}
+
+.feedback .popup__close {
+  width: 24px;
+  height: 24px;
+  position: static;
+  box-shadow: none;
+  border-radius: 0;
+  transform: translate(0, 0);
+}
+
 .login {
   padding: 0;
   display: flex;
@@ -4529,12 +4745,6 @@ body.lock {
   max-height: 1000px;
 }
 
-.comments__new.active textarea {
-  height: 140px;
-  background: #fff;
-  white-space: normal;
-}
-
 .comments__body {
   position: relative;
 }
@@ -5055,6 +5265,12 @@ body.lock {
   max-height: 0;
   overflow: hidden;
   transition: all 0.2s ease;
+}
+
+.review.active textarea {
+  height: 140px;
+  background: #fff;
+  white-space: normal;
 }
 
 .votes-comments {
@@ -7028,6 +7244,8 @@ body.lock {
   font-size: 1.125rem;
   color: #000;
   transition: all 0.2s linear;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .family-item__navigation {
@@ -8442,6 +8660,24 @@ body.lock {
   padding: 30px;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.recommend-about::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 50%;
+  height: 200%;
+  transform: translate(-150%, -50%) rotate(20deg);
+  background: rgba(255, 255, 255, 0.3);
+  animation: highlight2 3s linear infinite;
+}
+
+.recommend-about:hover {
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.12);
 }
 
 .recommend-about__text {
@@ -8726,6 +8962,38 @@ body.lock {
 .faq-item__answer {
   padding: 0 30px 30px;
   font-size: 1.125rem;
+}
+
+@keyframes highlight2 {
+  0% {
+    transform: translate(-150%, -50%) rotate(20deg);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  20% {
+    transform: translate(250%, -50%) rotate(20deg);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  21% {
+    transform: translate(250%, -50%) rotate(20deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  22% {
+    transform: translate(-150%, -50%) rotate(20deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  30% {
+    transform: translate(-150%, -50%) rotate(20deg);
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .about__body {
@@ -9758,10 +10026,26 @@ body.lock {
   border-bottom: 1px solid #EBEBEB;
 }
 
+.profile__content_new-message .profile__title span:nth-child(1) {
+  display: none;
+}
+
+.profile__content_new-message .profile__title span:nth-child(2) {
+  display: inline;
+}
+
+.profile__content_new-message .profile__count {
+  display: none;
+}
+
 .profile__header {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+}
+
+.profile__title span:nth-child(2) {
+  display: none;
 }
 
 .profile__count {
@@ -9838,6 +10122,7 @@ body.lock {
   padding: 15px 20px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .search-profile__input button {
@@ -9921,6 +10206,73 @@ body.lock {
   border-top: 10px solid #fff;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
+}
+
+.search-profile__result {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 6px;
+  z-index: 5;
+  padding-right: 10px;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.12);
+  display: none;
+}
+
+.search-profile__result.active {
+  display: block;
+}
+
+.search-profile__list {
+  overflow-y: auto;
+  max-height: 355px;
+}
+
+.search-profile__link {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  transition: all 0.2s linear;
+}
+
+.search-profile__link:hover {
+  background: rgba(0, 127, 95, 0.05);
+}
+
+.search-profile__link:hover .search-profile__name {
+  color: #007F5F;
+}
+
+.search-profile__image {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-right: 15px;
+}
+
+.search-profile__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.search-profile__name {
+  color: #000;
+  font-size: 1.125rem;
+  transition: all 0.2s linear;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .options-profile {
@@ -10398,11 +10750,6 @@ body.lock {
   color: #1e9d7d;
 }
 
-.progress-profile__scroll {
-  max-height: 83px;
-  overflow-y: hidden;
-}
-
 .progress-profile__list {
   display: flex;
   align-items: center;
@@ -10413,6 +10760,7 @@ body.lock {
   padding-bottom: 30px;
   width: -moz-fit-content;
   width: fit-content;
+  width: 100%;
 }
 
 .progress-profile__list::-webkit-scrollbar {
@@ -10428,10 +10776,18 @@ body.lock {
   margin-right: 15px;
 }
 
-.progress-profile__item:hover .progress-profile__prompt {
-  opacity: 1;
-  visibility: visible;
-  transform: translate(0, 0);
+.progress-profile__item:nth-child(1) .progress-profile__prompt,
+.progress-profile__item:nth-child(2) .progress-profile__prompt,
+.progress-profile__item:nth-child(3) .progress-profile__prompt {
+  left: 10px;
+  right: unset;
+}
+
+.progress-profile__item:nth-child(1) .progress-profile__prompt::after,
+.progress-profile__item:nth-child(2) .progress-profile__prompt::after,
+.progress-profile__item:nth-child(3) .progress-profile__prompt::after {
+  left: 25px;
+  right: unset;
 }
 
 .progress-profile__btn {
@@ -10464,7 +10820,7 @@ body.lock {
   background: #fff;
   position: absolute;
   bottom: 115%;
-  left: 10px;
+  right: 10px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -10480,7 +10836,7 @@ body.lock {
   content: "";
   position: absolute;
   top: 100%;
-  left: 25px;
+  right: 25px;
   border-top: 10px solid #fff;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
@@ -15334,6 +15690,12 @@ body.lock {
     transform: translate(-50%, 0);
   }
 
+  .progress-profile__item:hover .progress-profile__prompt {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, 0);
+  }
+
   .about-note__favorite:hover span,
   .about-note__share:hover span {
     opacity: 1;
@@ -16340,6 +16702,10 @@ body.lock {
   }
 
   .shelf__list {
+    width: 100%;
+  }
+
+  .rewards {
     width: 100%;
   }
 
@@ -18427,6 +18793,43 @@ body.lock {
     padding: 20px;
   }
 
+  .reward .popup__close {
+    width: 24px;
+    height: 24px;
+    box-shadow: none;
+    border-radius: 0;
+    right: 20px;
+    top: 20px;
+    transform: translate(0, 0);
+    background: none;
+  }
+
+  .reward .popup__close svg {
+    stroke: #000;
+  }
+
+  .feedback {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+    padding: 20px 20px 20px;
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+
+  .feedback::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  .feedback__header {
+    padding: 0 20px 20px;
+    margin: 0 -20px 20px;
+  }
+
   .login__social {
     width: 52px;
     height: 52px;
@@ -19390,10 +19793,6 @@ body.lock {
 
   .progress-profile__all {
     font-size: 1.0625rem;
-  }
-
-  .progress-profile__scroll {
-    max-height: 70px;
   }
 
   .progress-profile__item:not(:last-child) {
