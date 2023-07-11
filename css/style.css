@@ -19204,6 +19204,10 @@ body.lock {
     font-size: 1.0625rem;
   }
 
+  .reply__btn.reply-cancel {
+    display: none;
+  }
+
   .popular__title {
     margin-bottom: 24px;
   }
