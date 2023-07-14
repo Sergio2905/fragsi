@@ -2512,6 +2512,15 @@ body.lock {
   transform: translate(0, 0);
 }
 
+.feedback .review {
+  max-height: 100% !important;
+}
+
+.feedback .review textarea {
+  height: 140px !important;
+  background: #fff;
+}
+
 .login {
   padding: 0;
   display: flex;
@@ -2946,11 +2955,15 @@ body.lock {
   background: #e6e6e6;
 }
 
-.recent {
+.recent,
+.new-main,
+.fragrances-main {
   margin-bottom: 150px;
 }
 
-.recent__body {
+.recent__body,
+.new-main__body,
+.fragrances-main__body {
   position: relative;
   border: 1px solid #E1E1E1;
   border-radius: 16px;
@@ -2961,19 +2974,25 @@ body.lock {
   margin: 0 10px;
 }
 
-.recent__title {
+.recent__title,
+.new-main__title,
+.fragrances-main__title {
   transform: translate(0, -50%);
   padding: 0 30px;
   background: #fff;
 }
 
-.recent__slider {
+.recent__slider,
+.new-main__slider,
+.fragrances-main__slider {
   padding: 10px;
   width: 100%;
   overflow: hidden;
 }
 
-.recent__item {
+.recent__item,
+.new-main__item,
+.fragrances-main__item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2982,19 +3001,27 @@ body.lock {
   padding: 10px;
 }
 
-.recent__item:hover {
+.recent__item:hover,
+.new-main__item:hover,
+.fragrances-main__item:hover {
   box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.12);
 }
 
-.recent__item:hover .recent__name {
+.recent__item:hover .recent__name,
+.new-main__item:hover .recent__name,
+.fragrances-main__item:hover .recent__name {
   color: #007F5F;
 }
 
-.recent__item:hover .recent__image {
+.recent__item:hover .recent__image,
+.new-main__item:hover .recent__image,
+.fragrances-main__item:hover .recent__image {
   transform: scale(1.1);
 }
 
-.recent__image {
+.recent__image,
+.new-main__image,
+.fragrances-main__image {
   width: 130px;
   height: 130px;
   display: flex;
@@ -3006,7 +3033,9 @@ body.lock {
   transition: all 0.5s linear;
 }
 
-.recent__image img {
+.recent__image img,
+.new-main__image img,
+.fragrances-main__image img {
   position: absolute;
   top: 0;
   left: 0;
@@ -3016,7 +3045,9 @@ body.lock {
      object-fit: contain;
 }
 
-.recent__name {
+.recent__name,
+.new-main__name,
+.fragrances-main__name {
   font-size: 1.125rem;
   text-align: center;
   color: #000;
@@ -3024,7 +3055,9 @@ body.lock {
   max-width: 150px;
 }
 
-.recent__name:hover {
+.recent__name:hover,
+.new-main__name:hover,
+.fragrances-main__name:hover {
   color: #007F5F;
 }
 
@@ -3864,6 +3897,7 @@ body.lock {
   position: absolute;
   top: 10px;
   right: 10px;
+  display: none;
 }
 
 .sort__close svg {
@@ -5130,24 +5164,6 @@ body.lock {
   padding: 20px;
 }
 
-.review__block.error {
-  background: none;
-}
-
-.review__block.error .review__error {
-  margin-top: 10px;
-  max-height: 50px;
-}
-
-.review__block.error .review__general {
-  border: 1px solid #E84141;
-}
-
-.review__block.error textarea {
-  border: 1px solid #E84141;
-  color: #E84141;
-}
-
 .review__block:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -5281,7 +5297,24 @@ body.lock {
   color: #E84141;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.2s ease;
+}
+
+.review.active .review__block.error {
+  background: none;
+}
+
+.review.active .review__block.error .review__error {
+  margin-top: 10px;
+  max-height: 50px;
+}
+
+.review.active .review__block.error .review__general {
+  border: 1px solid #E84141;
+}
+
+.review.active .review__block.error textarea {
+  border: 1px solid #E84141;
+  color: #E84141;
 }
 
 .review.active textarea {
@@ -5364,10 +5397,6 @@ body.lock {
   position: relative;
 }
 
-.reply.active::after {
-  display: block;
-}
-
 .reply.visible {
   max-height: 100%;
   padding: 30px 0 30px 30px;
@@ -5401,7 +5430,13 @@ body.lock {
 .reply__form {
   padding: 20px 20px 0;
   border-radius: 8px;
+  border: 2px solid #EBEBEB;
+  background: #ECFFF8;
+}
+
+.reply__form.active {
   border: 2px solid #007F5F;
+  background: #fff;
 }
 
 .reply__form textarea {
@@ -5412,6 +5447,7 @@ body.lock {
   color: #000;
   resize: none;
   font-size: 1.125rem;
+  background: none;
 }
 
 .reply__form textarea::-moz-placeholder {
@@ -6458,6 +6494,10 @@ body.lock {
   border: 2px solid transparent;
 }
 
+.subscribe__input.active {
+  border: 2px solid transparent;
+}
+
 .subscribe__input.error {
   border: 2px solid #E84141;
 }
@@ -6701,6 +6741,414 @@ body.lock {
     opacity: 1;
     visibility: visible;
   }
+}
+
+.about-note {
+  background: linear-gradient(126.06deg, rgba(0, 194, 255, 0.06) 0%, rgba(235, 255, 0, 0.06) 100%);
+  padding: 42px 0;
+  margin-bottom: 30px;
+}
+
+.about-note__body {
+  display: flex;
+}
+
+.about-note__image {
+  width: 250px;
+  min-width: 250px;
+  height: 250px;
+  position: relative;
+  margin: 0 82px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: url("../img/loading.gif") center/contain no-repeat;
+}
+
+.about-note__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-note__info {
+  flex: 1 1 auto;
+}
+
+.about-note__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.about-note__title {
+  font-family: "Rubik";
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.about-note__options {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.about-note__favorite,
+.about-note__share {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 0.8px solid #EBEBEB;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s linear;
+  position: relative;
+}
+
+.about-note__favorite span,
+.about-note__share span {
+  position: absolute;
+  white-space: nowrap;
+  right: 125%;
+  top: 50%;
+  transform: translate(-20px, -50%);
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 20px 20px rgba(0, 0, 0, 0.08);
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.2s linear;
+}
+
+.about-note__favorite span::after,
+.about-note__share span::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid #fff;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+.about-note__favorite:hover,
+.about-note__share:hover {
+  border: 2px solid #007F5F;
+}
+
+.about-note__share svg {
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  stroke-width: 2px;
+  stroke: #000;
+  transition: all 0.2s linear;
+}
+
+.about-note__favorite svg {
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  transition: all 0.2s linear;
+}
+
+.about-note__subtitle {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.about-note__desc {
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+}
+
+.about-note__text {
+  font-size: 1.125rem;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  max-height: 100px;
+  transition: all 0.2s linear;
+}
+
+.about-note__text.full {
+  text-overflow: unset;
+  display: block;
+}
+
+.content-note__wrapper {
+  display: flex;
+}
+
+.content-note__sidebar {
+  flex: 0 0 350px;
+  margin-right: 30px;
+  max-width: 350px;
+}
+
+.content-note__body {
+  flex: 1 1 auto;
+  width: 100%;
+  margin-bottom: 80px;
+  min-width: 0;
+}
+
+.content-note__block {
+  padding-left: 30px;
+  border-left: 1px solid #EBEBEB;
+}
+
+.similar-notes__body {
+  width: 100%;
+  border: 1px solid #E1E1E1;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 0 30px 30px;
+  margin-bottom: 40px;
+}
+
+.similar-notes__title {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 1.375rem;
+  background: #fff;
+  transform: translate(0, -50%);
+  padding: 0 30px;
+}
+
+.similar-notes__slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.similar-notes__wrapper {
+  display: flex;
+}
+
+.similar-notes__item {
+  border: 2px solid #EBEBEB;
+  border-radius: 12px;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  transition: all 0.2s linear;
+}
+
+.similar-notes__item:hover {
+  border: 2px solid #CCE5DF;
+}
+
+.similar-notes__item:hover .similar-notes__image {
+  transform: scale(1.1);
+}
+
+.similar-notes__item:hover .similar-notes__name {
+  color: #007F5F;
+}
+
+.similar-notes__image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 25px;
+  background: url("../img/loading.gif") center/contain no-repeat;
+  transition: all 0.5s linear;
+}
+
+.similar-notes__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.similar-notes__name {
+  font-size: 1.125rem;
+  color: #000;
+  transition: all 0.2s linear;
+}
+
+.aromates-note__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.aromates-note__title {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 1.75rem;
+  margin-right: 10px;
+}
+
+.aromates-note__count {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1;
+  color: #FFFFFF;
+  background: #2E3192;
+  border-radius: 30px;
+  padding: 2px 6px;
+}
+
+.aromates-note__form {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #EBEBEB;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.aromates-note__form input {
+  font-size: 1.125rem;
+  background: none;
+  border: none;
+  flex: 1 1 auto;
+}
+
+.aromates-note__form input::-moz-placeholder {
+  opacity: 1;
+  color: #C5C5C5;
+}
+
+.aromates-note__form input::placeholder {
+  opacity: 1;
+  color: #C5C5C5;
+}
+
+.aromates-note__form button {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.aromates-note__form button svg {
+  width: 100%;
+  height: 100%;
+}
+
+.aromates-note__tags {
+  display: flex;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scrollbar-color: #5f5f5f #fff;
+}
+
+.aromates-note__tags::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.aromates-note__tags::-webkit-scrollbar-thumb {
+  background: #5f5f5f;
+}
+
+.aromates-note__tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F2F2F2;
+  border-radius: 50px;
+  height: 38px;
+  padding: 0 15px;
+  font-size: 1.125rem;
+  white-space: nowrap;
+}
+
+.aromates-note__tag_all {
+  flex: 1 1 auto;
+}
+
+.aromates-note__tag:first-child {
+  padding: 0 7px;
+}
+
+.aromates-note__tag:last-child {
+  color: #007F5F;
+  background: none;
+  border-radius: none;
+  padding: 0;
+  height: unset;
+  justify-content: flex-end;
+}
+
+.aromates-note__tag.active {
+  background: #FCFCFC;
+  border: 2px solid #2E3192;
+}
+
+.aromates-note__tag:not(:last-child) {
+  margin-right: 5px;
+}
+
+.aromates-note__tag button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aromates-note__tag button svg {
+  width: 24px;
+  height: 24px;
+  stroke: #000;
+}
+
+.aromates-note__more {
+  background: #F5F5F5;
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-size: 1.125rem;
+  margin: 0 auto;
+  display: block;
+  color: #000;
+  transition: all 0.2s linear;
+}
+
+.aromates-note__more:hover {
+  background: #e6e6e6;
+}
+
+.aromates-note__catalog {
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #EBEBEB;
 }
 
 .item__cards,
@@ -7296,20 +7744,24 @@ body.lock {
   border-right: 5px solid transparent;
 }
 
-.family-item__title {
+.family-item__title,
+.family-main__title {
   margin-bottom: 30px;
 }
 
-.family-item__body {
+.family-item__body,
+.family-main__body {
   position: relative;
   padding: 0 35px;
 }
 
-.family-item__slider {
+.family-item__slider,
+.family-main__slider {
   overflow-x: hidden;
 }
 
-.family-item__card {
+.family-item__card,
+.family-main__card {
   border: 2px solid #E1E1E1;
   border-radius: 8px;
   padding: 12px 20px;
@@ -7318,19 +7770,27 @@ body.lock {
   transition: all 0.2s linear;
 }
 
-.family-item__card:hover {
+.family-item__card:hover,
+.family-main__card:hover {
   border: 2px solid #CCE5DF;
 }
 
-.family-item__card:hover .family-item__image img {
+.family-item__card:hover .family-item__image img,
+.family-item__card:hover .family-main__image img,
+.family-main__card:hover .family-item__image img,
+.family-main__card:hover .family-main__image img {
   transform: scale(1.1);
 }
 
-.family-item__card:hover .family-item__name {
+.family-item__card:hover .family-item__name,
+.family-item__card:hover .family-main__name,
+.family-main__card:hover .family-item__name,
+.family-main__card:hover .family-main__name {
   color: #007F5F;
 }
 
-.family-item__image {
+.family-item__image,
+.family-main__image {
   width: 65px;
   height: 65px;
   min-width: 65px;
@@ -7340,7 +7800,8 @@ body.lock {
   overflow: hidden;
 }
 
-.family-item__image img {
+.family-item__image img,
+.family-main__image img {
   position: absolute;
   top: 0;
   left: 0;
@@ -7351,7 +7812,8 @@ body.lock {
   transition: all 0.5s linear;
 }
 
-.family-item__name {
+.family-item__name,
+.family-main__name {
   font-size: 1.125rem;
   color: #000;
   transition: all 0.2s linear;
@@ -7359,25 +7821,30 @@ body.lock {
   text-overflow: ellipsis;
 }
 
-.family-item__navigation {
+.family-item__navigation,
+.family-main__navigation {
   top: 0;
   transform: translate(0, 0);
 }
 
 .family-item__navigation .navigation__prev,
-.family-item__navigation .navigation__next {
+.family-item__navigation .navigation__next,
+.family-main__navigation .navigation__prev,
+.family-main__navigation .navigation__next {
   height: 92px;
   transform: translate(0, 0);
 }
 
-.family-item__pagination {
+.family-item__pagination,
+.family-main__pagination {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
 }
 
-.family-item__pagination .swiper-pagination-bullet {
+.family-item__pagination .swiper-pagination-bullet,
+.family-main__pagination .swiper-pagination-bullet {
   display: block;
   width: 12px;
   height: 12px;
@@ -7387,11 +7854,13 @@ body.lock {
   transition: all 0.2s linear;
 }
 
-.family-item__pagination .swiper-pagination-bullet:not(:last-child) {
+.family-item__pagination .swiper-pagination-bullet:not(:last-child),
+.family-main__pagination .swiper-pagination-bullet:not(:last-child) {
   margin-right: 5px;
 }
 
-.family-item__pagination .swiper-pagination-bullet-active {
+.family-item__pagination .swiper-pagination-bullet-active,
+.family-main__pagination .swiper-pagination-bullet-active {
   width: 28px;
   height: 12px;
   background: #3CBB9B;
@@ -9105,6 +9574,623 @@ body.lock {
     opacity: 1;
     visibility: visible;
   }
+}
+
+.main {
+  padding-bottom: 150px;
+}
+
+.main__gallery,
+.main__subscribe,
+.main__themes,
+.main__comments,
+.main__users,
+.main__parfumers,
+.main__new,
+.main__fragrances,
+.main__family,
+.main__important,
+.main__reviews,
+.main__new-articles,
+.main__brands {
+  margin-bottom: 80px;
+}
+
+.menu-main {
+  margin-top: 10px;
+  border-top: 1px solid #EBEBEB;
+  border-bottom: 1px solid #EBEBEB;
+  margin-bottom: 16px;
+}
+
+.menu-main__body {
+  padding: 20px 0;
+}
+
+.menu-main__slider {
+  overflow: hidden;
+}
+
+.menu-main__slide {
+  border-radius: 16px;
+  border: 2px solid #007F5F;
+  background: #FFF;
+  padding: 3px;
+}
+
+.menu-main__item {
+  border-radius: 12px;
+  position: relative;
+  height: 90px;
+  overflow: hidden;
+  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.menu-main__item:hover .menu-main__image img {
+  transform: scale(1.1);
+}
+
+.menu-main__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.menu-main__image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.menu-main__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s linear;
+}
+
+.menu-main__title {
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+}
+
+.popular-main {
+  margin-bottom: 35px;
+}
+
+.popular-main__title {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.family-main__image {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+}
+
+.family-main .navigation__prev,
+.family-main .navigation__next {
+  height: 77px;
+}
+
+.important-main__title,
+.reviews-main__title {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.important-main__grid,
+.reviews-main__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 30px;
+}
+
+.important-main__item,
+.reviews-main__item {
+  border: 1px solid #EBEBEB;
+  border-radius: 12px;
+  grid-column: span 2;
+}
+
+.new-articles-main__title {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.new-articles-main__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 30px;
+}
+
+.new-articles-main__item {
+  grid-column: span 4;
+  border: 1px solid #EBEBEB;
+}
+
+.new-articles-main__item:first-child {
+  grid-column: span 8;
+}
+
+.new-articles-main__item:nth-child(2) {
+  grid-column: span 4;
+}
+
+.new-articles-main__item:nth-child(3),
+.new-articles-main__item:nth-child(4) {
+  grid-column: span 6;
+}
+
+.brands-main__body {
+  position: relative;
+  padding: 45px 30px 30px;
+  border-radius: 16px;
+  border: 1px solid #E1E1E1;
+}
+
+.brands-main__title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  z-index: 2;
+  padding: 0 30px;
+  white-space: nowrap;
+}
+
+.brands-main__body {
+  border: 1px solid #E1E1E1;
+  border-radius: 16px;
+  position: relative;
+  padding: 45px 30px 30px;
+}
+
+.brands-main__slider {
+  overflow-x: hidden;
+  padding: 10px 15px;
+  margin: -10px -15px;
+}
+
+.brands-main__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 100%;
+  border-radius: 12px;
+  transition: all 0.2s linear;
+}
+
+.brands-main__card:hover {
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.12);
+}
+
+.brands-main__card:hover .brands-main__image img {
+  transform: scale(1.05);
+}
+
+.brands-main__card:hover .brands-main__name {
+  color: #007F5F;
+}
+
+.brands-main__card_add {
+  padding: 0;
+}
+
+.brands-main__new {
+  flex: 1 1 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #C3C3C3;
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  border: 1px solid #E1E1E1;
+  border-radius: 12px;
+  font-size: 1.125rem;
+  transition: all 0.2s linear;
+}
+
+.brands-main__new:hover {
+  color: #007F5F;
+}
+
+.brands-main__new:hover svg {
+  stroke: #007F5F;
+}
+
+.brands-main__new svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2px;
+  stroke: #C3C3C3;
+  margin-bottom: 10px;
+  transition: all 0.2s linear;
+}
+
+.brands-main__new span {
+  max-width: 100px;
+}
+
+.brands-main__image {
+  width: 150px;
+  height: 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.brands-main__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: all 0.5s linear;
+}
+
+.brands-main__name {
+  font-size: 1.125rem;
+  margin-bottom: 20px;
+  color: #000;
+  text-align: center;
+  transition: all 0.2s linear;
+  max-width: 150px;
+}
+
+.brands-main__name {
+  margin-bottom: 5px;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.brands-main__aromates {
+  color: #C3C3C3;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.brands-main__rating {
+  margin-bottom: 15px;
+}
+
+.comments-main__title {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.comments-main .tabs__header {
+  max-width: unset;
+  min-width: unset;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.comments-main .profile-comments__item,
+.comments-main .profile-reviews__item {
+  border-radius: 8px;
+  border: 1px solid #EBEBEB;
+  padding: 20px;
+}
+
+.comments-main .profile-comments__item:not(:last-child),
+.comments-main .profile-reviews__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.users-main__body,
+.parfumers-main__body {
+  position: relative;
+  padding: 45px 30px 30px;
+  border-radius: 16px;
+  border: 1px solid #E1E1E1;
+}
+
+.users-main__title,
+.parfumers-main__title {
+  position: absolute;
+  padding: 0 30px;
+  top: 0;
+  left: 0;
+  transform: translate(0, -50%);
+  background: #fff;
+}
+
+.users-main__all,
+.parfumers-main__all {
+  position: absolute;
+  top: 100%;
+  left: 30px;
+  transform: translate(0, -50%);
+}
+
+.parfumers-main__title {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.parfumers-main .slider-users__name {
+  margin-bottom: 5px;
+}
+
+.slider-users {
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-users__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  border: 2px solid #EBEBEB;
+  padding: 30px 0;
+  transition: all 0.2s linear;
+}
+
+.slider-users__slide:hover {
+  border: 2px solid #CCE5DF;
+}
+
+.slider-users__slide:hover .slider-users__image img {
+  transform: scale(1.1);
+}
+
+.slider-users__slide:hover .slider-users__name {
+  color: #007F5F;
+}
+
+.slider-users__image {
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.slider-users__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s linear;
+}
+
+.slider-users__name {
+  font-size: 1.125rem;
+  color: #000;
+  max-width: 120px;
+  text-align: center;
+  transition: all 0.2s linear;
+}
+
+.slider-users__occupation {
+  color: #C3C3C3;
+  text-align: center;
+}
+
+.gallery-main__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.gallery-main__item {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 31%;
+  transition: all 0.3s linear;
+}
+
+.gallery-main__item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-main__item:nth-child(1) {
+  grid-column: span 4;
+  grid-row: 1/8;
+}
+
+.gallery-main__item:nth-child(2) {
+  grid-column: span 8;
+  grid-row: 1/5;
+}
+
+.gallery-main__item:nth-child(3) {
+  grid-column: span 4;
+  grid-row: 5/13;
+}
+
+.gallery-main__item:nth-child(4) {
+  grid-column: span 4;
+  grid-row: 5/9;
+}
+
+.gallery-main__item:nth-child(5) {
+  grid-column: span 4;
+  grid-row: 8/13;
+}
+
+.gallery-main__item:nth-child(6) {
+  grid-column: span 4;
+  grid-row: 9/13;
+}
+
+.gallery-main__item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s linear;
+}
+
+.header-gallery {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.header-gallery__image {
+  width: 115px;
+  min-width: 115px;
+  height: 100px;
+  border-radius: 10px;
+  background: #F4F8F7;
+  position: relative;
+  margin-right: 30px;
+}
+
+.header-gallery__image img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 70%;
+  height: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.header-gallery__title {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.header-gallery__desc {
+  font-size: 1.125rem;
+  max-width: 640px;
+}
+
+.rubrics-main__body {
+  display: flex;
+}
+
+.rubrics-main__articles {
+  flex: 1 1 auto;
+  margin-right: 80px;
+}
+
+.rubrics-main__news {
+  flex: 0 1 352px;
+}
+
+.rubrics-main__news .rubric-articles__list {
+  -moz-columns: unset;
+       columns: unset;
+}
+
+.subscribe-main__body {
+  position: relative;
+  padding: 40px 30px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #F2F4FF 0%, #E4FFF8 100%);
+}
+
+.subscribe-main__info {
+  max-width: 650px;
+  position: relative;
+  z-index: 1;
+}
+
+.subscribe-main__attention {
+  color: #007F5F;
+  font-family: "Rubik";
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.subscribe-main__advice {
+  font-family: "Rubik";
+  font-size: 1.375rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.subscribe-main__text {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.subscribe-main__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 370px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.subscribe-main__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translate(10%, 0);
+}
+
+.subscribe-main__form {
+  position: relative;
+}
+
+.subscribe-main__form .subscribe__form {
+  box-shadow: none;
+  position: relative;
+}
+
+.subscribe-main__form .subscribe__input {
+  background: #fff;
+}
+
+.about-main__title {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.about-main__desc {
+  font-size: 1.125rem;
+}
+
+.about-main__desc p:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .about__body {
@@ -11326,14 +12412,15 @@ body.lock {
 .profile-reviews__article:hover,
 .profile-comments__parfume:hover,
 .profile-comments__article:hover {
-  color: #007F5F;
+  color: #fff;
+  background: #007F5F;
 }
 
 .profile-reviews__parfume:hover svg,
 .profile-reviews__article:hover svg,
 .profile-comments__parfume:hover svg,
 .profile-comments__article:hover svg {
-  stroke: #007F5F;
+  stroke: #fff;
 }
 
 .profile-reviews__parfume svg,
@@ -13547,6 +14634,7 @@ body.lock {
 
 .rubric-articles__link picture {
   width: 50px;
+  min-width: 50px;
   height: 50px;
   margin-right: 16px;
   position: relative;
@@ -13789,6 +14877,47 @@ body.lock {
 
 .articles-card__name:hover {
   color: #A5A5A5;
+}
+
+.articles-card__labels {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+.articles-card__label {
+  height: 38px;
+  padding: 0 15px;
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 50px;
+  color: #000;
+  transition: all 0.2s linear;
+}
+
+.articles-card__label:hover {
+  transform: scale(0.9);
+}
+
+.articles-card__label svg,
+.articles-card__label img {
+  width: 24px;
+  height: 24px;
+}
+
+.articles-card__label:not(:last-child) {
+  margin-right: 5px;
+}
+
+.articles-card__label_icon {
+  border-radius: 50%;
+  width: 38px;
 }
 
 .articles-card__image {
@@ -15102,414 +16231,6 @@ body.lock {
   padding-left: 50px;
 }
 
-.about-note {
-  background: linear-gradient(126.06deg, rgba(0, 194, 255, 0.06) 0%, rgba(235, 255, 0, 0.06) 100%);
-  padding: 42px 0;
-  margin-bottom: 30px;
-}
-
-.about-note__body {
-  display: flex;
-}
-
-.about-note__image {
-  width: 250px;
-  min-width: 250px;
-  height: 250px;
-  position: relative;
-  margin: 0 82px;
-  border-radius: 50%;
-  overflow: hidden;
-  background: url("../img/loading.gif") center/contain no-repeat;
-}
-
-.about-note__image img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.about-note__info {
-  flex: 1 1 auto;
-}
-
-.about-note__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-}
-
-.about-note__title {
-  font-family: "Rubik";
-  font-weight: 600;
-  font-size: 2rem;
-  margin-bottom: 8px;
-}
-
-.about-note__options {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.about-note__favorite,
-.about-note__share {
-  width: 48px;
-  height: 48px;
-  margin-right: 10px;
-  background: rgba(255, 255, 255, 0.5);
-  border: 0.8px solid #EBEBEB;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s linear;
-  position: relative;
-}
-
-.about-note__favorite span,
-.about-note__share span {
-  position: absolute;
-  white-space: nowrap;
-  right: 125%;
-  top: 50%;
-  transform: translate(-20px, -50%);
-  background: #fff;
-  padding: 6px 10px;
-  border-radius: 8px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 20px 20px rgba(0, 0, 0, 0.08);
-  display: block;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: all 0.2s linear;
-}
-
-.about-note__favorite span::after,
-.about-note__share span::after {
-  content: "";
-  position: absolute;
-  left: 100%;
-  top: 50%;
-  transform: translate(0, -50%);
-  width: 0;
-  height: 0;
-  border-left: 8px solid #fff;
-  border-top: 4px solid transparent;
-  border-bottom: 4px solid transparent;
-}
-
-.about-note__favorite:hover,
-.about-note__share:hover {
-  border: 2px solid #007F5F;
-}
-
-.about-note__share svg {
-  width: 32px;
-  min-width: 32px;
-  height: 32px;
-  stroke-width: 2px;
-  stroke: #000;
-  transition: all 0.2s linear;
-}
-
-.about-note__favorite svg {
-  width: 32px;
-  min-width: 32px;
-  height: 32px;
-  transition: all 0.2s linear;
-}
-
-.about-note__subtitle {
-  font-size: 1.125rem;
-  text-transform: uppercase;
-  color: #000000;
-  margin-bottom: 20px;
-}
-
-.about-note__desc {
-  font-weight: 600;
-  font-size: 1.125rem;
-  margin-bottom: 10px;
-}
-
-.about-note__text {
-  font-size: 1.125rem;
-  margin-bottom: 5px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  max-height: 100px;
-  transition: all 0.2s linear;
-}
-
-.about-note__text.full {
-  text-overflow: unset;
-  display: block;
-}
-
-.content-note__wrapper {
-  display: flex;
-}
-
-.content-note__sidebar {
-  flex: 0 0 350px;
-  margin-right: 30px;
-  max-width: 350px;
-}
-
-.content-note__body {
-  flex: 1 1 auto;
-  width: 100%;
-  margin-bottom: 80px;
-  min-width: 0;
-}
-
-.content-note__block {
-  padding-left: 30px;
-  border-left: 1px solid #EBEBEB;
-}
-
-.similar-notes__body {
-  width: 100%;
-  border: 1px solid #E1E1E1;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  padding: 0 30px 30px;
-  margin-bottom: 40px;
-}
-
-.similar-notes__title {
-  font-family: "Rubik";
-  font-weight: 500;
-  font-size: 1.375rem;
-  background: #fff;
-  transform: translate(0, -50%);
-  padding: 0 30px;
-}
-
-.similar-notes__slider {
-  overflow: hidden;
-  width: 100%;
-}
-
-.similar-notes__wrapper {
-  display: flex;
-}
-
-.similar-notes__item {
-  border: 2px solid #EBEBEB;
-  border-radius: 12px;
-  padding: 30px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 0;
-  transition: all 0.2s linear;
-}
-
-.similar-notes__item:hover {
-  border: 2px solid #CCE5DF;
-}
-
-.similar-notes__item:hover .similar-notes__image {
-  transform: scale(1.1);
-}
-
-.similar-notes__item:hover .similar-notes__name {
-  color: #007F5F;
-}
-
-.similar-notes__image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 25px;
-  background: url("../img/loading.gif") center/contain no-repeat;
-  transition: all 0.5s linear;
-}
-
-.similar-notes__image img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.similar-notes__name {
-  font-size: 1.125rem;
-  color: #000;
-  transition: all 0.2s linear;
-}
-
-.aromates-note__header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.aromates-note__title {
-  font-family: "Rubik";
-  font-weight: 500;
-  font-size: 1.75rem;
-  margin-right: 10px;
-}
-
-.aromates-note__count {
-  font-family: "Rubik";
-  font-weight: 500;
-  font-size: 1.125rem;
-  line-height: 1;
-  color: #FFFFFF;
-  background: #2E3192;
-  border-radius: 30px;
-  padding: 2px 6px;
-}
-
-.aromates-note__form {
-  flex: 1 1 auto;
-  display: flex;
-  align-items: center;
-  background: #fff;
-  border: 1px solid #EBEBEB;
-  border-radius: 8px;
-  padding: 15px 20px;
-  margin-bottom: 20px;
-}
-
-.aromates-note__form input {
-  font-size: 1.125rem;
-  background: none;
-  border: none;
-  flex: 1 1 auto;
-}
-
-.aromates-note__form input::-moz-placeholder {
-  opacity: 1;
-  color: #C5C5C5;
-}
-
-.aromates-note__form input::placeholder {
-  opacity: 1;
-  color: #C5C5C5;
-}
-
-.aromates-note__form button {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
-}
-
-.aromates-note__form button svg {
-  width: 100%;
-  height: 100%;
-}
-
-.aromates-note__tags {
-  display: flex;
-  margin-bottom: 30px;
-  overflow-x: auto;
-  scrollbar-width: none;
-  scrollbar-color: #5f5f5f #fff;
-}
-
-.aromates-note__tags::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-
-.aromates-note__tags::-webkit-scrollbar-thumb {
-  background: #5f5f5f;
-}
-
-.aromates-note__tag {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #F2F2F2;
-  border-radius: 50px;
-  height: 38px;
-  padding: 0 15px;
-  font-size: 1.125rem;
-  white-space: nowrap;
-}
-
-.aromates-note__tag_all {
-  flex: 1 1 auto;
-}
-
-.aromates-note__tag:first-child {
-  padding: 0 7px;
-}
-
-.aromates-note__tag:last-child {
-  color: #007F5F;
-  background: none;
-  border-radius: none;
-  padding: 0;
-  height: unset;
-  justify-content: flex-end;
-}
-
-.aromates-note__tag.active {
-  background: #FCFCFC;
-  border: 2px solid #2E3192;
-}
-
-.aromates-note__tag:not(:last-child) {
-  margin-right: 5px;
-}
-
-.aromates-note__tag button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.aromates-note__tag button svg {
-  width: 24px;
-  height: 24px;
-  stroke: #000;
-}
-
-.aromates-note__more {
-  background: #F5F5F5;
-  border-radius: 8px;
-  padding: 12px 18px;
-  font-size: 1.125rem;
-  margin: 0 auto;
-  display: block;
-  color: #000;
-  transition: all 0.2s linear;
-}
-
-.aromates-note__more:hover {
-  background: #e6e6e6;
-}
-
-.aromates-note__catalog {
-  margin-bottom: 20px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #EBEBEB;
-}
-
 /**
  * Swiper 8.4.7
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -15801,17 +16522,17 @@ body.lock {
     transform: translate(-50%, 0);
   }
 
-  .progress-profile__item:hover .progress-profile__prompt {
-    opacity: 1;
-    visibility: visible;
-    transform: translate(0, 0);
-  }
-
   .about-note__favorite:hover span,
   .about-note__share:hover span {
     opacity: 1;
     visibility: visible;
     transform: translate(0, -50%);
+  }
+
+  .progress-profile__item:hover .progress-profile__prompt {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, 0);
   }
 }
 
@@ -15916,14 +16637,6 @@ body.lock {
          columns: 2 350px;
   }
 
-  .article__body {
-    flex-direction: column;
-  }
-
-  .article__content {
-    margin-bottom: 80px;
-  }
-
   .content-note__sidebar {
     flex: unset;
     margin-right: 0;
@@ -15940,6 +16653,14 @@ body.lock {
 
   .similar-notes__body {
     margin-bottom: 30px;
+  }
+
+  .article__body {
+    flex-direction: column;
+  }
+
+  .article__content {
+    margin-bottom: 80px;
   }
 }
 
@@ -15969,11 +16690,6 @@ body.lock {
     font-size: calc(1.0625rem + 1 * (100vw - 20rem) / 916);
   }
 
-  .profile-articles__image {
-    width: calc(230px + 120 * (100vw - 992px) / 244);
-    min-width: calc(230px + 120 * (100vw - 992px) / 244);
-  }
-
   .about-note__image {
     margin: 0 calc(20px + 62 * (100vw - 768px) / 468);
   }
@@ -15985,9 +16701,43 @@ body.lock {
   .aromates-note__form input {
     font-size: calc(1.0625rem + 1 * (100vw - 20rem) / 916);
   }
+
+  .profile-articles__image {
+    width: calc(230px + 120 * (100vw - 992px) / 244);
+    min-width: calc(230px + 120 * (100vw - 992px) / 244);
+  }
 }
 
 @media (max-width: 1200px) {
+  .about-note__options {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+
+  .about-note__favorite,
+  .about-note__share {
+    margin-right: 0;
+    margin-bottom: 10px;
+    order: 2;
+  }
+
+  .about-note__share {
+    order: 1;
+  }
+
+  .about-note__favorite {
+    order: 2;
+  }
+
+  .about-note__subscribe {
+    margin-bottom: 10px;
+    order: 3;
+  }
+
+  .about-note__text {
+    padding-right: 58px;
+  }
+
   .features-item__block:nth-child(1) {
     grid-column: span 5;
     grid-row: span 3;
@@ -16110,6 +16860,15 @@ body.lock {
     padding: 0;
   }
 
+  .brands-main__body {
+    margin: 0 10px;
+  }
+
+  .users-main__wrapper,
+  .parfumers-main__wrapper {
+    padding: 0 15px;
+  }
+
   .main-profile {
     flex-wrap: wrap;
   }
@@ -16188,35 +16947,6 @@ body.lock {
   .sidebar-new__btn:not(:last-child) {
     border-bottom: none;
     border-right: 1px solid #EBEBEB;
-  }
-
-  .about-note__options {
-    flex-direction: column-reverse;
-    align-items: flex-end;
-  }
-
-  .about-note__favorite,
-  .about-note__share {
-    margin-right: 0;
-    margin-bottom: 10px;
-    order: 2;
-  }
-
-  .about-note__share {
-    order: 1;
-  }
-
-  .about-note__favorite {
-    order: 2;
-  }
-
-  .about-note__subscribe {
-    margin-bottom: 10px;
-    order: 3;
-  }
-
-  .about-note__text {
-    padding-right: 58px;
   }
 }
 
@@ -16313,7 +17043,9 @@ body.lock {
     flex: 0 0 465px;
   }
 
-  .recent {
+  .recent,
+  .new-main,
+  .fragrances-main {
     margin-bottom: 100px;
   }
 
@@ -16358,6 +17090,15 @@ body.lock {
 
   .socials {
     margin-bottom: 30px;
+  }
+
+  .about-note {
+    padding: 30px 0;
+  }
+
+  .aromates-note__catalog {
+    margin-bottom: 24px;
+    padding-bottom: 20px;
   }
 
   .features-item__block:nth-child(3) .features-item__label,
@@ -16410,6 +17151,10 @@ body.lock {
 
   .recommend-about {
     margin-right: -80px;
+  }
+
+  .main {
+    padding-bottom: 100px;
   }
 
   .about__body {
@@ -16624,15 +17369,6 @@ body.lock {
   .error__footer {
     padding-left: 0;
   }
-
-  .about-note {
-    padding: 30px 0;
-  }
-
-  .aromates-note__catalog {
-    margin-bottom: 24px;
-    padding-bottom: 20px;
-  }
 }
 
 @media (max-width: 1000px) and (max-width: 768px) {
@@ -16741,6 +17477,48 @@ body.lock {
     display: none;
   }
 
+  .important-main__grid,
+  .reviews-main__grid {
+    grid-gap: 20px;
+  }
+
+  .important-main__item,
+  .reviews-main__item {
+    grid-column: span 3;
+  }
+
+  .important-main__item:last-child,
+  .reviews-main__item:last-child {
+    grid-column: span 6;
+  }
+
+  .new-articles-main__item {
+    grid-column: span 6;
+  }
+
+  .new-articles-main__item:first-child {
+    grid-column: span 12;
+    height: 450px;
+  }
+
+  .new-articles-main__item:nth-child(2) {
+    grid-column: span 6;
+  }
+
+  .rubrics-main__articles {
+    flex: 1 1 50%;
+    margin-right: 30px;
+  }
+
+  .rubrics-main__articles .rubric-articles__list {
+    -moz-columns: unset;
+         columns: unset;
+  }
+
+  .rubrics-main__news {
+    flex: 1 1 50%;
+  }
+
   .all-family__list {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
@@ -16836,17 +17614,23 @@ body.lock {
     margin-bottom: 60px;
   }
 
-  .recent {
+  .recent,
+  .new-main,
+  .fragrances-main {
     margin-bottom: 80px;
   }
 
-  .recent__body {
+  .recent__body,
+  .new-main__body,
+  .fragrances-main__body {
     border: none;
     padding: 0;
     margin: 0;
   }
 
-  .recent__title {
+  .recent__title,
+  .new-main__title,
+  .fragrances-main__title {
     background: none;
     transform: translate(0, 0);
     padding: 0;
@@ -16855,12 +17639,16 @@ body.lock {
     text-align: left;
   }
 
-  .recent__slider {
+  .recent__slider,
+  .new-main__slider,
+  .fragrances-main__slider {
     overflow: visible;
     padding: 0;
   }
 
-  .recent__item {
+  .recent__item,
+  .new-main__item,
+  .fragrances-main__item {
     border: 2px solid #CCE5DF;
     padding: 20px;
   }
@@ -17034,6 +17822,82 @@ body.lock {
     display: flex;
   }
 
+  .about-note__body {
+    flex-direction: column;
+  }
+
+  .about-note__image {
+    margin: 0 auto 30px;
+  }
+
+  .about-note__title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-note__options {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .about-note__favorite,
+  .about-note__share {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  .about-note__share {
+    order: 2;
+  }
+
+  .about-note__favorite {
+    order: 1;
+  }
+
+  .about-note__subscribe {
+    margin-bottom: 0;
+    order: 3;
+  }
+
+  .about-note__subtitle {
+    text-align: center;
+  }
+
+  .about-note__text {
+    padding: 0;
+  }
+
+  .content-note__body {
+    margin-bottom: 60px;
+  }
+
+  .similar-notes {
+    padding: 0;
+  }
+
+  .similar-notes__body {
+    border: none;
+    padding: 0;
+  }
+
+  .similar-notes__title {
+    font-size: 1.5rem;
+    align-self: flex-start;
+    transform: translate(0, 0);
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .similar-notes__slider {
+    overflow: visible;
+  }
+
+  .similar-notes__item {
+    border: 2px solid #CCE5DF;
+  }
+
   .item__cards,
   .item__themes,
   .item__expert,
@@ -17120,23 +17984,28 @@ body.lock {
     margin-bottom: 0;
   }
 
-  .family-item__title {
+  .family-item__title,
+  .family-main__title {
     text-align: left;
   }
 
-  .family-item__body {
+  .family-item__body,
+  .family-main__body {
     padding: 0;
   }
 
-  .family-item__slider {
+  .family-item__slider,
+  .family-main__slider {
     overflow: visible;
   }
 
-  .family-item__card {
+  .family-item__card,
+  .family-main__card {
     border: 2px solid #CCE5DF;
   }
 
-  .family-item__pagination {
+  .family-item__pagination,
+  .family-main__pagination {
     display: none;
   }
 
@@ -17350,6 +18219,123 @@ body.lock {
 
   .faq-item__header {
     margin-bottom: 30px;
+  }
+
+  .main {
+    padding-bottom: 80px;
+  }
+
+  .main__gallery,
+  .main__subscribe,
+  .main__themes,
+  .main__comments,
+  .main__users,
+  .main__parfumers,
+  .main__new,
+  .main__fragrances,
+  .main__family,
+  .main__important,
+  .main__reviews,
+  .main__new-articles,
+  .main__brands {
+    margin-bottom: 60px;
+  }
+
+  .new-articles-main__grid {
+    grid-gap: 20px;
+  }
+
+  .brands-main__body {
+    border: none;
+    padding: 45px 0 0;
+  }
+
+  .brands-main__title {
+    position: static;
+    text-align: left;
+    margin-bottom: 30px;
+    transform: translate(0, 0);
+    padding: 0;
+    white-space: normal;
+  }
+
+  .brands-main__body {
+    border: none;
+    padding: 0;
+  }
+
+  .brands-main__card {
+    border: 2px solid rgba(0, 127, 95, 0.2);
+  }
+
+  .brands-main__card_add {
+    border: none;
+  }
+
+  .users-main__wrapper,
+  .parfumers-main__wrapper {
+    padding: 0;
+  }
+
+  .users-main__body,
+  .parfumers-main__body {
+    border: none;
+    padding: 45px 0 0;
+  }
+
+  .users-main__title,
+  .parfumers-main__title {
+    padding: 0;
+  }
+
+  .users-main__all,
+  .parfumers-main__all {
+    top: 0;
+    left: unset;
+    right: 0;
+  }
+
+  .parfumers-main__body {
+    padding: 0;
+  }
+
+  .parfumers-main__title {
+    position: static;
+    transform: translate(0, 0);
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .slider-users {
+    overflow: visible;
+  }
+
+  .slider-users__slide {
+    border: 2px solid #CCE5DF;
+  }
+
+  .header-gallery {
+    margin-bottom: 30px;
+  }
+
+  .header-gallery__image {
+    margin-right: 15px;
+  }
+
+  .rubrics-main__body {
+    flex-direction: column;
+  }
+
+  .rubrics-main__articles {
+    margin-right: 0;
+  }
+
+  .subscribe-main__info {
+    max-width: 580px;
+  }
+
+  .subscribe-main__image img {
+    transform: translate(20%, 0);
   }
 
   .about__body {
@@ -17950,82 +18936,6 @@ body.lock {
   .error__footer {
     padding-left: 10px;
   }
-
-  .about-note__body {
-    flex-direction: column;
-  }
-
-  .about-note__image {
-    margin: 0 auto 30px;
-  }
-
-  .about-note__title {
-    width: 100%;
-    text-align: center;
-  }
-
-  .about-note__options {
-    position: static;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-
-  .about-note__favorite,
-  .about-note__share {
-    margin-bottom: 0;
-    margin-right: 10px;
-  }
-
-  .about-note__share {
-    order: 2;
-  }
-
-  .about-note__favorite {
-    order: 1;
-  }
-
-  .about-note__subscribe {
-    margin-bottom: 0;
-    order: 3;
-  }
-
-  .about-note__subtitle {
-    text-align: center;
-  }
-
-  .about-note__text {
-    padding: 0;
-  }
-
-  .content-note__body {
-    margin-bottom: 60px;
-  }
-
-  .similar-notes {
-    padding: 0;
-  }
-
-  .similar-notes__body {
-    border: none;
-    padding: 0;
-  }
-
-  .similar-notes__title {
-    font-size: 1.5rem;
-    align-self: flex-start;
-    transform: translate(0, 0);
-    padding: 0;
-    margin-bottom: 20px;
-  }
-
-  .similar-notes__slider {
-    overflow: visible;
-  }
-
-  .similar-notes__item {
-    border: 2px solid #CCE5DF;
-  }
 }
 
 @media (max-width: 768px) and (max-width: 576px) {
@@ -18360,13 +19270,15 @@ body.lock {
     flex-direction: column;
   }
 
-  .family-item__image {
+  .family-item__image,
+  .family-main__image {
     width: 55px;
     height: 55px;
     min-width: 55px;
   }
 
-  .family-item__name {
+  .family-item__name,
+  .family-main__name {
     font-size: 1.0625rem;
   }
 
@@ -18429,6 +19341,88 @@ body.lock {
   }
 
   .faq-item__intro {
+    font-size: 0.9375rem;
+  }
+
+  .important-main__item,
+  .reviews-main__item {
+    grid-column: span 6;
+  }
+
+  .new-articles-main__grid {
+    grid-gap: 16px;
+  }
+
+  .new-articles-main__item {
+    grid-column: span 12;
+  }
+
+  .new-articles-main__item:first-child {
+    height: 350px;
+    padding: 24px;
+  }
+
+  .new-articles-main__item:nth-child(2) {
+    grid-column: span 12;
+  }
+
+  .new-articles-main__item:nth-child(3),
+  .new-articles-main__item:nth-child(4) {
+    grid-column: span 12;
+  }
+
+  .brands-main__body {
+    padding: 0;
+  }
+
+  .users-main__body,
+  .parfumers-main__body {
+    padding: 0;
+  }
+
+  .users-main__title,
+  .parfumers-main__title {
+    position: static;
+    text-align: left;
+    transform: translate(0, 0);
+    margin-bottom: 16px;
+  }
+
+  .users-main__all,
+  .parfumers-main__all {
+    position: static;
+    width: -moz-fit-content;
+    width: fit-content;
+    transform: translate(0, 0);
+    margin-bottom: 24px;
+  }
+
+  .gallery-main__item {
+    padding-bottom: 0;
+    height: 200px;
+  }
+
+  .gallery-main__item:nth-child(1),
+  .gallery-main__item:nth-child(2),
+  .gallery-main__item:nth-child(3),
+  .gallery-main__item:nth-child(4),
+  .gallery-main__item:nth-child(5),
+  .gallery-main__item:nth-child(6) {
+    grid-column: span 12;
+    grid-row: span 2;
+  }
+
+  .header-gallery__image {
+    width: 83px;
+    min-width: 83px;
+    height: 72px;
+  }
+
+  .header-gallery__title {
+    margin-bottom: 5px;
+  }
+
+  .header-gallery__desc {
     font-size: 0.9375rem;
   }
 
@@ -18991,15 +19985,21 @@ body.lock {
     padding: 6px 12px;
   }
 
-  .recent {
+  .recent,
+  .new-main,
+  .fragrances-main {
     margin-bottom: 60px;
   }
 
-  .recent__title {
+  .recent__title,
+  .new-main__title,
+  .fragrances-main__title {
     margin-bottom: 24px;
   }
 
-  .recent__name {
+  .recent__name,
+  .new-main__name,
+  .fragrances-main__name {
     font-size: 1.0625rem;
   }
 
@@ -19044,6 +20044,10 @@ body.lock {
   }
 
   .sort__title {
+    display: block;
+  }
+
+  .sort__close {
     display: block;
   }
 
@@ -19350,6 +20354,71 @@ body.lock {
     font-size: 1.0625rem;
   }
 
+  .about-note {
+    margin-bottom: 24px;
+  }
+
+  .about-note {
+    padding: 24px 0;
+  }
+
+  .about-note__image {
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+    margin-bottom: 24px;
+  }
+
+  .about-note__title {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 4px;
+  }
+
+  .about-note__options {
+    margin-bottom: 24px;
+  }
+
+  .about-note__subtitle {
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 0.9375rem;
+  }
+
+  .about-note__desc {
+    font-size: 1.0625rem;
+    margin-bottom: 8px;
+  }
+
+  .about-note__text {
+    font-size: 1.0625rem;
+  }
+
+  .content-note__body {
+    margin-bottom: 40px;
+  }
+
+  .similar-notes__body {
+    margin-bottom: 24px;
+  }
+
+  .similar-notes__title {
+    font-size: 1.375rem;
+  }
+
+  .similar-notes__item {
+    padding: 20px 0;
+  }
+
+  .aromates-note__title {
+    font-size: 1.375rem;
+  }
+
+  .aromates-note__catalog {
+    border: none;
+    padding-bottom: 0;
+  }
+
   .item__cards,
   .item__themes,
   .item__expert,
@@ -19469,7 +20538,8 @@ body.lock {
     margin: 0 20px 0 0;
   }
 
-  .family-item__title {
+  .family-item__title,
+  .family-main__title {
     margin-bottom: 24px;
   }
 
@@ -19703,6 +20773,105 @@ body.lock {
   .faq-item__answer {
     font-size: 1.0625rem;
     padding: 0 24px 24px;
+  }
+
+  .main {
+    padding-bottom: 60px;
+  }
+
+  .main__gallery,
+  .main__subscribe,
+  .main__themes,
+  .main__comments,
+  .main__users,
+  .main__parfumers,
+  .main__new,
+  .main__fragrances,
+  .main__family,
+  .main__important,
+  .main__reviews,
+  .main__new-articles,
+  .main__brands {
+    margin-bottom: 40px;
+  }
+
+  .popular-main {
+    margin-bottom: 24px;
+  }
+
+  .popular-main__title {
+    margin-bottom: 24px;
+  }
+
+  .family-main__image {
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+  }
+
+  .important-main__title,
+  .reviews-main__title {
+    margin-bottom: 24px;
+  }
+
+  .new-articles-main__title {
+    margin-bottom: 24px;
+  }
+
+  .brands-main__title {
+    margin-bottom: 24px;
+  }
+
+  .brands-main__new {
+    font-size: 1.0625rem;
+  }
+
+  .brands-main__name {
+    font-size: 1.0625rem;
+  }
+
+  .comments-main__title {
+    margin-bottom: 20px;
+  }
+
+  .parfumers-main__title {
+    margin-bottom: 24px;
+  }
+
+  .header-gallery {
+    margin-bottom: 24px;
+  }
+
+  .subscribe-main__body {
+    padding: 24px 20px;
+  }
+
+  .subscribe-main__attention {
+    font-size: 1.375rem;
+    margin-bottom: 8px;
+  }
+
+  .subscribe-main__advice {
+    max-width: 250px;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+
+  .subscribe-main__text {
+    max-width: 340px;
+    font-size: 1.125rem;
+  }
+
+  .subscribe-main__image img {
+    transform: translate(30%, 0);
+  }
+
+  .about-main__title {
+    margin-bottom: 24px;
+  }
+
+  .about-main__desc {
+    font-size: 1.0625rem;
   }
 
   .about__body {
@@ -20434,6 +21603,10 @@ body.lock {
     font-size: 0.9375rem;
   }
 
+  .articles-card__label {
+    font-size: 1.0625rem;
+  }
+
   .articles-card__btn,
   .articles-card__views {
     font-size: 0.9375rem;
@@ -20713,71 +21886,6 @@ body.lock {
   .error__info {
     flex: 0 0 60%;
   }
-
-  .about-note {
-    margin-bottom: 24px;
-  }
-
-  .about-note {
-    padding: 24px 0;
-  }
-
-  .about-note__image {
-    width: 200px;
-    height: 200px;
-    min-width: 200px;
-    margin-bottom: 24px;
-  }
-
-  .about-note__title {
-    font-size: 1.5rem;
-    text-align: left;
-    margin-bottom: 4px;
-  }
-
-  .about-note__options {
-    margin-bottom: 24px;
-  }
-
-  .about-note__subtitle {
-    text-align: left;
-    margin-bottom: 15px;
-    font-size: 0.9375rem;
-  }
-
-  .about-note__desc {
-    font-size: 1.0625rem;
-    margin-bottom: 8px;
-  }
-
-  .about-note__text {
-    font-size: 1.0625rem;
-  }
-
-  .content-note__body {
-    margin-bottom: 40px;
-  }
-
-  .similar-notes__body {
-    margin-bottom: 24px;
-  }
-
-  .similar-notes__title {
-    font-size: 1.375rem;
-  }
-
-  .similar-notes__item {
-    padding: 20px 0;
-  }
-
-  .aromates-note__title {
-    font-size: 1.375rem;
-  }
-
-  .aromates-note__catalog {
-    border: none;
-    padding-bottom: 0;
-  }
 }
 
 @media (max-width: 460px) {
@@ -21011,7 +22119,9 @@ body.lock {
     margin-bottom: 20px;
   }
 
-  .recent {
+  .recent,
+  .new-main,
+  .fragrances-main {
     margin-bottom: 40px;
   }
 
@@ -21035,6 +22145,10 @@ body.lock {
 
   .socials__list {
     max-width: 270px;
+  }
+
+  .content-note__body {
+    margin-bottom: 32px;
   }
 
   .item__cards,
@@ -21120,6 +22234,62 @@ body.lock {
   }
 
   .opinion-item__header {
+    margin-bottom: 20px;
+  }
+
+  .main__gallery,
+  .main__subscribe,
+  .main__themes,
+  .main__comments,
+  .main__users,
+  .main__parfumers,
+  .main__new,
+  .main__fragrances,
+  .main__family,
+  .main__important,
+  .main__reviews,
+  .main__new-articles,
+  .main__brands {
+    margin-bottom: 32px;
+  }
+
+  .menu-main__body {
+    padding: 16px 0;
+  }
+
+  .popular-main {
+    margin-bottom: 20px;
+  }
+
+  .popular-main__title {
+    margin-bottom: 20px;
+  }
+
+  .new-articles-main__title {
+    margin-bottom: 20px;
+  }
+
+  .new-articles-main__item:first-child {
+    height: 300px;
+  }
+
+  .brands-main__title {
+    margin-bottom: 20px;
+  }
+
+  .parfumers-main__title {
+    margin-bottom: 20px;
+  }
+
+  .header-gallery__image {
+    display: none;
+  }
+
+  .subscribe-main__text {
+    max-width: 220px;
+  }
+
+  .about-main__title {
     margin-bottom: 20px;
   }
 
@@ -21242,9 +22412,5 @@ body.lock {
 
   .socials-article {
     max-width: 250px;
-  }
-
-  .content-note__body {
-    margin-bottom: 32px;
   }
 }
