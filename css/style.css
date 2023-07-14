@@ -5397,6 +5397,10 @@ body.lock {
   position: relative;
 }
 
+.reply.active::after {
+  display: block;
+}
+
 .reply.visible {
   max-height: 100%;
   padding: 30px 0 30px 30px;
