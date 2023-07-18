@@ -4,7 +4,7 @@
 <head>
     <title>Fragsi</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230714154641">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230718115917">
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание">
@@ -146,7 +146,7 @@
 						<div class="menu-main__slider">
 							<div class="menu-main__wrapper swiper-wrapper">
 								<div class="menu-main__slide swiper-slide">
-									<a href="#" class="menu-main__item">
+									<button type="button" class="menu-main__item popup-link" data-modal="story">
 										<div class="menu-main__image">
 											<picture>
 												<source data-srcset="img/articles/Image1.webp" srcset="img/plug.png"
@@ -156,7 +156,7 @@
 											</picture>
 										</div>
 										<span class="menu-main__title">Пять ароматов в офис</span>
-									</a>
+									</button>
 								</div>
 								<div class="menu-main__slide swiper-slide">
 									<a href="#" class="menu-main__item">
@@ -6606,7 +6606,114 @@
         </div>
     </div>
 </div>
-	<script src="js/app.min.js?_v=20230714154641"></script>
+
+<div class="popup" id="story">
+    <div class="popup__body">
+        <div class="popup__content story">
+            <button class="popup__close">
+                <svg>
+                    <use href="img/icons/icons.svg#close"></use>
+                </svg>
+            </button>
+            <div class="story__slider">
+                <div class="story__wrapper swiper-wrapper">
+                    <div class="story__slide swiper-slide">
+                        <div class="story__item">
+                            <div class="story__image">
+                                <picture>
+                                    <source data-srcset="img/articles/Image1.webp" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/articles/Image1.png" src="img/plug.png" alt="Image">
+                                </picture>
+                            </div>
+                            <div class="story__info">
+                                <h3 class="story__title">5 ароматов в офис</h3>
+                                <p class="story__desc">
+                                    Разбираем лучшие ароматы для офиса, которые помогут вам
+                                    выглядеть и чувствовать себя стильно, элегантно и профессионально.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story__slide swiper-slide">
+                        <div class="story__item">
+                            <div class="story__image">
+                                <picture>
+                                    <source data-srcset="img/articles/Image2.webp" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/articles/Image2.png" src="img/plug.png" alt="Image">
+                                </picture>
+                            </div>
+                            <div class="story__fragrance">
+                                <h3 class="story__title">СK One 2022</h3>
+                                <p class="story__desc">
+                                    Разбираем лучшие ароматы для офиса, которые помогут вам
+                                    выглядеть и чувствовать себя стильно, элегантно и профессионально.
+                                </p>
+                                <a href="#" class="story__btn btn_green">
+                                    Перейти к аромату
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow-right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story__slide swiper-slide">
+                        <div class="story__item">
+                            <div class="story__image">
+                                <picture>
+                                    <source data-srcset="img/articles/Image3.webp" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/articles/Image3.png" src="img/plug.png" alt="Image">
+                                </picture>
+                            </div>
+                            <div class="story__fragrance">
+                                <h3 class="story__title">СK One 2022</h3>
+                                <p class="story__desc">
+                                    Разбираем лучшие ароматы для офиса, которые помогут вам
+                                    выглядеть и чувствовать себя стильно, элегантно и профессионально.
+                                </p>
+                                <a href="#" class="story__btn btn_green">
+                                    Перейти к аромату
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow-right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story__slide swiper-slide">
+                        <div class="story__item">
+                            <div class="story__image">
+                                <picture>
+                                    <source data-srcset="img/articles/Image4.webp" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/articles/Image4.png" src="img/plug.png" alt="Image">
+                                </picture>
+                            </div>
+                            <div class="story__fragrance">
+                                <h3 class="story__title">СK One 2022</h3>
+                                <p class="story__desc">
+                                    Разбираем лучшие ароматы для офиса, которые помогут вам
+                                    выглядеть и чувствовать себя стильно, элегантно и профессионально.
+                                </p>
+                                <a href="#" class="story__btn btn_green">
+                                    Перейти к аромату
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow-right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="story__pagination"></div>
+        </div>
+    </div>
+</div>
+	<script src="js/app.min.js?_v=20230718115917"></script>
 </body>
 
 </html>
