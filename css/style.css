@@ -3476,6 +3476,14 @@ body.lock {
   height: 70px;
 }
 
+.catalog_brand .catalog__extra {
+  margin-top: 10px;
+}
+
+.catalog_brand .catalog__rating {
+  margin-bottom: 0;
+}
+
 .catalog_parfumer .catalog__aromates-count {
   color: #000;
   margin-bottom: 8px;
@@ -3537,7 +3545,7 @@ body.lock {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 55px;
+  flex-wrap: wrap;
   border-bottom: 1px solid #EBEBEB;
   margin-bottom: 15px;
 }
@@ -3755,6 +3763,11 @@ body.lock {
 
 .filter__section_price .filter__inputs {
   display: none;
+}
+
+.filter__section_occupation .filter__item,
+.filter__section_segment .filter__item {
+  min-height: 24px;
 }
 
 .filter__list {
@@ -4505,6 +4518,30 @@ body.lock {
   margin-bottom: 60px;
 }
 
+.sidebar__filter {
+  height: 100%;
+}
+
+.sidebar__filter .filter__wrapper {
+  position: static;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transition: all 0.3s linear;
+}
+
+.sidebar__filter .filter__body {
+  position: static;
+  transform: translate(0, 0);
+}
+
+.sidebar__filter .filter__sections {
+  padding: 0;
+}
+
 .information-sidebar {
   margin-bottom: 60px;
 }
@@ -4804,6 +4841,64 @@ body.lock {
 
 .interesting-sidebar__link:hover {
   color: #007F5F;
+}
+
+.add-sidebar {
+  border-radius: 16px;
+  background: linear-gradient(135deg, #F2F4FF 0%, #E4FFF8 100%);
+  overflow: hidden;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.add-sidebar__question {
+  color: rgba(0, 0, 0, 0.3);
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.add-sidebar__proposal {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.add-sidebar__text {
+  font-size: 1.125rem;
+  margin-bottom: 20px;
+  max-width: 220px;
+  position: relative;
+  z-index: 1;
+}
+
+.add-sidebar__btn {
+  z-index: 1;
+}
+
+.add-sidebar__bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 145%;
+  width: 100%;
+  transform: translate(50%, 10px);
+}
+
+.add-sidebar__bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .help {
@@ -7004,19 +7099,22 @@ body.lock {
 }
 
 .about-note,
-.about-water {
+.about-water,
+.about-group {
   background: linear-gradient(126.06deg, rgba(0, 194, 255, 0.06) 0%, rgba(235, 255, 0, 0.06) 100%);
   padding: 42px 0;
   margin-bottom: 30px;
 }
 
 .about-note__body,
-.about-water__body {
+.about-water__body,
+.about-group__body {
   display: flex;
 }
 
 .about-note__image,
-.about-water__image {
+.about-water__image,
+.about-group__image {
   width: 250px;
   min-width: 250px;
   height: 250px;
@@ -7028,7 +7126,8 @@ body.lock {
 }
 
 .about-note__image img,
-.about-water__image img {
+.about-water__image img,
+.about-group__image img {
   position: absolute;
   top: 0;
   left: 0;
@@ -7039,12 +7138,14 @@ body.lock {
 }
 
 .about-note__info,
-.about-water__info {
+.about-water__info,
+.about-group__info {
   flex: 1 1 auto;
 }
 
 .about-note__header,
-.about-water__header {
+.about-water__header,
+.about-group__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7052,7 +7153,8 @@ body.lock {
 }
 
 .about-note__title,
-.about-water__title {
+.about-water__title,
+.about-group__title {
   font-family: "Rubik";
   font-weight: 600;
   font-size: 2rem;
@@ -7060,7 +7162,8 @@ body.lock {
 }
 
 .about-note__options,
-.about-water__options {
+.about-water__options,
+.about-group__options {
   display: flex;
   align-items: center;
   position: absolute;
@@ -7071,7 +7174,9 @@ body.lock {
 .about-note__favorite,
 .about-note__share,
 .about-water__favorite,
-.about-water__share {
+.about-water__share,
+.about-group__favorite,
+.about-group__share {
   width: 48px;
   height: 48px;
   margin-right: 10px;
@@ -7088,7 +7193,9 @@ body.lock {
 .about-note__favorite span,
 .about-note__share span,
 .about-water__favorite span,
-.about-water__share span {
+.about-water__share span,
+.about-group__favorite span,
+.about-group__share span {
   position: absolute;
   white-space: nowrap;
   right: 125%;
@@ -7108,7 +7215,9 @@ body.lock {
 .about-note__favorite span::after,
 .about-note__share span::after,
 .about-water__favorite span::after,
-.about-water__share span::after {
+.about-water__share span::after,
+.about-group__favorite span::after,
+.about-group__share span::after {
   content: "";
   position: absolute;
   left: 100%;
@@ -7124,12 +7233,15 @@ body.lock {
 .about-note__favorite:hover,
 .about-note__share:hover,
 .about-water__favorite:hover,
-.about-water__share:hover {
+.about-water__share:hover,
+.about-group__favorite:hover,
+.about-group__share:hover {
   border: 2px solid #007F5F;
 }
 
 .about-note__share svg,
-.about-water__share svg {
+.about-water__share svg,
+.about-group__share svg {
   width: 32px;
   min-width: 32px;
   height: 32px;
@@ -7139,7 +7251,8 @@ body.lock {
 }
 
 .about-note__favorite svg,
-.about-water__favorite svg {
+.about-water__favorite svg,
+.about-group__favorite svg {
   width: 32px;
   min-width: 32px;
   height: 32px;
@@ -7147,7 +7260,8 @@ body.lock {
 }
 
 .about-note__subtitle,
-.about-water__subtitle {
+.about-water__subtitle,
+.about-group__subtitle {
   font-size: 1.125rem;
   text-transform: uppercase;
   color: #000000;
@@ -7155,14 +7269,16 @@ body.lock {
 }
 
 .about-note__desc,
-.about-water__desc {
+.about-water__desc,
+.about-group__desc {
   font-weight: 600;
   font-size: 1.125rem;
   margin-bottom: 10px;
 }
 
 .about-note__text,
-.about-water__text {
+.about-water__text,
+.about-group__text {
   font-size: 1.125rem;
   margin-bottom: 5px;
   overflow: hidden;
@@ -7175,7 +7291,8 @@ body.lock {
 }
 
 .about-note__text.full,
-.about-water__text.full {
+.about-water__text.full,
+.about-group__text.full {
   text-overflow: unset;
   display: block;
 }
@@ -7184,20 +7301,36 @@ body.lock {
   background: linear-gradient(180deg, #EBFFFA 0%, #F6FAFF 100%);
 }
 
+.about-group {
+  background: linear-gradient(135deg, #F0FBFF 0%, #FEFFF0 100%);
+}
+
 .content-note__wrapper,
-.content-water__wrapper {
+.content-water__wrapper,
+.content-group__wrapper,
+.content-persona__wrapper,
+.content-brands__wrapper,
+.content-cat__wrapper {
   display: flex;
 }
 
 .content-note__sidebar,
-.content-water__sidebar {
+.content-water__sidebar,
+.content-group__sidebar,
+.content-persona__sidebar,
+.content-brands__sidebar,
+.content-cat__sidebar {
   flex: 0 0 350px;
   margin-right: 30px;
   max-width: 350px;
 }
 
 .content-note__body,
-.content-water__body {
+.content-water__body,
+.content-group__body,
+.content-persona__body,
+.content-brands__body,
+.content-cat__body {
   flex: 1 1 auto;
   width: 100%;
   margin-bottom: 80px;
@@ -7205,7 +7338,11 @@ body.lock {
 }
 
 .content-note__block,
-.content-water__block {
+.content-water__block,
+.content-group__block,
+.content-persona__block,
+.content-brands__block,
+.content-cat__block {
   padding-left: 30px;
   border-left: 1px solid #EBEBEB;
 }
@@ -7291,14 +7428,22 @@ body.lock {
 }
 
 .aromates-note__header,
-.aromates-water__header {
+.aromates-water__header,
+.cat-group__header,
+.cat-persona__header,
+.cat-brands__header,
+.items-cat__header {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
 .aromates-note__title,
-.aromates-water__title {
+.aromates-water__title,
+.cat-group__title,
+.cat-persona__title,
+.cat-brands__title,
+.items-cat__title {
   font-family: "Rubik";
   font-weight: 500;
   font-size: 1.75rem;
@@ -7306,7 +7451,11 @@ body.lock {
 }
 
 .aromates-note__count,
-.aromates-water__count {
+.aromates-water__count,
+.cat-group__count,
+.cat-persona__count,
+.cat-brands__count,
+.items-cat__count {
   font-family: "Rubik";
   font-weight: 500;
   font-size: 1.125rem;
@@ -7318,7 +7467,11 @@ body.lock {
 }
 
 .aromates-note__form,
-.aromates-water__form {
+.aromates-water__form,
+.cat-group__form,
+.cat-persona__form,
+.cat-brands__form,
+.items-cat__form {
   flex: 1 1 auto;
   display: flex;
   align-items: center;
@@ -7330,39 +7483,59 @@ body.lock {
 }
 
 .aromates-note__form input,
-.aromates-water__form input {
+.aromates-water__form input,
+.cat-group__form input,
+.cat-persona__form input,
+.cat-brands__form input,
+.items-cat__form input {
   font-size: 1.125rem;
   background: none;
   border: none;
   flex: 1 1 auto;
 }
 
-.aromates-note__form input::-moz-placeholder, .aromates-water__form input::-moz-placeholder {
+.aromates-note__form input::-moz-placeholder, .aromates-water__form input::-moz-placeholder, .cat-group__form input::-moz-placeholder, .cat-persona__form input::-moz-placeholder, .cat-brands__form input::-moz-placeholder, .items-cat__form input::-moz-placeholder {
   opacity: 1;
   color: #C5C5C5;
 }
 
 .aromates-note__form input::placeholder,
-.aromates-water__form input::placeholder {
+.aromates-water__form input::placeholder,
+.cat-group__form input::placeholder,
+.cat-persona__form input::placeholder,
+.cat-brands__form input::placeholder,
+.items-cat__form input::placeholder {
   opacity: 1;
   color: #C5C5C5;
 }
 
 .aromates-note__form button,
-.aromates-water__form button {
+.aromates-water__form button,
+.cat-group__form button,
+.cat-persona__form button,
+.cat-brands__form button,
+.items-cat__form button {
   width: 24px;
   height: 24px;
   margin-right: 10px;
 }
 
 .aromates-note__form button svg,
-.aromates-water__form button svg {
+.aromates-water__form button svg,
+.cat-group__form button svg,
+.cat-persona__form button svg,
+.cat-brands__form button svg,
+.items-cat__form button svg {
   width: 100%;
   height: 100%;
 }
 
 .aromates-note__tags,
-.aromates-water__tags {
+.aromates-water__tags,
+.cat-group__tags,
+.cat-persona__tags,
+.cat-brands__tags,
+.items-cat__tags {
   display: flex;
   margin-bottom: 30px;
   overflow-x: auto;
@@ -7371,18 +7544,30 @@ body.lock {
 }
 
 .aromates-note__tags::-webkit-scrollbar,
-.aromates-water__tags::-webkit-scrollbar {
+.aromates-water__tags::-webkit-scrollbar,
+.cat-group__tags::-webkit-scrollbar,
+.cat-persona__tags::-webkit-scrollbar,
+.cat-brands__tags::-webkit-scrollbar,
+.items-cat__tags::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
 
 .aromates-note__tags::-webkit-scrollbar-thumb,
-.aromates-water__tags::-webkit-scrollbar-thumb {
+.aromates-water__tags::-webkit-scrollbar-thumb,
+.cat-group__tags::-webkit-scrollbar-thumb,
+.cat-persona__tags::-webkit-scrollbar-thumb,
+.cat-brands__tags::-webkit-scrollbar-thumb,
+.items-cat__tags::-webkit-scrollbar-thumb {
   background: #5f5f5f;
 }
 
 .aromates-note__tag,
-.aromates-water__tag {
+.aromates-water__tag,
+.cat-group__tag,
+.cat-persona__tag,
+.cat-brands__tag,
+.items-cat__tag {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7395,17 +7580,29 @@ body.lock {
 }
 
 .aromates-note__tag_all,
-.aromates-water__tag_all {
+.aromates-water__tag_all,
+.cat-group__tag_all,
+.cat-persona__tag_all,
+.cat-brands__tag_all,
+.items-cat__tag_all {
   flex: 1 1 auto;
 }
 
 .aromates-note__tag:first-child,
-.aromates-water__tag:first-child {
+.aromates-water__tag:first-child,
+.cat-group__tag:first-child,
+.cat-persona__tag:first-child,
+.cat-brands__tag:first-child,
+.items-cat__tag:first-child {
   padding: 0 7px;
 }
 
 .aromates-note__tag:last-child,
-.aromates-water__tag:last-child {
+.aromates-water__tag:last-child,
+.cat-group__tag:last-child,
+.cat-persona__tag:last-child,
+.cat-brands__tag:last-child,
+.items-cat__tag:last-child {
   color: #007F5F;
   background: none;
   border-radius: none;
@@ -7415,32 +7612,52 @@ body.lock {
 }
 
 .aromates-note__tag.active,
-.aromates-water__tag.active {
+.aromates-water__tag.active,
+.cat-group__tag.active,
+.cat-persona__tag.active,
+.cat-brands__tag.active,
+.items-cat__tag.active {
   background: #FCFCFC;
   border: 2px solid #2E3192;
 }
 
 .aromates-note__tag:not(:last-child),
-.aromates-water__tag:not(:last-child) {
+.aromates-water__tag:not(:last-child),
+.cat-group__tag:not(:last-child),
+.cat-persona__tag:not(:last-child),
+.cat-brands__tag:not(:last-child),
+.items-cat__tag:not(:last-child) {
   margin-right: 5px;
 }
 
 .aromates-note__tag button,
-.aromates-water__tag button {
+.aromates-water__tag button,
+.cat-group__tag button,
+.cat-persona__tag button,
+.cat-brands__tag button,
+.items-cat__tag button {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .aromates-note__tag button svg,
-.aromates-water__tag button svg {
+.aromates-water__tag button svg,
+.cat-group__tag button svg,
+.cat-persona__tag button svg,
+.cat-brands__tag button svg,
+.items-cat__tag button svg {
   width: 24px;
   height: 24px;
   stroke: #000;
 }
 
 .aromates-note__more,
-.aromates-water__more {
+.aromates-water__more,
+.cat-group__more,
+.cat-persona__more,
+.cat-brands__more,
+.items-cat__more {
   background: #F5F5F5;
   border-radius: 8px;
   padding: 12px 18px;
@@ -7452,15 +7669,113 @@ body.lock {
 }
 
 .aromates-note__more:hover,
-.aromates-water__more:hover {
+.aromates-water__more:hover,
+.cat-group__more:hover,
+.cat-persona__more:hover,
+.cat-brands__more:hover,
+.items-cat__more:hover {
   background: #e6e6e6;
 }
 
 .aromates-note__catalog,
-.aromates-water__catalog {
+.aromates-water__catalog,
+.cat-group__catalog,
+.cat-persona__catalog,
+.cat-brands__catalog,
+.items-cat__catalog {
   margin-bottom: 20px;
   padding-bottom: 30px;
   border-bottom: 1px solid #EBEBEB;
+}
+
+.cat-notes__body,
+.cat-persona__body {
+  display: flex;
+}
+
+.cat-notes__sidebar,
+.cat-persona__sidebar {
+  flex: 0 0 350px;
+  margin-right: 30px;
+  max-width: 350px;
+}
+
+.cat-notes__wrapper,
+.cat-persona__wrapper {
+  flex: 1 1 auto;
+  margin-bottom: 80px;
+}
+
+.cat-notes__block,
+.cat-persona__block {
+  padding-left: 30px;
+  border-left: 1px solid #EBEBEB;
+  margin-bottom: 20px;
+}
+
+.cat-notes__catalog,
+.cat-persona__catalog {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.cat-notes__more,
+.cat-persona__more {
+  background: #F5F5F5;
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-size: 1.125rem;
+  margin: 0 auto;
+  display: block;
+  color: #000;
+  transition: all 0.2s linear;
+}
+
+.cat-notes__more:hover,
+.cat-persona__more:hover {
+  background: #e6e6e6;
+}
+
+.cat-notes .options__title,
+.cat-persona .options__title {
+  flex: 1 1 100%;
+  font-family: "Rubik";
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.cat-notes .sidebar__title,
+.cat-persona .sidebar__title {
+  font-family: "Rubik";
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.cat-notes .filter__list,
+.cat-persona .filter__list {
+  max-height: 100%;
+}
+
+.cat-notes .filter__section::after,
+.cat-persona .filter__section::after {
+  display: none;
+}
+
+.cat-persona .options__title,
+.cat-brands .options__title,
+.items-cat .options__title {
+  flex: unset;
+  font-family: "Rubik";
+  font-size: 1.375rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.cat-persona .filter,
+.cat-brands .filter,
+.items-cat .filter {
+  display: none;
 }
 
 .item__cards,
@@ -10674,36 +10989,68 @@ body.lock {
   height: 32px;
 }
 
-.family__about {
+.family__about,
+.notes__about,
+.persona__about,
+.brands__about,
+.cat__about {
   margin-bottom: 30px;
 }
 
-.family__offers {
+.family__offers,
+.notes__offers,
+.persona__offers,
+.brands__offers,
+.cat__offers {
   margin-bottom: 50px;
 }
 
-.family__themes {
+.family__themes,
+.notes__themes,
+.persona__themes,
+.brands__themes,
+.cat__themes {
   margin-bottom: 80px;
 }
 
-.family__recent {
+.family__recent,
+.notes__recent,
+.persona__recent,
+.brands__recent,
+.cat__recent {
   margin-bottom: 150px;
 }
 
-.family__all {
+.family__all,
+.notes__all,
+.persona__all,
+.brands__all,
+.cat__all {
   margin-bottom: 80px;
 }
 
-.about-family__body {
+.about-family__body,
+.about-notes__body,
+.about-persona__body,
+.about-brands__body,
+.about-cat__body {
   padding-top: 20px;
 }
 
-.about-family__title {
+.about-family__title,
+.about-notes__title,
+.about-persona__title,
+.about-brands__title,
+.about-cat__title {
   text-align: left;
   margin-bottom: 30px;
 }
 
-.about-family__count {
+.about-family__count,
+.about-notes__count,
+.about-persona__count,
+.about-brands__count,
+.about-cat__count {
   font-family: "Rubik";
   font-weight: 500;
   font-size: 1.125rem;
@@ -10711,12 +11058,20 @@ body.lock {
   margin-bottom: 10px;
 }
 
-.about-family__count span {
+.about-family__count span,
+.about-notes__count span,
+.about-persona__count span,
+.about-brands__count span,
+.about-cat__count span {
   font-size: 1.375rem;
   color: #2E3192;
 }
 
-.about-family__desc {
+.about-family__desc,
+.about-notes__desc,
+.about-persona__desc,
+.about-brands__desc,
+.about-cat__desc {
   font-size: 1.125rem;
 }
 
@@ -10768,19 +11123,22 @@ body.lock {
   transition: all 0.2s linear;
 }
 
-.all-family__title {
+.all-family__title,
+.all-notes__title {
   text-align: left;
   margin-bottom: 30px;
 }
 
-.all-family__list {
+.all-family__list,
+.all-notes__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 15px;
   transition: all 0.5s linear;
 }
 
-.all-family__item {
+.all-family__item,
+.all-notes__item {
   padding: 12px 20px;
   border: 2px solid #EBEBEB;
   border-radius: 8px;
@@ -10789,15 +11147,18 @@ body.lock {
   transition: all 0.3s linear;
 }
 
-.all-family__item:hover {
+.all-family__item:hover,
+.all-notes__item:hover {
   border: 2px solid #CCE5DF;
 }
 
-.all-family__item:hover .all-family__image {
+.all-family__item:hover .all-family__image,
+.all-notes__item:hover .all-family__image {
   transform: scale(1.1);
 }
 
-.all-family__image {
+.all-family__image,
+.all-notes__image {
   width: 50px;
   height: 50px;
   position: relative;
@@ -10808,7 +11169,8 @@ body.lock {
   transition: all 0.5s linear;
 }
 
-.all-family__image img {
+.all-family__image img,
+.all-notes__image img {
   position: absolute;
   top: 0;
   left: 0;
@@ -10818,37 +11180,44 @@ body.lock {
      object-fit: cover;
 }
 
-.all-family__name {
+.all-family__name,
+.all-notes__name {
   flex: 1 1 auto;
   font-size: 1.125rem;
   color: #000;
   transition: all 0.2s linear;
 }
 
-.all-family__name:hover {
+.all-family__name:hover,
+.all-notes__name:hover {
   color: #007F5F;
 }
 
-.all-family__count {
+.all-family__count,
+.all-notes__count {
   color: #C3C3C3;
 }
 
-.all-family__more {
+.all-family__more,
+.all-notes__more {
   width: 100%;
   display: none;
   margin-top: 15px;
 }
 
-.all-family__more:hover span::after {
+.all-family__more:hover span::after,
+.all-notes__more:hover span::after {
   background: #fff;
 }
 
-.all-family__more span {
+.all-family__more span,
+.all-notes__more span {
   position: relative;
   padding-right: 30px;
 }
 
-.all-family__more span::after {
+.all-family__more span::after,
+.all-notes__more span::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -10862,7 +11231,8 @@ body.lock {
   transition: all 0.2s linear;
 }
 
-.all-family__more.disable {
+.all-family__more.disable,
+.all-notes__more.disable {
   display: none;
 }
 
@@ -16838,7 +17208,9 @@ body.lock {
   .about-note__favorite:hover span,
   .about-note__share:hover span,
   .about-water__favorite:hover span,
-  .about-water__share:hover span {
+  .about-water__share:hover span,
+  .about-group__favorite:hover span,
+  .about-group__share:hover span {
     opacity: 1;
     visibility: visible;
     transform: translate(0, -50%);
@@ -16872,6 +17244,10 @@ body.lock {
 
   .sidebar__articles {
     margin-bottom: 80px;
+  }
+
+  .sidebar__filter {
+    display: none;
   }
 
   .information-sidebar {
@@ -16961,14 +17337,32 @@ body.lock {
          columns: 2 350px;
   }
 
+  .add-sidebar__text {
+    max-width: unset;
+  }
+
+  .add-sidebar__bg {
+    height: 145%;
+    width: unset;
+    aspect-ratio: 1/1;
+  }
+
   .content-note__sidebar,
-  .content-water__sidebar {
+  .content-water__sidebar,
+  .content-group__sidebar,
+  .content-persona__sidebar,
+  .content-brands__sidebar,
+  .content-cat__sidebar {
     flex: unset;
     margin-right: 0;
   }
 
   .content-note__block,
-  .content-water__block {
+  .content-water__block,
+  .content-group__block,
+  .content-persona__block,
+  .content-brands__block,
+  .content-cat__block {
     padding-left: 0;
     border-left: none;
   }
@@ -16979,6 +17373,31 @@ body.lock {
 
   .similar-notes__body {
     margin-bottom: 30px;
+  }
+
+  .cat-notes__sidebar,
+  .cat-persona__sidebar {
+    flex: unset;
+    margin-right: 0;
+    display: none;
+  }
+
+  .cat-notes__block,
+  .cat-persona__block {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .cat-persona .options__title,
+  .cat-brands .options__title,
+  .items-cat .options__title {
+    flex: 1 1 100%;
+  }
+
+  .cat-persona .filter,
+  .cat-brands .filter,
+  .items-cat .filter {
+    display: flex;
   }
 
   .article__body {
@@ -17017,17 +17436,26 @@ body.lock {
   }
 
   .about-note__image,
-  .about-water__image {
+  .about-water__image,
+  .about-group__image {
     margin: 0 calc(20px + 62 * (100vw - 768px) / 468);
   }
 
   .aromates-note__form,
-  .aromates-water__form {
+  .aromates-water__form,
+  .cat-group__form,
+  .cat-persona__form,
+  .cat-brands__form,
+  .items-cat__form {
     padding: calc(10px + 5 * (100vw - 320px) / 916);
   }
 
   .aromates-note__form input,
-  .aromates-water__form input {
+  .aromates-water__form input,
+  .cat-group__form input,
+  .cat-persona__form input,
+  .cat-brands__form input,
+  .items-cat__form input {
     font-size: calc(1.0625rem + 1 * (100vw - 20rem) / 916);
   }
 
@@ -17039,7 +17467,8 @@ body.lock {
 
 @media (max-width: 1200px) {
   .about-note__options,
-  .about-water__options {
+  .about-water__options,
+  .about-group__options {
     flex-direction: column-reverse;
     align-items: flex-end;
   }
@@ -17047,30 +17476,36 @@ body.lock {
   .about-note__favorite,
   .about-note__share,
   .about-water__favorite,
-  .about-water__share {
+  .about-water__share,
+  .about-group__favorite,
+  .about-group__share {
     margin-right: 0;
     margin-bottom: 10px;
     order: 2;
   }
 
   .about-note__share,
-  .about-water__share {
+  .about-water__share,
+  .about-group__share {
     order: 1;
   }
 
   .about-note__favorite,
-  .about-water__favorite {
+  .about-water__favorite,
+  .about-group__favorite {
     order: 2;
   }
 
   .about-note__subscribe,
-  .about-water__subscribe {
+  .about-water__subscribe,
+  .about-group__subscribe {
     margin-bottom: 10px;
     order: 3;
   }
 
   .about-note__text,
-  .about-water__text {
+  .about-water__text,
+  .about-group__text {
     padding-right: 58px;
   }
 
@@ -17429,12 +17864,23 @@ body.lock {
   }
 
   .about-note,
-  .about-water {
+  .about-water,
+  .about-group {
     padding: 30px 0;
   }
 
   .aromates-note__catalog,
-  .aromates-water__catalog {
+  .aromates-water__catalog,
+  .cat-group__catalog,
+  .cat-persona__catalog,
+  .cat-brands__catalog,
+  .items-cat__catalog {
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+  }
+
+  .cat-notes__catalog,
+  .cat-persona__catalog {
     margin-bottom: 24px;
     padding-bottom: 20px;
   }
@@ -17857,7 +18303,8 @@ body.lock {
     flex: 1 1 50%;
   }
 
-  .all-family__list {
+  .all-family__list,
+  .all-notes__list {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
   }
@@ -18001,10 +18448,6 @@ body.lock {
     max-width: 160px;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-
-  .catalog_note .catalog__list {
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .catalog_note .catalog__image {
@@ -18161,23 +18604,27 @@ body.lock {
   }
 
   .about-note__body,
-  .about-water__body {
+  .about-water__body,
+  .about-group__body {
     flex-direction: column;
   }
 
   .about-note__image,
-  .about-water__image {
+  .about-water__image,
+  .about-group__image {
     margin: 0 auto 30px;
   }
 
   .about-note__title,
-  .about-water__title {
+  .about-water__title,
+  .about-group__title {
     width: 100%;
     text-align: center;
   }
 
   .about-note__options,
-  .about-water__options {
+  .about-water__options,
+  .about-group__options {
     position: static;
     flex-direction: row;
     justify-content: center;
@@ -18187,39 +18634,50 @@ body.lock {
   .about-note__favorite,
   .about-note__share,
   .about-water__favorite,
-  .about-water__share {
+  .about-water__share,
+  .about-group__favorite,
+  .about-group__share {
     margin-bottom: 0;
     margin-right: 10px;
   }
 
   .about-note__share,
-  .about-water__share {
+  .about-water__share,
+  .about-group__share {
     order: 2;
   }
 
   .about-note__favorite,
-  .about-water__favorite {
+  .about-water__favorite,
+  .about-group__favorite {
     order: 1;
   }
 
   .about-note__subscribe,
-  .about-water__subscribe {
+  .about-water__subscribe,
+  .about-group__subscribe {
     margin-bottom: 0;
     order: 3;
   }
 
   .about-note__subtitle,
-  .about-water__subtitle {
+  .about-water__subtitle,
+  .about-group__subtitle {
     text-align: center;
   }
 
   .about-note__text,
-  .about-water__text {
+  .about-water__text,
+  .about-group__text {
     padding: 0;
   }
 
   .content-note__body,
-  .content-water__body {
+  .content-water__body,
+  .content-group__body,
+  .content-persona__body,
+  .content-brands__body,
+  .content-cat__body {
     margin-bottom: 60px;
   }
 
@@ -18246,6 +18704,11 @@ body.lock {
 
   .similar-notes__item {
     border: 2px solid #CCE5DF;
+  }
+
+  .cat-notes__wrapper,
+  .cat-persona__wrapper {
+    margin-bottom: 60px;
   }
 
   .item__cards,
@@ -18712,7 +19175,11 @@ body.lock {
     margin-bottom: 20px;
   }
 
-  .family__all {
+  .family__all,
+  .notes__all,
+  .persona__all,
+  .brands__all,
+  .cat__all {
     margin-bottom: 60px;
   }
 
@@ -18723,21 +19190,28 @@ body.lock {
     border-bottom: 1px solid #EBEBEB;
   }
 
-  .all-family__wrapper {
+  .all-family__wrapper,
+  .all-notes__wrapper {
     border-bottom: 1px solid #EBEBEB;
     padding-bottom: 10px;
   }
 
-  .all-family__list {
+  .all-family__list,
+  .all-notes__list {
     grid-template-columns: 1fr;
     max-height: 340px;
     overflow: hidden;
   }
 
-  .all-family__more {
+  .all-family__more,
+  .all-notes__more {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .all-notes__list {
+    max-height: 255px;
   }
 
   .compare__popular {
@@ -19558,6 +20032,12 @@ body.lock {
     height: 66px;
   }
 
+  .catalog_brand .catalog__extra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .catalog_parfumer .catalog__image {
     width: 70px;
     height: 70px;
@@ -19577,6 +20057,10 @@ body.lock {
     height: 100%;
   }
 
+  .catalog_note .catalog__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .catalog_note .catalog__item:hover .catalog__image img {
     transform: translate(-50%, -50%) scale(1.05);
   }
@@ -19586,6 +20070,10 @@ body.lock {
     padding: 20px 30px;
     border: 1px solid #cce5df;
     border-radius: 8px;
+  }
+
+  .catalog_note .catalog__image {
+    margin-bottom: 15px;
   }
 
   .catalog_note .catalog__image img {
@@ -20373,10 +20861,6 @@ body.lock {
     display: none;
   }
 
-  .catalog_note .catalog__list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .filter__btn {
     font-size: 1.0625rem;
   }
@@ -20538,6 +21022,11 @@ body.lock {
 
   .interesting-sidebar .sidebar__title {
     font-size: 1.375rem;
+  }
+
+  .add-sidebar {
+    margin-bottom: 24px;
+    padding: 24px;
   }
 
   .help__info {
@@ -20733,17 +21222,20 @@ body.lock {
   }
 
   .about-note,
-  .about-water {
+  .about-water,
+  .about-group {
     margin-bottom: 24px;
   }
 
   .about-note,
-  .about-water {
+  .about-water,
+  .about-group {
     padding: 24px 0;
   }
 
   .about-note__image,
-  .about-water__image {
+  .about-water__image,
+  .about-group__image {
     width: 200px;
     height: 200px;
     min-width: 200px;
@@ -20751,37 +21243,46 @@ body.lock {
   }
 
   .about-note__title,
-  .about-water__title {
+  .about-water__title,
+  .about-group__title {
     font-size: 1.5rem;
     text-align: left;
     margin-bottom: 4px;
   }
 
   .about-note__options,
-  .about-water__options {
+  .about-water__options,
+  .about-group__options {
     margin-bottom: 24px;
   }
 
   .about-note__subtitle,
-  .about-water__subtitle {
+  .about-water__subtitle,
+  .about-group__subtitle {
     text-align: left;
     margin-bottom: 15px;
     font-size: 0.9375rem;
   }
 
   .about-note__desc,
-  .about-water__desc {
+  .about-water__desc,
+  .about-group__desc {
     font-size: 1.0625rem;
     margin-bottom: 8px;
   }
 
   .about-note__text,
-  .about-water__text {
+  .about-water__text,
+  .about-group__text {
     font-size: 1.0625rem;
   }
 
   .content-note__body,
-  .content-water__body {
+  .content-water__body,
+  .content-group__body,
+  .content-persona__body,
+  .content-brands__body,
+  .content-cat__body {
     margin-bottom: 40px;
   }
 
@@ -20798,14 +21299,39 @@ body.lock {
   }
 
   .aromates-note__title,
-  .aromates-water__title {
+  .aromates-water__title,
+  .cat-group__title,
+  .cat-persona__title,
+  .cat-brands__title,
+  .items-cat__title {
     font-size: 1.375rem;
   }
 
   .aromates-note__catalog,
-  .aromates-water__catalog {
+  .aromates-water__catalog,
+  .cat-group__catalog,
+  .cat-persona__catalog,
+  .cat-brands__catalog,
+  .items-cat__catalog {
     border: none;
     padding-bottom: 0;
+  }
+
+  .cat-notes__wrapper,
+  .cat-persona__wrapper {
+    margin-bottom: 40px;
+  }
+
+  .cat-notes__catalog,
+  .cat-persona__catalog {
+    border: none;
+    padding-bottom: 0;
+  }
+
+  .cat-persona .options__title,
+  .cat-brands .options__title,
+  .items-cat .options__title {
+    font-size: 1.25rem;
   }
 
   .item__cards,
@@ -21307,23 +21833,43 @@ body.lock {
     font-size: 1.0625rem;
   }
 
-  .family__offers {
+  .family__offers,
+  .notes__offers,
+  .persona__offers,
+  .brands__offers,
+  .cat__offers {
     margin-bottom: 40px;
   }
 
-  .family__all {
+  .family__all,
+  .notes__all,
+  .persona__all,
+  .brands__all,
+  .cat__all {
     margin-bottom: 40px;
   }
 
-  .about-family__count {
+  .about-family__count,
+  .about-notes__count,
+  .about-persona__count,
+  .about-brands__count,
+  .about-cat__count {
     font-size: 1.0625rem;
   }
 
-  .about-family__count span {
+  .about-family__count span,
+  .about-notes__count span,
+  .about-persona__count span,
+  .about-brands__count span,
+  .about-cat__count span {
     font-size: 1.25rem;
   }
 
-  .about-family__desc {
+  .about-family__desc,
+  .about-notes__desc,
+  .about-persona__desc,
+  .about-brands__desc,
+  .about-cat__desc {
     font-size: 1.0625rem;
   }
 
@@ -21331,20 +21877,28 @@ body.lock {
     font-size: 1.0625rem;
   }
 
-  .all-family__list {
-    max-height: 320px;
+  .all-family__list,
+  .all-notes__list {
+    max-height: 325px;
   }
 
-  .all-family__item {
+  .all-family__item,
+  .all-notes__item {
     padding: 10px 16px;
   }
 
-  .all-family__name {
+  .all-family__name,
+  .all-notes__name {
     font-size: 1.0625rem;
   }
 
-  .all-family__count {
+  .all-family__count,
+  .all-notes__count {
     font-size: 0.9375rem;
+  }
+
+  .all-notes__list {
+    max-height: 245px;
   }
 
   .compare__popular {
@@ -22305,6 +22859,10 @@ body.lock {
     margin-bottom: 60px;
   }
 
+  .catalog_note .catalog__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .accord-quest__image,
   .deep-quest__image,
   .notes-quest__image,
@@ -22537,7 +23095,16 @@ body.lock {
   }
 
   .content-note__body,
-  .content-water__body {
+  .content-water__body,
+  .content-group__body,
+  .content-persona__body,
+  .content-brands__body,
+  .content-cat__body {
+    margin-bottom: 32px;
+  }
+
+  .cat-notes__wrapper,
+  .cat-persona__wrapper {
     margin-bottom: 32px;
   }
 
@@ -22683,11 +23250,19 @@ body.lock {
     margin-bottom: 20px;
   }
 
-  .family__offers {
+  .family__offers,
+  .notes__offers,
+  .persona__offers,
+  .brands__offers,
+  .cat__offers {
     margin-bottom: 32px;
   }
 
-  .family__all {
+  .family__all,
+  .notes__all,
+  .persona__all,
+  .brands__all,
+  .cat__all {
     margin-bottom: 32px;
   }
 
