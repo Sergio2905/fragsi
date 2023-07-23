@@ -4622,6 +4622,11 @@ body.lock {
   display: block;
 }
 
+.information-sidebar__intro {
+  font-size: 1.125rem;
+  color: #000000;
+}
+
 .information-sidebar__link {
   font-size: 1.125rem;
   text-decoration-line: underline;
@@ -4652,6 +4657,39 @@ body.lock {
 .information-sidebar__history.full {
   display: block;
   text-overflow: unset;
+}
+
+.information-sidebar__item {
+  display: flex;
+  align-items: center;
+}
+
+.information-sidebar__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.information-sidebar__icon {
+  margin-right: 15px;
+}
+
+.information-sidebar__icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: #C3C3C3;
+  stroke-width: 2px;
+}
+
+.information-sidebar__about {
+  display: flex;
+  flex-direction: column;
+}
+
+.information-sidebar__label {
+  color: #C3C3C3;
+}
+
+.information-sidebar__value {
+  font-size: 1.125rem;
 }
 
 .fragrances-sidebar {
@@ -4899,6 +4937,218 @@ body.lock {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.parfumers-sidebar {
+  margin-bottom: 60px;
+}
+
+.parfumers-sidebar__item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #EBEBEB;
+  padding: 15px 0;
+}
+
+.parfumers-sidebar__item:hover .parfumers-sidebar__name {
+  color: #007F5F;
+}
+
+.parfumers-sidebar__item:hover .parfumers-sidebar__image img {
+  transform: scale(1.1);
+}
+
+.parfumers-sidebar__image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-right: 20px;
+}
+
+.parfumers-sidebar__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s linear;
+}
+
+.parfumers-sidebar__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.parfumers-sidebar__name {
+  font-size: 1.125rem;
+  color: #000;
+  margin-bottom: 4px;
+  transition: all 0.2s linear;
+}
+
+.parfumers-sidebar__occupation {
+  color: #C3C3C3;
+  text-align: center;
+}
+
+.brands-sidebar {
+  margin-bottom: 60px;
+}
+
+.brands-sidebar__title {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 1.375rem;
+  margin-bottom: 30px;
+}
+
+.brands-sidebar__items {
+  display: flex;
+  align-items: center;
+}
+
+.brands-sidebar__image {
+  position: relative;
+  flex: 1 1 30%;
+  height: 60px;
+  overflow: hidden;
+}
+
+.brands-sidebar__image:not(:last-child) {
+  margin-right: 15px;
+}
+
+.brands-sidebar__image:hover img {
+  transform: scale(1.05);
+}
+
+.brands-sidebar__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: all 0.5s linear;
+}
+
+.persons-sidebar {
+  margin-bottom: 60px;
+}
+
+.persons-sidebar__body {
+  display: flex;
+  height: 100%;
+  position: relative;
+  padding: 35px 0;
+}
+
+.persons-sidebar__slider {
+  max-height: 300px;
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+.persons-sidebar__slide {
+  max-height: 100px;
+  padding: 5px 5px 5px 0;
+}
+
+.persons-sidebar__item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #E1E1E1;
+}
+
+.persons-sidebar__image {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-right: 15px;
+}
+
+.persons-sidebar__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.persons-sidebar__name {
+  font-size: 1.125rem;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.persons-sidebar__occupation {
+  color: #C3C3C3;
+}
+
+.persons-sidebar__pagination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  z-index: 1;
+}
+
+.persons-sidebar__pagination .swiper-pagination-bullet {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #EBEBEB;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.persons-sidebar__pagination .swiper-pagination-bullet:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.persons-sidebar__pagination .swiper-pagination-bullet-active {
+  height: 28px;
+  width: 12px;
+  background: #3CBB9B;
+  border-radius: 10px;
+}
+
+.persons-sidebar__navigation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  flex-direction: column;
+  align-items: center;
+}
+
+.persons-sidebar__navigation .navigation__prev,
+.persons-sidebar__navigation .navigation__next {
+  transform: translate(0, 0);
+  height: 30px;
+  width: 100px;
+}
+
+.persons-sidebar__navigation .navigation__prev svg {
+  transform: rotate(180deg);
+}
+
+.persons-sidebar__navigation .navigation__next svg {
+  transform: rotate(0);
 }
 
 .help {
@@ -7100,7 +7350,9 @@ body.lock {
 
 .about-note,
 .about-water,
-.about-group {
+.about-group,
+.about-parfumer,
+.about-brand {
   background: linear-gradient(126.06deg, rgba(0, 194, 255, 0.06) 0%, rgba(235, 255, 0, 0.06) 100%);
   padding: 42px 0;
   margin-bottom: 30px;
@@ -7108,13 +7360,17 @@ body.lock {
 
 .about-note__body,
 .about-water__body,
-.about-group__body {
+.about-group__body,
+.about-parfumer__body,
+.about-brand__body {
   display: flex;
 }
 
 .about-note__image,
 .about-water__image,
-.about-group__image {
+.about-group__image,
+.about-parfumer__image,
+.about-brand__image {
   width: 250px;
   min-width: 250px;
   height: 250px;
@@ -7127,7 +7383,9 @@ body.lock {
 
 .about-note__image img,
 .about-water__image img,
-.about-group__image img {
+.about-group__image img,
+.about-parfumer__image img,
+.about-brand__image img {
   position: absolute;
   top: 0;
   left: 0;
@@ -7139,13 +7397,17 @@ body.lock {
 
 .about-note__info,
 .about-water__info,
-.about-group__info {
+.about-group__info,
+.about-parfumer__info,
+.about-brand__info {
   flex: 1 1 auto;
 }
 
 .about-note__header,
 .about-water__header,
-.about-group__header {
+.about-group__header,
+.about-parfumer__header,
+.about-brand__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7154,7 +7416,9 @@ body.lock {
 
 .about-note__title,
 .about-water__title,
-.about-group__title {
+.about-group__title,
+.about-parfumer__title,
+.about-brand__title {
   font-family: "Rubik";
   font-weight: 600;
   font-size: 2rem;
@@ -7163,7 +7427,9 @@ body.lock {
 
 .about-note__options,
 .about-water__options,
-.about-group__options {
+.about-group__options,
+.about-parfumer__options,
+.about-brand__options {
   display: flex;
   align-items: center;
   position: absolute;
@@ -7176,7 +7442,11 @@ body.lock {
 .about-water__favorite,
 .about-water__share,
 .about-group__favorite,
-.about-group__share {
+.about-group__share,
+.about-parfumer__favorite,
+.about-parfumer__share,
+.about-brand__favorite,
+.about-brand__share {
   width: 48px;
   height: 48px;
   margin-right: 10px;
@@ -7195,7 +7465,11 @@ body.lock {
 .about-water__favorite span,
 .about-water__share span,
 .about-group__favorite span,
-.about-group__share span {
+.about-group__share span,
+.about-parfumer__favorite span,
+.about-parfumer__share span,
+.about-brand__favorite span,
+.about-brand__share span {
   position: absolute;
   white-space: nowrap;
   right: 125%;
@@ -7217,7 +7491,11 @@ body.lock {
 .about-water__favorite span::after,
 .about-water__share span::after,
 .about-group__favorite span::after,
-.about-group__share span::after {
+.about-group__share span::after,
+.about-parfumer__favorite span::after,
+.about-parfumer__share span::after,
+.about-brand__favorite span::after,
+.about-brand__share span::after {
   content: "";
   position: absolute;
   left: 100%;
@@ -7235,13 +7513,19 @@ body.lock {
 .about-water__favorite:hover,
 .about-water__share:hover,
 .about-group__favorite:hover,
-.about-group__share:hover {
+.about-group__share:hover,
+.about-parfumer__favorite:hover,
+.about-parfumer__share:hover,
+.about-brand__favorite:hover,
+.about-brand__share:hover {
   border: 2px solid #007F5F;
 }
 
 .about-note__share svg,
 .about-water__share svg,
-.about-group__share svg {
+.about-group__share svg,
+.about-parfumer__share svg,
+.about-brand__share svg {
   width: 32px;
   min-width: 32px;
   height: 32px;
@@ -7252,7 +7536,9 @@ body.lock {
 
 .about-note__favorite svg,
 .about-water__favorite svg,
-.about-group__favorite svg {
+.about-group__favorite svg,
+.about-parfumer__favorite svg,
+.about-brand__favorite svg {
   width: 32px;
   min-width: 32px;
   height: 32px;
@@ -7261,7 +7547,9 @@ body.lock {
 
 .about-note__subtitle,
 .about-water__subtitle,
-.about-group__subtitle {
+.about-group__subtitle,
+.about-parfumer__subtitle,
+.about-brand__subtitle {
   font-size: 1.125rem;
   text-transform: uppercase;
   color: #000000;
@@ -7270,7 +7558,9 @@ body.lock {
 
 .about-note__desc,
 .about-water__desc,
-.about-group__desc {
+.about-group__desc,
+.about-parfumer__desc,
+.about-brand__desc {
   font-weight: 600;
   font-size: 1.125rem;
   margin-bottom: 10px;
@@ -7278,7 +7568,9 @@ body.lock {
 
 .about-note__text,
 .about-water__text,
-.about-group__text {
+.about-group__text,
+.about-parfumer__text,
+.about-brand__text {
   font-size: 1.125rem;
   margin-bottom: 5px;
   overflow: hidden;
@@ -7292,7 +7584,9 @@ body.lock {
 
 .about-note__text.full,
 .about-water__text.full,
-.about-group__text.full {
+.about-group__text.full,
+.about-parfumer__text.full,
+.about-brand__text.full {
   text-overflow: unset;
   display: block;
 }
@@ -7305,12 +7599,71 @@ body.lock {
   background: linear-gradient(135deg, #F0FBFF 0%, #FEFFF0 100%);
 }
 
+.about-parfumer {
+  background: linear-gradient(180deg, #E5FFF9 0%, #F4F9FF 100%);
+}
+
+.about-parfumer__title {
+  margin-right: 190px;
+}
+
+.about-parfumer__name {
+  color: #C3C3C3;
+  transform: translate(0, -5px);
+  margin-bottom: 5px;
+}
+
+.about-parfumer__occupation {
+  font-size: 1.125rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.about-parfumer__text {
+  -webkit-line-clamp: 6;
+  max-height: 150px;
+}
+
+.about-brand {
+  background: linear-gradient(135deg, #FBF9FF 0%, #E7FBFF 100%);
+}
+
+.about-brand__title {
+  margin-right: 190px;
+}
+
+.about-brand__type {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.about-brand__reviews {
+  color: #C3C3C3;
+  margin-bottom: 20px;
+}
+
+.about-brand .rating {
+  margin-bottom: 5px;
+}
+
+.about-brand .rating__value {
+  display: block;
+  font-family: "Rubik";
+  font-size: 1.75rem;
+  font-weight: 500;
+  padding: 0;
+  margin-right: 10px;
+}
+
 .content-note__wrapper,
 .content-water__wrapper,
 .content-group__wrapper,
 .content-persona__wrapper,
 .content-brands__wrapper,
-.content-cat__wrapper {
+.content-cat__wrapper,
+.content-parfumer__wrapper,
+.content-brand__wrapper {
   display: flex;
 }
 
@@ -7319,7 +7672,9 @@ body.lock {
 .content-group__sidebar,
 .content-persona__sidebar,
 .content-brands__sidebar,
-.content-cat__sidebar {
+.content-cat__sidebar,
+.content-parfumer__sidebar,
+.content-brand__sidebar {
   flex: 0 0 350px;
   margin-right: 30px;
   max-width: 350px;
@@ -7330,7 +7685,9 @@ body.lock {
 .content-group__body,
 .content-persona__body,
 .content-brands__body,
-.content-cat__body {
+.content-cat__body,
+.content-parfumer__body,
+.content-brand__body {
   flex: 1 1 auto;
   width: 100%;
   margin-bottom: 80px;
@@ -7342,9 +7699,38 @@ body.lock {
 .content-group__block,
 .content-persona__block,
 .content-brands__block,
-.content-cat__block {
+.content-cat__block,
+.content-parfumer__block,
+.content-brand__block {
   padding-left: 30px;
   border-left: 1px solid #EBEBEB;
+}
+
+.content-brand__table {
+  border-radius: 6px;
+  border: 1px solid #EBEBEE;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.content-brand table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.content-brand tr:not(:last-child) td {
+  border-bottom: 1px solid #EBEBEE;
+}
+
+.content-brand td {
+  padding: 15px 10px 15px 20px;
+  font-size: 1.125rem;
+}
+
+.content-brand td:nth-child(2) {
+  padding: 15px 20px 15px 10px;
+  text-align: right;
+  text-decoration: underline;
 }
 
 .similar-notes__body {
@@ -7429,6 +7815,8 @@ body.lock {
 
 .aromates-note__header,
 .aromates-water__header,
+.aromates-parfumer__header,
+.aromates-brand__header,
 .cat-group__header,
 .cat-persona__header,
 .cat-brands__header,
@@ -7440,6 +7828,8 @@ body.lock {
 
 .aromates-note__title,
 .aromates-water__title,
+.aromates-parfumer__title,
+.aromates-brand__title,
 .cat-group__title,
 .cat-persona__title,
 .cat-brands__title,
@@ -7452,6 +7842,8 @@ body.lock {
 
 .aromates-note__count,
 .aromates-water__count,
+.aromates-parfumer__count,
+.aromates-brand__count,
 .cat-group__count,
 .cat-persona__count,
 .cat-brands__count,
@@ -7468,6 +7860,8 @@ body.lock {
 
 .aromates-note__form,
 .aromates-water__form,
+.aromates-parfumer__form,
+.aromates-brand__form,
 .cat-group__form,
 .cat-persona__form,
 .cat-brands__form,
@@ -7484,6 +7878,8 @@ body.lock {
 
 .aromates-note__form input,
 .aromates-water__form input,
+.aromates-parfumer__form input,
+.aromates-brand__form input,
 .cat-group__form input,
 .cat-persona__form input,
 .cat-brands__form input,
@@ -7494,13 +7890,15 @@ body.lock {
   flex: 1 1 auto;
 }
 
-.aromates-note__form input::-moz-placeholder, .aromates-water__form input::-moz-placeholder, .cat-group__form input::-moz-placeholder, .cat-persona__form input::-moz-placeholder, .cat-brands__form input::-moz-placeholder, .items-cat__form input::-moz-placeholder {
+.aromates-note__form input::-moz-placeholder, .aromates-water__form input::-moz-placeholder, .aromates-parfumer__form input::-moz-placeholder, .aromates-brand__form input::-moz-placeholder, .cat-group__form input::-moz-placeholder, .cat-persona__form input::-moz-placeholder, .cat-brands__form input::-moz-placeholder, .items-cat__form input::-moz-placeholder {
   opacity: 1;
   color: #C5C5C5;
 }
 
 .aromates-note__form input::placeholder,
 .aromates-water__form input::placeholder,
+.aromates-parfumer__form input::placeholder,
+.aromates-brand__form input::placeholder,
 .cat-group__form input::placeholder,
 .cat-persona__form input::placeholder,
 .cat-brands__form input::placeholder,
@@ -7511,6 +7909,8 @@ body.lock {
 
 .aromates-note__form button,
 .aromates-water__form button,
+.aromates-parfumer__form button,
+.aromates-brand__form button,
 .cat-group__form button,
 .cat-persona__form button,
 .cat-brands__form button,
@@ -7522,6 +7922,8 @@ body.lock {
 
 .aromates-note__form button svg,
 .aromates-water__form button svg,
+.aromates-parfumer__form button svg,
+.aromates-brand__form button svg,
 .cat-group__form button svg,
 .cat-persona__form button svg,
 .cat-brands__form button svg,
@@ -7532,6 +7934,8 @@ body.lock {
 
 .aromates-note__tags,
 .aromates-water__tags,
+.aromates-parfumer__tags,
+.aromates-brand__tags,
 .cat-group__tags,
 .cat-persona__tags,
 .cat-brands__tags,
@@ -7545,6 +7949,8 @@ body.lock {
 
 .aromates-note__tags::-webkit-scrollbar,
 .aromates-water__tags::-webkit-scrollbar,
+.aromates-parfumer__tags::-webkit-scrollbar,
+.aromates-brand__tags::-webkit-scrollbar,
 .cat-group__tags::-webkit-scrollbar,
 .cat-persona__tags::-webkit-scrollbar,
 .cat-brands__tags::-webkit-scrollbar,
@@ -7555,6 +7961,8 @@ body.lock {
 
 .aromates-note__tags::-webkit-scrollbar-thumb,
 .aromates-water__tags::-webkit-scrollbar-thumb,
+.aromates-parfumer__tags::-webkit-scrollbar-thumb,
+.aromates-brand__tags::-webkit-scrollbar-thumb,
 .cat-group__tags::-webkit-scrollbar-thumb,
 .cat-persona__tags::-webkit-scrollbar-thumb,
 .cat-brands__tags::-webkit-scrollbar-thumb,
@@ -7564,6 +7972,8 @@ body.lock {
 
 .aromates-note__tag,
 .aromates-water__tag,
+.aromates-parfumer__tag,
+.aromates-brand__tag,
 .cat-group__tag,
 .cat-persona__tag,
 .cat-brands__tag,
@@ -7581,6 +7991,8 @@ body.lock {
 
 .aromates-note__tag_all,
 .aromates-water__tag_all,
+.aromates-parfumer__tag_all,
+.aromates-brand__tag_all,
 .cat-group__tag_all,
 .cat-persona__tag_all,
 .cat-brands__tag_all,
@@ -7590,6 +8002,8 @@ body.lock {
 
 .aromates-note__tag:first-child,
 .aromates-water__tag:first-child,
+.aromates-parfumer__tag:first-child,
+.aromates-brand__tag:first-child,
 .cat-group__tag:first-child,
 .cat-persona__tag:first-child,
 .cat-brands__tag:first-child,
@@ -7599,6 +8013,8 @@ body.lock {
 
 .aromates-note__tag:last-child,
 .aromates-water__tag:last-child,
+.aromates-parfumer__tag:last-child,
+.aromates-brand__tag:last-child,
 .cat-group__tag:last-child,
 .cat-persona__tag:last-child,
 .cat-brands__tag:last-child,
@@ -7613,6 +8029,8 @@ body.lock {
 
 .aromates-note__tag.active,
 .aromates-water__tag.active,
+.aromates-parfumer__tag.active,
+.aromates-brand__tag.active,
 .cat-group__tag.active,
 .cat-persona__tag.active,
 .cat-brands__tag.active,
@@ -7623,6 +8041,8 @@ body.lock {
 
 .aromates-note__tag:not(:last-child),
 .aromates-water__tag:not(:last-child),
+.aromates-parfumer__tag:not(:last-child),
+.aromates-brand__tag:not(:last-child),
 .cat-group__tag:not(:last-child),
 .cat-persona__tag:not(:last-child),
 .cat-brands__tag:not(:last-child),
@@ -7632,6 +8052,8 @@ body.lock {
 
 .aromates-note__tag button,
 .aromates-water__tag button,
+.aromates-parfumer__tag button,
+.aromates-brand__tag button,
 .cat-group__tag button,
 .cat-persona__tag button,
 .cat-brands__tag button,
@@ -7643,6 +8065,8 @@ body.lock {
 
 .aromates-note__tag button svg,
 .aromates-water__tag button svg,
+.aromates-parfumer__tag button svg,
+.aromates-brand__tag button svg,
 .cat-group__tag button svg,
 .cat-persona__tag button svg,
 .cat-brands__tag button svg,
@@ -7654,6 +8078,8 @@ body.lock {
 
 .aromates-note__more,
 .aromates-water__more,
+.aromates-parfumer__more,
+.aromates-brand__more,
 .cat-group__more,
 .cat-persona__more,
 .cat-brands__more,
@@ -7670,6 +8096,8 @@ body.lock {
 
 .aromates-note__more:hover,
 .aromates-water__more:hover,
+.aromates-parfumer__more:hover,
+.aromates-brand__more:hover,
 .cat-group__more:hover,
 .cat-persona__more:hover,
 .cat-brands__more:hover,
@@ -7679,6 +8107,8 @@ body.lock {
 
 .aromates-note__catalog,
 .aromates-water__catalog,
+.aromates-parfumer__catalog,
+.aromates-brand__catalog,
 .cat-group__catalog,
 .cat-persona__catalog,
 .cat-brands__catalog,
@@ -7776,6 +8206,396 @@ body.lock {
 .cat-brands .filter,
 .items-cat .filter {
   display: none;
+}
+
+.parfumer__articles,
+.parfumer__reviews,
+.parfumer__other,
+.brand__articles,
+.brand__reviews,
+.brand__other {
+  margin-bottom: 80px;
+}
+
+.articles-parfumer__title,
+.articles-brand__title {
+  margin-bottom: 40px;
+}
+
+.articles-parfumer__body,
+.articles-brand__body {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 30px;
+}
+
+.articles-parfumer__card,
+.articles-brand__card {
+  grid-column: span 2;
+  border: 1px solid #ebebeb;
+}
+
+.other-parfumer,
+.interesting-parfumer,
+.parfumers-brand,
+.other-brand {
+  display: none;
+}
+
+.other-parfumer__title,
+.interesting-parfumer__title,
+.parfumers-brand__title,
+.other-brand__title {
+  margin-bottom: 40px;
+}
+
+.other-parfumer__body,
+.interesting-parfumer__body,
+.parfumers-brand__body,
+.other-brand__body {
+  position: relative;
+  padding: 0 35px;
+  margin-bottom: 80px;
+}
+
+.other-parfumer__slider,
+.interesting-parfumer__slider,
+.parfumers-brand__slider,
+.other-brand__slider {
+  overflow: hidden;
+}
+
+.other-parfumer__item,
+.interesting-parfumer__item,
+.parfumers-brand__item,
+.other-brand__item {
+  border: 2px solid #E1E1E1;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  transition: all 0.2s linear;
+}
+
+.other-parfumer__item:hover,
+.interesting-parfumer__item:hover,
+.parfumers-brand__item:hover,
+.other-brand__item:hover {
+  border: 2px solid #CCE5DF;
+}
+
+.other-parfumer__item:hover .other-parfumer__name,
+.interesting-parfumer__item:hover .other-parfumer__name,
+.parfumers-brand__item:hover .other-parfumer__name,
+.other-brand__item:hover .other-parfumer__name {
+  color: #007F5F;
+}
+
+.other-parfumer__item:hover .other-parfumer__image img,
+.interesting-parfumer__item:hover .other-parfumer__image img,
+.parfumers-brand__item:hover .other-parfumer__image img,
+.other-brand__item:hover .other-parfumer__image img {
+  transform: scale(1.1);
+}
+
+.other-parfumer__image,
+.interesting-parfumer__image,
+.parfumers-brand__image,
+.other-brand__image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.other-parfumer__image img,
+.interesting-parfumer__image img,
+.parfumers-brand__image img,
+.other-brand__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s linear;
+}
+
+.other-parfumer__info,
+.interesting-parfumer__info,
+.parfumers-brand__info,
+.other-brand__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.other-parfumer__name,
+.interesting-parfumer__name,
+.parfumers-brand__name,
+.other-brand__name {
+  font-size: 1.125rem;
+  color: #000;
+  margin-bottom: 4px;
+  transition: all 0.2s linear;
+  text-align: center;
+}
+
+.other-parfumer__occupation,
+.interesting-parfumer__occupation,
+.parfumers-brand__occupation,
+.other-brand__occupation {
+  color: #C3C3C3;
+  text-align: center;
+}
+
+.other-parfumer__navigation,
+.interesting-parfumer__navigation,
+.parfumers-brand__navigation,
+.other-brand__navigation {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translate(0, -50%);
+}
+
+.other-parfumer__navigation .navigation__prev,
+.other-parfumer__navigation .navigation__next,
+.interesting-parfumer__navigation .navigation__prev,
+.interesting-parfumer__navigation .navigation__next,
+.parfumers-brand__navigation .navigation__prev,
+.parfumers-brand__navigation .navigation__next,
+.other-brand__navigation .navigation__prev,
+.other-brand__navigation .navigation__next {
+  transform: translate(0, 0);
+}
+
+.other-parfumer__pagination,
+.interesting-parfumer__pagination,
+.parfumers-brand__pagination,
+.other-brand__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.other-parfumer__pagination .swiper-pagination-bullet,
+.interesting-parfumer__pagination .swiper-pagination-bullet,
+.parfumers-brand__pagination .swiper-pagination-bullet,
+.other-brand__pagination .swiper-pagination-bullet {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #EBEBEB;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.other-parfumer__pagination .swiper-pagination-bullet:not(:last-child),
+.interesting-parfumer__pagination .swiper-pagination-bullet:not(:last-child),
+.parfumers-brand__pagination .swiper-pagination-bullet:not(:last-child),
+.other-brand__pagination .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 5px;
+}
+
+.other-parfumer__pagination .swiper-pagination-bullet-active,
+.interesting-parfumer__pagination .swiper-pagination-bullet-active,
+.parfumers-brand__pagination .swiper-pagination-bullet-active,
+.other-brand__pagination .swiper-pagination-bullet-active {
+  width: 28px;
+  height: 12px;
+  background: #3CBB9B;
+  border-radius: 10px;
+}
+
+.other-brand__name {
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.other-brand__image {
+  width: 150px;
+  height: 70px;
+  border-radius: 0;
+}
+
+.other-brand__image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.images-parfumer,
+.images-brand {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  flex: 0 0 385px;
+  min-width: 0;
+}
+
+.images-parfumer__main,
+.images-brand__main {
+  margin-bottom: 15px;
+}
+
+.images-parfumer__slider,
+.images-brand__slider {
+  overflow: hidden;
+}
+
+.images-parfumer__slide,
+.images-brand__slide {
+  display: flex;
+  justify-content: center;
+}
+
+.images-parfumer__image,
+.images-brand__image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.images-parfumer__image img,
+.images-brand__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.images-parfumer__pagination,
+.images-brand__pagination {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 20px;
+}
+
+.images-parfumer__pagination .swiper-pagination-bullet,
+.images-brand__pagination .swiper-pagination-bullet {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #EBEBEB;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.images-parfumer__pagination .swiper-pagination-bullet:not(:last-child),
+.images-brand__pagination .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 5px;
+}
+
+.images-parfumer__pagination .swiper-pagination-bullet-active,
+.images-brand__pagination .swiper-pagination-bullet-active {
+  width: 28px;
+  height: 12px;
+  background: #3CBB9B;
+  border-radius: 10px;
+}
+
+.images-brand__image {
+  max-width: 380px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #EBEBEB;
+  background: #FFF;
+}
+
+.images-brand__image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.thumbs-parfumer,
+.thumbs-brand {
+  position: relative;
+  padding: 0 35px;
+}
+
+.thumbs-parfumer__slider,
+.thumbs-brand__slider {
+  overflow: hidden;
+}
+
+.thumbs-parfumer__slide,
+.thumbs-brand__slide {
+  transition: all 0.2s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbs-parfumer__slide.swiper-slide-thumb-active .thumbs-parfumer__item,
+.thumbs-parfumer__slide.swiper-slide-thumb-active .thumbs-brand__item,
+.thumbs-brand__slide.swiper-slide-thumb-active .thumbs-parfumer__item,
+.thumbs-brand__slide.swiper-slide-thumb-active .thumbs-brand__item {
+  border: 2px solid #007F5F;
+  padding: 5px;
+}
+
+.thumbs-parfumer__item,
+.thumbs-brand__item {
+  width: 98px;
+  height: 80px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: all 0.2s linear;
+}
+
+.thumbs-parfumer__image,
+.thumbs-brand__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.thumbs-parfumer__image img,
+.thumbs-brand__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.thumbs-parfumer__navigation .navigation__prev,
+.thumbs-parfumer__navigation .navigation__next,
+.thumbs-brand__navigation .navigation__prev,
+.thumbs-brand__navigation .navigation__next {
+  background: transparent;
+  transform: translate(0, 0);
+  height: 80px;
+}
+
+.thumbs-brand__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .item__cards,
@@ -17210,7 +18030,11 @@ body.lock {
   .about-water__favorite:hover span,
   .about-water__share:hover span,
   .about-group__favorite:hover span,
-  .about-group__share:hover span {
+  .about-group__share:hover span,
+  .about-parfumer__favorite:hover span,
+  .about-parfumer__share:hover span,
+  .about-brand__favorite:hover span,
+  .about-brand__share:hover span {
     opacity: 1;
     visibility: visible;
     transform: translate(0, -50%);
@@ -17257,6 +18081,12 @@ body.lock {
   .information-sidebar__history {
     -webkit-line-clamp: 2;
     max-height: 50px;
+  }
+
+  .information-sidebar__list {
+    width: 100%;
+    -moz-columns: 2;
+         columns: 2;
   }
 
   .information-sidebar .sidebar__title {
@@ -17347,12 +18177,26 @@ body.lock {
     aspect-ratio: 1/1;
   }
 
+  .parfumers-sidebar {
+    display: none;
+  }
+
+  .brands-sidebar {
+    display: none;
+  }
+
+  .persons-sidebar {
+    display: none;
+  }
+
   .content-note__sidebar,
   .content-water__sidebar,
   .content-group__sidebar,
   .content-persona__sidebar,
   .content-brands__sidebar,
-  .content-cat__sidebar {
+  .content-cat__sidebar,
+  .content-parfumer__sidebar,
+  .content-brand__sidebar {
     flex: unset;
     margin-right: 0;
   }
@@ -17362,7 +18206,9 @@ body.lock {
   .content-group__block,
   .content-persona__block,
   .content-brands__block,
-  .content-cat__block {
+  .content-cat__block,
+  .content-parfumer__block,
+  .content-brand__block {
     padding-left: 0;
     border-left: none;
   }
@@ -17398,6 +18244,18 @@ body.lock {
   .cat-brands .filter,
   .items-cat .filter {
     display: flex;
+  }
+
+  .parfumer .recent-sidebar,
+  .brand .recent-sidebar {
+    display: none;
+  }
+
+  .other-parfumer,
+  .interesting-parfumer,
+  .parfumers-brand,
+  .other-brand {
+    display: block;
   }
 
   .article__body {
@@ -17437,12 +18295,16 @@ body.lock {
 
   .about-note__image,
   .about-water__image,
-  .about-group__image {
+  .about-group__image,
+  .about-parfumer__image,
+  .about-brand__image {
     margin: 0 calc(20px + 62 * (100vw - 768px) / 468);
   }
 
   .aromates-note__form,
   .aromates-water__form,
+  .aromates-parfumer__form,
+  .aromates-brand__form,
   .cat-group__form,
   .cat-persona__form,
   .cat-brands__form,
@@ -17452,6 +18314,8 @@ body.lock {
 
   .aromates-note__form input,
   .aromates-water__form input,
+  .aromates-parfumer__form input,
+  .aromates-brand__form input,
   .cat-group__form input,
   .cat-persona__form input,
   .cat-brands__form input,
@@ -17468,7 +18332,9 @@ body.lock {
 @media (max-width: 1200px) {
   .about-note__options,
   .about-water__options,
-  .about-group__options {
+  .about-group__options,
+  .about-parfumer__options,
+  .about-brand__options {
     flex-direction: column-reverse;
     align-items: flex-end;
   }
@@ -17478,7 +18344,11 @@ body.lock {
   .about-water__favorite,
   .about-water__share,
   .about-group__favorite,
-  .about-group__share {
+  .about-group__share,
+  .about-parfumer__favorite,
+  .about-parfumer__share,
+  .about-brand__favorite,
+  .about-brand__share {
     margin-right: 0;
     margin-bottom: 10px;
     order: 2;
@@ -17486,26 +18356,34 @@ body.lock {
 
   .about-note__share,
   .about-water__share,
-  .about-group__share {
+  .about-group__share,
+  .about-parfumer__share,
+  .about-brand__share {
     order: 1;
   }
 
   .about-note__favorite,
   .about-water__favorite,
-  .about-group__favorite {
+  .about-group__favorite,
+  .about-parfumer__favorite,
+  .about-brand__favorite {
     order: 2;
   }
 
   .about-note__subscribe,
   .about-water__subscribe,
-  .about-group__subscribe {
+  .about-group__subscribe,
+  .about-parfumer__subscribe,
+  .about-brand__subscribe {
     margin-bottom: 10px;
     order: 3;
   }
 
   .about-note__text,
   .about-water__text,
-  .about-group__text {
+  .about-group__text,
+  .about-parfumer__text,
+  .about-brand__text {
     padding-right: 58px;
   }
 
@@ -17865,12 +18743,20 @@ body.lock {
 
   .about-note,
   .about-water,
-  .about-group {
+  .about-group,
+  .about-parfumer,
+  .about-brand {
     padding: 30px 0;
+  }
+
+  .content-brand__table {
+    margin-bottom: 40px;
   }
 
   .aromates-note__catalog,
   .aromates-water__catalog,
+  .aromates-parfumer__catalog,
+  .aromates-brand__catalog,
   .cat-group__catalog,
   .cat-persona__catalog,
   .cat-brands__catalog,
@@ -18162,6 +19048,21 @@ body.lock {
 }
 
 @media (max-width: 992px) {
+  .articles-parfumer__body,
+  .articles-brand__body {
+    grid-gap: 20px;
+  }
+
+  .articles-parfumer__card,
+  .articles-brand__card {
+    grid-column: span 3;
+  }
+
+  .articles-parfumer__card:last-child,
+  .articles-brand__card:last-child {
+    grid-column: span 6;
+  }
+
   .cards-item__body {
     grid-gap: 20px;
   }
@@ -18605,26 +19506,34 @@ body.lock {
 
   .about-note__body,
   .about-water__body,
-  .about-group__body {
+  .about-group__body,
+  .about-parfumer__body,
+  .about-brand__body {
     flex-direction: column;
   }
 
   .about-note__image,
   .about-water__image,
-  .about-group__image {
+  .about-group__image,
+  .about-parfumer__image,
+  .about-brand__image {
     margin: 0 auto 30px;
   }
 
   .about-note__title,
   .about-water__title,
-  .about-group__title {
+  .about-group__title,
+  .about-parfumer__title,
+  .about-brand__title {
     width: 100%;
     text-align: center;
   }
 
   .about-note__options,
   .about-water__options,
-  .about-group__options {
+  .about-group__options,
+  .about-parfumer__options,
+  .about-brand__options {
     position: static;
     flex-direction: row;
     justify-content: center;
@@ -18636,40 +19545,90 @@ body.lock {
   .about-water__favorite,
   .about-water__share,
   .about-group__favorite,
-  .about-group__share {
+  .about-group__share,
+  .about-parfumer__favorite,
+  .about-parfumer__share,
+  .about-brand__favorite,
+  .about-brand__share {
     margin-bottom: 0;
     margin-right: 10px;
   }
 
   .about-note__share,
   .about-water__share,
-  .about-group__share {
+  .about-group__share,
+  .about-parfumer__share,
+  .about-brand__share {
     order: 2;
   }
 
   .about-note__favorite,
   .about-water__favorite,
-  .about-group__favorite {
+  .about-group__favorite,
+  .about-parfumer__favorite,
+  .about-brand__favorite {
     order: 1;
   }
 
   .about-note__subscribe,
   .about-water__subscribe,
-  .about-group__subscribe {
+  .about-group__subscribe,
+  .about-parfumer__subscribe,
+  .about-brand__subscribe {
     margin-bottom: 0;
     order: 3;
   }
 
   .about-note__subtitle,
   .about-water__subtitle,
-  .about-group__subtitle {
+  .about-group__subtitle,
+  .about-parfumer__subtitle,
+  .about-brand__subtitle {
     text-align: center;
   }
 
   .about-note__text,
   .about-water__text,
-  .about-group__text {
+  .about-group__text,
+  .about-parfumer__text,
+  .about-brand__text {
     padding: 0;
+  }
+
+  .about-parfumer__header {
+    flex-direction: column-reverse;
+  }
+
+  .about-parfumer__title {
+    margin-right: 0;
+  }
+
+  .about-parfumer__name {
+    text-align: center;
+  }
+
+  .about-parfumer__occupation {
+    text-align: center;
+  }
+
+  .about-brand__header {
+    flex-direction: column-reverse;
+  }
+
+  .about-brand__title {
+    margin-right: 0;
+  }
+
+  .about-brand__type {
+    text-align: center;
+  }
+
+  .about-brand__reviews {
+    text-align: center;
+  }
+
+  .about-brand .rating {
+    justify-content: center;
   }
 
   .content-note__body,
@@ -18677,7 +19636,9 @@ body.lock {
   .content-group__body,
   .content-persona__body,
   .content-brands__body,
-  .content-cat__body {
+  .content-cat__body,
+  .content-parfumer__body,
+  .content-brand__body {
     margin-bottom: 60px;
   }
 
@@ -18709,6 +19670,86 @@ body.lock {
   .cat-notes__wrapper,
   .cat-persona__wrapper {
     margin-bottom: 60px;
+  }
+
+  .parfumer__articles,
+  .parfumer__reviews,
+  .parfumer__other,
+  .brand__articles,
+  .brand__reviews,
+  .brand__other {
+    margin-bottom: 60px;
+  }
+
+  .articles-parfumer__title,
+  .articles-brand__title {
+    margin-bottom: 30px;
+  }
+
+  .other-parfumer__title,
+  .interesting-parfumer__title,
+  .parfumers-brand__title,
+  .other-brand__title {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .other-parfumer__body,
+  .interesting-parfumer__body,
+  .parfumers-brand__body,
+  .other-brand__body {
+    margin-bottom: 60px;
+    padding: 0;
+  }
+
+  .other-parfumer__slider,
+  .interesting-parfumer__slider,
+  .parfumers-brand__slider,
+  .other-brand__slider {
+    overflow: visible;
+  }
+
+  .other-parfumer__item,
+  .interesting-parfumer__item,
+  .parfumers-brand__item,
+  .other-brand__item {
+    border: 2px solid #CCE5DF;
+  }
+
+  .other-parfumer__name,
+  .interesting-parfumer__name,
+  .parfumers-brand__name,
+  .other-brand__name {
+    width: -moz-min-content;
+    width: min-content;
+  }
+
+  .other-parfumer__pagination,
+  .interesting-parfumer__pagination,
+  .parfumers-brand__pagination,
+  .other-brand__pagination {
+    display: none;
+  }
+
+  .other-brand__name {
+    width: 100%;
+  }
+
+  .images-parfumer,
+  .images-brand {
+    margin: 0;
+    flex: unset;
+  }
+
+  .images-parfumer__pagination,
+  .images-brand__pagination {
+    display: flex;
+    margin: 20px 0 10px;
+  }
+
+  .thumbs-parfumer,
+  .thumbs-brand {
+    display: none;
   }
 
   .item__cards,
@@ -20081,6 +21122,11 @@ body.lock {
     height: 100%;
   }
 
+  .information-sidebar__list {
+    -moz-columns: unset;
+         columns: unset;
+  }
+
   .author-comments__rating .rating__body {
     width: 22px;
   }
@@ -20088,6 +21134,11 @@ body.lock {
   .popular__images picture {
     width: 60px;
     height: 70px;
+  }
+
+  .articles-parfumer__card,
+  .articles-brand__card {
+    grid-column: span 6;
   }
 
   .cards-item__card {
@@ -21223,19 +22274,25 @@ body.lock {
 
   .about-note,
   .about-water,
-  .about-group {
+  .about-group,
+  .about-parfumer,
+  .about-brand {
     margin-bottom: 24px;
   }
 
   .about-note,
   .about-water,
-  .about-group {
+  .about-group,
+  .about-parfumer,
+  .about-brand {
     padding: 24px 0;
   }
 
   .about-note__image,
   .about-water__image,
-  .about-group__image {
+  .about-group__image,
+  .about-parfumer__image,
+  .about-brand__image {
     width: 200px;
     height: 200px;
     min-width: 200px;
@@ -21244,7 +22301,9 @@ body.lock {
 
   .about-note__title,
   .about-water__title,
-  .about-group__title {
+  .about-group__title,
+  .about-parfumer__title,
+  .about-brand__title {
     font-size: 1.5rem;
     text-align: left;
     margin-bottom: 4px;
@@ -21252,13 +22311,17 @@ body.lock {
 
   .about-note__options,
   .about-water__options,
-  .about-group__options {
+  .about-group__options,
+  .about-parfumer__options,
+  .about-brand__options {
     margin-bottom: 24px;
   }
 
   .about-note__subtitle,
   .about-water__subtitle,
-  .about-group__subtitle {
+  .about-group__subtitle,
+  .about-parfumer__subtitle,
+  .about-brand__subtitle {
     text-align: left;
     margin-bottom: 15px;
     font-size: 0.9375rem;
@@ -21266,15 +22329,39 @@ body.lock {
 
   .about-note__desc,
   .about-water__desc,
-  .about-group__desc {
+  .about-group__desc,
+  .about-parfumer__desc,
+  .about-brand__desc {
     font-size: 1.0625rem;
     margin-bottom: 8px;
   }
 
   .about-note__text,
   .about-water__text,
-  .about-group__text {
+  .about-group__text,
+  .about-parfumer__text,
+  .about-brand__text {
     font-size: 1.0625rem;
+  }
+
+  .about-parfumer__name {
+    text-align: left;
+  }
+
+  .about-parfumer__occupation {
+    text-align: left;
+  }
+
+  .about-brand__type {
+    text-align: left;
+  }
+
+  .about-brand__reviews {
+    text-align: left;
+  }
+
+  .about-brand .rating {
+    justify-content: flex-start;
   }
 
   .content-note__body,
@@ -21282,8 +22369,14 @@ body.lock {
   .content-group__body,
   .content-persona__body,
   .content-brands__body,
-  .content-cat__body {
+  .content-cat__body,
+  .content-parfumer__body,
+  .content-brand__body {
     margin-bottom: 40px;
+  }
+
+  .content-brand td {
+    font-size: 1.0625rem;
   }
 
   .similar-notes__body {
@@ -21300,6 +22393,8 @@ body.lock {
 
   .aromates-note__title,
   .aromates-water__title,
+  .aromates-parfumer__title,
+  .aromates-brand__title,
   .cat-group__title,
   .cat-persona__title,
   .cat-brands__title,
@@ -21309,6 +22404,8 @@ body.lock {
 
   .aromates-note__catalog,
   .aromates-water__catalog,
+  .aromates-parfumer__catalog,
+  .aromates-brand__catalog,
   .cat-group__catalog,
   .cat-persona__catalog,
   .cat-brands__catalog,
@@ -21332,6 +22429,40 @@ body.lock {
   .cat-brands .options__title,
   .items-cat .options__title {
     font-size: 1.25rem;
+  }
+
+  .parfumer__articles,
+  .parfumer__reviews,
+  .parfumer__other,
+  .brand__articles,
+  .brand__reviews,
+  .brand__other {
+    margin-bottom: 40px;
+  }
+
+  .articles-parfumer__title,
+  .articles-brand__title {
+    margin-bottom: 24px;
+  }
+
+  .other-parfumer__title,
+  .interesting-parfumer__title,
+  .parfumers-brand__title,
+  .other-brand__title {
+    margin-bottom: 24px;
+  }
+
+  .other-parfumer__body,
+  .interesting-parfumer__body,
+  .parfumers-brand__body,
+  .other-brand__body {
+    margin-bottom: 40px;
+  }
+
+  .images-parfumer__image,
+  .images-brand__image {
+    width: 200px;
+    height: 200px;
   }
 
   .item__cards,
@@ -23099,12 +24230,59 @@ body.lock {
   .content-group__body,
   .content-persona__body,
   .content-brands__body,
-  .content-cat__body {
+  .content-cat__body,
+  .content-parfumer__body,
+  .content-brand__body {
     margin-bottom: 32px;
+  }
+
+  .content-brand__table {
+    margin-bottom: 32px;
+    border: none;
+  }
+
+  .content-brand tr:last-child {
+    border-bottom: 1px solid #EBEBEE;
+  }
+
+  .content-brand td {
+    padding-left: 0;
+  }
+
+  .content-brand td:nth-child(2) {
+    padding-right: 0;
   }
 
   .cat-notes__wrapper,
   .cat-persona__wrapper {
+    margin-bottom: 32px;
+  }
+
+  .parfumer__articles,
+  .parfumer__reviews,
+  .parfumer__other,
+  .brand__articles,
+  .brand__reviews,
+  .brand__other {
+    margin-bottom: 32px;
+  }
+
+  .articles-parfumer__title,
+  .articles-brand__title {
+    margin-bottom: 20px;
+  }
+
+  .other-parfumer__title,
+  .interesting-parfumer__title,
+  .parfumers-brand__title,
+  .other-brand__title {
+    margin-bottom: 20px;
+  }
+
+  .other-parfumer__body,
+  .interesting-parfumer__body,
+  .parfumers-brand__body,
+  .other-brand__body {
     margin-bottom: 32px;
   }
 
