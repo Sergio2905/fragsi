@@ -4,7 +4,7 @@
 <head>
     <title>Fragsi</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230723154206">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230726133153">
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание">
@@ -44,20 +44,101 @@
                 </a>
                 <div class="header__menu menu">
                     <nav class="menu__body" data-mob="submenu, append">
+                        <h3 class="menu__title title3">Разделы</h3>
                         <ul class="menu__list">
-                            <li class="menu__item active"><a href="#" class="menu__link">Ароматы</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Бренды</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Парфюмеры</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Ноты</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
+                            <li class="menu__item active"><a href="#" class="menu__link">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#header-aromo"></use>
+                                    </svg>
+                                    <span>Ароматы</span>
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow-right"></use>
+                                    </svg>
+                                </a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#header-brand"></use>
+                                    </svg>
+                                    <span>Бренды</span>
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow-right"></use>
+                                    </svg>
+                                </a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#header-nose"></use>
+                                    </svg>
+                                    <span>Парфюмеры</span>
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow-right"></use>
+                                    </svg>
+                                </a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#header-notes"></use>
+                                    </svg>
+                                    <span>Ноты</span>
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow-right"></use>
+                                    </svg>
+                                </a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#header-pen"></use>
+                                    </svg>
+                                    <span>Статьи</span>
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow-right"></use>
+                                    </svg>
+                                </a></li>
                             <li class="menu__item menu__item_sub" data-desk="submenu, append">
                                 <a href="#" class="menu__link">Еще</a>
                                 <ul class="menu__sub-list" data-move="submenu, 993">
-                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">Семейства</a></li>
-                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">Сегменты</a></li>
-                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">Концентрации</a></li>
-                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">Производители</a></li>
-                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">Глассарий</a></li>
+                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#header-family"></use>
+                                            </svg>
+                                            <span>Семейства</span>
+                                            <svg>
+                                                <use href="img/icons/icons.svg#arrow-right"></use>
+                                            </svg>
+                                        </a></li>
+                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#header-shiny"></use>
+                                            </svg>
+                                            <span>Сегменты</span>
+                                            <svg>
+                                                <use href="img/icons/icons.svg#arrow-right"></use>
+                                            </svg>
+                                        </a></li>
+                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#header-concentration"></use>
+                                            </svg>
+                                            <span>Концентрации</span>
+                                            <svg>
+                                                <use href="img/icons/icons.svg#arrow-right"></use>
+                                            </svg>
+                                        </a></li>
+                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#header-production"></use>
+                                            </svg>
+                                            <span>Производители</span>
+                                            <svg>
+                                                <use href="img/icons/icons.svg#arrow-right"></use>
+                                            </svg>
+                                        </a></li>
+                                    <li class="menu__sub-item"><a href="#" class="menu__sub-link">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#header-glossary"></use>
+                                            </svg>
+                                            <span>Глассарий</span>
+                                            <svg>
+                                                <use href="img/icons/icons.svg#arrow-right"></use>
+                                            </svg>
+                                        </a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -106,16 +187,64 @@
                 </svg>
                 <span>Каталог пафрюмов</span>
             </a>
-            <form action="#" class="actions__form search">
-                <div class="search__wrapper">
-                    <button type="submit" title="search-btn">
-                        <svg>
-                            <use href="img/icons/icons.svg#search"></use>
-                        </svg>
-                    </button>
-                    <input class="search__input" type="text" placeholder="Что будете искать?">
-                    <div class="search__result">
+            <form action="#" class="actions__form search-actions">
+                <div class="search-actions__wrapper">
 
+                    <div class="search-actions__input input">
+                        <button type="submit" title="search-btn">
+                            <svg>
+                                <use href="img/icons/icons.svg#search"></use>
+                            </svg>
+                        </button>
+                        <input type="text" placeholder="Что будете искать?">
+                    </div>
+                    <div class="search-actions__result" data-simplebar>
+                        <div class="search-actions__block block-search">
+                            <div class="block-search__header">
+                                <h4 class="block-search__title">Ароматы</h4>
+                                <span class="block-search__count">(53)</span>
+                            </div>
+                            <ul class="block-search__list">
+                                <li class="block-search__item">
+                                    <a href="#" class="block-search__link">
+                                        <div class="block-search__image">
+                                            <picture>
+                                                <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </div>
+                                        <div class="block-search__info">
+                                            <div class="block-search__name">Tom Ford Lost Cherry</div>
+                                            <div class="block-search__desc">парфюмерная вода</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="block-search__item">
+                                    <a href="#" class="block-search__link">
+                                        <div class="block-search__image">
+                                            <picture>
+                                                <source data-srcset="img/note/cat2.webp" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/note/cat2.png" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </div>
+                                        <div class="block-search__info">
+                                            <div class="block-search__name">Tom Ford Lost Cherry</div>
+                                            <div class="block-search__desc">парфюмерная вода</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="block-search__footer">
+                                <button type="button" class="block-search__btn">
+                                    Смотреть все ароматы
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow-str"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </form>
@@ -322,9 +451,8 @@
 									</div>
 									<div class="recommend-about__bg">
 										<picture>
-											<source data-srcset="img/item/stars.svg" srcset="img/plug.png"
-												type="image/webp">
-											<img data-src="img/item/stars.svg" src="img/plug.png" alt="Image">
+											<source srcset="img/item/stars.svg" type="image/webp">
+											<img src="img/item/stars.svg" alt="Image">
 										</picture>
 									</div>
 								</div>
@@ -2556,6 +2684,11 @@
 								<div class="sort__body">
 									<div class="sort__wrapper">
 										<h3 class="sort__title">Сортировка:</h3>
+										<button type="button" class="sort__close">
+											<svg>
+												<use href="img/icons/icons.svg#close"></use>
+											</svg>
+										</button>
 										<ul class="sort__list">
 											<li class="sort__item active">
 												<input type="radio" name="sort" value="popular" id="popular" checked>
@@ -2830,7 +2963,12 @@
 													<button type="button"
 														class="reply__btn btn_cancel reply-cancel">Отмена</button>
 													<button type="submit"
-														class="reply__btn btn_green disable reply-send">Ответить</button>
+														class="reply__btn btn_green disable reply-send">
+														Ответить
+														<svg>
+															<use href="img/icons/icons.svg#send"></use>
+														</svg>
+													</button>
 												</div>
 											</div>
 										</form>
@@ -2901,7 +3039,12 @@
 															<button type="button"
 																class="reply__btn btn_cancel reply-cancel">Отмена</button>
 															<button type="submit"
-																class="reply__btn btn_green disable reply-send">Ответить</button>
+																class="reply__btn btn_green disable reply-send">
+																Ответить
+																<svg>
+																	<use href="img/icons/icons.svg#send"></use>
+																</svg>
+															</button>
 														</div>
 													</div>
 												</form>
@@ -2972,7 +3115,12 @@
 																	<button type="button"
 																		class="reply__btn btn_cancel reply-cancel">Отмена</button>
 																	<button type="submit"
-																		class="reply__btn btn_green disable reply-send">Ответить</button>
+																		class="reply__btn btn_green disable reply-send">
+																		Ответить
+																		<svg>
+																			<use href="img/icons/icons.svg#send"></use>
+																		</svg>
+																	</button>
 																</div>
 															</div>
 														</form>
@@ -3040,7 +3188,12 @@
 															<button type="button"
 																class="reply__btn btn_cancel reply-cancel">Отмена</button>
 															<button type="submit"
-																class="reply__btn btn_green disable reply-send">Ответить</button>
+																class="reply__btn btn_green disable reply-send">
+																Ответить
+																<svg>
+																	<use href="img/icons/icons.svg#send"></use>
+																</svg>
+															</button>
 														</div>
 													</div>
 												</form>
@@ -3139,7 +3292,12 @@
 													<button type="button"
 														class="reply__btn btn_cancel reply-cancel">Отмена</button>
 													<button type="submit"
-														class="reply__btn btn_green disable reply-send">Ответить</button>
+														class="reply__btn btn_green disable reply-send">
+														Ответить
+														<svg>
+															<use href="img/icons/icons.svg#send"></use>
+														</svg>
+													</button>
 												</div>
 											</div>
 										</form>
@@ -4694,7 +4852,7 @@
 	<div class="popup" id="lang-settings">
     <div class="popup__body">
         <div class="popup__content lang-settings">
-            <button type="button" class="popup__close">
+            <button type="button" class="lang-settings__close popup__close">
                 <svg>
                     <use href="img/icons/icons.svg#close"></use>
                 </svg>
@@ -4740,14 +4898,14 @@
                 <div class="input__error">Ошибка. Попробуйте еще раз.</div>
             </div>
             <button type="button" class="lang-settings__btn btn_green popup__close">Применить</button>
+            <button type="button" class="lang-settings__cancel popup__close">Отмена</button>
         </div>
     </div>
 </div>
-
-<div class="popup" id="login">
+	<div class="popup" id="login">
     <div class="popup__body">
         <div class="popup__content login">
-            <button type="button" class="popup__close">
+            <button type="button" class="login__close popup__close">
                 <svg>
                     <use href="img/icons/icons.svg#close"></use>
                 </svg>
@@ -4835,6 +4993,7 @@
                                     </div>
                                     <button type="submit"
                                         class="form-login__btn btn_green switcher disable">Вход</button>
+                                    <button type="button" class="form-login__cancel popup__close">Отмена</button>
                                     <div class="form-login__footer">
                                         <div class="form-login__checkbox checkbox">
                                             Запомнить меня
@@ -4880,6 +5039,51 @@
                                     </div>
                                     <button type="submit"
                                         class="form-login__btn btn_green switcher disable">Зарегистрироваться</button>
+                                    <button type="button" class="form-login__cancel popup__close">Отмена</button>
+                                </form>
+                                <form action="#" class="login__mob mob-login form-login">
+                                    <div class="mob-login__slider">
+                                        <div class="mob-login__wrapper swiper-wrapper">
+                                            <div class="mob-login__slide mob-login__first swiper-slide">
+                                                <div class="form-login__input input">
+                                                    <label for="e-mail">Введите ваше имя</label>
+                                                    <input type="text" title="Your name" name="name">
+                                                </div>
+                                                <div class="form-login__input input">
+                                                    <label for="e-mail">Введите телефон или Email</label>
+                                                    <input type="text" title="E-mail" name="email">
+                                                </div>
+                                                <button type="button"
+                                                    class="form-login__next btn_green disable">Далее</button>
+                                                <button type="button"
+                                                    class="form-login__cancel popup__close">Отмена</button>
+                                            </div>
+                                            <div class="mob-login__slide swiper-slide">
+                                                <div class="form-login__input input pass">
+                                                    <label for="password">Придумайте пароль</label>
+                                                    <input type="password" title="Password" name="password">
+                                                    <button class="pass__btn" type="button" title="Show password">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#eye"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="form-login__input input pass">
+                                                    <label for="password">Повторите пароль</label>
+                                                    <input type="password" title="Repeat password">
+                                                    <button class="pass__btn" type="button" title="Show password">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#eye"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button type="submit"
+                                                    class="form-login__btn btn_green switcher disable">Зарегистрироваться</button>
+                                                <button type="button"
+                                                    class="form-login__cancel popup__close">Отмена</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -4889,662 +5093,7 @@
         </div>
     </div>
 </div>
-
-<div class="popup" id="change-password">
-    <div class="popup__body">
-        <div class="popup__content reset">
-            <form action="#" class="reset__form">
-                <div class="reset__header">
-                    <h4 class="reset__title">Изменить пароль</h4>
-                    <button type="button" title="Close popup" class="popup__close">
-                        <svg>
-                            <use href="img/icons/icons.svg#close"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="reset__block">
-                    <p class="reset__desc">Введите текущий пароль что бы продолжить</p>
-                    <div class="reset__input input pass">
-                        <label for="password">Текущий пароль</label>
-                        <input type="password" title="Password">
-                        <button class="pass__btn" type="button" title="Show password">
-                            <svg>
-                                <use href="img/icons/icons.svg#eye"></use>
-                            </svg>
-                        </button>
-                        <div class="input__error">Упс, ошибка! Неправильный логин или пароль</div>
-                    </div>
-                </div>
-                <div class="reset__block">
-                    <p class="reset__desc">Придумайте новый пароль</p>
-                    <div class="reset__input input pass">
-                        <label for="password">Введите пароль</label>
-                        <input type="password" title="Password">
-                        <button class="pass__btn" type="button" title="Show password">
-                            <svg>
-                                <use href="img/icons/icons.svg#eye"></use>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="reset__input input pass confirm">
-                        <label for="password">Повторите пароль</label>
-                        <input type="password" title="Password">
-                        <button class="pass__btn" type="button" title="Show password">
-                            <svg>
-                                <use href="img/icons/icons.svg#eye"></use>
-                            </svg>
-                        </button>
-                        <div class="input__error">Пароли не совпадают.</div>
-                    </div>
-                </div>
-                <div class="reset__btns">
-                    <button type="button" title="Cancel" class="reset__btn btn_grey popup__close">Отмена</button>
-                    <button type="button" title="Save" class="reset__btn btn_green popup__close">Изменить
-                        пароль</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-<div class="popup" id="delete-account">
-    <div class="popup__body">
-        <div class="popup__content reset">
-            <form action="#" class="reset__form">
-                <div class="reset__header">
-                    <h4 class="reset__title">Удалить аккаунт?</h4>
-                    <button type="button" title="Close popup" class="popup__close">
-                        <svg>
-                            <use href="img/icons/icons.svg#close"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="reset__block">
-                    <p class="reset__desc">Вы уверены, что хотите удалить свой аккаунт?</p>
-                    <p class="reset__info">*После этого вы больше не сможете войти на свой профиль и все ваши данные
-                        будут безвозвратно удалены.</p>
-                    <p class="reset__desc">Введите текущий пароль что бы продолжить</p>
-                    <div class="reset__input input pass error">
-                        <label for="password">Текущий пароль</label>
-                        <input type="password" title="Password">
-                        <button class="pass__btn" type="button" title="Show password">
-                            <svg>
-                                <use href="img/icons/icons.svg#eye"></use>
-                            </svg>
-                        </button>
-                        <div class="input__error">Упс, ошибка! Неправильный логин или пароль</div>
-                    </div>
-                </div>
-                <div class="reset__btns">
-                    <button type="button" title="Cancel" class="reset__btn btn_grey popup__close">Отмена</button>
-                    <button type="button" title="Delete" class="reset__btn btn_red popup__close">
-                        <svg>
-                            <use href="img/icons/icons.svg#trash"></use>
-                        </svg>
-                        Удалить аккаунт
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-<div class="popup" id="new-shelf">
-    <div class="popup__body">
-        <div class="popup__content shelf">
-            <form action="#" class="shelf__form">
-                <div class="shelf__header">
-                    <h4 class="shelf__title">Создание полки</h4>
-                    <button type="button" title="Close popup" class="popup__close">
-                        <svg>
-                            <use href="img/icons/icons.svg#close"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="shelf__input limit">
-                    <textarea name="shelf" placeholder="Введите название полки..."></textarea>
-                </div>
-                <div class="shelf__checkbox checkbox">
-                    Скрыть полку от других пользователей
-                    <input type="checkbox" name="hide">
-                </div>
-                <div class="shelf__btns">
-                    <div class="shelf__counter counter">
-                        мин. <span class="counter__min">3</span>/<span class="counter__current">0</span>
-                    </div>
-                    <button type="button" title="Delete" class="shelf__btn btn_green popup__close disable">
-                        Создать полку
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-<div class="popup" id="shelf-order">
-    <div class="popup__body">
-        <div class="popup__content shelf">
-            <form action="#" class="shelf__form">
-                <div class="shelf__header">
-                    <h4 class="shelf__title">Название полки</h4>
-                    <button type="button" title="Close popup" class="popup__close">
-                        <svg>
-                            <use href="img/icons/icons.svg#close"></use>
-                        </svg>
-                    </button>
-                </div>
-                <ul class="shelf__list" data-simplebar>
-                    <li class="shelf__item" draggable="true">
-                        <div class="shelf__image">
-                            <picture>
-                                <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
-                                <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
-                            </picture>
-                        </div>
-                        <div class="shelf__info">
-                            <a href="#" class="shelf__name">Baccarat Rouge 540</a>
-                            <p class="shelf__desc">парфюмерная вода</p>
-                        </div>
-                        <div class="shelf__options">
-                            <button type="button" title="Move item" class="shelf__move move">
-                                <svg>
-                                    <use href="img/icons/icons.svg#drag"></use>
-                                </svg>
-                            </button>
-                            <button type="button" title="Move item" class="shelf__delete">
-                                <svg>
-                                    <use href="img/icons/icons.svg#close"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="shelf__item" draggable="true">
-                        <div class="shelf__image">
-                            <picture>
-                                <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
-                                <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
-                            </picture>
-                        </div>
-                        <div class="shelf__info">
-                            <a href="#" class="shelf__name">Baccarat Rouge 540</a>
-                            <p class="shelf__desc">парфюмерная вода</p>
-                        </div>
-                        <div class="shelf__options">
-                            <button type="button" title="Move item" class="shelf__move move">
-                                <svg>
-                                    <use href="img/icons/icons.svg#drag"></use>
-                                </svg>
-                            </button>
-                            <button type="button" title="Move item" class="shelf__delete">
-                                <svg>
-                                    <use href="img/icons/icons.svg#close"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="shelf__item" draggable="true">
-                        <div class="shelf__image">
-                            <picture>
-                                <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
-                                <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
-                            </picture>
-                        </div>
-                        <div class="shelf__info">
-                            <a href="#" class="shelf__name">Baccarat Rouge 540</a>
-                            <p class="shelf__desc">парфюмерная вода</p>
-                        </div>
-                        <div class="shelf__options">
-                            <button type="button" title="Move item" class="shelf__move move">
-                                <svg>
-                                    <use href="img/icons/icons.svg#drag"></use>
-                                </svg>
-                            </button>
-                            <button type="button" title="Move item" class="shelf__delete">
-                                <svg>
-                                    <use href="img/icons/icons.svg#close"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="shelf__item" draggable="true">
-                        <div class="shelf__image">
-                            <picture>
-                                <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
-                                <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
-                            </picture>
-                        </div>
-                        <div class="shelf__info">
-                            <a href="#" class="shelf__name">Baccarat Rouge 540</a>
-                            <p class="shelf__desc">парфюмерная вода</p>
-                        </div>
-                        <div class="shelf__options">
-                            <button type="button" title="Move item" class="shelf__move move">
-                                <svg>
-                                    <use href="img/icons/icons.svg#drag"></use>
-                                </svg>
-                            </button>
-                            <button type="button" title="Move item" class="shelf__delete">
-                                <svg>
-                                    <use href="img/icons/icons.svg#close"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="shelf__item" draggable="true">
-                        <div class="shelf__image">
-                            <picture>
-                                <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
-                                <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
-                            </picture>
-                        </div>
-                        <div class="shelf__info">
-                            <a href="#" class="shelf__name">Baccarat Rouge 540</a>
-                            <p class="shelf__desc">парфюмерная вода</p>
-                        </div>
-                        <div class="shelf__options">
-                            <button type="button" title="Move item" class="shelf__move move">
-                                <svg>
-                                    <use href="img/icons/icons.svg#drag"></use>
-                                </svg>
-                            </button>
-                            <button type="button" title="Move item" class="shelf__delete">
-                                <svg>
-                                    <use href="img/icons/icons.svg#close"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="shelf__item" draggable="true">
-                        <div class="shelf__image">
-                            <picture>
-                                <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
-                                <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
-                            </picture>
-                        </div>
-                        <div class="shelf__info">
-                            <a href="#" class="shelf__name">Baccarat Rouge 540</a>
-                            <p class="shelf__desc">парфюмерная вода</p>
-                        </div>
-                        <div class="shelf__options">
-                            <button type="button" title="Move item" class="shelf__move move">
-                                <svg>
-                                    <use href="img/icons/icons.svg#drag"></use>
-                                </svg>
-                            </button>
-                            <button type="button" title="Move item" class="shelf__delete">
-                                <svg>
-                                    <use href="img/icons/icons.svg#close"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="shelf__item" draggable="true">
-                        <div class="shelf__image">
-                            <picture>
-                                <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
-                                <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
-                            </picture>
-                        </div>
-                        <div class="shelf__info">
-                            <a href="#" class="shelf__name">Baccarat Rouge 540</a>
-                            <p class="shelf__desc">парфюмерная вода</p>
-                        </div>
-                        <div class="shelf__options">
-                            <button type="button" title="Move item" class="shelf__move move">
-                                <svg>
-                                    <use href="img/icons/icons.svg#drag"></use>
-                                </svg>
-                            </button>
-                            <button type="button" title="Move item" class="shelf__delete">
-                                <svg>
-                                    <use href="img/icons/icons.svg#close"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="shelf__item" draggable="true">
-                        <div class="shelf__image">
-                            <picture>
-                                <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
-                                <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
-                            </picture>
-                        </div>
-                        <div class="shelf__info">
-                            <a href="#" class="shelf__name">Baccarat Rouge 540</a>
-                            <p class="shelf__desc">парфюмерная вода</p>
-                        </div>
-                        <div class="shelf__options">
-                            <button type="button" title="Move item" class="shelf__move move">
-                                <svg>
-                                    <use href="img/icons/icons.svg#drag"></use>
-                                </svg>
-                            </button>
-                            <button type="button" title="Move item" class="shelf__delete">
-                                <svg>
-                                    <use href="img/icons/icons.svg#close"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="shelf__item" draggable="true">
-                        <div class="shelf__image">
-                            <picture>
-                                <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
-                                <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
-                            </picture>
-                        </div>
-                        <div class="shelf__info">
-                            <a href="#" class="shelf__name">Baccarat Rouge 540</a>
-                            <p class="shelf__desc">парфюмерная вода</p>
-                        </div>
-                        <div class="shelf__options">
-                            <button type="button" title="Move item" class="shelf__move move">
-                                <svg>
-                                    <use href="img/icons/icons.svg#drag"></use>
-                                </svg>
-                            </button>
-                            <button type="button" title="Move item" class="shelf__delete">
-                                <svg>
-                                    <use href="img/icons/icons.svg#close"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="shelf__item" draggable="true">
-                        <div class="shelf__image">
-                            <picture>
-                                <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
-                                <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
-                            </picture>
-                        </div>
-                        <div class="shelf__info">
-                            <a href="#" class="shelf__name">Baccarat Rouge 540</a>
-                            <p class="shelf__desc">парфюмерная вода</p>
-                        </div>
-                        <div class="shelf__options">
-                            <button type="button" title="Move item" class="shelf__move move">
-                                <svg>
-                                    <use href="img/icons/icons.svg#drag"></use>
-                                </svg>
-                            </button>
-                            <button type="button" title="Move item" class="shelf__delete">
-                                <svg>
-                                    <use href="img/icons/icons.svg#close"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
-                </ul>
-                <button type="button" title="Delete" class="shelf__btn btn_green popup__close ">
-                    Сохранить
-                </button>
-            </form>
-        </div>
-    </div>
-</div>
-
-<div class="popup" id="add-fragrance">
-    <div class="popup__body">
-        <div class="popup__content shelf">
-            <form action="#" class="shelf__form">
-                <div class="shelf__header">
-                    <h4 class="shelf__title">Добавить аромат</h4>
-                    <button type="button" title="Close popup" class="popup__close">
-                        <svg>
-                            <use href="img/icons/icons.svg#close"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="shelf__input input profile-search">
-                    <button type="submit">
-                        <svg>
-                            <use href="img/icons/icons.svg#plus"></use>
-                        </svg>
-                    </button>
-                    <input type="text" name="fragrance" placeholder="Введите название аромата">
-                </div>
-                <div class="shelf__result search-result">
-                    <div class="shelf__wrapper search-wrapper">
-                        <ul class="shelf__list" data-simplebar>
-                            <li class="shelf__item">
-                                <button type="button" class="shelf__link">
-                                    <div class="shelf__image">
-                                        <picture>
-                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
-                                                type="image/webp">
-                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
-                                        </picture>
-                                    </div>
-                                    <div class="shelf__info">
-                                        <span class="shelf__name">Baccarat Rouge 540</span>
-                                        <span class="shelf__desc">парфюмерная вода</span>
-                                    </div>
-                                </button>
-                            </li>
-                            <li class="shelf__item">
-                                <button type="button" class="shelf__link">
-                                    <div class="shelf__image">
-                                        <picture>
-                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
-                                                type="image/webp">
-                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
-                                        </picture>
-                                    </div>
-                                    <div class="shelf__info">
-                                        <span class="shelf__name">Baccarat Rouge 540</span>
-                                        <span class="shelf__desc">парфюмерная вода</span>
-                                    </div>
-                                </button>
-                            </li>
-                            <li class="shelf__item">
-                                <button type="button" class="shelf__link">
-                                    <div class="shelf__image">
-                                        <picture>
-                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
-                                                type="image/webp">
-                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
-                                        </picture>
-                                    </div>
-                                    <div class="shelf__info">
-                                        <span class="shelf__name">Baccarat Rouge 540</span>
-                                        <span class="shelf__desc">парфюмерная вода</span>
-                                    </div>
-                                </button>
-                            </li>
-                            <li class="shelf__item">
-                                <button type="button" class="shelf__link">
-                                    <div class="shelf__image">
-                                        <picture>
-                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
-                                                type="image/webp">
-                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
-                                        </picture>
-                                    </div>
-                                    <div class="shelf__info">
-                                        <span class="shelf__name">Baccarat Rouge 540</span>
-                                        <span class="shelf__desc">парфюмерная вода</span>
-                                    </div>
-                                </button>
-                            </li>
-                            <li class="shelf__item">
-                                <button type="button" class="shelf__link">
-                                    <div class="shelf__image">
-                                        <picture>
-                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
-                                                type="image/webp">
-                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
-                                        </picture>
-                                    </div>
-                                    <div class="shelf__info">
-                                        <span class="shelf__name">Baccarat Rouge 540</span>
-                                        <span class="shelf__desc">парфюмерная вода</span>
-                                    </div>
-                                </button>
-                            </li>
-                            <li class="shelf__item">
-                                <button type="button" class="shelf__link">
-                                    <div class="shelf__image">
-                                        <picture>
-                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
-                                                type="image/webp">
-                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
-                                        </picture>
-                                    </div>
-                                    <div class="shelf__info">
-                                        <span class="shelf__name">Baccarat Rouge 540</span>
-                                        <span class="shelf__desc">парфюмерная вода</span>
-                                    </div>
-                                </button>
-                            </li>
-                            <li class="shelf__item">
-                                <button type="button" class="shelf__link">
-                                    <div class="shelf__image">
-                                        <picture>
-                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
-                                                type="image/webp">
-                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
-                                        </picture>
-                                    </div>
-                                    <div class="shelf__info">
-                                        <span class="shelf__name">Baccarat Rouge 540</span>
-                                        <span class="shelf__desc">парфюмерная вода</span>
-                                    </div>
-                                </button>
-                            </li>
-                            <li class="shelf__item">
-                                <button type="button" class="shelf__link">
-                                    <div class="shelf__image">
-                                        <picture>
-                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
-                                                type="image/webp">
-                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
-                                        </picture>
-                                    </div>
-                                    <div class="shelf__info">
-                                        <span class="shelf__name">Baccarat Rouge 540</span>
-                                        <span class="shelf__desc">парфюмерная вода</span>
-                                    </div>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <button type="button" title="Delete" class="shelf__btn btn_green popup__close">
-                    Оценить аромат
-                </button>
-            </form>
-        </div>
-    </div>
-</div>
-
-<div class="popup" id="new-shelf">
-    <div class="popup__body">
-        <div class="popup__content shelf">
-            <form action="#" class="shelf__form">
-                <div class="shelf__header">
-                    <h4 class="shelf__title">Создание полки</h4>
-                    <button type="button" title="Close popup" class="popup__close">
-                        <svg>
-                            <use href="img/icons/icons.svg#close"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="shelf__input limit">
-                    <textarea name="shelf" placeholder="Введите название полки..."></textarea>
-                </div>
-                <div class="shelf__checkbox checkbox">
-                    Скрыть полку от других пользователей
-                    <input type="checkbox" name="hide">
-                </div>
-                <div class="shelf__btns">
-                    <div class="shelf__counter counter">
-                        мин. <span class="counter__min">50</span>/<span class="counter__current">0</span>
-                    </div>
-                    <button type="button" title="Delete" class="shelf__btn btn_green popup__close disable">
-                        Создать полку
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-<div class="popup" id="new-rules">
-    <div class="popup__body">
-        <div class="popup__content new-popup">
-            <div class="new-popup__header">
-                <h4 class="new-popup__title">Правила публикации</h4>
-                <button type="button" title="Close popup" class="popup__close">
-                    <svg>
-                        <use href="img/icons/icons.svg#close"></use>
-                    </svg>
-                </button>
-            </div>
-            <div class="new-popup__wrapper" data-simplebar>
-                <ol class="new-popup__list">
-                    <li class="new-popup__item">
-                        <p>
-                            Заголовок должен сообщать, о чём пойдет речь в материале: это может быть краткая
-                            формулировка
-                            основной мысли, метафора или яркий образ, характеризующий текст и т.п. (Примеры: Страсти по
-                            Лолите: L de Lolita Lempicka,Таинственная и чарующая Азия в аромате Suma Oriental, №14 и №21
-                            от
-                            Nikkos-Oskol: прозрачные, прохладные и травяные). В заголовке не используется CAPS LOCK,
-                            скобки,
-                            дефис вместо тире. Точка в заголовке не ставится. Для выделения названий, прямой речи, цитат
-                            и
-                            т.п. как в заголовке, так и в теле материала, используются кавычки-«ёлочки».
-                        </p>
-                    </li>
-                    <li class="new-popup__item">
-                        <p>
-                            Заголовок должен сообщать, о чём пойдет речь в материале: это может быть краткая
-                            формулировка
-                            основной мысли, метафора или яркий образ, характеризующий текст и т.п. (Примеры: Страсти по
-                            Лолите: L de Lolita Lempicka,Таинственная и чарующая Азия в аромате Suma Oriental, №14 и №21
-                            от
-                            Nikkos-Oskol: прозрачные, прохладные и травяные). В заголовке не используется CAPS LOCK,
-                            скобки,
-                            дефис вместо тире. Точка в заголовке не ставится. Для выделения названий, прямой речи, цитат
-                            и
-                            т.п. как в заголовке, так и в теле материала, используются кавычки-«ёлочки».
-                        </p>
-                    </li>
-                    <li class="new-popup__item">
-                        <p>
-                            Заголовок должен сообщать, о чём пойдет речь в материале: это может быть краткая
-                            формулировка
-                            основной мысли, метафора или яркий образ, характеризующий текст и т.п. (Примеры: Страсти по
-                            Лолите: L de Lolita Lempicka,Таинственная и чарующая Азия в аромате Suma Oriental, №14 и №21
-                            от
-                            Nikkos-Oskol: прозрачные, прохладные и травяные). В заголовке не используется CAPS LOCK,
-                            скобки,
-                            дефис вместо тире. Точка в заголовке не ставится. Для выделения названий, прямой речи, цитат
-                            и
-                            т.п. как в заголовке, так и в теле материала, используются кавычки-«ёлочки».
-                        </p>
-                    </li>
-                    <li class="new-popup__item">
-                        <p>
-                            Заголовок должен сообщать, о чём пойдет речь в материале: это может быть краткая
-                            формулировка
-                            основной мысли, метафора или яркий образ, характеризующий текст и т.п. (Примеры: Страсти по
-                            Лолите: L de Lolita Lempicka,Таинственная и чарующая Азия в аромате Suma Oriental, №14 и №21
-                            от
-                            Nikkos-Oskol: прозрачные, прохладные и травяные). В заголовке не используется CAPS LOCK,
-                            скобки,
-                            дефис вместо тире. Точка в заголовке не ставится. Для выделения названий, прямой речи, цитат
-                            и
-                            т.п. как в заголовке, так и в теле материала, используются кавычки-«ёлочки».
-                        </p>
-                    </li>
-                </ol>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="popup" id="share">
+	<div class="popup" id="share">
     <div class="popup__body">
         <div class="popup__content share">
             <div class="share__header">
@@ -5600,30 +5149,7 @@
         </div>
     </div>
 </div>
-
-<div class="popup" id="fragrance">
-    <div class="popup__body">
-        <div class="popup__content fragrance">
-            <div class="fragrance__body">
-                <div class="fragrance__image">
-                    <picture>
-                        <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
-                        <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
-                    </picture>
-                </div>
-                <div class="fragrance__info">
-                    <div class="fragrance__name">Baccarat Rouge 540</div>
-                    <div class="fragrance__brand">Maison Francis Kurkdjian</div>
-                </div>
-            </div>
-            <a href="#" class="fragrance__link btn_green">
-                Перейти к аромату
-            </a>
-        </div>
-    </div>
-</div>
-
-<div class="popup" id="quest">
+	<div class="popup" id="quest">
     <div class="popup__body">
         <div class="popup__content quest">
             <form action="#" class="quest__form">
@@ -6867,516 +6393,7 @@
         </div>
     </div>
 </div>
-
-<div class="add" id="add-to-compare">
-    <div class="add__container container">
-        <div class="add__body">
-            <div class="add__item">
-                <a href="#" class="add__image">
-                    <picture>
-                        <source data-srcset="img/note/cat4.webp" srcset="img/plug.png" type="image/webp">
-                        <img data-src="img/note/cat4.png" src="img/plug.png" alt="Image">
-                    </picture>
-                </a>
-                <div class="add__info">
-                    <p class="add__text">
-                        Аромат <a href="#" class="add__link">“Baccarat Rouge 540”</a> был успешно добавлен к сравнению!
-                    </p>
-                    <p class="add__count">Всего в списке: 3 аромата</p>
-                </div>
-            </div>
-            <div class="add__btns">
-                <button type="button" class="add__btn btn_green">
-                    Сохранить
-                </button>
-                <button type="button" class="add__btn add__btn_close">
-                    <svg>
-                        <use href="img/icons/icons.svg#close"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="add" id="add-to-favorite">
-    <div class="add__container container">
-        <div class="add__body">
-            <div class="add__item">
-                <a href="#" class="add__image">
-                    <picture>
-                        <source data-srcset="img/note/cat6.webp" srcset="img/plug.png" type="image/webp">
-                        <img data-src="img/note/cat6.png" src="img/plug.png" alt="Image">
-                    </picture>
-                </a>
-                <div class="add__info">
-                    <p class="add__text">
-                        Аромат <a href="#" class="add__link">“Baccarat Rouge 540”</a> был успешно добавлен в избранное!
-                    </p>
-                    <p class="add__count">Всего в списке: 3 аромата</p>
-                </div>
-            </div>
-            <div class="add__btns">
-                <button type="button" class="add__btn btn_green">
-                    Сохранить
-                </button>
-                <button type="button" class="add__btn add__btn_close">
-                    <svg>
-                        <use href="img/icons/icons.svg#close"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="popup" id="rewards">
-    <div class="popup__body">
-        <div class="popup__content rewards">
-            <div class="rewards__header">
-                <h4 class="rewards__title">Достижения</h4>
-                <button type="button" title="Close popup" class="popup__close">
-                    <svg>
-                        <use href="img/icons/icons.svg#close"></use>
-                    </svg>
-                </button>
-            </div>
-            <div class="rewards__body" data-simplebar>
-                <div class="rewards__block block-rewards">
-                    <div class="block-rewards__header">
-                        <h5 class="block-rewards__title">Полученные</h5>
-                        <span class="block-rewards__count">9</span>
-                    </div>
-                    <ul class="block-rewards__list progress-profile__list">
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn popup-link"
-                                data-modal="reward">
-                                <picture>
-                                    <source data-srcset="img/profile/progress1.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress1.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress2.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress2.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress3.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress3.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress4.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress4.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress5.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress5.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress1.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress1.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress2.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress2.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress3.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress3.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress4.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress4.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="rewards__block block-rewards block-rewards_inactive">
-                    <div class="block-rewards__header">
-                        <h5 class="block-rewards__title">В процессе</h5>
-                        <span class="block-rewards__count">26</span>
-                    </div>
-                    <ul class="block-rewards__list progress-profile__list">
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn popup-link"
-                                data-modal="reward-inactive">
-                                <picture>
-                                    <source data-srcset="img/profile/progress1.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress1.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress2.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress2.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress3.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress3.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress4.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress4.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress5.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress5.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress1.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress1.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress2.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress2.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress3.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress3.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress4.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress4.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress1.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress1.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress2.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress2.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress3.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress3.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress4.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress4.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress5.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress5.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress1.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress1.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress2.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress2.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress3.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress3.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress4.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress4.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress2.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress2.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress3.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress3.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress4.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress4.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress1.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress1.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress2.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress2.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress3.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress3.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress4.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress4.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress5.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress5.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress1.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress1.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress2.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress2.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress3.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress3.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                        <li class="progress-profile__item">
-                            <button type="button" title="Progress" class="progress-profile__btn">
-                                <picture>
-                                    <source data-srcset="img/profile/progress4.svg" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/profile/progress4.svg" src="img/plug.png" alt="Image">
-                                </picture>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="popup" id="reward">
-    <div class="popup__body">
-        <div class="popup__content reward">
-            <div class="reward__header">
-                <div class="reward__bg"></div>
-                <button type="button" title="Close popup" class="popup__close">
-                    <svg>
-                        <use href="img/icons/icons.svg#close"></use>
-                    </svg>
-                </button>
-                <div class="reward__image">
-                    <picture>
-                        <source data-srcset="img/profile/reward.svg" srcset="img/plug.png" type="image/webp">
-                        <img data-src="img/profile/reward.svg" src="img/plug.png" alt="Image">
-                    </picture>
-                </div>
-            </div>
-            <div class="reward__body">
-                <h4 class="reward__title">“Название награды”</h4>
-                <div class="reward__level">3 уровень</div>
-                <div class="reward__status">Открыто</div>
-                <p class="reward__text">
-                    Общий рейтинг – это список самых активных и популярных пользователей в сообществе Aromo. Количество
-                    поинтов, которые вы получаете за различные действия на сайте, определяет вашу позицию в рейтинге.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="popup" id="reward-inactive">
-    <div class="popup__body">
-        <div class="popup__content reward">
-            <div class="reward__header">
-                <div class="reward__bg"></div>
-                <button type="button" title="Close popup" class="popup__close">
-                    <svg>
-                        <use href="img/icons/icons.svg#close"></use>
-                    </svg>
-                </button>
-                <div class="reward__image">
-                    <picture>
-                        <source data-srcset="img/profile/reward.svg" srcset="img/plug.png" type="image/webp">
-                        <img data-src="img/profile/reward.svg" src="img/plug.png" alt="Image">
-                    </picture>
-                </div>
-            </div>
-            <div class="reward__body">
-                <h4 class="reward__title">“Название награды”</h4>
-                <div class="reward__level">3 уровень</div>
-                <div class="reward__status">Не Открыто</div>
-                <p class="reward__text">
-                    Общий рейтинг – это список самых активных и популярных пользователей в сообществе Aromo. Количество
-                    поинтов, которые вы получаете за различные действия на сайте, определяет вашу позицию в рейтинге.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="popup" id="feedback">
+	<div class="popup" id="feedback">
     <div class="popup__body">
         <div class="popup__content feedback">
             <div class="feedback__header">
@@ -7565,114 +6582,67 @@
         </div>
     </div>
 </div>
-
-<div class="popup" id="story">
-    <div class="popup__body">
-        <div class="popup__content story">
-            <button class="popup__close">
-                <svg>
-                    <use href="img/icons/icons.svg#close"></use>
-                </svg>
-            </button>
-            <div class="story__slider">
-                <div class="story__wrapper swiper-wrapper">
-                    <div class="story__slide swiper-slide">
-                        <div class="story__item">
-                            <div class="story__image">
-                                <picture>
-                                    <source data-srcset="img/articles/Image1.webp" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/articles/Image1.png" src="img/plug.png" alt="Image">
-                                </picture>
-                            </div>
-                            <div class="story__info">
-                                <h3 class="story__title">5 ароматов в офис</h3>
-                                <p class="story__desc">
-                                    Разбираем лучшие ароматы для офиса, которые помогут вам
-                                    выглядеть и чувствовать себя стильно, элегантно и профессионально.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="story__slide swiper-slide">
-                        <div class="story__item">
-                            <div class="story__image">
-                                <picture>
-                                    <source data-srcset="img/articles/Image2.webp" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/articles/Image2.png" src="img/plug.png" alt="Image">
-                                </picture>
-                            </div>
-                            <div class="story__fragrance">
-                                <h3 class="story__title">СK One 2022</h3>
-                                <p class="story__desc">
-                                    Разбираем лучшие ароматы для офиса, которые помогут вам
-                                    выглядеть и чувствовать себя стильно, элегантно и профессионально.
-                                </p>
-                                <a href="#" class="story__btn btn_green">
-                                    Перейти к аромату
-                                    <svg>
-                                        <use href="img/icons/icons.svg#arrow-right"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="story__slide swiper-slide">
-                        <div class="story__item">
-                            <div class="story__image">
-                                <picture>
-                                    <source data-srcset="img/articles/Image3.webp" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/articles/Image3.png" src="img/plug.png" alt="Image">
-                                </picture>
-                            </div>
-                            <div class="story__fragrance">
-                                <h3 class="story__title">СK One 2022</h3>
-                                <p class="story__desc">
-                                    Разбираем лучшие ароматы для офиса, которые помогут вам
-                                    выглядеть и чувствовать себя стильно, элегантно и профессионально.
-                                </p>
-                                <a href="#" class="story__btn btn_green">
-                                    Перейти к аромату
-                                    <svg>
-                                        <use href="img/icons/icons.svg#arrow-right"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="story__slide swiper-slide">
-                        <div class="story__item">
-                            <div class="story__image">
-                                <picture>
-                                    <source data-srcset="img/articles/Image4.webp" srcset="img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="img/articles/Image4.png" src="img/plug.png" alt="Image">
-                                </picture>
-                            </div>
-                            <div class="story__fragrance">
-                                <h3 class="story__title">СK One 2022</h3>
-                                <p class="story__desc">
-                                    Разбираем лучшие ароматы для офиса, которые помогут вам
-                                    выглядеть и чувствовать себя стильно, элегантно и профессионально.
-                                </p>
-                                <a href="#" class="story__btn btn_green">
-                                    Перейти к аромату
-                                    <svg>
-                                        <use href="img/icons/icons.svg#arrow-right"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+	<div class="add" id="add-to-favorite">
+    <div class="add__container container">
+        <div class="add__body">
+            <div class="add__item">
+                <a href="#" class="add__image">
+                    <picture>
+                        <source data-srcset="img/note/cat6.webp" srcset="img/plug.png" type="image/webp">
+                        <img data-src="img/note/cat6.png" src="img/plug.png" alt="Image">
+                    </picture>
+                </a>
+                <div class="add__info">
+                    <p class="add__text">
+                        Аромат <a href="#" class="add__link">“Baccarat Rouge 540”</a> был успешно добавлен в избранное!
+                    </p>
+                    <p class="add__count">Всего в списке: 3 аромата</p>
                 </div>
             </div>
-            <div class="story__pagination"></div>
+            <div class="add__btns">
+                <button type="button" class="add__btn btn_green">
+                    Сохранить
+                </button>
+                <button type="button" class="add__btn add__btn_close">
+                    <svg>
+                        <use href="img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </div>
 </div>
-	<script src="js/app.min.js?_v=20230723154206"></script>
+	<div class="add" id="add-to-compare">
+    <div class="add__container container">
+        <div class="add__body">
+            <div class="add__item">
+                <a href="#" class="add__image">
+                    <picture>
+                        <source data-srcset="img/note/cat4.webp" srcset="img/plug.png" type="image/webp">
+                        <img data-src="img/note/cat4.png" src="img/plug.png" alt="Image">
+                    </picture>
+                </a>
+                <div class="add__info">
+                    <p class="add__text">
+                        Аромат <a href="#" class="add__link">“Baccarat Rouge 540”</a> был успешно добавлен к сравнению!
+                    </p>
+                    <p class="add__count">Всего в списке: 3 аромата</p>
+                </div>
+            </div>
+            <div class="add__btns">
+                <button type="button" class="add__btn btn_green">
+                    Сохранить
+                </button>
+                <button type="button" class="add__btn add__btn_close">
+                    <svg>
+                        <use href="img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+	<script src="js/app.min.js?_v=20230726133153"></script>
 </body>
 
 </html>
