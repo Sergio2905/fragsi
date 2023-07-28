@@ -5066,6 +5066,7 @@ body.lock {
   position: relative;
   display: block;
   margin-right: 15px;
+  background: #fff;
 }
 
 .fragrances-sidebar__image img {
