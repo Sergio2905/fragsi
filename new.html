@@ -4,7 +4,7 @@
 <head>
     <title>Fragsi</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230726144441">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230728115203">
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание">
@@ -558,7 +558,8 @@
 				</div>
 				<div class="new__body">
 					<div class="new__content">
-						<div class="new__editor editor">
+						<div class="new__article">
+							<div class="new__editor editor"></div>
 						</div>
 						<button class="new__settings active" type="button">
 							<span>Настройки и публикация</span>
@@ -631,7 +632,7 @@
 								</div>
 								<form action="#" class="block-new__form">
 									<div class="block-new__radio radio-options">
-										<div class="radio-options__item">
+										<div class="radio-options__item rubric-item">
 											<picture>
 												<source data-srcset="img/articles/Image1.webp" srcset="img/plug.png"
 													type="image/webp">
@@ -641,7 +642,7 @@
 											<span>Обзоры</span>
 											<input type="radio" name="rubrick" value="reviews">
 										</div>
-										<div class="radio-options__item">
+										<div class="radio-options__item rubric-item">
 											<picture>
 												<source data-srcset="img/articles/Image2.webp" srcset="img/plug.png"
 													type="image/webp">
@@ -651,7 +652,7 @@
 											<span>Интервью</span>
 											<input type="radio" name="rubrick" value="interview">
 										</div>
-										<div class="radio-options__item">
+										<div class="radio-options__item rubric-item">
 											<picture>
 												<source data-srcset="img/articles/Image3.webp" srcset="img/plug.png"
 													type="image/webp">
@@ -661,7 +662,7 @@
 											<span>Производство</span>
 											<input type="radio" name="rubrick" value="production">
 										</div>
-										<div class="radio-options__item">
+										<div class="radio-options__item rubric-item">
 											<picture>
 												<source data-srcset="img/articles/Image4.webp" srcset="img/plug.png"
 													type="image/webp">
@@ -671,7 +672,7 @@
 											<span>Вопрос ответ</span>
 											<input type="radio" name="rubrick" value="faq">
 										</div>
-										<div class="radio-options__item">
+										<div class="radio-options__item rubric-item">
 											<picture>
 												<source data-srcset="img/articles/Image5.webp" srcset="img/plug.png"
 													type="image/webp">
@@ -681,7 +682,7 @@
 											<span>Косметика</span>
 											<input type="radio" name="rubrick" value="Cosmetic">
 										</div>
-										<div class="radio-options__item">
+										<div class="radio-options__item rubric-item">
 											<picture>
 												<source data-srcset="img/articles/Image1.webp" srcset="img/plug.png"
 													type="image/webp">
@@ -691,7 +692,7 @@
 											<span>История</span>
 											<input type="radio" name="rubrick" value="History">
 										</div>
-										<div class="radio-options__item">
+										<div class="radio-options__item rubric-item">
 											<picture>
 												<source data-srcset="img/articles/Image2.webp" srcset="img/plug.png"
 													type="image/webp">
@@ -701,7 +702,7 @@
 											<span>Эссэ</span>
 											<input type="radio" name="rubrick" value="Assay">
 										</div>
-										<div class="radio-options__item">
+										<div class="radio-options__item rubric-item">
 											<picture>
 												<source data-srcset="img/articles/Image3.webp" srcset="img/plug.png"
 													type="image/webp">
@@ -711,7 +712,7 @@
 											<span>Редкости</span>
 											<input type="radio" name="rubrick" value="Rarities">
 										</div>
-										<div class="radio-options__item">
+										<div class="radio-options__item rubric-item">
 											<picture>
 												<source data-srcset="img/articles/Image4.webp" srcset="img/plug.png"
 													type="image/webp">
@@ -765,15 +766,18 @@
 							<div class="new__block block-new block-new_done">
 								<h3 class="block-new__title title3">Почти готово!</h3>
 								<ul class="block-new__list">
-									<li class="block-new__item active">Заполнить заголовок</li>
-									<li class="block-new__item">Написать 0 / 3 000 знаков</li>
-									<li class="block-new__item">Загрузить обложку</li>
-									<li class="block-new__item">Выбрать рубрику</li>
-									<li class="block-new__item">Добавить темы 0 / 2</li>
+									<li class="block-new__item require-title">Заполнить заголовок</li>
+									<li class="block-new__item require-text">Написать <span>0</span> / 3 000 знаков</li>
+									<li class="block-new__item require-canvas">Загрузить обложку</li>
+									<li class="block-new__item require-rubric">Выбрать рубрику</li>
+									<li class="block-new__item require-themes">
+										Добавить темы <span>0</span> / 2
+									</li>
 								</ul>
 								<div class="block-new__btns">
-									<button class="block-new__view btn_white">Предпросмотр</button>
-									<button class="block-new__public btn_green disable">Опубликовать</button>
+									<button type="button" class="block-new__view btn_white">Предпросмотр</button>
+									<button type="submit"
+										class="block-new__public btn_green disable">Опубликовать</button>
 								</div>
 							</div>
 						</div>
@@ -781,7 +785,7 @@
 					<aside class="new__sidebar sidebar-new">
 						<div class="sidebar-new__body">
 							<div class="sidebar-new__count">
-								<span>8</span>/<span>3 000</span> знаков
+								<span>0</span>/<span>3 000</span> знаков
 							</div>
 							<div class="sidebar-new__btns">
 								<button class="sidebar-new__btn" type="button" title="Save">
@@ -1342,7 +1346,7 @@
         </div>
     </div>
 </div>
-	<script src="js/app.min.js?_v=20230726144441"></script>
+	<script src="js/app.min.js?_v=20230728115203"></script>
 </body>
 
 </html>

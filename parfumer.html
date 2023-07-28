@@ -4,7 +4,7 @@
 <head>
     <title>Fragsi</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230726144441">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230728115203">
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание">
@@ -2918,7 +2918,7 @@
 									Поделитесь своими впечетлениями об аромате
 								</div>
 								<button type="button" class="block-item__review btn_green popup-link"
-									data-modal="feedback">
+									data-modal="feedback2">
 									<svg>
 										<use href="img/icons/icons.svg#like"></use>
 									</svg>
@@ -4457,6 +4457,85 @@
         </div>
     </div>
 </div>
+	<div class="popup" id="feedback2">
+    <div class="popup__body">
+        <div class="popup__content feedback">
+            <div class="feedback__header">
+                <h4 class="feedback__title">Оцените аромат</h4>
+                <button type="button" title="Close popup" class="popup__close">
+                    <svg>
+                        <use href="img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="feedback__body review">
+                <form action="#" class="review__form">
+                    <div class="review__block limit">
+                        <textarea name="comment" placeholder="Напишите комментарий к статье..."></textarea>
+                        <div class="review__error">
+                            Минимум 150 символов
+                        </div>
+                    </div>
+                    <div class="review__block">
+                        <h5 class="review__title">Оцените аромат в общих чертах</h5>
+                        <div class="review__vote review__general vote vote-require radio-options">
+                            <div class="radio-options__item">
+                                <svg>
+                                    <use href="img/icons/icons.svg#star-vote"></use>
+                                </svg>
+                                <input type="radio" name="vote-general" value="1">
+                            </div>
+                            <div class="radio-options__item">
+                                <svg>
+                                    <use href="img/icons/icons.svg#star-vote"></use>
+                                </svg>
+                                <input type="radio" name="vote-general" value="2">
+                            </div>
+                            <div class="radio-options__item">
+                                <svg>
+                                    <use href="img/icons/icons.svg#star-vote"></use>
+                                </svg>
+                                <input type="radio" name="vote-general" value="3">
+                            </div>
+                            <div class="radio-options__item">
+                                <svg>
+                                    <use href="img/icons/icons.svg#star-vote"></use>
+                                </svg>
+                                <input type="radio" name="vote-general" value="4">
+                            </div>
+                            <div class="radio-options__item">
+                                <svg>
+                                    <use href="img/icons/icons.svg#star-vote"></use>
+                                </svg>
+                                <input type="radio" name="vote-general" value="5">
+                            </div>
+                        </div>
+                        <div class="review__error">
+                            Оцените аромат в общих чертах
+                        </div>
+                    </div>
+                    <div class="review__footer">
+                        <input type="file" name="comments-file" id="comments-file">
+                        <label for="comments-file">
+                            <svg>
+                                <use href="img/icons/icons.svg#img"></use>
+                            </svg>
+                        </label>
+                        <div class="review__counter counter">
+                            мин.
+                            <span class="counter__min">150</span>
+                            /
+                            <span class="counter__current">0</span>
+                        </div>
+                        <button type="submit" class="review__submit btn_green">
+                            Оставить отзыв
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 	<div class="add" id="add-to-favorite">
     <div class="add__container container">
         <div class="add__body">
@@ -4487,7 +4566,7 @@
         </div>
     </div>
 </div>
-	<script src="js/app.min.js?_v=20230726144441"></script>
+	<script src="js/app.min.js?_v=20230728115203"></script>
 </body>
 
 </html>
