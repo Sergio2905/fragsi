@@ -4,7 +4,7 @@
 <head>
     <title>Fragsi</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230728140628">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230730164020">
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание">
@@ -44,7 +44,6 @@
                 </a>
                 <div class="header__menu menu">
                     <nav class="menu__body" data-mob="submenu, append">
-                        <h3 class="menu__title title3">Разделы</h3>
                         <ul class="menu__list">
                             <li class="menu__item active"><a href="#" class="menu__link">
                                     <svg>
@@ -146,7 +145,8 @@
                 </div>
                 <div class="header__options">
                     <div class="header__notifications notifications-header active">
-                        <a href="#" class="notifications-header__link" area-lable="Read all notifications">
+                        <a href="#" class="notifications-header__link popup-link" area-lable="Read all notifications"
+                            data-modal="login">
                             <svg>
                                 <use xlink: href="img/icons/icons.svg#notification"></use>
                             </svg>
@@ -506,7 +506,7 @@
                     </svg>
                     <span>Сравнить</span>
                 </button>
-                <button class="actions__btn" title="action-btn">
+                <button class="actions__btn popup-link" title="action-btn" data-modal="login">
                     <svg class="fill">
                         <use xlink: href="img/icons/icons.svg#favorite"></use>
                     </svg>
@@ -1637,7 +1637,8 @@
                                             Запомнить меня
                                             <input type="checkbox" name="remember-me">
                                         </div>
-                                        <a href="#" class="form-login__forgot">Забыли пароль?</a>
+                                        <a href="#" class="form-login__forgot popup-link" data-modal="restore">Забыли
+                                            пароль?</a>
                                     </div>
                                 </form>
                             </div>
@@ -1665,8 +1666,11 @@
                                                 <use href="img/icons/icons.svg#eye"></use>
                                             </svg>
                                         </button>
+                                        <div class="form-login__error">
+                                            Пароли не совпадают
+                                        </div>
                                     </div>
-                                    <div class="form-login__input input pass">
+                                    <div class="form-login__input input pass confirm">
                                         <label for="password">Повторите пароль</label>
                                         <input type="password" title="Repeat password">
                                         <button class="pass__btn" type="button" title="Show password">
@@ -1674,6 +1678,9 @@
                                                 <use href="img/icons/icons.svg#eye"></use>
                                             </svg>
                                         </button>
+                                        <div class="form-login__error">
+                                            Пароли не совпадают
+                                        </div>
                                     </div>
                                     <button type="submit"
                                         class="form-login__btn btn_green switcher disable">Зарегистрироваться</button>
@@ -1705,8 +1712,11 @@
                                                             <use href="img/icons/icons.svg#eye"></use>
                                                         </svg>
                                                     </button>
+                                                    <div class="form-login__error">
+                                                        Пароли не совпадают
+                                                    </div>
                                                 </div>
-                                                <div class="form-login__input input pass">
+                                                <div class="form-login__input input pass confirm">
                                                     <label for="password">Повторите пароль</label>
                                                     <input type="password" title="Repeat password">
                                                     <button class="pass__btn" type="button" title="Show password">
@@ -1714,6 +1724,9 @@
                                                             <use href="img/icons/icons.svg#eye"></use>
                                                         </svg>
                                                     </button>
+                                                    <div class="form-login__error">
+                                                        Пароли не совпадают
+                                                    </div>
                                                 </div>
                                                 <button type="submit"
                                                     class="form-login__btn btn_green switcher disable">Зарегистрироваться</button>
@@ -1727,6 +1740,36 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+	<div class="popup" id="restore">
+    <div class="popup__body">
+        <div class="popup__content login">
+            <button type="button" class="login__close popup__close">
+                <svg>
+                    <use href="img/icons/icons.svg#close"></use>
+                </svg>
+            </button>
+            <div class="login__body">
+                <h2 class="login__title">Вход во Fragsi</h2>
+                <div class="login__text">
+                    Введите адрес электронной почты
+                    На него будет отправлено письмо с инструкцией по смене пароля
+                </div>
+                <form action="#" class="login__form form-login">
+                    <div class="form-login__input input email">
+                        <label for="name">Email</label>
+                        <input type="text" name="email">
+                        <div class="form-login__error">
+                            Проверьте правильность ввода
+                        </div>
+                    </div>
+                    <button type="submit"
+                        class="form-login__btn form-login__restore btn_green switcher disable">Отправить</button>
+                    <button type="button" class="form-login__cancel popup__close">Отмена</button>
+                </form>
             </div>
         </div>
     </div>
@@ -1811,7 +1854,7 @@
                     <div class="shelf__wrapper search-wrapper">
                         <ul class="shelf__list" data-simplebar>
                             <li class="shelf__item">
-                                <button type="button" class="shelf__link">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
                                     <div class="shelf__image">
                                         <picture>
                                             <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
@@ -1826,7 +1869,7 @@
                                 </button>
                             </li>
                             <li class="shelf__item">
-                                <button type="button" class="shelf__link">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
                                     <div class="shelf__image">
                                         <picture>
                                             <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
@@ -1841,7 +1884,7 @@
                                 </button>
                             </li>
                             <li class="shelf__item">
-                                <button type="button" class="shelf__link">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
                                     <div class="shelf__image">
                                         <picture>
                                             <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
@@ -1856,7 +1899,7 @@
                                 </button>
                             </li>
                             <li class="shelf__item">
-                                <button type="button" class="shelf__link">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
                                     <div class="shelf__image">
                                         <picture>
                                             <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
@@ -1871,7 +1914,7 @@
                                 </button>
                             </li>
                             <li class="shelf__item">
-                                <button type="button" class="shelf__link">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
                                     <div class="shelf__image">
                                         <picture>
                                             <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
@@ -1886,7 +1929,7 @@
                                 </button>
                             </li>
                             <li class="shelf__item">
-                                <button type="button" class="shelf__link">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
                                     <div class="shelf__image">
                                         <picture>
                                             <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
@@ -1901,7 +1944,7 @@
                                 </button>
                             </li>
                             <li class="shelf__item">
-                                <button type="button" class="shelf__link">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
                                     <div class="shelf__image">
                                         <picture>
                                             <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
@@ -1916,7 +1959,7 @@
                                 </button>
                             </li>
                             <li class="shelf__item">
-                                <button type="button" class="shelf__link">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
                                     <div class="shelf__image">
                                         <picture>
                                             <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
@@ -1933,14 +1976,14 @@
                         </ul>
                     </div>
                 </div>
-                <button type="button" title="Delete" class="shelf__btn btn_green popup__close">
+                <button type="button" title="Delete" class="shelf__btn btn_green popup-link" data-modal="login">
                     Оценить аромат
                 </button>
             </form>
         </div>
     </div>
 </div>
-	<script src="js/app.min.js?_v=20230728140628"></script>
+	<script src="js/app.min.js?_v=20230730164020"></script>
 </body>
 
 </html>

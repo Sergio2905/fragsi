@@ -926,6 +926,7 @@ body.lock {
 .notifications-header__link svg {
   width: 100%;
   height: 100%;
+  stroke-width: 2px;
   stroke: #000;
   transition: all 0.2s linear;
 }
@@ -980,6 +981,7 @@ body.lock {
 .login-header__btn svg {
   width: 24px;
   height: 24px;
+  stroke-width: 2px;
   stroke: #000;
   transition: all 0.2s linear;
 }
@@ -1090,6 +1092,7 @@ body.lock {
   flex-direction: column;
   align-items: center;
   transition: all 0.2s linear;
+  font-weight: 500;
 }
 
 .actions__btn:hover {
@@ -1101,7 +1104,7 @@ body.lock {
 }
 
 .actions__btn:hover svg.fill {
-  stroke: unset;
+  stroke: #007F5F;
   fill: #007F5F;
 }
 
@@ -1113,12 +1116,15 @@ body.lock {
   width: 24px;
   height: 24px;
   stroke: #000;
+  stroke-width: 2px;
   transition: all 0.2s linear;
 }
 
 .actions__btn svg.fill {
-  stroke: unset;
+  stroke: #000;
   fill: #000;
+  stroke-width: 0.5px;
+  transition: all 0.2s linear;
 }
 
 .actions__count {
@@ -1202,7 +1208,8 @@ body.lock {
 
 .search-actions {
   flex: 1 1 auto;
-  margin-right: 30px;
+  margin-left: 10px;
+  margin-right: 20px;
   position: relative;
 }
 
@@ -1231,6 +1238,11 @@ body.lock {
 
 .search-actions__input {
   margin-bottom: 10px !important;
+  border: 0.8px solid #ebebeb !important;
+}
+
+.search-actions__input.active {
+  border: 0.8px solid #007F5F !important;
 }
 
 .search-actions__input:not(:last-of-type) {
@@ -1307,6 +1319,7 @@ body.lock {
 
 .block-search__link:hover {
   background: rgba(0, 127, 95, 0.05);
+  padding-left: 10px;
 }
 
 .block-search__link:hover .block-search__name {
@@ -1322,6 +1335,7 @@ body.lock {
   height: 66px;
   border-radius: 8px;
   border: 1px solid #CCE5DF;
+  background: #fff;
   overflow: hidden;
   margin-right: 15px;
   display: flex;
@@ -2834,6 +2848,39 @@ body.lock {
   padding: 20px;
 }
 
+.story__item_style2 .story__fragrance {
+  padding: 0;
+  background: none;
+  -webkit-backdrop-filter: unset;
+          backdrop-filter: unset;
+}
+
+.story__item_style3 {
+  flex-direction: column;
+  background: #3F4364;
+}
+
+.story__item_style3 .story__image {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.story__item_style3 .story__image::after {
+  display: none;
+}
+
+.story__item_style3 .story__image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.story__item_style3 .story__fragrance {
+  padding: 0;
+  background: none;
+  -webkit-backdrop-filter: unset;
+          backdrop-filter: unset;
+}
+
 .story__image {
   position: absolute;
   width: 100%;
@@ -3117,6 +3164,11 @@ body.lock {
   position: relative;
 }
 
+.login__text {
+  margin-bottom: 20px;
+  font-size: 1.125rem;
+}
+
 .form-login__input {
   position: relative;
   border: 1px solid #C3C3C3;
@@ -3157,6 +3209,13 @@ body.lock {
 
 .form-login__input.error {
   border: 1px solid #E84141;
+  margin-bottom: 40px;
+  background: none;
+}
+
+.form-login__input.error .form-login__error {
+  opacity: 1;
+  visibility: visible;
 }
 
 .form-login__input.error label {
@@ -3180,6 +3239,17 @@ body.lock {
   left: 20px;
   transform: translate(0, -50%);
   pointer-events: none;
+  transition: all 0.2s linear;
+}
+
+.form-login__error {
+  color: #E84141;
+  font-size: 1.125rem;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
   transition: all 0.2s linear;
 }
 
@@ -3269,6 +3339,14 @@ body.lock {
   stroke-width: 2px;
   stroke: #c3c3c3;
   transition: all 0.2s linear;
+}
+
+#restore .login {
+  max-width: 450px;
+}
+
+#restore .login__body {
+  flex: 1 1 100%;
 }
 
 .checkbox {
@@ -15395,6 +15473,7 @@ body.lock {
   flex: 1 1 auto;
   display: flex;
   align-items: center;
+  margin-right: -10px;
 }
 
 .wardrobe__add {
@@ -15404,6 +15483,7 @@ body.lock {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 83px;
   width: 83px;
   height: 83px;
   transition: all 0.2s linear;
@@ -15501,6 +15581,7 @@ body.lock {
   color: #C3C3C3;
   text-align: center;
   flex: 1 1 auto;
+  min-width: 240px;
 }
 
 .wardrobe__help {
@@ -15938,8 +16019,8 @@ body.lock {
   transform: translate(0, -50%);
   width: 40px;
   height: 40px;
-  -webkit-mask: url("../../img/icons/icons.svg#check") center/contain no-repeat;
-          mask: url("../../img/icons/icons.svg#check") center/contain no-repeat;
+  -webkit-mask: url("../img/icons/icons.svg#check") center/contain no-repeat;
+          mask: url("../img/icons/icons.svg#check") center/contain no-repeat;
   background: #007F5F;
 }
 
@@ -19763,7 +19844,7 @@ body.lock {
   }
 
   .search-actions {
-    margin-right: 0;
+    margin: 0;
   }
 
   .shelf {
@@ -22397,6 +22478,14 @@ body.lock {
     display: none;
   }
 
+  .login__text {
+    font-size: 1.0625rem;
+  }
+
+  .form-login__error {
+    font-size: 1.0625rem;
+  }
+
   .form-login__btn {
     margin-bottom: 10px;
   }
@@ -23989,6 +24078,10 @@ body.lock {
     flex: 0 0 95px;
   }
 
+  .wardrobe__slide_empty {
+    flex: 1 1 auto;
+  }
+
   .wardrobe__help {
     font-size: 1.0625rem;
   }
@@ -25038,6 +25131,10 @@ body.lock {
 
   .wardrobe__slide {
     flex: 0 0 90px;
+  }
+
+  .wardrobe__slide_empty {
+    flex: 1 1 auto;
   }
 
   .wardrobe__empty {
