@@ -4,7 +4,7 @@
 <head>
     <title>Fragsi</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230730164020">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230731131612">
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание">
@@ -970,9 +970,10 @@
 						</section>
 						<section class="article__images images-article">
 							<h2 class="images-article__title title2">Блок с картинками</h2>
-							<div class="images-article__gallery-4">
+							<div class="images-article__gallery-4 gallery">
 								<figure>
-									<picture>
+									<picture class="gallery__elem popup-link" data-modal="viewer"
+										data-desc="Описание картинки">
 										<source data-srcset="img/articles/Image1.webp" srcset="img/plug.png"
 											type="image/webp">
 										<img data-src="img/articles/Image1.png" src="img/plug.png" alt="Image">
@@ -980,7 +981,8 @@
 									<figcaption>Синтетические</figcaption>
 								</figure>
 								<figure>
-									<picture>
+									<picture class="gallery__elem popup-link" data-modal="viewer"
+										data-desc="Описание картинки 2">
 										<source data-srcset="img/articles/Image2.webp" srcset="img/plug.png"
 											type="image/webp">
 										<img data-src="img/articles/Image2.png" src="img/plug.png" alt="Image">
@@ -988,7 +990,8 @@
 									<figcaption>Синтетические</figcaption>
 								</figure>
 								<figure>
-									<picture>
+									<picture class="gallery__elem popup-link" data-modal="viewer"
+										data-desc="Описание картинки 3">
 										<source data-srcset="img/articles/Image3.webp" srcset="img/plug.png"
 											type="image/webp">
 										<img data-src="img/articles/Image3.png" src="img/plug.png" alt="Image">
@@ -996,7 +999,8 @@
 									<figcaption>Синтетические</figcaption>
 								</figure>
 								<figure>
-									<picture>
+									<picture class="gallery__elem popup-link" data-modal="viewer"
+										data-desc="Описание картинки 4">
 										<source data-srcset="img/articles/Image4.webp" srcset="img/plug.png"
 											type="image/webp">
 										<img data-src="img/articles/Image4.png" src="img/plug.png" alt="Image">
@@ -1007,13 +1011,15 @@
 						</section>
 						<section class="article__images images-article">
 							<h2 class="images-article__title title2">Блок с картинками</h2>
-							<div class="images-article__gallery-2">
-								<picture>
+							<div class="images-article__gallery-2 gallery">
+								<picture class="gallery__elem popup-link" data-modal="viewer"
+									data-desc="Еще одно описание">
 									<source data-srcset="img/articles/Image1.webp" srcset="img/plug.png"
 										type="image/webp">
 									<img data-src="img/articles/Image1.png" src="img/plug.png" alt="Image">
 								</picture>
-								<picture>
+								<picture class="gallery__elem popup-link" data-modal="viewer"
+									data-desc="Еще одно описание 2">
 									<source data-srcset="img/articles/Image2.webp" srcset="img/plug.png"
 										type="image/webp">
 									<img data-src="img/articles/Image2.png" src="img/plug.png" alt="Image">
@@ -1022,18 +1028,18 @@
 						</section>
 						<section class="article__images images-article">
 							<h2 class="images-article__title title2">Блок с картинками</h2>
-							<div class="images-article__gallery-3">
-								<picture>
+							<div class="images-article__gallery-3 gallery">
+								<picture class="gallery__elem popup-link" data-desc="описание 1" data-modal="viewer">
 									<source data-srcset="img/articles/Image1.webp" srcset="img/plug.png"
 										type="image/webp">
 									<img data-src="img/articles/Image1.png" src="img/plug.png" alt="Image">
 								</picture>
-								<picture>
+								<picture class="gallery__elem popup-link" data-desc="описание 1" data-modal="viewer">
 									<source data-srcset="img/articles/Image2.webp" srcset="img/plug.png"
 										type="image/webp">
 									<img data-src="img/articles/Image2.png" src="img/plug.png" alt="Image">
 								</picture>
-								<picture>
+								<picture class="gallery__elem popup-link" data-desc="описание 1" data-modal="viewer">
 									<source data-srcset="img/articles/Image3.webp" srcset="img/plug.png"
 										type="image/webp">
 									<img data-src="img/articles/Image3.png" src="img/plug.png" alt="Image">
@@ -2497,7 +2503,64 @@
         </div>
     </div>
 </div>
-	<script src="js/app.min.js?_v=20230730164020"></script>
+	<div class="popup" id="viewer">
+    <div class="popup__body">
+        <div class="popup__content viewer">
+            <div class="viewer__body">
+                <button type="button" class="popup__close clear-gallery">
+                    <svg>
+                        <use href="img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+
+                <div class="viewer__slider">
+                    <div class="viewer__wrapper swiper-wrapper">
+                        <!-- <div class="viewer__slide swiper-slide">
+                            <div class="viewer__item">
+                                <div class="viewer__image">
+                                    <picture>
+                                        <source data-srcset="img/articles/Image1.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/articles/Image1.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="viewer__desc">Описание</div>
+                            </div>
+                        </div>
+                        <div class="viewer__slide swiper-slide">
+                            <div class="viewer__item">
+                                <div class="viewer__image">
+                                    <picture>
+                                        <source data-srcset="img/note/cat4.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/note/cat4.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="viewer__desc">Описание</div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="viewer__pagination"></div>
+
+            </div>
+        </div>
+
+        <div class="viewer__navigation navigation">
+            <div class="navigation__prev">
+                <svg>
+                    <use href="img/icons/icons.svg#arrow-str"></use>
+                </svg>
+            </div>
+            <div class="navigation__next">
+                <svg>
+                    <use href="img/icons/icons.svg#arrow-str"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+	<script src="js/app.min.js?_v=20230731131612"></script>
 </body>
 
 </html>
