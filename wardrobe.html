@@ -4,7 +4,7 @@
 <head>
     <title>Fragsi</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230731131612">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230802152533">
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание">
@@ -74,22 +74,114 @@
                             У вас имеются непросмотренные уведомления <span>(4)</span>, ознакомьтесь с ними
                         </div>
                     </div>
-                    <div class="header__login login-header">
-                        <button type="button" class="login-header__btn" title="Login">
-                            <span>Вход</span>
-                            <svg>
-                                <use xlink: href="img/icons/icons.svg#login"></use>
-                            </svg>
+                    <div class="header__user user-header">
+                        <button type="button" class="user-header__image">
+                            <picture>
+                                <source data-srcset="img/chat/Image.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
+                            </picture>
                         </button>
-                        <div class="login-header__help">
-                            <p>
-                                Зарегистрируйтесь, чтобы узнавать новинках, интересных ароматах, обзорах и советах по
-                                выбору парфюма.
-                            </p>
-                            <button type="button" data-modal="login" class="login-header__reg popup-link"
-                                title="Login or registration">
-                                Войти или зарегестрироваться
+                        <div class="user-header__menu menu-user">
+                            <button type="button" class="menu-user__close">
+                                <svg>
+                                    <use href="img/icons/icons.svg#close"></use>
+                                </svg>
                             </button>
+                            <div class="menu-user__wrapper">
+                                <div class="menu-user__header">
+                                    <div class="menu-user__image">
+                                        <picture>
+                                            <source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                    <div class="menu-user__info">
+                                        <div class="menu-user__data">
+                                            <div class="menu-user__name">Кирилл Изотов</div>
+                                            <div class="menu-user__status">
+                                                <picture>
+                                                    <source data-srcset="img/profile/star 3lvl.svg"
+                                                        srcset="img/plug.png" type="image/webp">
+                                                    <img data-src="img/profile/star 3lvl.svg" src="img/plug.png"
+                                                        alt="Image">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="menu-user__mail">izotov@gmail.com</div>
+                                    </div>
+                                </div>
+                                <nav class="menu-user__body user-menu__body">
+                                    <ul class="user-menu__list">
+                                        <li class="user-menu__item active">
+                                            <a href="#" class="user-menu__link">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#profile"></use>
+                                                </svg>
+                                                <span>Мой профиль</span>
+                                            </a>
+                                        </li>
+                                        <li class="user-menu__item">
+                                            <a href="#" class="user-menu__link">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#wardrobe"></use>
+                                                </svg>
+                                                <span>Гардероб</span>
+                                            </a>
+                                        </li>
+                                        <li class="user-menu__item">
+                                            <a href="#" class="user-menu__link">
+                                                <svg class="fill">
+                                                    <use href="img/icons/icons.svg#heart"></use>
+                                                </svg>
+                                                <span>Избранное</span>
+                                            </a>
+                                        </li>
+                                        <li class="user-menu__item">
+                                            <a href="#" class="user-menu__link">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#subscribe-menu"></use>
+                                                </svg>
+                                                <span>Подписки</span>
+                                            </a>
+                                        </li>
+                                        <li class="user-menu__item">
+                                            <a href="#" class="user-menu__link">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#message"></use>
+                                                </svg>
+                                                <span>Сообщения</span>
+                                                <span>2</span>
+                                            </a>
+                                        </li>
+                                        <li class="user-menu__item">
+                                            <a href="#" class="user-menu__link">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#notification"></use>
+                                                </svg>
+                                                <span>Уведомления</span>
+                                                <span>2</span>
+                                            </a>
+                                        </li>
+                                        <li class="user-menu__item">
+                                            <a href="#" class="user-menu__link">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#settings"></use>
+                                                </svg>
+                                                <span>Настройки</span>
+                                            </a>
+                                        </li>
+                                        <li class="user-menu__item">
+                                            <a href="#" class="user-menu__link">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#loguot"></use>
+                                                </svg>
+                                                <span>Выйти</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2021,7 +2113,7 @@
         </div>
     </div>
 </div>
-    <script src="js/app.min.js?_v=20230731131612"></script>
+    <script src="js/app.min.js?_v=20230802152533"></script>
 </body>
 
 </html>

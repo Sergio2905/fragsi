@@ -538,103 +538,34 @@
                             <use href="img/icons/icons.svg#home"></use>
                         </svg>
                     </a>
-                    <a href="#" class="breadcrumbs__link">Кирилл Изотов</a>
+                    <a href="#" class="breadcrumbs__link">Мой профиль</a>
                 </div>
             </div>
         </div>
 
-        <div class="profile-menu">
-            <div class="profile-menu__container container">
-                <div class="profile-menu__body" data-mob="user-menu, append">
-                    <button type="button" class="profile-menu__btn">
-                        <svg>
-                            <use href="img/icons/icons.svg#message"></use>
-                        </svg>
-                        Сообщения
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="profile">
+        <div class="profile profile_own">
             <div class="profile__container container">
-                <div class="profile__body" data-desk="user-menu, prepend">
-                    <div class="profile__menu user-menu" data-move="user-menu, 1001">
-                        <nav class="user-menu__body">
-                            <ul class="user-menu__list">
-                                <li class="user-menu__item active">
-                                    <a href="#" class="user-menu__link">
-                                        <svg>
-                                            <use href="img/icons/icons.svg#profile"></use>
-                                        </svg>
-                                        <span>Мой профиль</span>
-                                    </a>
-                                </li>
-                                <li class="user-menu__item">
-                                    <a href="#" class="user-menu__link">
-                                        <svg>
-                                            <use href="img/icons/icons.svg#wardrobe"></use>
-                                        </svg>
-                                        <span>Гардероб</span>
-                                    </a>
-                                </li>
-                                <li class="user-menu__item">
-                                    <a href="#" class="user-menu__link">
-                                        <svg class="fill">
-                                            <use href="img/icons/icons.svg#heart"></use>
-                                        </svg>
-                                        <span>Избранное</span>
-                                    </a>
-                                </li>
-                                <li class="user-menu__item">
-                                    <a href="#" class="user-menu__link">
-                                        <svg>
-                                            <use href="img/icons/icons.svg#subscribe-menu"></use>
-                                        </svg>
-                                        <span>Подписки</span>
-                                    </a>
-                                </li>
-                                <li class="user-menu__item">
-                                    <a href="#" class="user-menu__link">
-                                        <svg>
-                                            <use href="img/icons/icons.svg#message"></use>
-                                        </svg>
-                                        <span>Сообщения</span>
-                                        <span>2</span>
-                                    </a>
-                                </li>
-                                <li class="user-menu__item">
-                                    <a href="#" class="user-menu__link">
-                                        <svg>
-                                            <use href="img/icons/icons.svg#notification"></use>
-                                        </svg>
-                                        <span>Уведомления</span>
-                                        <span>2</span>
-                                    </a>
-                                </li>
-                                <li class="user-menu__item">
-                                    <a href="#" class="user-menu__link">
-                                        <svg>
-                                            <use href="img/icons/icons.svg#settings"></use>
-                                        </svg>
-                                        <span>Настройки</span>
-                                    </a>
-                                </li>
-                                <li class="user-menu__item">
-                                    <a href="#" class="user-menu__link">
-                                        <svg>
-                                            <use href="img/icons/icons.svg#loguot"></use>
-                                        </svg>
-                                        <span>Выйти</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                <div class="profile__body">
+                    <div class="profile__unregister unregister-profile">
+                        <div class="unregister-profile__proposal">Создайте свой профиль!</div>
+                        <div class="unregister-profile__text">
+                            Войдите или зарегистрируйтесь, чтобы узнавать о новинках, интересных ароматах, обзорах и
+                            советах по выбору парфюма.
+                        </div>
+                        <a href="#" class="unregister-profile__btn btn_green">
+                            Войти в аккаунт
+                        </a>
+                        <div class="unregister-profile__bg">
+                            <picture>
+                                <source srcset="img/cat/bg.webp" type="image/webp">
+                                <img src="img/cat/bg.png" alt="Image">
+                            </picture>
+                        </div>
                     </div>
                     <div class="profile__content">
                         <div class="profile__main main-profile">
                             <div class="main-profile__wrapper">
-                                <div class="main-profile__photo active">
+                                <form action="#" class="main-profile__photo">
                                     <div class="main-profile__image">
                                         <picture>
                                             <source data-srcset="img/chat/Image.webp" srcset="img/plug.png"
@@ -642,10 +573,16 @@
                                             <img data-src="img/chat/Image.png" src="img/plug.png" alt="Image">
                                         </picture>
                                     </div>
-                                </div>
+                                    <input type="file" name="profile-photo" id="profile-photo">
+                                    <label for="profile-photo" class="main-profile__photo-edit">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#camera"></use>
+                                        </svg>
+                                    </label>
+                                </form>
                                 <div class="main-profile__info">
                                     <div class="main-profile__header">
-                                        <h1 class="main-profile__title title1">Чужой Профиль</h1>
+                                        <h1 class="main-profile__title title1">Мой профиль</h1>
                                         <button class="main-profile__rating popup-link" data-modal="reward">
                                             <picture>
                                                 <source data-srcset="img/profile/star 3lvl.svg" srcset="img/plug.png"
@@ -658,7 +595,13 @@
                                             </div>
                                         </button>
                                     </div>
-                                    <div class="main-profile__status" data-desk="profile-list, after">Арома любитель
+                                    <div class="main-profile__status" data-desk="profile-list, after">
+                                        <span class="main-profile__status-input" contenteditable>Арома любитель</span>
+                                        <button type="button" class="main-profile__status-edit">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#edit2"></use>
+                                            </svg>
+                                        </button>
                                     </div>
                                     <ul class="main-profile__list" data-move="profile-list, 769">
                                         <li class="main-profile__item">
@@ -681,39 +624,12 @@
                                 </div>
                             </div>
                             <div class="main-profile__btns" data-mob="profile-list, before">
-                                <div class="main-profile__subscribe subscription">
-                                    <div class="subscription__off">
-                                        <button type="botton" class="subscription__btn btn_green" title="Subscription">
-                                            <svg>
-                                                <use href="img/icons/icons.svg#check-one"></use>
-                                            </svg>
-                                            <span>Подписаться</span>
-                                        </button>
-                                    </div>
-                                    <div class="subscription__on">
-                                        <button type="botton" class="subscription__btn btn_green" title="Subscription">
-                                            <svg>
-                                                <use href="img/icons/icons.svg#subscription"></use>
-                                            </svg>
-                                            <span>Вы подписаны</span>
-                                        </button>
-                                        <div class="subscription__prompt">
-                                            Отменить подписку?
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="main-profile__message btn_icon">
+                                <a href="#" class="main-profile__settings btn_icon">
                                     <svg>
-                                        <use href="img/icons/icons.svg#message"></use>
+                                        <use href="img/icons/icons.svg#settings"></use>
                                     </svg>
-                                    <span>Сообщение</span>
-                                </button>
-                                <button class="main-profile__favorite btn_icon">
-                                    <svg>
-                                        <use href="img/icons/icons.svg#favorite-eye"></use>
-                                    </svg>
-                                    <span>Избранное</span>
-                                </button>
+                                    <span>Настройки</span>
+                                </a>
                             </div>
                         </div>
                         <div class="profile__data data-profile">
@@ -772,8 +688,13 @@
                                     </div>
                                 </li>
                             </ul>
-                            <a href="#" class="data-profile__aromate">
-                                <div class="data-profile__current">Текущий аромат</div>
+                            <a href="#" class="data-profile__aromate popup-link" data-modal="current-fragrance">
+                                <div class="data-profile__current">
+                                    Текущий аромат
+                                    <svg>
+                                        <use href="img/icons/icons.svg#filter"></use>
+                                    </svg>
+                                </div>
                                 <div href="#" class="data-profile__image">
                                     <picture>
                                         <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
@@ -1009,449 +930,49 @@
                                     <div class="tabs__block _active">
                                         <div class="tabs__content profile-articles">
                                             <div class="profile-articles__body">
-                                                <div class="profile-articles__item">
-                                                    <div class="profile-articles__info">
-                                                        <div class="profile-articles__author author-profile">
-                                                            <a href="#" class="author-profile__photo">
-                                                                <picture>
-                                                                    <source data-srcset="img/chat/Image.webp"
-                                                                        srcset="img/plug.png" type="image/webp">
-                                                                    <img data-src="img/chat/Image.png"
-                                                                        src="img/plug.png" alt="Image">
-                                                                </picture>
-                                                            </a>
-                                                            <div class="author-profile__info">
-                                                                <a href="#" class="author-profile__name">
-                                                                    <span>Кирилл Изотов</span>
-                                                                    <picture>
-                                                                        <source data-srcset="img/profile/user-lvl.svg"
-                                                                            srcset="img/plug.png" type="image/webp">
-                                                                        <img data-src="img/profile/user-lvl.svg"
-                                                                            src="img/plug.png" alt="Image">
-                                                                    </picture>
-                                                                </a>
-                                                                <div class="author-profile__items">
-                                                                    <div class="author-profile__date">
-                                                                        <svg>
-                                                                            <use href="img/icons/icons.svg#calendar">
-                                                                            </use>
-                                                                        </svg>
-                                                                        <time datetime="2023-06-01 12:20">Сегодня
-                                                                            12:20</time>
-                                                                    </div>
-                                                                    <div class="author-profile__views">
-                                                                        <svg>
-                                                                            <use href="img/icons/icons.svg#eye"></use>
-                                                                        </svg>
-                                                                        <span>16k</span>
-                                                                    </div>
-                                                                </div>
+                                                <div class="profile-articles__new review">
+                                                    <form action="#" class="review__form">
+                                                        <div class="review__block limit">
+                                                            <textarea name="comment"
+                                                                placeholder="Напишите комментарий к статье..."></textarea>
+                                                            <div class="review__error">
+                                                                Минимум 150 символов
                                                             </div>
                                                         </div>
-                                                        <article class="profile-articles__details">
-                                                            <div class="profile-articles__wrapper">
-                                                                <h3 class="profile-articles__title title3">
-                                                                    <a href="#">
-                                                                        Пахнуть собой: 5 ароматов в модонм направлении
-                                                                        second
-                                                                        skin scents
-                                                                    </a>
-                                                                </h3>
-                                                                <p class="profile-articles__desc">
-                                                                    Парфюмерная индустрия идёт рука об руку с модной — и
-                                                                    вслед за последней претерпела любопытные изменения
-                                                                    за
-                                                                    минувшую декаду. Интерес к телу в ней присутствовал
-                                                                    всегда, но в эпоху diversity, бодипозитива и
-                                                                    гендерного
-                                                                    разнообразия акценты сместились, а
-                                                                </p>
+                                                        <div class="review__footer">
+                                                            <input type="file" name="comments-file" id="comments-file">
+                                                            <label for="comments-file">
+                                                                <svg>
+                                                                    <use href="img/icons/icons.svg#img"></use>
+                                                                </svg>
+                                                            </label>
+                                                            <div class="review__counter counter">
+                                                                мин.
+                                                                <span class="counter__min">150</span>
+                                                                /
+                                                                <span class="counter__current">0</span>
                                                             </div>
-                                                        </article>
-                                                        <div class="profile-articles__options">
-                                                            <div class="profile-articles__btns">
-                                                                <button type="button" title="Like"
-                                                                    class="profile-articles__btn">
-                                                                    <svg>
-                                                                        <use href="img/icons/icons.svg#like"></use>
-                                                                    </svg>
-                                                                    <span>153</span>
-                                                                </button>
-                                                                <button type="button" title="Like"
-                                                                    class="profile-articles__btn">
-                                                                    <svg>
-                                                                        <use href="img/icons/icons.svg#comment"></use>
-                                                                    </svg>
-                                                                    <span>3</span>
-                                                                </button>
-                                                            </div>
-                                                            <a href="#" class="profile-articles__link">Перейти</a>
+                                                            <button type="submit" class="review__submit btn_green">
+                                                                Оставить отзыв
+                                                            </button>
                                                         </div>
-                                                    </div>
-                                                    <a href="#" class="profile-articles__image">
+                                                    </form>
+                                                </div>
+                                                <div class="profile-articles__empty empty-articles">
+                                                    <div class="empty-articles__image">
                                                         <picture>
-                                                            <source data-srcset="img/articles/Image1.webp"
+                                                            <source data-srcset="img/profile/empty.svg"
                                                                 srcset="img/plug.png" type="image/webp">
-                                                            <img data-src="img/articles/Image1.png" src="img/plug.png"
+                                                            <img data-src="img/profile/empty.svg" src="img/plug.png"
                                                                 alt="Image">
                                                         </picture>
-                                                    </a>
-                                                </div>
-                                                <div class="profile-articles__item">
-                                                    <div class="profile-articles__info">
-                                                        <div class="profile-articles__author author-profile">
-                                                            <a href="#" class="author-profile__photo">
-                                                                <picture>
-                                                                    <source data-srcset="img/chat/Image.webp"
-                                                                        srcset="img/plug.png" type="image/webp">
-                                                                    <img data-src="img/chat/Image.png"
-                                                                        src="img/plug.png" alt="Image">
-                                                                </picture>
-                                                            </a>
-                                                            <div class="author-profile__info">
-                                                                <a href="#" class="author-profile__name">
-                                                                    <span>Кирилл Изотов</span>
-                                                                    <picture>
-                                                                        <source data-srcset="img/profile/user-lvl.svg"
-                                                                            srcset="img/plug.png" type="image/webp">
-                                                                        <img data-src="img/profile/user-lvl.svg"
-                                                                            src="img/plug.png" alt="Image">
-                                                                    </picture>
-                                                                </a>
-                                                                <div class="author-profile__items">
-                                                                    <div class="author-profile__date">
-                                                                        <svg>
-                                                                            <use href="img/icons/icons.svg#calendar">
-                                                                            </use>
-                                                                        </svg>
-                                                                        <time datetime="2023-06-01 12:20">Сегодня
-                                                                            12:20</time>
-                                                                    </div>
-                                                                    <div class="author-profile__views">
-                                                                        <svg>
-                                                                            <use href="img/icons/icons.svg#eye"></use>
-                                                                        </svg>
-                                                                        <span>16k</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <article class="profile-articles__details">
-                                                            <div class="profile-articles__wrapper">
-                                                                <h3 class="profile-articles__title title3">
-                                                                    <a href="#">
-                                                                        Пахнуть собой: 5 ароматов в модонм направлении
-                                                                        second
-                                                                        skin scents
-                                                                    </a>
-                                                                </h3>
-                                                                <p class="profile-articles__desc">
-                                                                    Парфюмерная индустрия идёт рука об руку с модной — и
-                                                                    вслед за последней претерпела любопытные изменения
-                                                                    за
-                                                                    минувшую декаду. Интерес к телу в ней присутствовал
-                                                                    всегда, но в эпоху diversity, бодипозитива и
-                                                                    гендерного
-                                                                    разнообразия акценты сместились, а
-                                                                </p>
-                                                            </div>
-                                                        </article>
-                                                        <div class="profile-articles__options">
-                                                            <div class="profile-articles__btns">
-                                                                <button type="button" title="Like"
-                                                                    class="profile-articles__btn">
-                                                                    <svg>
-                                                                        <use href="img/icons/icons.svg#like"></use>
-                                                                    </svg>
-                                                                    <span>153</span>
-                                                                </button>
-                                                                <button type="button" title="Like"
-                                                                    class="profile-articles__btn">
-                                                                    <svg>
-                                                                        <use href="img/icons/icons.svg#comment"></use>
-                                                                    </svg>
-                                                                    <span>3</span>
-                                                                </button>
-                                                            </div>
-                                                            <a href="#" class="profile-articles__link">Перейти</a>
-                                                        </div>
                                                     </div>
-                                                    <a href="#" class="profile-articles__image">
-                                                        <picture>
-                                                            <source data-srcset="img/articles/Image2.webp"
-                                                                srcset="img/plug.png" type="image/webp">
-                                                            <img data-src="img/articles/Image2.png" src="img/plug.png"
-                                                                alt="Image">
-                                                        </picture>
-                                                    </a>
+                                                    <h4 class="empty-articles__title">Тут пока еще ничего нет :&#40;
+                                                    </h4>
+                                                    <p class="empty-articles__desc">Здесь можете публиковать статьи о
+                                                        своих любимых ароматах, делиться своими мыслями, секретами
+                                                        выбора и покупки духов и т.д</p>
                                                 </div>
-                                                <div class="profile-articles__item">
-                                                    <div class="profile-articles__info">
-                                                        <div class="profile-articles__author author-profile">
-                                                            <a href="#" class="author-profile__photo">
-                                                                <picture>
-                                                                    <source data-srcset="img/chat/Image.webp"
-                                                                        srcset="img/plug.png" type="image/webp">
-                                                                    <img data-src="img/chat/Image.png"
-                                                                        src="img/plug.png" alt="Image">
-                                                                </picture>
-                                                            </a>
-                                                            <div class="author-profile__info">
-                                                                <a href="#" class="author-profile__name">
-                                                                    <span>Кирилл Изотов</span>
-                                                                    <picture>
-                                                                        <source data-srcset="img/profile/user-lvl.svg"
-                                                                            srcset="img/plug.png" type="image/webp">
-                                                                        <img data-src="img/profile/user-lvl.svg"
-                                                                            src="img/plug.png" alt="Image">
-                                                                    </picture>
-                                                                </a>
-                                                                <div class="author-profile__items">
-                                                                    <div class="author-profile__date">
-                                                                        <svg>
-                                                                            <use href="img/icons/icons.svg#calendar">
-                                                                            </use>
-                                                                        </svg>
-                                                                        <time datetime="2023-06-01 12:20">Сегодня
-                                                                            12:20</time>
-                                                                    </div>
-                                                                    <div class="author-profile__views">
-                                                                        <svg>
-                                                                            <use href="img/icons/icons.svg#eye"></use>
-                                                                        </svg>
-                                                                        <span>16k</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <article class="profile-articles__details">
-                                                            <div class="profile-articles__wrapper">
-                                                                <h3 class="profile-articles__title title3">
-                                                                    <a href="#">
-                                                                        Пахнуть собой: 5 ароматов в модонм направлении
-                                                                        second
-                                                                        skin scents
-                                                                    </a>
-                                                                </h3>
-                                                                <p class="profile-articles__desc">
-                                                                    Парфюмерная индустрия идёт рука об руку с модной — и
-                                                                    вслед за последней претерпела любопытные изменения
-                                                                    за
-                                                                    минувшую декаду. Интерес к телу в ней присутствовал
-                                                                    всегда, но в эпоху diversity, бодипозитива и
-                                                                    гендерного
-                                                                    разнообразия акценты сместились, а
-                                                                </p>
-                                                            </div>
-                                                        </article>
-                                                        <div class="profile-articles__options">
-                                                            <div class="profile-articles__btns">
-                                                                <button type="button" title="Like"
-                                                                    class="profile-articles__btn">
-                                                                    <svg>
-                                                                        <use href="img/icons/icons.svg#like"></use>
-                                                                    </svg>
-                                                                    <span>153</span>
-                                                                </button>
-                                                                <button type="button" title="Like"
-                                                                    class="profile-articles__btn">
-                                                                    <svg>
-                                                                        <use href="img/icons/icons.svg#comment"></use>
-                                                                    </svg>
-                                                                    <span>3</span>
-                                                                </button>
-                                                            </div>
-                                                            <a href="#" class="profile-articles__link">Перейти</a>
-                                                        </div>
-                                                    </div>
-                                                    <a href="#" class="profile-articles__image">
-                                                        <picture>
-                                                            <source data-srcset="img/articles/Image3.webp"
-                                                                srcset="img/plug.png" type="image/webp">
-                                                            <img data-src="img/articles/Image3.png" src="img/plug.png"
-                                                                alt="Image">
-                                                        </picture>
-                                                    </a>
-                                                </div>
-                                                <div class="profile-articles__item">
-                                                    <div class="profile-articles__info">
-                                                        <div class="profile-articles__author author-profile">
-                                                            <a href="#" class="author-profile__photo">
-                                                                <picture>
-                                                                    <source data-srcset="img/chat/Image.webp"
-                                                                        srcset="img/plug.png" type="image/webp">
-                                                                    <img data-src="img/chat/Image.png"
-                                                                        src="img/plug.png" alt="Image">
-                                                                </picture>
-                                                            </a>
-                                                            <div class="author-profile__info">
-                                                                <a href="#" class="author-profile__name">
-                                                                    <span>Кирилл Изотов</span>
-                                                                    <picture>
-                                                                        <source data-srcset="img/profile/user-lvl.svg"
-                                                                            srcset="img/plug.png" type="image/webp">
-                                                                        <img data-src="img/profile/user-lvl.svg"
-                                                                            src="img/plug.png" alt="Image">
-                                                                    </picture>
-                                                                </a>
-                                                                <div class="author-profile__items">
-                                                                    <div class="author-profile__date">
-                                                                        <svg>
-                                                                            <use href="img/icons/icons.svg#calendar">
-                                                                            </use>
-                                                                        </svg>
-                                                                        <time datetime="2023-06-01 12:20">Сегодня
-                                                                            12:20</time>
-                                                                    </div>
-                                                                    <div class="author-profile__views">
-                                                                        <svg>
-                                                                            <use href="img/icons/icons.svg#eye"></use>
-                                                                        </svg>
-                                                                        <span>16k</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <article class="profile-articles__details">
-                                                            <div class="profile-articles__wrapper">
-                                                                <h3 class="profile-articles__title title3">
-                                                                    <a href="#">
-                                                                        Пахнуть собой: 5 ароматов в модонм направлении
-                                                                        second
-                                                                        skin scents
-                                                                    </a>
-                                                                </h3>
-                                                                <p class="profile-articles__desc">
-                                                                    Парфюмерная индустрия идёт рука об руку с модной — и
-                                                                    вслед за последней претерпела любопытные изменения
-                                                                    за
-                                                                    минувшую декаду. Интерес к телу в ней присутствовал
-                                                                    всегда, но в эпоху diversity, бодипозитива и
-                                                                    гендерного
-                                                                    разнообразия акценты сместились, а
-                                                                </p>
-                                                            </div>
-                                                        </article>
-                                                        <div class="profile-articles__options">
-                                                            <div class="profile-articles__btns">
-                                                                <button type="button" title="Like"
-                                                                    class="profile-articles__btn">
-                                                                    <svg>
-                                                                        <use href="img/icons/icons.svg#like"></use>
-                                                                    </svg>
-                                                                    <span>153</span>
-                                                                </button>
-                                                                <button type="button" title="Like"
-                                                                    class="profile-articles__btn">
-                                                                    <svg>
-                                                                        <use href="img/icons/icons.svg#comment"></use>
-                                                                    </svg>
-                                                                    <span>3</span>
-                                                                </button>
-                                                            </div>
-                                                            <a href="#" class="profile-articles__link">Перейти</a>
-                                                        </div>
-                                                    </div>
-                                                    <a href="#" class="profile-articles__image">
-                                                        <picture>
-                                                            <source data-srcset="img/articles/Image4.webp"
-                                                                srcset="img/plug.png" type="image/webp">
-                                                            <img data-src="img/articles/Image4.png" src="img/plug.png"
-                                                                alt="Image">
-                                                        </picture>
-                                                    </a>
-                                                </div>
-                                                <div class="profile-articles__item">
-                                                    <div class="profile-articles__info">
-                                                        <div class="profile-articles__author author-profile">
-                                                            <a href="#" class="author-profile__photo">
-                                                                <picture>
-                                                                    <source data-srcset="img/chat/Image.webp"
-                                                                        srcset="img/plug.png" type="image/webp">
-                                                                    <img data-src="img/chat/Image.png"
-                                                                        src="img/plug.png" alt="Image">
-                                                                </picture>
-                                                            </a>
-                                                            <div class="author-profile__info">
-                                                                <a href="#" class="author-profile__name">
-                                                                    <span>Кирилл Изотов</span>
-                                                                    <picture>
-                                                                        <source data-srcset="img/profile/user-lvl.svg"
-                                                                            srcset="img/plug.png" type="image/webp">
-                                                                        <img data-src="img/profile/user-lvl.svg"
-                                                                            src="img/plug.png" alt="Image">
-                                                                    </picture>
-                                                                </a>
-                                                                <div class="author-profile__items">
-                                                                    <div class="author-profile__date">
-                                                                        <svg>
-                                                                            <use href="img/icons/icons.svg#calendar">
-                                                                            </use>
-                                                                        </svg>
-                                                                        <time datetime="2023-06-01 12:20">Сегодня
-                                                                            12:20</time>
-                                                                    </div>
-                                                                    <div class="author-profile__views">
-                                                                        <svg>
-                                                                            <use href="img/icons/icons.svg#eye"></use>
-                                                                        </svg>
-                                                                        <span>16k</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <article class="profile-articles__details">
-                                                            <div class="profile-articles__wrapper">
-                                                                <h3 class="profile-articles__title title3">
-                                                                    <a href="#">
-                                                                        Пахнуть собой: 5 ароматов в модонм направлении
-                                                                        second
-                                                                        skin scents
-                                                                    </a>
-                                                                </h3>
-                                                                <p class="profile-articles__desc">
-                                                                    Парфюмерная индустрия идёт рука об руку с модной — и
-                                                                    вслед за последней претерпела любопытные изменения
-                                                                    за
-                                                                    минувшую декаду. Интерес к телу в ней присутствовал
-                                                                    всегда, но в эпоху diversity, бодипозитива и
-                                                                    гендерного
-                                                                    разнообразия акценты сместились, а
-                                                                </p>
-                                                            </div>
-                                                        </article>
-                                                        <div class="profile-articles__options">
-                                                            <div class="profile-articles__btns">
-                                                                <button type="button" title="Like"
-                                                                    class="profile-articles__btn">
-                                                                    <svg>
-                                                                        <use href="img/icons/icons.svg#like"></use>
-                                                                    </svg>
-                                                                    <span>153</span>
-                                                                </button>
-                                                                <button type="button" title="Like"
-                                                                    class="profile-articles__btn">
-                                                                    <svg>
-                                                                        <use href="img/icons/icons.svg#comment"></use>
-                                                                    </svg>
-                                                                    <span>3</span>
-                                                                </button>
-                                                            </div>
-                                                            <a href="#" class="profile-articles__link">Перейти</a>
-                                                        </div>
-                                                    </div>
-                                                    <a href="#" class="profile-articles__image">
-                                                        <picture>
-                                                            <source data-srcset="img/articles/Image5.webp"
-                                                                srcset="img/plug.png" type="image/webp">
-                                                            <img data-src="img/articles/Image5.png" src="img/plug.png"
-                                                                alt="Image">
-                                                        </picture>
-                                                    </a>
-                                                </div>
-                                                <button type="button" class="profile-articles__more" title="show-more">
-                                                    Показать больше
-                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -2932,6 +2453,332 @@
             <a href="#" class="fragrance__link btn_green">
                 Перейти к аромату
             </a>
+        </div>
+    </div>
+</div>
+    <div class="popup" id="add-fragrance">
+    <div class="popup__body">
+        <div class="popup__content shelf">
+            <form action="#" class="shelf__form">
+                <div class="shelf__header">
+                    <h4 class="shelf__title">Добавить аромат</h4>
+                    <button type="button" title="Close popup" class="popup__close">
+                        <svg>
+                            <use href="img/icons/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="shelf__input input profile-search">
+                    <button type="submit">
+                        <svg>
+                            <use href="img/icons/icons.svg#plus"></use>
+                        </svg>
+                    </button>
+                    <input type="text" name="fragrance" placeholder="Введите название аромата">
+                </div>
+                <div class="shelf__result search-result">
+                    <div class="shelf__wrapper search-wrapper">
+                        <ul class="shelf__list" data-simplebar>
+                            <li class="shelf__item">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
+                                    <div class="shelf__image">
+                                        <picture>
+                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                    <div class="shelf__info">
+                                        <span class="shelf__name">Baccarat Rouge 540</span>
+                                        <span class="shelf__desc">парфюмерная вода</span>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="shelf__item">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
+                                    <div class="shelf__image">
+                                        <picture>
+                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                    <div class="shelf__info">
+                                        <span class="shelf__name">Baccarat Rouge 540</span>
+                                        <span class="shelf__desc">парфюмерная вода</span>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="shelf__item">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
+                                    <div class="shelf__image">
+                                        <picture>
+                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                    <div class="shelf__info">
+                                        <span class="shelf__name">Baccarat Rouge 540</span>
+                                        <span class="shelf__desc">парфюмерная вода</span>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="shelf__item">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
+                                    <div class="shelf__image">
+                                        <picture>
+                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                    <div class="shelf__info">
+                                        <span class="shelf__name">Baccarat Rouge 540</span>
+                                        <span class="shelf__desc">парфюмерная вода</span>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="shelf__item">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
+                                    <div class="shelf__image">
+                                        <picture>
+                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                    <div class="shelf__info">
+                                        <span class="shelf__name">Baccarat Rouge 540</span>
+                                        <span class="shelf__desc">парфюмерная вода</span>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="shelf__item">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
+                                    <div class="shelf__image">
+                                        <picture>
+                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                    <div class="shelf__info">
+                                        <span class="shelf__name">Baccarat Rouge 540</span>
+                                        <span class="shelf__desc">парфюмерная вода</span>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="shelf__item">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
+                                    <div class="shelf__image">
+                                        <picture>
+                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                    <div class="shelf__info">
+                                        <span class="shelf__name">Baccarat Rouge 540</span>
+                                        <span class="shelf__desc">парфюмерная вода</span>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="shelf__item">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
+                                    <div class="shelf__image">
+                                        <picture>
+                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                    <div class="shelf__info">
+                                        <span class="shelf__name">Baccarat Rouge 540</span>
+                                        <span class="shelf__desc">парфюмерная вода</span>
+                                    </div>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" title="Delete" class="shelf__btn btn_green popup-link" data-modal="login">
+                    Оценить аромат
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+    <div class="popup" id="current-fragrance">
+    <div class="popup__body">
+        <div class="popup__content shelf">
+            <form action="#" class="shelf__form">
+                <div class="shelf__header">
+                    <h4 class="shelf__title">Текущий аромат</h4>
+                    <button type="button" title="Close popup" class="popup__close">
+                        <svg>
+                            <use href="img/icons/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="shelf__current shelf__item">
+                    <div class="shelf__link">
+                        <a href="#" class="shelf__image">
+                            <picture>
+                                <source data-srcset="img/note/cat1.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                            </picture>
+                        </a>
+                        <div class="shelf__info">
+                            <a href="#" class="shelf__name">Baccarat Rouge 540</a>
+                            <span class="shelf__desc">парфюмерная вода</span>
+                        </div>
+                        <button class="shelf__delete">
+                            <svg>
+                                <use href="img/icons/icons.svg#close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <h4 class="shelf__subtitle shelf__title">Изменить текущий аромат</h4>
+                <div class="shelf__input input profile-search">
+                    <button type="submit">
+                        <svg>
+                            <use href="img/icons/icons.svg#plus"></use>
+                        </svg>
+                    </button>
+                    <input type="text" name="fragrance" placeholder="Введите название аромата">
+                </div>
+                <div class="shelf__result search-result">
+                    <div class="shelf__wrapper search-wrapper">
+                        <ul class="shelf__list" data-simplebar>
+                            <li class="shelf__item">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
+                                    <div class="shelf__image">
+                                        <picture>
+                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                    <div class="shelf__info">
+                                        <span class="shelf__name">Baccarat Rouge 540</span>
+                                        <span class="shelf__desc">парфюмерная вода</span>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="shelf__item">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
+                                    <div class="shelf__image">
+                                        <picture>
+                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                    <div class="shelf__info">
+                                        <span class="shelf__name">Baccarat Rouge 540</span>
+                                        <span class="shelf__desc">парфюмерная вода</span>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="shelf__item">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
+                                    <div class="shelf__image">
+                                        <picture>
+                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                    <div class="shelf__info">
+                                        <span class="shelf__name">Baccarat Rouge 540</span>
+                                        <span class="shelf__desc">парфюмерная вода</span>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="shelf__item">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
+                                    <div class="shelf__image">
+                                        <picture>
+                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                    <div class="shelf__info">
+                                        <span class="shelf__name">Baccarat Rouge 540</span>
+                                        <span class="shelf__desc">парфюмерная вода</span>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="shelf__item">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
+                                    <div class="shelf__image">
+                                        <picture>
+                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                    <div class="shelf__info">
+                                        <span class="shelf__name">Baccarat Rouge 540</span>
+                                        <span class="shelf__desc">парфюмерная вода</span>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="shelf__item">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
+                                    <div class="shelf__image">
+                                        <picture>
+                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                    <div class="shelf__info">
+                                        <span class="shelf__name">Baccarat Rouge 540</span>
+                                        <span class="shelf__desc">парфюмерная вода</span>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="shelf__item">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
+                                    <div class="shelf__image">
+                                        <picture>
+                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                    <div class="shelf__info">
+                                        <span class="shelf__name">Baccarat Rouge 540</span>
+                                        <span class="shelf__desc">парфюмерная вода</span>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="shelf__item">
+                                <button type="button" class="shelf__link popup-link require-auth" data-modal="login">
+                                    <div class="shelf__image">
+                                        <picture>
+                                            <source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/note/cat1.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                    <div class="shelf__info">
+                                        <span class="shelf__name">Baccarat Rouge 540</span>
+                                        <span class="shelf__desc">парфюмерная вода</span>
+                                    </div>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" title="Delete" class="shelf__btn btn_green popup-link" data-modal="login">
+                    Оценить аромат
+                </button>
+            </form>
         </div>
     </div>
 </div>
