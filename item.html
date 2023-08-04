@@ -4,7 +4,7 @@
 <head>
     <title>Fragsi</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230802152533">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230804084937">
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание">
@@ -710,7 +710,7 @@
 							</div>
 							<div class="about-item__btns" data-move="item-btns, 993">
 								<div class="about-item__btn">
-									<button class="about-item__favorite btn_icon btn_favorite">
+									<button class="about-item__favorite btn_icon btn_favorite" title="To favorite">
 										<svg>
 											<use href="img/icons/icons.svg#favorite"></use>
 										</svg>
@@ -723,7 +723,7 @@
 									</div>
 								</div>
 								<div class="about-item__btn">
-									<button class="about-item__compare btn_icon btn_compare">
+									<button class="about-item__compare btn_icon btn_compare" title="To compare">
 										<svg>
 											<use href="img/icons/icons.svg#compare"></use>
 										</svg>
@@ -733,7 +733,8 @@
 									</div>
 								</div>
 								<div class="about-item__btn">
-									<button class="about-item__share btn_icon popup-link" data-modal="share">
+									<button class="about-item__share btn_icon popup-link" data-modal="share"
+										title="Share">
 										<svg>
 											<use href="img/icons/icons.svg#share"></use>
 										</svg>
@@ -743,7 +744,7 @@
 									</div>
 								</div>
 								<div class="about-item__btn">
-									<button class="about-item__comment btn_icon">
+									<button class="about-item__comment btn_icon" title="Comment">
 										<svg>
 											<use href="img/icons/icons.svg#comment-square"></use>
 										</svg>
@@ -764,7 +765,7 @@
 					<div class="proposal-item__body">
 						<div class="proposal-item__header">
 							<h2 class="proposal-item__title title2">Предложения магазинов <span>16</span></h2>
-							<button type="button" class="proposal-item__btn btn_white hide-prices active">
+							<button type="button" class="proposal-item__btn btn_white hide-prices active" title="Hide">
 								<span>Показать цены</span>
 								<span>Скрыть цены</span>
 								<svg>
@@ -775,16 +776,16 @@
 						<div class="proposal-item__wrapper active">
 							<div class="proposal-item__sort sort">
 								<div class="sort__desk">
-									<button type="button" class="sort__option active asc">
+									<button type="button" class="sort__option active asc" title="By popular">
 										<span>по популярности</span>
 									</button>
-									<button type="button" class="sort__option">
+									<button type="button" class="sort__option" title="By rating">
 										<span>по рейтингу</span>
 									</button>
-									<button type="button" class="sort__option">
+									<button type="button" class="sort__option" title="By volume">
 										<span>по объему</span>
 									</button>
-									<button type="button" class="sort__option">
+									<button type="button" class="sort__option" title="By price">
 										<span>по цене</span>
 									</button>
 								</div>
@@ -798,13 +799,13 @@
 								<div class="sort__name">
 									Сортировка:
 								</div>
-								<button type="button" class="sort__btn sort__mob">
+								<button type="button" class="sort__btn sort__mob" title="Sort">
 									По популярности
 								</button>
 								<div class="sort__body">
 									<div class="sort__wrapper">
 										<h3 class="sort__title">Сортировка:</h3>
-										<button type="button" class="sort__close">
+										<button type="button" class="sort__close" title="Close">
 											<svg>
 												<use href="img/icons/icons.svg#close"></use>
 											</svg>
@@ -831,7 +832,8 @@
 												<label for="old">Сначала старые</label>
 											</li>
 										</ul>
-										<button type="button" class="sort__apply btn_green">Показать</button>
+										<button type="button" class="sort__apply btn_green"
+											title="Apply">Показать</button>
 									</div>
 								</div>
 							</div>
@@ -946,7 +948,7 @@
 								</li>
 							</ul>
 						</div>
-						<button class="proposal-item__hide hide-prices active" type="button">
+						<button class="proposal-item__hide hide-prices active" type="button" title="Hide">
 							<span>Показать цены</span>
 							<span>Скрыть цены</span>
 							<svg>
@@ -973,8 +975,9 @@
 							<div class="features-item__images">
 								<div class="features-item__image">
 									<picture>
-										<source srcset="img/item/Block2.png" type="image/webp">
-										<img src="img/item/Block2.png" alt="Image">
+										<source data-srcset="img/item/Block2.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/item/Block2.png" src="img/plug.png" alt="Image">
 									</picture>
 								</div>
 							</div>
@@ -988,8 +991,9 @@
 							<div class="features-item__images">
 								<div class="features-item__image">
 									<picture>
-										<source srcset="img/item/Block3.png" type="image/webp">
-										<img src="img/item/Block3.png" alt="Image">
+										<source data-srcset="img/item/Block3.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/item/Block3.png" src="img/plug.png" alt="Image">
 									</picture>
 								</div>
 							</div>
@@ -1004,8 +1008,9 @@
 							<div class="features-item__images">
 								<div class="features-item__image">
 									<picture>
-										<source srcset="img/item/Block4.png" type="image/webp">
-										<img src="img/item/Block4.png" alt="Image">
+										<source data-srcset="img/item/Block4.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/item/Block4.png" src="img/plug.png" alt="Image">
 									</picture>
 								</div>
 							</div>
@@ -1019,14 +1024,16 @@
 							<div class="features-item__images">
 								<div class="features-item__image">
 									<picture>
-										<source srcset="img/item/Block5.png" type="image/webp">
-										<img src="img/item/Block5.png" alt="Image">
+										<source data-srcset="img/item/Block5.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/item/Block5.png" src="img/plug.png" alt="Image">
 									</picture>
 								</div>
 								<div class="features-item__image">
 									<picture>
-										<source srcset="img/item/Block5-2.png" type="image/webp">
-										<img src="img/item/Block5-2.png" alt="Image">
+										<source data-srcset="img/item/Block5-2.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/item/Block5-2.png" src="img/plug.png" alt="Image">
 									</picture>
 								</div>
 							</div>
@@ -1041,14 +1048,16 @@
 							<div class="features-item__images">
 								<div class="features-item__image">
 									<picture>
-										<source srcset="img/item/Block6.png" type="image/webp">
-										<img src="img/item/Block6.png" alt="Image">
+										<source data-srcset="img/item/Block6.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/item/Block6.png" src="img/plug.png" alt="Image">
 									</picture>
 								</div>
 								<div class="features-item__image">
 									<picture>
-										<source srcset="img/item/Block6.png" type="image/webp">
-										<img src="img/item/Block6.png" alt="Image">
+										<source data-srcset="img/item/Block6.webp" srcset="img/plug.png"
+											type="image/webp">
+										<img data-src="img/item/Block6.png" src="img/plug.png" alt="Image">
 									</picture>
 								</div>
 							</div>
@@ -1758,7 +1767,7 @@
 										<div class="block-opinion__header">
 											<h5 class="block-opinion__title">Для какого события</h5>
 											<div class="block-opinion__help help">
-												<button type="button" class="help__btn">
+												<button type="button" class="help__btn" title="Help">
 													<svg>
 														<use href="img/icons/icons.svg#help"></use>
 													</svg>
@@ -1852,7 +1861,7 @@
 										<div class="block-opinion__header">
 											<h5 class="block-opinion__title">Для какого времени года</h5>
 											<div class="block-opinion__help help">
-												<button type="button" class="help__btn">
+												<button type="button" class="help__btn" title="Help">
 													<svg>
 														<use href="img/icons/icons.svg#help"></use>
 													</svg>
@@ -1914,7 +1923,7 @@
 										<div class="block-opinion__header">
 											<h5 class="block-opinion__title">Для какого стиля</h5>
 											<div class="block-opinion__help help">
-												<button type="button" class="help__btn">
+												<button type="button" class="help__btn" title="help">
 													<svg>
 														<use href="img/icons/icons.svg#help"></use>
 													</svg>
@@ -1969,7 +1978,7 @@
 										<div class="block-opinion__header">
 											<h5 class="block-opinion__title">Для какого события</h5>
 											<div class="block-opinion__help help">
-												<button type="button" class="help__btn">
+												<button type="button" class="help__btn" title="Help">
 													<svg>
 														<use href="img/icons/icons.svg#help"></use>
 													</svg>
@@ -2025,7 +2034,7 @@
 										<div class="block-opinion__header">
 											<h5 class="block-opinion__title">Для какого времени года</h5>
 											<div class="block-opinion__help help">
-												<button type="button" class="help__btn">
+												<button type="button" class="help__btn" title="Help">
 													<svg>
 														<use href="img/icons/icons.svg#help"></use>
 													</svg>
@@ -2081,7 +2090,7 @@
 										<div class="block-opinion__header">
 											<h5 class="block-opinion__title">Для какого стиля</h5>
 											<div class="block-opinion__help help">
-												<button type="button" class="help__btn">
+												<button type="button" class="help__btn" title="Help">
 													<svg>
 														<use href="img/icons/icons.svg#help"></use>
 													</svg>
@@ -2121,7 +2130,7 @@
 										<div class="block-opinion__header">
 											<h5 class="block-opinion__title">Для какого возраста</h5>
 											<div class="block-opinion__help help">
-												<button type="button" class="help__btn">
+												<button type="button" class="help__btn" title="help">
 													<svg>
 														<use href="img/icons/icons.svg#help"></use>
 													</svg>
@@ -2176,7 +2185,7 @@
 										<div class="block-opinion__header">
 											<h5 class="block-opinion__title">Для какого времени года</h5>
 											<div class="block-opinion__help help">
-												<button type="button" class="help__btn">
+												<button type="button" class="help__btn" title="help">
 													<svg>
 														<use href="img/icons/icons.svg#help"></use>
 													</svg>
@@ -2216,7 +2225,7 @@
 										<div class="block-opinion__header">
 											<h5 class="block-opinion__title">Для какого стиля</h5>
 											<div class="block-opinion__help help">
-												<button type="button" class="help__btn">
+												<button type="button" class="help__btn" title="Help">
 													<svg>
 														<use href="img/icons/icons.svg#help"></use>
 													</svg>
@@ -2260,7 +2269,7 @@
 										<div class="block-opinion__header">
 											<h5 class="block-opinion__title">Качество упаковки</h5>
 											<div class="block-opinion__help help">
-												<button type="button" class="help__btn">
+												<button type="button" class="help__btn" title="Help">
 													<svg>
 														<use href="img/icons/icons.svg#help"></use>
 													</svg>
@@ -2315,7 +2324,7 @@
 										<div class="block-opinion__header">
 											<h5 class="block-opinion__title">Для какого времени года</h5>
 											<div class="block-opinion__help help">
-												<button type="button" class="help__btn">
+												<button type="button" class="help__btn" title="Help">
 													<svg>
 														<use href="img/icons/icons.svg#help"></use>
 													</svg>
@@ -2355,7 +2364,7 @@
 										<div class="block-opinion__header">
 											<h5 class="block-opinion__title">Для какого стиля</h5>
 											<div class="block-opinion__help help">
-												<button type="button" class="help__btn">
+												<button type="button" class="help__btn" title="Help">
 													<svg>
 														<use href="img/icons/icons.svg#help"></use>
 													</svg>
@@ -2395,7 +2404,7 @@
 										<div class="block-opinion__header">
 											<h5 class="block-opinion__title">Для какого стиля</h5>
 											<div class="block-opinion__help help">
-												<button type="button" class="help__btn">
+												<button type="button" class="help__btn" title="Help">
 													<svg>
 														<use href="img/icons/icons.svg#help"></use>
 													</svg>
@@ -2631,7 +2640,7 @@
 								<a href="#" class="opinion-article__name">Елена Кудрявцева</a>
 								<div class="opinion-article__ocupation">парфюмерных дел мастер</div>
 							</div>
-							<button class="opinion-article__btn btn_green">Мнение эксперта</button>
+							<button class="opinion-article__btn btn_green" title="Opinion">Мнение эксперта</button>
 						</div>
 						<div class="opinion-article__body">
 							<p>
@@ -2644,7 +2653,7 @@
 								nobis deserunt totam itaque iste nesciunt obcaecati molestias! Sapiente quasi eius
 								dolore non et obcaecati nobis cumque omnis!
 							</p>
-							<button class="opinion-article__more read-more">
+							<button class="opinion-article__more read-more" title="Show more">
 								Показать больше
 							</button>
 						</div>
@@ -2690,7 +2699,7 @@
 												type="image/webp">
 											<img data-src="img/articles/Image1.png" src="img/plug.png" alt="Image">
 										</picture>
-										<a href="#" class="insta-item__icon">
+										<a href="#" class="insta-item__icon" area-label="Instagram">
 											<svg>
 												<use href="img/icons/icons.svg#insta"></use>
 											</svg>
@@ -2705,7 +2714,7 @@
 												type="image/webp">
 											<img data-src="img/articles/Image2.png" src="img/plug.png" alt="Image">
 										</picture>
-										<a href="#" class="insta-item__icon">
+										<a href="#" class="insta-item__icon" area-label="Instagram">
 											<svg>
 												<use href="img/icons/icons.svg#insta"></use>
 											</svg>
@@ -2720,7 +2729,7 @@
 												type="image/webp">
 											<img data-src="img/articles/Image3.png" src="img/plug.png" alt="Image">
 										</picture>
-										<a href="#" class="insta-item__icon">
+										<a href="#" class="insta-item__icon" area-label="Instagram">
 											<svg>
 												<use href="img/icons/icons.svg#insta"></use>
 											</svg>
@@ -2735,7 +2744,7 @@
 												type="image/webp">
 											<img data-src="img/articles/Image4.png" src="img/plug.png" alt="Image">
 										</picture>
-										<a href="#" class="insta-item__icon">
+										<a href="#" class="insta-item__icon" area-label="Instagram">
 											<svg>
 												<use href="img/icons/icons.svg#insta"></use>
 											</svg>
@@ -2780,7 +2789,7 @@
 									<div class="reviews-item__count">250 отзывов</div>
 								</div>
 								<div class="reviews-item__share popup-link" data-modal="share">
-									<button type="button" class="reviews-item__btn btn_icon">
+									<button type="button" class="reviews-item__btn btn_icon" title="Share">
 										<svg>
 											<use href="img/icons/icons.svg#share"></use>
 										</svg>
@@ -2870,8 +2879,8 @@
 								<div class="block-item__text">
 									Поделитесь своими впечетлениями об аромате
 								</div>
-								<button type="button" class="block-item__review btn_green popup-link"
-									data-modal="login">
+								<button type="button" class="block-item__review btn_green popup-link" data-modal="login"
+									title="Leave review">
 									<svg>
 										<use href="img/icons/icons.svg#like"></use>
 									</svg>
@@ -2881,7 +2890,7 @@
 						</div>
 						<div class="reviews-item__comments comments">
 							<div class="comments__opinions">
-								<button type="button" class="comments__opinion">
+								<button type="button" class="comments__opinion" title="Like">
 									<picture>
 										<source data-srcset="img/item/like.svg" srcset="img/plug.png"
 											type="image/webp">
@@ -2889,7 +2898,7 @@
 									</picture>
 									<span>Лайк</span>
 								</button>
-								<button type="button" class="comments__opinion">
+								<button type="button" class="comments__opinion" title="Had">
 									<picture>
 										<source data-srcset="img/item/time.svg" srcset="img/plug.png"
 											type="image/webp">
@@ -2897,7 +2906,7 @@
 									</picture>
 									<span>Был</span>
 								</button>
-								<button type="button" class="comments__opinion">
+								<button type="button" class="comments__opinion" title="Have">
 									<picture>
 										<source data-srcset="img/item/check.svg" srcset="img/plug.png"
 											type="image/webp">
@@ -2905,7 +2914,7 @@
 									</picture>
 									<span>Есть</span>
 								</button>
-								<button type="button" class="comments__opinion">
+								<button type="button" class="comments__opinion" title="Want">
 									<picture>
 										<source data-srcset="img/item/heart.svg" srcset="img/plug.png"
 											type="image/webp">
@@ -2920,32 +2929,32 @@
 							<div class="comments__sort sort sort-comments">
 								<div class="sort__desk">
 									<span>Сортировка по:</span>
-									<button type="button" class="sort__option">
+									<button type="button" class="sort__option" title="By popular">
 										<span>по популярности</span>
 										<svg>
 											<use href="img/icons/icons.svg#sort"></use>
 										</svg>
 									</button>
-									<button type="button" class="sort__option">
+									<button type="button" class="sort__option" title="By rating">
 										<span>по рейтингу</span>
 										<svg>
 											<use href="img/icons/icons.svg#sort"></use>
 										</svg>
 									</button>
-									<button type="button" class="sort__option active asc">
+									<button type="button" class="sort__option active asc" title="By date">
 										<span>по дате</span>
 										<svg>
 											<use href="img/icons/icons.svg#sort"></use>
 										</svg>
 									</button>
 								</div>
-								<button type="button" class="sort__btn sort__mob">
+								<button type="button" class="sort__btn sort__mob" title="Sort">
 									Сначала популярные
 								</button>
 								<div class="sort__body">
 									<div class="sort__wrapper">
 										<h3 class="sort__title">Сортировка:</h3>
-										<button type="button" class="sort__close">
+										<button type="button" class="sort__close" title="Close">
 											<svg>
 												<use href="img/icons/icons.svg#close"></use>
 											</svg>
@@ -2972,7 +2981,8 @@
 												<label for="old">Сначала старые</label>
 											</li>
 										</ul>
-										<button type="button" class="sort__apply btn_green">Показать</button>
+										<button type="button" class="sort__apply btn_green"
+											title="Apply">Показать</button>
 									</div>
 								</div>
 							</div>
@@ -3147,7 +3157,7 @@
 											<span class="counter__current">0</span>
 										</div>
 										<button type="submit" class="review__submit btn_green popup-link require-auth"
-											data-modal="login">
+											data-modal="login" title="Submit">
 											Оставить отзыв
 										</button>
 									</div>
@@ -3203,9 +3213,10 @@
 												<span>3</span>
 											</button>
 										</div>
-										<button type="button" class="comments__reply-btn">Ответить</button>
+										<button type="button" class="comments__reply-btn"
+											title="Reply">Ответить</button>
 									</div>
-									<button type="button" class="comments__hide active">
+									<button type="button" class="comments__hide active" title="show comments">
 										<span>Показать комментарии</span>
 										<span>Скрыть комментарии</span>
 									</button>
@@ -3222,10 +3233,10 @@
 													</label>
 												</div>
 												<div class="reply__btns">
-													<button type="button"
-														class="reply__btn btn_cancel reply-cancel">Отмена</button>
+													<button type="button" class="reply__btn btn_cancel reply-cancel"
+														title="cancel">Отмена</button>
 													<button type="submit"
-														class="reply__btn btn_green disable reply-send">
+														class="reply__btn btn_green disable reply-send" title="submit">
 														Ответить
 														<svg>
 															<use href="img/icons/icons.svg#send"></use>
@@ -3279,9 +3290,10 @@
 														<span>3</span>
 													</button>
 												</div>
-												<button type="button" class="comments__reply-btn">Ответить</button>
+												<button type="button" class="comments__reply-btn"
+													title="reply">Ответить</button>
 											</div>
-											<button type="button" class="comments__hide active">
+											<button type="button" class="comments__hide active" title="Hide">
 												<span>Показать комментарии</span>
 												<span>Скрыть комментарии</span>
 											</button>
@@ -3299,9 +3311,11 @@
 														</div>
 														<div class="reply__btns">
 															<button type="button"
-																class="reply__btn btn_cancel reply-cancel">Отмена</button>
+																class="reply__btn btn_cancel reply-cancel"
+																title="cancel">Отмена</button>
 															<button type="submit"
-																class="reply__btn btn_green disable reply-send">
+																class="reply__btn btn_green disable reply-send"
+																title="submit">
 																Ответить
 																<svg>
 																	<use href="img/icons/icons.svg#send"></use>
@@ -3357,8 +3371,8 @@
 																<span>3</span>
 															</button>
 														</div>
-														<button type="button"
-															class="comments__reply-btn">Ответить</button>
+														<button type="button" class="comments__reply-btn"
+															title="reply">Ответить</button>
 													</div>
 													<div class="comments__reply reply">
 														<form action="#" class="reply__form active">
@@ -3375,9 +3389,11 @@
 																</div>
 																<div class="reply__btns">
 																	<button type="button"
-																		class="reply__btn btn_cancel reply-cancel">Отмена</button>
+																		class="reply__btn btn_cancel reply-cancel"
+																		title="cancel">Отмена</button>
 																	<button type="submit"
-																		class="reply__btn btn_green disable reply-send">
+																		class="reply__btn btn_green disable reply-send"
+																		title="submit">
 																		Ответить
 																		<svg>
 																			<use href="img/icons/icons.svg#send"></use>
@@ -3432,7 +3448,8 @@
 														<span>3</span>
 													</button>
 												</div>
-												<button type="button" class="comments__reply-btn">Ответить</button>
+												<button type="button" class="comments__reply-btn"
+													title="reply">Ответить</button>
 											</div>
 											<div class="comments__reply reply">
 												<form action="#" class="reply__form active">
@@ -3448,9 +3465,11 @@
 														</div>
 														<div class="reply__btns">
 															<button type="button"
-																class="reply__btn btn_cancel reply-cancel">Отмена</button>
+																class="reply__btn btn_cancel reply-cancel"
+																title="cancel">Отмена</button>
 															<button type="submit"
-																class="reply__btn btn_green disable reply-send">
+																class="reply__btn btn_green disable reply-send"
+																title="submit">
 																Ответить
 																<svg>
 																	<use href="img/icons/icons.svg#send"></use>
@@ -3502,7 +3521,7 @@
 										540 это настоящая унисексовая композиция от популярного бренда и маэстро
 										"Francis
 									</p>
-									<button class="read-more">
+									<button class="read-more" title="read more">
 										Читать дальше
 									</button>
 									<div class="comments__images">
@@ -3536,7 +3555,8 @@
 												<span>3</span>
 											</button>
 										</div>
-										<button type="button" class="comments__reply-btn">Ответить</button>
+										<button type="button" class="comments__reply-btn"
+											title="reply">Ответить</button>
 									</div>
 									<div class="comments__reply reply">
 										<form action="#" class="reply__form active">
@@ -3551,10 +3571,10 @@
 													</label>
 												</div>
 												<div class="reply__btns">
-													<button type="button"
-														class="reply__btn btn_cancel reply-cancel">Отмена</button>
+													<button type="button" class="reply__btn btn_cancel reply-cancel"
+														title="cancel">Отмена</button>
 													<button type="submit"
-														class="reply__btn btn_green disable reply-send">
+														class="reply__btn btn_green disable reply-send" title="submit">
 														Ответить
 														<svg>
 															<use href="img/icons/icons.svg#send"></use>
@@ -7101,7 +7121,7 @@
         </div>
     </div>
 </div>
-	<script src="js/app.min.js?_v=20230802152533"></script>
+	<script src="js/app.min.js?_v=20230804084937"></script>
 </body>
 
 </html>

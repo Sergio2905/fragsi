@@ -915,7 +915,7 @@ body.lock {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #007F5F;
+  background: #2e3192;
   display: none;
 }
 
@@ -13581,8 +13581,8 @@ body.lock {
   transform: translate(0, -50%);
   width: 20px;
   height: 20px;
-  -webkit-mask: url("../img/icons/icons.svg#arrow") center/contain no-repeat exclude;
-          mask: url("../img/icons/icons.svg#arrow") center/contain no-repeat exclude;
+  -webkit-mask: url("../img/icons/icons.svg#arrow") center/contain no-repeat;
+          mask: url("../img/icons/icons.svg#arrow") center/contain no-repeat;
   background: #C3C3C3;
   border: 2px solid #ecfff8;
   transition: all 0.2s linear;
@@ -20365,6 +20365,14 @@ body.lock {
 @media (max-width: 768px) {
   .navigation {
     display: none;
+  }
+
+  .breadcrumbs__body {
+    height: 40px;
+  }
+
+  .actions__body {
+    padding-bottom: 0;
   }
 
   .actions__cat {
