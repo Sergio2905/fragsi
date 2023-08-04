@@ -18420,10 +18420,6 @@ body.lock {
   background: #FFFFFF;
   border: 2px solid #CCE5DF;
   border-radius: 12px;
-  margin-bottom: 30px;
-}
-
-.survey-article_last {
   margin-bottom: 60px;
 }
 
@@ -18469,6 +18465,14 @@ body.lock {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.survey-article__body.disable {
+  display: none;
+}
+
+.survey-article__form.disable {
+  display: none;
 }
 
 .survey-article__item {
@@ -21913,7 +21917,7 @@ body.lock {
     margin-bottom: 40px;
   }
 
-  .survey-article_last {
+  .survey-article {
     margin-bottom: 40px;
   }
 
@@ -25227,9 +25231,6 @@ body.lock {
 
   .survey-article {
     padding: 20px;
-  }
-
-  .survey-article_last {
     margin-bottom: 32px;
   }
 
