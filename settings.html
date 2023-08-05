@@ -4,7 +4,7 @@
 <head>
     <title>Fragsi</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230805135309">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230805140735">
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание">
@@ -674,12 +674,14 @@
                                                         </button>
                                                     </div>
                                                     <div class="settings__input input">
-                                                        <label for="name">Имя*</label>
-                                                        <input type="text" name="name" value="Кирилл">
+                                                        <label for="settings-name">Имя*</label>
+                                                        <input type="text" id="settings-name" name="name"
+                                                            value="Кирилл">
                                                     </div>
                                                     <div class="settings__input input">
-                                                        <label for="surname">Фамилия*</label>
-                                                        <input type="text" name="surname" value="Изотов">
+                                                        <label for="settings-surname">Фамилия*</label>
+                                                        <input type="text" id="settings-surname" name="surname"
+                                                            value="Изотов">
                                                     </div>
                                                 </div>
                                             </section>
@@ -687,8 +689,9 @@
                                                 <h4 class="settings__title">Дата рождения</h4>
                                                 <div class="settings__block">
                                                     <div class="settings__input input readonly">
-                                                        <label for="name">День</label>
-                                                        <input type="text" name="day" value="1" readonly>
+                                                        <label for="settings-day">День</label>
+                                                        <input type="text" id="settings-day" name="day" value="1"
+                                                            readonly>
                                                         <ul class="settings__list input-list" data-simplebar>
                                                             <li class="input-list__item">1</li>
                                                             <li class="input-list__item">2</li>
@@ -704,8 +707,9 @@
                                                         </ul>
                                                     </div>
                                                     <div class="settings__input input readonly">
-                                                        <label for="name">Месяц</label>
-                                                        <input type="text" name="month" value="Январь" readonly>
+                                                        <label for="settings-month">Месяц</label>
+                                                        <input type="text" id="settings-month" name="month"
+                                                            value="Январь" readonly>
                                                         <ul class="settings__list input-list" data-simplebar>
                                                             <li class="input-list__item">Январь</li>
                                                             <li class="input-list__item">Февраль</li>
@@ -722,8 +726,9 @@
                                                         </ul>
                                                     </div>
                                                     <div class="settings__input input readonly">
-                                                        <label for="surname">Год</label>
-                                                        <input type="text" name="year" value="1990" readonly>
+                                                        <label for="settings-year">Год</label>
+                                                        <input type="text" id="settings-year" name="year" value="1990"
+                                                            readonly>
                                                         <ul class="settings__list input-list" data-simplebar>
                                                             <li class="input-list__item">1990</li>
                                                             <li class="input-list__item">1991</li>
@@ -750,8 +755,9 @@
                                                 <h4 class="settings__title">Контактная информация</h4>
                                                 <div class="settings__block">
                                                     <div class="settings__input input">
-                                                        <label for="name">Страна</label>
-                                                        <input type="text" name="country" value="Україна">
+                                                        <label for="settings-country">Страна</label>
+                                                        <input type="text" id="settings-country" name="country"
+                                                            value="Україна">
                                                         <ul class="settings__list input-list" data-simplebar>
                                                             <li class="input-list__item">Україна</li>
                                                             <li class="input-list__item">Россия</li>
@@ -764,8 +770,8 @@
                                                         </ul>
                                                     </div>
                                                     <div class="settings__input input">
-                                                        <label for="name">Город</label>
-                                                        <input type="text" name="city" value="Київ">
+                                                        <label for="settings-city">Город</label>
+                                                        <input type="text" id="settings-city" name="city" value="Київ">
                                                         <ul class="settings__list input-list" data-simplebar>
                                                             <li class="input-list__item">Київ</li>
                                                             <li class="input-list__item">Москва</li>
@@ -783,15 +789,17 @@
                                                 <h4 class="settings__title">Подтверждение аккаунта</h4>
                                                 <div class="settings__block">
                                                     <div class="settings__input input email">
-                                                        <label for="name">Email</label>
-                                                        <input type="text" name="country" value="izotov@gmail.com">
+                                                        <label for="settings-email">Email</label>
+                                                        <input type="text" id="settings-email" name="email"
+                                                            value="izotov@gmail.com">
                                                         <div class="settings__error">
                                                             Проверьте правильность ввода
                                                         </div>
                                                     </div>
                                                     <div class="settings__input input">
-                                                        <label for="name">Номер телефона</label>
-                                                        <input type="text" name="city" value="8-(950)-224-9499">
+                                                        <label for="settings-phone">Номер телефона</label>
+                                                        <input type="text" id="settings-phone" name="phone"
+                                                            value="8-(950)-224-9499">
                                                     </div>
                                                 </div>
                                             </section>
@@ -872,14 +880,14 @@
                                         <form action="#" class="settings__form">
                                             <section class="settings__section">
                                                 <h3 class="settings__title title3">Аккаунт</h3>
-                                                <button type="#" class="settings__change popup-link"
+                                                <button type="button" class="settings__change popup-link"
                                                     data-modal="change-password" title="Change password">
                                                     <svg>
                                                         <use href="img/icons/icons.svg#lock"></use>
                                                     </svg>
                                                     <span>Изменить пароль</span>
                                                 </button>
-                                                <button type="#" class="settings__del popup-link"
+                                                <button type="button" class="settings__del popup-link"
                                                     data-modal="delete-account" title="Delete account">
                                                     <svg>
                                                         <use href="img/icons/icons.svg#trash"></use>
@@ -1487,8 +1495,8 @@
                         будут безвозвратно удалены.</p>
                     <p class="reset__desc">Введите текущий пароль что бы продолжить</p>
                     <div class="reset__input input pass error">
-                        <label for="password">Текущий пароль</label>
-                        <input type="password" title="Password">
+                        <label for="delete-pass">Текущий пароль</label>
+                        <input type="password" id="delete-pass" name="password">
                         <button class="pass__btn" type="button" title="Show password">
                             <svg>
                                 <use href="img/icons/icons.svg#eye"></use>
@@ -1525,8 +1533,8 @@
                 <div class="reset__block">
                     <p class="reset__desc">Введите текущий пароль что бы продолжить</p>
                     <div class="reset__input input pass">
-                        <label for="password">Текущий пароль</label>
-                        <input type="password" title="Password">
+                        <label for="change-pass">Текущий пароль</label>
+                        <input type="password" id="change-pass" name="password">
                         <button class="pass__btn" type="button" title="Show password">
                             <svg>
                                 <use href="img/icons/icons.svg#eye"></use>
@@ -1538,8 +1546,8 @@
                 <div class="reset__block">
                     <p class="reset__desc">Придумайте новый пароль</p>
                     <div class="reset__input input pass">
-                        <label for="password">Введите пароль</label>
-                        <input type="password" title="Password">
+                        <label for="change-confirm">Введите пароль</label>
+                        <input type="password" id="change-confirm" name="password">
                         <button class="pass__btn" type="button" title="Show password">
                             <svg>
                                 <use href="img/icons/icons.svg#eye"></use>
@@ -1566,7 +1574,7 @@
         </div>
     </div>
 </div>
-    <script src="js/app.min.js?_v=20230805135309"></script>
+    <script src="js/app.min.js?_v=20230805140735"></script>
 </body>
 
 </html>
