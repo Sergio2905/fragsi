@@ -4,7 +4,7 @@
 <head>
     <title>Fragsi</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/cat.min.css?_v=20230806115131">
+    <link rel="stylesheet" href="css/cat.min.css?_v=20230806141425">
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание">
@@ -1540,12 +1540,12 @@
 												</div>
 												<div class="filter__inputs">
 													<div class="filter__input input">
-														<input type="text" name="min" value="0">
-														<label for="min">От:</label>
+														<input type="text" id="min-price" name="min" value="0">
+														<label for="min-price">От:</label>
 													</div>
 													<div class="filter__input input">
-														<input type="text" name="max" value="0">
-														<label for="max">До:</label>
+														<input type="text" id="max-price" name="max" value="0">
+														<label for="max-price">До:</label>
 													</div>
 												</div>
 												<button type="button" title="Reset filter" class="filter__reset">
@@ -1584,12 +1584,12 @@
 												</div>
 												<div class="filter__inputs">
 													<div class="filter__input input">
-														<input type="text" name="min" value="0">
-														<label for="min-price">От:</label>
+														<input type="text" id="min-year" name="min" value="0">
+														<label for="min-year">От:</label>
 													</div>
 													<div class="filter__input input">
-														<input type="text" name="max" value="0">
-														<label for="max-price">До:</label>
+														<input type="text" id="max-year" name="max" value="0">
+														<label for="max-year">До:</label>
 													</div>
 												</div>
 												<ul class="filter__list" data-simplebar>
@@ -1654,9 +1654,9 @@
 												<div class="filter__durability"></div>
 												<div class="filter__range range-single">
 													<input type="range" min="0" max="100" step="25" value="0"
-														list="durability">
+														list="durability-2">
 
-													<datalist id="durability">
+													<datalist id="durability-2">
 														<option value="0" label="Слабый"></option>
 														<option value="25" label="Средний"></option>
 														<option value="50" label="Нормальный"></option>
@@ -1675,9 +1675,9 @@
 												<div class="filter__durability"></div>
 												<div class="filter__range range-single">
 													<input type="range" min="0" max="100" step="25" value="0"
-														list="flute">
+														list="flute-1">
 
-													<datalist id="flute">
+													<datalist id="flute-1">
 														<option value="0" label="Слабый"></option>
 														<option value="25" label="Средний"></option>
 														<option value="50" label="Нормальный"></option>
@@ -2956,12 +2956,14 @@
 																</div>
 																<div class="filter__inputs">
 																	<div class="filter__input input">
-																		<input type="text" name="min" value="0">
-																		<label for="min">От:</label>
+																		<input type="text" id="sidebar-min-price"
+																			name="min" value="0">
+																		<label for="sidebar-min-price">От:</label>
 																	</div>
 																	<div class="filter__input input">
-																		<input type="text" name="max" value="0">
-																		<label for="max">До:</label>
+																		<input type="text" id="sidebar-max-price"
+																			name="max" value="0">
+																		<label for="sidebar-max-price">До:</label>
 																	</div>
 																</div>
 																<button type="button" title="Reset filter"
@@ -3004,12 +3006,14 @@
 																</div>
 																<div class="filter__inputs">
 																	<div class="filter__input input">
-																		<input type="text" name="min" value="0">
-																		<label for="min-price">От:</label>
+																		<input type="text" id="sidebar-min-year"
+																			name="min" value="0">
+																		<label for="sidebar-min-year">От:</label>
 																	</div>
 																	<div class="filter__input input">
-																		<input type="text" name="max" value="0">
-																		<label for="max-price">До:</label>
+																		<input type="text" id="sidebar-max-year"
+																			name="max" value="0">
+																		<label for="sidebar-max-year">До:</label>
 																	</div>
 																</div>
 																<ul class="filter__list" data-simplebar>
@@ -3084,9 +3088,9 @@
 																<div class="filter__durability"></div>
 																<div class="filter__range range-single">
 																	<input type="range" min="0" max="100" step="25"
-																		value="0" list="durability">
+																		value="0" list="durability-1">
 
-																	<datalist id="durability">
+																	<datalist id="durability-1">
 																		<option value="0" label="Слабый"></option>
 																		<option value="25" label="Средний"></option>
 																		<option value="50" label="Нормальный"></option>
@@ -3106,9 +3110,9 @@
 																<div class="filter__durability"></div>
 																<div class="filter__range range-single">
 																	<input type="range" min="0" max="100" step="25"
-																		value="0" list="flute">
+																		value="0" list="flute-2">
 
-																	<datalist id="flute">
+																	<datalist id="flute-2">
 																		<option value="0" label="Слабый"></option>
 																		<option value="25" label="Средний"></option>
 																		<option value="50" label="Нормальный"></option>
@@ -3210,7 +3214,7 @@
 										</div>
 										<ul class="catalog__list">
 											<li class="catalog__item">
-												<a href="#" class="catalog__image" area-label="Catalog item">
+												<a href="#" class="catalog__image" title="Catalog item">
 													<picture>
 														<source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
 															type="image/webp">
@@ -3240,7 +3244,7 @@
 												</div>
 											</li>
 											<li class="catalog__item">
-												<a href="#" class="catalog__image" area-label="Catalog item">
+												<a href="#" class="catalog__image" title="Catalog item">
 													<picture>
 														<source data-srcset="img/note/cat2.webp" srcset="img/plug.png"
 															type="image/webp">
@@ -3270,7 +3274,7 @@
 												</div>
 											</li>
 											<li class="catalog__item">
-												<a href="#" class="catalog__image" area-label="Catalog item">
+												<a href="#" class="catalog__image" title="Catalog item">
 													<picture>
 														<source data-srcset="img/note/cat3.webp" srcset="img/plug.png"
 															type="image/webp">
@@ -3300,7 +3304,7 @@
 												</div>
 											</li>
 											<li class="catalog__item">
-												<a href="#" class="catalog__image" area-label="Catalog item">
+												<a href="#" class="catalog__image" title="Catalog item">
 													<picture>
 														<source data-srcset="img/note/cat4.webp" srcset="img/plug.png"
 															type="image/webp">
@@ -3330,7 +3334,7 @@
 												</div>
 											</li>
 											<li class="catalog__item">
-												<a href="#" class="catalog__image" area-label="Catalog item">
+												<a href="#" class="catalog__image" title="Catalog item">
 													<picture>
 														<source data-srcset="img/note/cat5.webp" srcset="img/plug.png"
 															type="image/webp">
@@ -3360,7 +3364,7 @@
 												</div>
 											</li>
 											<li class="catalog__item">
-												<a href="#" class="catalog__image" area-label="Catalog item">
+												<a href="#" class="catalog__image" title="Catalog item">
 													<picture>
 														<source data-srcset="img/note/cat6.webp" srcset="img/plug.png"
 															type="image/webp">
@@ -3390,7 +3394,7 @@
 												</div>
 											</li>
 											<li class="catalog__item">
-												<a href="#" class="catalog__image" area-label="Catalog item">
+												<a href="#" class="catalog__image" title="Catalog item">
 													<picture>
 														<source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
 															type="image/webp">
@@ -3420,7 +3424,7 @@
 												</div>
 											</li>
 											<li class="catalog__item">
-												<a href="#" class="catalog__image" area-label="Catalog item">
+												<a href="#" class="catalog__image" title="Catalog item">
 													<picture>
 														<source data-srcset="img/note/cat2.webp" srcset="img/plug.png"
 															type="image/webp">
@@ -3450,7 +3454,7 @@
 												</div>
 											</li>
 											<li class="catalog__item">
-												<a href="#" class="catalog__image" area-label="Catalog item">
+												<a href="#" class="catalog__image" title="Catalog item">
 													<picture>
 														<source data-srcset="img/note/cat3.webp" srcset="img/plug.png"
 															type="image/webp">
@@ -3480,7 +3484,7 @@
 												</div>
 											</li>
 											<li class="catalog__item">
-												<a href="#" class="catalog__image" area-label="Catalog item">
+												<a href="#" class="catalog__image" title="Catalog item">
 													<picture>
 														<source data-srcset="img/note/cat4.webp" srcset="img/plug.png"
 															type="image/webp">
@@ -3510,7 +3514,7 @@
 												</div>
 											</li>
 											<li class="catalog__item">
-												<a href="#" class="catalog__image" area-label="Catalog item">
+												<a href="#" class="catalog__image" title="Catalog item">
 													<picture>
 														<source data-srcset="img/note/cat5.webp" srcset="img/plug.png"
 															type="image/webp">
@@ -3540,7 +3544,7 @@
 												</div>
 											</li>
 											<li class="catalog__item">
-												<a href="#" class="catalog__image" area-label="Catalog item">
+												<a href="#" class="catalog__image" title="Catalog item">
 													<picture>
 														<source data-srcset="img/note/cat6.webp" srcset="img/plug.png"
 															type="image/webp">
@@ -3591,67 +3595,67 @@
 						</div>
 						<ul class="themes__list">
 							<li class="themes__item">
-								<a href="#" area-label="Theme link" class="themes__btn">Нишевая парфюмерия</a>
+								<a href="#" title="Theme link" class="themes__btn">Нишевая парфюмерия</a>
 							</li>
 							<li class="themes__item">
-								<a href="#" area-label="Theme link" class="themes__btn">Парфюмерия люкс</a>
+								<a href="#" title="Theme link" class="themes__btn">Парфюмерия люкс</a>
 							</li>
 							<li class="themes__item">
-								<a href="#" area-label="Theme link" class="themes__btn">Обзоры</a>
+								<a href="#" title="Theme link" class="themes__btn">Обзоры</a>
 							</li>
 							<li class="themes__item">
-								<a href="#" area-label="Theme link" class="themes__btn">Новинки</a>
+								<a href="#" title="Theme link" class="themes__btn">Новинки</a>
 							</li>
 							<li class="themes__item">
-								<a href="#" area-label="Theme link" class="themes__btn">Kenzo</a>
+								<a href="#" title="Theme link" class="themes__btn">Kenzo</a>
 							</li>
 							<li class="themes__item">
-								<a href="#" area-label="Theme link" class="themes__btn">События</a>
+								<a href="#" title="Theme link" class="themes__btn">События</a>
 							</li>
 							<li class="themes__item">
-								<a href="#" area-label="Theme link" class="themes__btn">Аромат</a>
+								<a href="#" title="Theme link" class="themes__btn">Аромат</a>
 							</li>
 							<li class="themes__item">
-								<a href="#" area-label="Theme link" class="themes__btn">Натуральный</a>
+								<a href="#" title="Theme link" class="themes__btn">Натуральный</a>
 							</li>
 							<li class="themes__item">
-								<a href="#" area-label="Theme link" class="themes__btn">Роза</a>
+								<a href="#" title="Theme link" class="themes__btn">Роза</a>
 							</li>
 							<li class="themes__item">
-								<a href="#" area-label="Theme link" class="themes__btn">Косметика</a>
+								<a href="#" title="Theme link" class="themes__btn">Косметика</a>
 							</li>
 							<li class="themes__item">
-								<a href="#" area-label="Theme link" class="themes__btn">Цветочные ароматы</a>
+								<a href="#" title="Theme link" class="themes__btn">Цветочные ароматы</a>
 							</li>
 							<li class="themes__item">
-								<a href="#" area-label="Theme link" class="themes__btn">Вопрос-ответ</a>
+								<a href="#" title="Theme link" class="themes__btn">Вопрос-ответ</a>
 							</li>
 							<li class="themes__item">
-								<a href="#" area-label="Theme link" class="themes__btn">Интервью</a>
+								<a href="#" title="Theme link" class="themes__btn">Интервью</a>
 							</li>
 							<li class="themes__item">
-								<a href="#" area-label="Theme link" class="themes__btn">Dior</a>
+								<a href="#" title="Theme link" class="themes__btn">Dior</a>
 							</li>
 							<li class="themes__item">
-								<a href="#" area-label="Theme link" class="themes__btn">Парфюмер</a>
+								<a href="#" title="Theme link" class="themes__btn">Парфюмер</a>
 							</li>
 							<li class="themes__item">
-								<a href="#" area-label="Theme link" class="themes__btn">Зима</a>
+								<a href="#" title="Theme link" class="themes__btn">Зима</a>
 							</li>
 							<li class="themes__item">
-								<a href="#" area-label="Theme link" class="themes__btn">Весна</a>
+								<a href="#" title="Theme link" class="themes__btn">Весна</a>
 							</li>
 							<li class="themes__item">
-								<a href="#" area-label="Theme link" class="themes__btn">Романтичный</a>
+								<a href="#" title="Theme link" class="themes__btn">Романтичный</a>
 							</li>
 							<li class="themes__item">
-								<a href="#" area-label="Theme link" class="themes__btn">Производство</a>
+								<a href="#" title="Theme link" class="themes__btn">Производство</a>
 							</li>
 							<li class="themes__item">
-								<a href="#" area-label="Theme link" class="themes__btn">Guerlain</a>
+								<a href="#" title="Theme link" class="themes__btn">Guerlain</a>
 							</li>
 							<li class="themes__item">
-								<a href="#" area-label="Theme link" class="themes__btn">Романтичный</a>
+								<a href="#" title="Theme link" class="themes__btn">Романтичный</a>
 							</li>
 						</ul>
 					</div>
@@ -3665,7 +3669,7 @@
 							<div class="recent__wrapper swiper-wrapper">
 								<div class="recent__slide swiper-slide">
 									<div class="recent__item">
-										<a href="#" class="recent__image" area-label="Recent viewed aromate">
+										<a href="#" class="recent__image" title="Recent viewed aromate">
 											<picture>
 												<source data-srcset="img/note/cat1.webp" srcset="img/plug.png"
 													type="image/webp">
@@ -3677,7 +3681,7 @@
 								</div>
 								<div class="recent__slide swiper-slide">
 									<div class="recent__item">
-										<a href="#" class="recent__image" area-label="Recent viewed aromate">
+										<a href="#" class="recent__image" title="Recent viewed aromate">
 											<picture>
 												<source data-srcset="img/note/cat2.webp" srcset="img/plug.png"
 													type="image/webp">
@@ -3689,7 +3693,7 @@
 								</div>
 								<div class="recent__slide swiper-slide">
 									<div class="recent__item">
-										<a href="#" class="recent__image" area-label="Recent viewed aromate">
+										<a href="#" class="recent__image" title="Recent viewed aromate">
 											<picture>
 												<source data-srcset="img/note/cat3.webp" srcset="img/plug.png"
 													type="image/webp">
@@ -3701,7 +3705,7 @@
 								</div>
 								<div class="recent__slide swiper-slide">
 									<div class="recent__item">
-										<a href="#" class="recent__image" area-label="Recent viewed aromate">
+										<a href="#" class="recent__image" title="Recent viewed aromate">
 											<picture>
 												<source data-srcset="img/note/cat4.webp" srcset="img/plug.png"
 													type="image/webp">
@@ -3713,7 +3717,7 @@
 								</div>
 								<div class="recent__slide swiper-slide">
 									<div class="recent__item">
-										<a href="#" class="recent__image" area-label="Recent viewed aromate">
+										<a href="#" class="recent__image" title="Recent viewed aromate">
 											<picture>
 												<source data-srcset="img/note/cat5.webp" srcset="img/plug.png"
 													type="image/webp">
@@ -4300,7 +4304,7 @@
         </div>
     </div>
 </div>
-	<script src="js/app.min.js?_v=20230806115131"></script>
+	<script src="js/app.min.js?_v=20230806141425"></script>
 </body>
 
 </html>
