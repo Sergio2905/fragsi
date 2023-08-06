@@ -16741,7 +16741,7 @@ body.lock {
   top: 0;
   z-index: -1;
   transition: all 0.5s linear;
-  background: url("../../img/loading.gif") center/contain no-repeat;
+  background: url("../img/loading.gif") center/contain no-repeat;
 }
 
 .main-articles__image::after {
