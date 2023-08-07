@@ -608,6 +608,10 @@ body.lock {
   display: block;
 }
 
+.gallery__elem {
+  cursor: pointer;
+}
+
 .header__main {
   position: relative;
   background: #FFFFFF;
@@ -3202,11 +3206,16 @@ body.lock {
   margin-left: 10px;
 }
 
+#viewer .popup__body {
+  height: 100%;
+  display: block;
+  position: relative;
+}
+
 .viewer {
-  width: 100%;
-  max-width: 80vw;
-  height: 70vh;
-  padding: 0;
+  max-width: 100%;
+  height: 100%;
+  padding: 40px 40px 0;
   background: none;
   display: flex;
   flex-direction: column;
@@ -3223,7 +3232,7 @@ body.lock {
   position: absolute;
   right: 0;
   top: 0;
-  transform: translate(0, -100%);
+  transform: translate(0, 0);
 }
 
 .viewer .popup__close svg {
@@ -3233,7 +3242,6 @@ body.lock {
 }
 
 .viewer__body {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -3242,6 +3250,7 @@ body.lock {
 }
 
 .viewer__slider {
+  height: 100% !important;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -3249,20 +3258,23 @@ body.lock {
 
 .viewer__wrapper {
   width: 100%;
-  height: 100%;
+  height: 100% !important;
 }
 
 .viewer__slide {
   width: 100%;
-  height: 100%;
+  height: 100% !important;
 }
 
 .viewer__item {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .viewer__image {
+  flex: 1 1 auto;
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -3270,15 +3282,15 @@ body.lock {
   overflow: hidden;
   margin-bottom: 20px;
   width: 100%;
-  height: 50vh;
 }
 
 .viewer__image img {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -3306,11 +3318,11 @@ body.lock {
 }
 
 .viewer__navigation .navigation__prev {
-  transform: translate(15px, 0);
+  transform: translate(30px, 0);
 }
 
 .viewer__navigation .navigation__next {
-  transform: translate(-15px, 0);
+  transform: translate(-30px, 0);
 }
 
 @keyframes activeSlide {
@@ -6425,6 +6437,7 @@ body.lock {
   margin: 0 auto;
   display: block;
   transition: all 0.2s linear;
+  color: #000;
 }
 
 .comments__more:hover {
@@ -10672,6 +10685,7 @@ body.lock {
   height: 450px;
   width: 100%;
   max-width: 800px;
+  border: none;
 }
 
 .trend-item__title {
@@ -11020,7 +11034,11 @@ body.lock {
   align-items: center;
 }
 
-.card-proposal__name label {
+.card-proposal__name:hover {
+  color: #007F5F;
+}
+
+.card-proposal__label {
   margin-left: 10px;
   border-radius: 44px;
   padding: 0px 6px;
@@ -11028,10 +11046,6 @@ body.lock {
   color: #fff;
   font-size: 1.125rem;
   font-weight: 400;
-}
-
-.card-proposal__name:hover {
-  color: #007F5F;
 }
 
 .card-proposal__desc {
@@ -19763,6 +19777,7 @@ body.lock {
     display: flex;
     flex-direction: column;
     padding: 0 20px;
+    pointer-events: all;
   }
 
   .menu__sub-item {
@@ -20178,6 +20193,42 @@ body.lock {
 }
 
 @media (max-width: 992px) {
+  .quest .help {
+    position: static;
+  }
+
+  .quest .help:hover .help__info {
+    transform: translate(0, 0);
+  }
+
+  .quest .help__info {
+    bottom: unset;
+    top: 110%;
+    left: 0;
+    transform: translate(0, 20px);
+  }
+
+  .quest .help__info::after {
+    display: none;
+  }
+
+  .accord-quest__header,
+  .deep-quest__header,
+  .notes-quest__header,
+  .gender-quest__header,
+  .duration-quest__header,
+  .plume-quest__header,
+  .range-duration__header,
+  .range-plume__header,
+  .season-quest__header,
+  .shot-quest__header,
+  .range-shot__header,
+  .face-quest__header,
+  .intensity-quest__header,
+  .effect-quest__header {
+    position: relative;
+  }
+
   .articles-parfumer__body,
   .articles-brand__body {
     grid-gap: 20px;
@@ -24018,13 +24069,13 @@ body.lock {
     margin-bottom: 24px;
   }
 
-  .card-proposal__name label {
-    font-size: 0.875rem;
-    padding: 0 3px;
-  }
-
   .card-proposal__name {
     font-size: 1.0625rem;
+  }
+
+  .card-proposal__label {
+    font-size: 0.875rem;
+    padding: 0 3px;
   }
 
   .card-proposal__desc {
