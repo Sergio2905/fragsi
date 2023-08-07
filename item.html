@@ -4,7 +4,7 @@
 <head>
     <title>Fragsi</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/item.min.css?_v=20230806134605">
+    <link rel="stylesheet" href="css/item.min.css?_v=20230807204430">
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание">
@@ -3524,16 +3524,18 @@
 									<button class="read-more" title="read more">
 										Читать дальше
 									</button>
-									<div class="comments__images">
+									<div class="comments__images gallery">
 										<div class="comments__image">
-											<picture>
+											<picture class="gallery__elem popup-link" data-desc="Image description"
+												data-modal="viewer">
 												<source data-srcset="img/item/comment1.webp" srcset="img/plug.png"
 													type="image/webp">
 												<img data-src="img/item/comment1.png" src="img/plug.png" alt="Image">
 											</picture>
 										</div>
 										<div class="comments__image">
-											<picture>
+											<picture class="gallery__elem popup-link" data-desc="Image description"
+												data-modal="viewer">
 												<source data-srcset="img/item/comment2.webp" srcset="img/plug.png"
 													type="image/webp">
 												<img data-src="img/item/comment2.png" src="img/plug.png" alt="Image">
@@ -7130,7 +7132,40 @@
         </div>
     </div>
 </div>
-	<script src="js/app.min.js?_v=20230806134605"></script>
+	<div class="popup" id="viewer">
+    <div class="popup__body">
+        <div class="popup__content viewer">
+            <div class="viewer__body">
+                <button type="button" class="popup__close clear-gallery">
+                    <svg>
+                        <use href="img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+
+                <div class="viewer__slider">
+                    <div class="viewer__wrapper swiper-wrapper">
+                    </div>
+                </div>
+                <div class="viewer__pagination"></div>
+
+            </div>
+        </div>
+
+        <div class="viewer__navigation navigation">
+            <div class="navigation__prev">
+                <svg>
+                    <use href="img/icons/icons.svg#arrow-str"></use>
+                </svg>
+            </div>
+            <div class="navigation__next">
+                <svg>
+                    <use href="img/icons/icons.svg#arrow-str"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+	<script src="js/app.min.js?_v=20230807204430"></script>
 </body>
 
 </html>
