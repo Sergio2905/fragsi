@@ -4,11 +4,11 @@
 <head>
     <title>Fragsi</title>
     <meta charset="UTF-8">
-    <link rel="preload" href="@gen?_v=20230808154900" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/settings_gen.min.css?_v=20230808172503" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="@gen?_v=20230808154900">
+        <link rel="stylesheet" href="css/settings_gen.min.css?_v=20230808172503">
     </noscript>
-    <link rel="stylesheet" href="css/settings.min.css?_v=20230808154900">
+    <link rel="stylesheet" href="css/settings.min.css?_v=20230808172503">
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание">
@@ -1195,7 +1195,7 @@
     <div class="popup" id="lang-settings">
     <div class="popup__body">
         <div class="popup__content lang-settings">
-            <button type="button" class="lang-settings__close popup__close">
+            <button type="button" class="lang-settings__close popup__close" title="Close">
                 <svg>
                     <use href="img/icons/icons.svg#close"></use>
                 </svg>
@@ -1248,7 +1248,7 @@
     <div class="popup" id="login">
     <div class="popup__body">
         <div class="popup__content login">
-            <button type="button" class="login__close popup__close">
+            <button type="button" class="login__close popup__close" title="Close">
                 <svg>
                     <use href="img/icons/icons.svg#close"></use>
                 </svg>
@@ -1340,7 +1340,7 @@
                                     <div class="form-login__footer">
                                         <div class="form-login__checkbox checkbox">
                                             Запомнить меня
-                                            <input type="checkbox" name="remember-me">
+                                            <input type="checkbox" name="remember-me" title="Remember me">
                                         </div>
                                         <a href="#" class="form-login__forgot popup-link" data-modal="restore">Забыли
                                             пароль?</a>
@@ -1453,7 +1453,7 @@
     <div class="popup" id="restore">
     <div class="popup__body">
         <div class="popup__content login">
-            <button type="button" class="login__close popup__close">
+            <button type="button" class="login__close popup__close" title="Close">
                 <svg>
                     <use href="img/icons/icons.svg#close"></use>
                 </svg>
@@ -1577,7 +1577,9 @@
         </div>
     </div>
 </div>
-    <script src="js/app.min.js?_v=20230808154900"></script>
+
+    <script src="js/critical.min.js?_v=20230808172503"></script>
+    <script src="js/settings.min.js?_v=20230808172503" defer></script>
 </body>
 
 </html>
