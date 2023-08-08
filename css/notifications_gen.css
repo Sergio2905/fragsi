@@ -2616,7 +2616,7 @@
 .menu-footer__btn svg {
   width: 24px;
   height: 24px;
-  stroke: #007F5F;
+  fill: #007F5F;
 }
 
 @keyframes highlight {

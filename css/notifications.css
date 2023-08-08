@@ -1261,6 +1261,12 @@ body.lock {
   padding: 15px 18px;
 }
 
+.actions__cat svg {
+  stroke: none;
+  fill: #fff;
+  stroke-width: 0;
+}
+
 .actions__btns {
   display: flex;
   margin-right: 20px;
