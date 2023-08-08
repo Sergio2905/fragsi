@@ -3675,115 +3675,6 @@ body.lock {
   flex: 1 1 100%;
 }
 
-.checkbox {
-  padding-left: 34px;
-  position: relative;
-  cursor: pointer;
-}
-
-.checkbox::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: " ";
-  width: 24px;
-  height: 24px;
-  background: #fff;
-  border: 2px solid #000000;
-  border-radius: 5px;
-  transition: all 0.3s linear;
-}
-
-.checkbox::after {
-  content: " ";
-  position: absolute;
-  top: -7px;
-  left: -7px;
-  width: 40px;
-  height: 40px;
-  -webkit-mask: url("../img/icons/icons.svg#check") center/contain no-repeat;
-          mask: url("../img/icons/icons.svg#check") center/contain no-repeat;
-  border: 2px solid #007F5F;
-  background: #fff;
-  opacity: 0;
-  transform: scale(0);
-  transition: all 0.3s linear;
-}
-
-.checkbox.active::before {
-  background: #007F5F;
-  border: 2px solid #007F5F;
-}
-
-.checkbox.active::after {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.checkbox input {
-  display: none;
-}
-
-.alert__error {
-  color: #E84141;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  font-size: 1.125rem;
-  position: absolute;
-  bottom: 100%;
-  transform: translate(0, -50%);
-  right: 0;
-  background: #FFFFFF;
-  border-left: 3px solid #E84141;
-  box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.12);
-  border-radius: 6px;
-  transition: all 0.3s linear;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 200;
-}
-
-.alert__error.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.alert__error svg {
-  width: 24px;
-  height: 24px;
-  stroke: #E84141;
-  stroke-width: 2px;
-  margin-right: 15px;
-}
-
-.alert__sent {
-  padding: 20px;
-  font-size: 1.125rem;
-  position: absolute;
-  bottom: 100%;
-  transform: translate(0, -50%);
-  right: 0;
-  background: #FFFFFF;
-  border-left: 3px solid #007F5F;
-  box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.12);
-  border-radius: 6px;
-  transition: all 0.3s linear;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 200;
-}
-
-.alert__sent span {
-  color: #007F5F;
-  margin: 0 3px;
-}
-
-.alert__sent.active {
-  opacity: 1;
-  visibility: visible;
-}
-
 .themes {
   margin-bottom: 80px;
 }
@@ -3842,204 +3733,6 @@ body.lock {
 
 .themes__btn:hover {
   background: #e6e6e6;
-}
-
-.recent,
-.new-main,
-.fragrances-main {
-  margin-bottom: 150px;
-}
-
-.recent__body,
-.new-main__body,
-.fragrances-main__body {
-  position: relative;
-  border: 1px solid #E1E1E1;
-  border-radius: 16px;
-  padding: 0 30px 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 10px;
-}
-
-.recent__title,
-.new-main__title,
-.fragrances-main__title {
-  transform: translate(0, -50%);
-  padding: 0 30px;
-  background: #fff;
-}
-
-.recent__slider,
-.new-main__slider,
-.fragrances-main__slider {
-  padding: 10px;
-  width: 100%;
-  overflow: hidden;
-}
-
-.recent__item,
-.new-main__item,
-.fragrances-main__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 12px;
-  transition: all 0.2s linear;
-  padding: 10px;
-}
-
-.recent__item:hover,
-.new-main__item:hover,
-.fragrances-main__item:hover {
-  box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.12);
-}
-
-.recent__item:hover .recent__name,
-.new-main__item:hover .recent__name,
-.fragrances-main__item:hover .recent__name {
-  color: #007F5F;
-}
-
-.recent__item:hover .recent__image,
-.new-main__item:hover .recent__image,
-.fragrances-main__item:hover .recent__image {
-  transform: scale(1.1);
-}
-
-.recent__image,
-.new-main__image,
-.fragrances-main__image {
-  width: 130px;
-  height: 130px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  position: relative;
-  background: url("../img/loading.gif") center/contain no-repeat;
-  transition: all 0.5s linear;
-}
-
-.recent__image img,
-.new-main__image img,
-.fragrances-main__image img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.recent__name,
-.new-main__name,
-.fragrances-main__name {
-  font-size: 1.125rem;
-  text-align: center;
-  color: #000;
-  transition: all 0.2s linear;
-  max-width: 150px;
-}
-
-.recent__name:hover,
-.new-main__name:hover,
-.fragrances-main__name:hover {
-  color: #007F5F;
-}
-
-.tags {
-  display: flex;
-  align-items: center;
-}
-
-.tags__list {
-  flex: 1 1 auto;
-  display: flex;
-  align-items: center;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-
-.tags__list::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-
-.tags__item.active .tags__btn {
-  background: #FCFCFC;
-  border: 2px solid #2E3192;
-  color: #2E3192;
-}
-
-.tags__item.active .tags__btn svg {
-  stroke: #2E3192;
-}
-
-.tags__item:not(:last-child) {
-  margin-right: 6px;
-}
-
-.tags__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 38px;
-  background: #F2F2F2;
-  border-radius: 50px;
-  padding: 0 15px;
-  font-size: 1.125rem;
-  white-space: nowrap;
-  color: #000;
-  transition: all 0.2s linear;
-}
-
-.tags__btn_clear {
-  width: 38px;
-  height: 38px;
-  padding: 0;
-}
-
-.tags__btn:hover {
-  background: #e6e6e6;
-}
-
-.tags__btn svg {
-  width: 22px;
-  height: 22px;
-  stroke: #000;
-  stroke-width: 2px;
-  stroke-linecap: round;
-}
-
-.tags__all {
-  margin-left: 10px;
-  font-size: 1.125rem;
-  display: block;
-  color: #007F5F;
-  transition: all 0.2s linear;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-}
-
-.tags__all:hover {
-  color: #1e9d7d;
-}
-
-.tags__all:hover svg {
-  stroke: #1e9d7d;
-}
-
-.tags__all svg {
-  width: 22px;
-  height: 22px;
-  stroke: #007F5F;
-  stroke-width: 2px;
-  stroke-linecap: round;
-  transition: all 0.2s linear;
 }
 
 .options {
@@ -6835,12 +6528,6 @@ body.lock {
     flex: 0 0 465px;
   }
 
-  .recent,
-  .new-main,
-  .fragrances-main {
-    margin-bottom: 100px;
-  }
-
   .user-menu {
     flex: unset;
     width: 100%;
@@ -7047,45 +6734,6 @@ body.lock {
 
   .themes {
     margin-bottom: 60px;
-  }
-
-  .recent,
-  .new-main,
-  .fragrances-main {
-    margin-bottom: 80px;
-  }
-
-  .recent__body,
-  .new-main__body,
-  .fragrances-main__body {
-    border: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .recent__title,
-  .new-main__title,
-  .fragrances-main__title {
-    background: none;
-    transform: translate(0, 0);
-    padding: 0;
-    align-self: flex-start;
-    margin-bottom: 30px;
-    text-align: left;
-  }
-
-  .recent__slider,
-  .new-main__slider,
-  .fragrances-main__slider {
-    overflow: visible;
-    padding: 0;
-  }
-
-  .recent__item,
-  .new-main__item,
-  .fragrances-main__item {
-    border: 2px solid #CCE5DF;
-    padding: 20px;
   }
 
   .user-menu__list {
@@ -7773,16 +7421,6 @@ body.lock {
     display: block;
   }
 
-  .alert__error {
-    padding: 10px;
-    font-size: 1.0625rem;
-  }
-
-  .alert__sent {
-    padding: 10px;
-    font-size: 1.0625rem;
-  }
-
   .themes {
     margin-bottom: 40px;
   }
@@ -7807,28 +7445,6 @@ body.lock {
   .themes__btn {
     font-size: 1.0625rem;
     padding: 6px 12px;
-  }
-
-  .recent,
-  .new-main,
-  .fragrances-main {
-    margin-bottom: 60px;
-  }
-
-  .recent__title,
-  .new-main__title,
-  .fragrances-main__title {
-    margin-bottom: 24px;
-  }
-
-  .recent__name,
-  .new-main__name,
-  .fragrances-main__name {
-    font-size: 1.0625rem;
-  }
-
-  .tags__all {
-    display: none;
   }
 
   .filter__btn {
@@ -8162,12 +7778,6 @@ body.lock {
 
   .themes__header {
     margin-bottom: 20px;
-  }
-
-  .recent,
-  .new-main,
-  .fragrances-main {
-    margin-bottom: 40px;
   }
 
   .socials__list {
