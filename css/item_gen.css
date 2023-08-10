@@ -2898,7 +2898,7 @@
 
 .filter__input:not(:last-of-type) {
   margin-right: 6px;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .filter__durability {
