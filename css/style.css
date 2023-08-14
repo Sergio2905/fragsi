@@ -15271,8 +15271,6 @@ body.lock {
 
 .chat__wrapper {
   padding: 0 21px;
-  display: flex;
-  flex-direction: column;
   height: 690px;
 }
 
@@ -15280,7 +15278,7 @@ body.lock {
   width: 100% !important;
 }
 
-.chat__wrapper .simplebar-content {
+.chat__scroll {
   display: flex;
   flex-direction: column;
 }
