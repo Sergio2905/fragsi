@@ -118,6 +118,16 @@ body.lock {
   padding: 0 10px;
 }
 
+.filter__wrapper {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.filter__body {
+  transform: translate(-200%, 0);
+}
+
 .header__main {
   position: relative;
   background: #FFFFFF;
