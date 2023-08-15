@@ -1692,7 +1692,7 @@
 .sort__apply {
   width: 100%;
   margin-top: 10px;
-  display: none;
+  display: none !important;
   align-items: center;
   justify-content: center;
 }
@@ -4364,7 +4364,7 @@
   }
 
   .sort__apply {
-    display: flex;
+    display: flex !important;
   }
 
   .tags__all {

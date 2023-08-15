@@ -2134,6 +2134,7 @@ body.lock {
   padding: 12px;
   box-shadow: 0 -2px 22px rgba(0, 0, 0, 0.12);
   background: #fff;
+  color: #000;
   position: absolute;
   top: 150%;
   right: 0;
@@ -2426,6 +2427,8 @@ body.lock {
   font-size: 1.125rem;
   color: #007F5F;
   transition: all 0.2s linear;
+  position: relative;
+  z-index: 10;
 }
 
 .progress-profile__all:hover {
@@ -3959,6 +3962,7 @@ body.lock {
   border: none;
   color: #C3C3C3;
   font-size: 1.125rem;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 

@@ -3853,6 +3853,7 @@ body.lock {
   border: none;
   color: #C3C3C3;
   font-size: 1.125rem;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -5450,6 +5451,12 @@ body.lock {
   }
 }
 
+@media (max-width: 640px) {
+  .opinion-article__btn {
+    display: none !important;
+  }
+}
+
 @media (max-width: 576px) {
   .menu-user {
     position: fixed;
@@ -5497,10 +5504,6 @@ body.lock {
   .syntetic-article__list:not(:last-child),
   .natural-article__list:not(:last-child) {
     margin-bottom: 24px;
-  }
-
-  .opinion-article__btn {
-    display: none;
   }
 
   .instruction-article__wrapper {

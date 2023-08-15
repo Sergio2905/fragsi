@@ -1175,6 +1175,7 @@
   border: none;
   color: #C3C3C3;
   font-size: rem(18);
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -3099,7 +3100,7 @@
 .sort__apply {
   width: 100%;
   margin-top: 10px;
-  display: none;
+  display: none !important;
   align-items: center;
   justify-content: center;
 }
@@ -7500,7 +7501,7 @@
   }
 
   .sort__apply {
-    display: flex;
+    display: flex !important;
   }
 
   .user-menu__list {

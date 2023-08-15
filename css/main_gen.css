@@ -5163,6 +5163,7 @@
   padding: 12px;
   box-shadow: 0 -2px 22px rgba(0, 0, 0, 0.12);
   background: #fff;
+  color: #000;
   position: absolute;
   top: 150%;
   right: 0;
@@ -5455,6 +5456,8 @@
   font-size: 1.125rem;
   color: #007F5F;
   transition: all 0.2s linear;
+  position: relative;
+  z-index: 10;
 }
 
 .progress-profile__all:hover {

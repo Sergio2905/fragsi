@@ -1463,7 +1463,7 @@
 .sort__apply {
   width: 100%;
   margin-top: 10px;
-  display: none;
+  display: none !important;
   align-items: center;
   justify-content: center;
 }
@@ -6742,6 +6742,12 @@
   }
 }
 
+@media (max-width: 640px) {
+  .opinion-article__btn {
+    display: none !important;
+  }
+}
+
 @media (max-width: 600px) {
   .sort__desk {
     display: none;
@@ -6782,10 +6788,6 @@
   .syntetic-article__list:not(:last-child),
   .natural-article__list:not(:last-child) {
     margin-bottom: 24px;
-  }
-
-  .opinion-article__btn {
-    display: none;
   }
 
   .instruction-article__wrapper {
@@ -7043,7 +7045,7 @@
   }
 
   .sort__apply {
-    display: flex;
+    display: flex !important;
   }
 
   .user-menu__list {
