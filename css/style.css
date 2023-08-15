@@ -2609,6 +2609,7 @@ body.lock {
   border: none;
   color: #C3C3C3;
   font-size: 1.125rem;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -4922,7 +4923,7 @@ body.lock {
 .sort__apply {
   width: 100%;
   margin-top: 10px;
-  display: none;
+  display: none !important;
   align-items: center;
   justify-content: center;
 }
@@ -14044,6 +14045,7 @@ body.lock {
   padding: 12px;
   box-shadow: 0 -2px 22px rgba(0, 0, 0, 0.12);
   background: #fff;
+  color: #000;
   position: absolute;
   top: 150%;
   right: 0;
@@ -14336,6 +14338,8 @@ body.lock {
   font-size: 1.125rem;
   color: #007F5F;
   transition: all 0.2s linear;
+  position: relative;
+  z-index: 10;
 }
 
 .progress-profile__all:hover {
@@ -16615,6 +16619,7 @@ body.lock {
 }
 
 .sidebar-new__btn {
+  color: #000;
   padding: 16px 20px;
   display: flex;
   align-items: center;
@@ -22131,6 +22136,12 @@ body.lock {
   }
 }
 
+@media (max-width: 640px) {
+  .opinion-article__btn {
+    display: none !important;
+  }
+}
+
 @media (max-width: 600px) {
   .sort__desk {
     display: none;
@@ -22850,10 +22861,6 @@ body.lock {
     margin-bottom: 24px;
   }
 
-  .opinion-article__btn {
-    display: none;
-  }
-
   .instruction-article__wrapper {
     grid-template-columns: 1fr;
   }
@@ -23329,7 +23336,7 @@ body.lock {
   }
 
   .sort__apply {
-    display: flex;
+    display: flex !important;
   }
 
   .user-menu__list {
