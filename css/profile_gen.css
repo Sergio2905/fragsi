@@ -676,12 +676,6 @@
   stroke: #007F5F;
 }
 
-.user-menu__item.active .user-menu__link svg.fill {
-  stroke: none;
-  fill: #007F5F;
-  stroke: #007F5F;
-}
-
 .user-menu__item.active span:not(:first-of-type) {
   background: #007F5F;
 }
@@ -717,9 +711,7 @@
   margin-right: 15px;
 }
 
-.user-menu__link svg.fill {
-  stroke: #C3C3C3;
-  fill: #C3C3C3;
+.user-menu__link svg.str {
   stroke-width: 1px;
 }
 

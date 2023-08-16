@@ -969,11 +969,6 @@ body.lock {
   stroke: #007F5F;
 }
 
-.actions__btn:hover svg.fill {
-  stroke: #007F5F;
-  fill: #007F5F;
-}
-
 .actions__btn:not(:last-child) {
   margin-right: 30px;
 }
@@ -986,11 +981,8 @@ body.lock {
   transition: all 0.2s linear;
 }
 
-.actions__btn svg.fill {
-  stroke: #000;
-  fill: #000;
-  stroke-width: 0.5px;
-  transition: all 0.2s linear;
+.actions__btn svg.str {
+  stroke-width: 1.3px;
 }
 
 .actions__count {
@@ -5513,12 +5505,6 @@ body.lock {
   stroke: #007F5F;
 }
 
-.user-menu__item.active .user-menu__link svg.fill {
-  stroke: none;
-  fill: #007F5F;
-  stroke: #007F5F;
-}
-
 .user-menu__item.active span:not(:first-of-type) {
   background: #007F5F;
 }
@@ -5554,9 +5540,7 @@ body.lock {
   margin-right: 15px;
 }
 
-.user-menu__link svg.fill {
-  stroke: #C3C3C3;
-  fill: #C3C3C3;
+.user-menu__link svg.str {
   stroke-width: 1px;
 }
 
