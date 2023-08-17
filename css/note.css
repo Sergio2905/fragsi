@@ -1477,9 +1477,9 @@ body.lock {
 .about-group__favorite svg,
 .about-parfumer__favorite svg,
 .about-brand__favorite svg {
-  width: 32px;
-  min-width: 32px;
-  height: 32px;
+  width: 27px;
+  min-width: 27px;
+  height: 27px;
   transition: all 0.2s linear;
 }
 
