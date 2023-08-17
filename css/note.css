@@ -849,6 +849,8 @@ body.lock {
   opacity: 0;
   visibility: hidden;
   transition: all 0.2s linear;
+  stroke-width: 0;
+  stroke: none;
 }
 
 .btn_favorite.active svg {
@@ -859,6 +861,8 @@ body.lock {
   fill: #007F5F;
   opacity: 1;
   visibility: visible;
+  stroke: none;
+  stroke-width: 0;
 }
 
 .btn_cancel {
