@@ -831,9 +831,9 @@ body.lock {
 .btn_favorite svg {
   stroke-width: 1.5px;
   stroke: #000;
-  width: 25px;
-  height: 25px;
-  min-width: 25px;
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
 }
 
 .btn_favorite.active svg {
@@ -1477,9 +1477,9 @@ body.lock {
 .about-group__favorite svg,
 .about-parfumer__favorite svg,
 .about-brand__favorite svg {
-  width: 25px;
-  min-width: 25px;
-  height: 25px;
+  width: 26px;
+  min-width: 26px;
+  height: 26px;
   transition: all 0.2s linear;
 }
 
