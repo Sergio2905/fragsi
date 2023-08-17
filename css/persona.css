@@ -831,34 +831,13 @@ body.lock {
 .btn_favorite svg {
   stroke-width: 1.5px;
   stroke: #000;
-}
-
-.btn_favorite svg:nth-of-type(1) {
-  width: 27px;
-  height: 27px;
-  min-width: 27px;
-}
-
-.btn_favorite svg:nth-of-type(2) {
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.2s linear;
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
 }
 
 .btn_favorite.active svg {
-  stroke: #007F5F;
-}
-
-.btn_favorite.active svg:nth-of-type(2) {
-  fill: #007F5F;
-  opacity: 1;
-  visibility: visible;
+  stroke: #E84141;
 }
 
 .btn_cancel {
@@ -1761,9 +1740,9 @@ body.lock {
 .about-group__favorite svg,
 .about-parfumer__favorite svg,
 .about-brand__favorite svg {
-  width: 32px;
-  min-width: 32px;
-  height: 32px;
+  width: 26px;
+  min-width: 26px;
+  height: 26px;
   transition: all 0.2s linear;
 }
 
